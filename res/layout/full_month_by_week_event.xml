@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright 2013.03.28, reset full_month_by_week.xml by FR593012-Wentao-Wan-001
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingTop="1dip"
+    android:background="@null">
+    <LinearLayout
+        android:id="@+id/month"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+
+ <!--added yuanding add it for PR635523 20140409  start-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+           android:background="#ffeeeeee">
+        
+        	<ImageButton
+            	android:id="@+id/goto_last_month"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:layout_alignParentLeft="true"
+            	android:layout_marginLeft="15dp"
+            	android:src="@drawable/left"
+            	android:background="@drawable/action_bar_button_lt"/>
+        
+        	<TextView android:id="@+id/month_name"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true"
+            	style="@style/MonthView_MiniMonthLabel"/>
+        
+        	<ImageButton
+            	android:id="@+id/goto_next_month"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:layout_alignParentRight="true"
+            	android:layout_marginRight="15dp"
+            	android:background="@drawable/action_bar_button_lt" 
+            	android:src="@drawable/right" />
+    	</RelativeLayout>
+ <!--added yuanding add it for PR635523 20140409 end-->
+
+
+        <include android:id="@+id/day_names" layout="@layout/full_month_header"/>
+        <!-- FR593012-Wentao-Wan-001 begin -->
+	<!-- hong.zhan modify it for PR:635523 20140505 start-->
+        <com.android.calendar.month.MonthListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="440dip"
+            android:drawSelectorOnTop="false"/>
+	<!-- hong.zhan modify it for PR:635523 20140505 end-->	
+    </LinearLayout>
+        <!-- FR593012-Wentao-Wan-001 end-->
+    <!-- FR593012-Wentao-Wan-001 begin-->
+    <RelativeLayout
+        android:id="@+id/month_event"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/month_event_list_bgcolor"
+        android:layout_below="@id/month"
+        >
+<!--
+        <view
+            class="com.android.calendar.month.EventDragView"
+            android:id="@+id/line_button"
+            android:background="#e5e5e5"
+            android:layout_width="540dip"
+            android:layout_height="10dip"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+-->
+        <view
+            class="com.android.calendar.eventlist.EventListView"
+            android:id="@+id/events_list"
+            android:fadingEdge="none"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"/>
+
+         <View
+            android:background="@drawable/shadow"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/shadow" />
+         <TextView android:id="@+id/noEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noEventHint"
+
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="20sp"/>
+        </RelativeLayout>
+    <!-- FR593012-Wentao-Wan-001 end-->
+</RelativeLayout>

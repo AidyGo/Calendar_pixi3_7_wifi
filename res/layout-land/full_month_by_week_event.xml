@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright 2013.03.28, reset full_month_by_week.xml by FR593012-Wentao-Wan-001
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<!-- modified by yubin.yi.hz for FR622951 pixo7 Calendar GD at 2014-03-15 begin-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingTop="1dip"
+    android:background="@null">
+    <!-- hong.zhan modify it for PR:635523 20140507 begin -->
+    <LinearLayout
+        android:id="@+id/month"
+        android:orientation="vertical"
+        android:layout_width="707dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="#ffeeeeee">
+<!-- modified by yubin.yi.hz for FR622951 Calendar GD at 2014-03-17 begin -->    
+		    
+        	<ImageButton
+            	android:id="@+id/goto_last_month"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+            	android:layout_marginTop="0dp"
+            	android:layout_marginLeft="15dp" 
+            	android:background="@drawable/action_bar_button_lt" 
+            	android:src="@drawable/left"/>
+  		      
+        	<TextView android:id="@+id/month_name"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true"
+            	style="@style/MonthView_MiniMonthLabel"
+            	/>
+        
+        	<ImageButton
+            	android:id="@+id/goto_next_month"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="2dp"
+            	android:layout_alignParentRight="true"
+            	android:layout_marginRight="15dp"
+            	android:background="@drawable/action_bar_button_lt" 
+            	android:src="@drawable/right" />
+		 
+<!-- modified by yubin.yi.hz for FR622951 Calendar GD at 2014-03-17 end -->
+    	</RelativeLayout>
+    
+        <include android:id="@+id/day_names" layout="@layout/full_month_header"/>
+        <com.android.calendar.month.MonthListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="370dip"
+            android:drawSelectorOnTop="false"/>
+    </LinearLayout>
+    <!-- hong.zhan modify it for PR:635523 20140507 end -->
+    <RelativeLayout
+        android:id="@+id/month_event"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/month_event_list_bgcolor"
+        android:layout_toRightOf="@id/month"
+        >
+        <view
+            class="com.android.calendar.eventlist.EventListView"
+            android:id="@+id/events_list"
+            android:fadingEdge="none"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-1dp"
+            android:layout_alignParentTop="true"/>
+
+         <TextView android:id="@+id/noEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noEventHint"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="20sp"/>
+        </RelativeLayout>
+</RelativeLayout>
+<!-- modified by yubin.yi.hz for FR622951 pixo7 Calendar GD at 2014-03-15 end-->
