@@ -86,7 +86,6 @@ public class TabContainerView extends HorizontalScrollView implements AdapterVie
         WindowManager wm = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
         int miniTabWidth =(int)((wm.getDefaultDisplay().getWidth() - mBottomBarHeight *2 - 
             BOTTOM_BAR_PADDING * mDisplayMetrics.density *2 ) /3) ;
-        android.util.Log.i("aidy", "mTabWidth = " + mTabWidth + " -- miniTabWidth = " + miniTabWidth);
         mTabWidth = Math.min(mTabWidth, miniTabWidth);
 
         mTabLayout = createTabLayout();
