@@ -133,10 +133,10 @@ public class Utils {
     // exiting is identical to reverting
     public static final int DONE_EXIT = 1 << 0;
 
-    ///M:@{
-    public static final int FIRST_CALENDAR_DAY = Time.EPOCH_JULIAN_DAY; /* 1970.1.1 in Julian*/
+    // /M:@{
+    public static final int FIRST_CALENDAR_DAY = Time.EPOCH_JULIAN_DAY; /* 1970.1.1 in Julian */
     public static final int LAST_CALENDAR_DAY = 2465059; /* 2036.12.31 in Julian */
-    ///@}
+    // /@}
 
     public static final String OPEN_EMAIL_MARKER = " <";
     public static final String CLOSE_EMAIL_MARKER = ">";
@@ -186,67 +186,56 @@ public class Utils {
     private static long mTardis = 0;
     private static String sVersion = null;
 
-    //FR593012-Wentao-Wan-001 begin
+    // FR593012-Wentao-Wan-001 begin
     public static int MONTH_VIEW_HEIGHT = 300;
     public static int monthDayViewWidth = 0;
     public static int monthDayViewHeight = 0;
 
-    public static int mSelectedWeekDayEX = -1;//WeekDay  Selected
-    public static int mClickedDayIndexEX = -1;//MonthDay Selected
+    public static int mSelectedWeekDayEX = -1;// WeekDay Selected
+    public static int mClickedDayIndexEX = -1;// MonthDay Selected
     public static int mSelectedJulianDayEX = -1;
-    //FR593012-Wentao-Wan-001 end
+    // FR593012-Wentao-Wan-001 end
 
     private static final Pattern mWildcardPattern = Pattern.compile("^.*$");
 
     /**
-    * A coordinate must be of the following form for Google Maps to correctly use it:
-    * Latitude, Longitude
-    *
-    * This may be in decimal form:
-    * Latitude: {-90 to 90}
-    * Longitude: {-180 to 180}
-    *
-    * Or, in degrees, minutes, and seconds:
-    * Latitude: {-90 to 90}° {0 to 59}' {0 to 59}"
-    * Latitude: {-180 to 180}° {0 to 59}' {0 to 59}"
-    * + or - degrees may also be represented with N or n, S or s for latitude, and with
-    * E or e, W or w for longitude, where the direction may either precede or follow the value.
-    *
-    * Some examples of coordinates that will be accepted by the regex:
-    * 37.422081°, -122.084576°
-    * 37.422081,-122.084576
-    * +37°25'19.49", -122°5'4.47"
-    * 37°25'19.49"N, 122°5'4.47"W
-    * N 37° 25' 19.49",  W 122° 5' 4.47"
-    **/
+     * A coordinate must be of the following form for Google Maps to correctly use it: Latitude,
+     * Longitude This may be in decimal form: Latitude: {-90 to 90} Longitude: {-180 to 180} Or, in
+     * degrees, minutes, and seconds: Latitude: {-90 to 90}° {0 to 59}' {0 to 59}" Latitude: {-180
+     * to 180}° {0 to 59}' {0 to 59}" + or - degrees may also be represented with N or n, S or s for
+     * latitude, and with E or e, W or w for longitude, where the direction may either precede or
+     * follow the value. Some examples of coordinates that will be accepted by the regex:
+     * 37.422081°, -122.084576° 37.422081,-122.084576 +37°25'19.49", -122°5'4.47" 37°25'19.49"N,
+     * 122°5'4.47"W N 37° 25' 19.49",  W 122° 5' 4.47"
+     **/
     private static final String COORD_DEGREES_LATITUDE =
             "([-+NnSs]" + "(\\s)*)?"
-            + "[1-9]?[0-9](\u00B0)" + "(\\s)*"
-            + "([1-5]?[0-9]\')?" + "(\\s)*"
-            + "([1-5]?[0-9]" + "(\\.[0-9]+)?\")?"
-            + "((\\s)*" + "[NnSs])?";
+                    + "[1-9]?[0-9](\u00B0)" + "(\\s)*"
+                    + "([1-5]?[0-9]\')?" + "(\\s)*"
+                    + "([1-5]?[0-9]" + "(\\.[0-9]+)?\")?"
+                    + "((\\s)*" + "[NnSs])?";
     private static final String COORD_DEGREES_LONGITUDE =
             "([-+EeWw]" + "(\\s)*)?"
-            + "(1)?[0-9]?[0-9](\u00B0)" + "(\\s)*"
-            + "([1-5]?[0-9]\')?" + "(\\s)*"
-            + "([1-5]?[0-9]" + "(\\.[0-9]+)?\")?"
-            + "((\\s)*" + "[EeWw])?";
+                    + "(1)?[0-9]?[0-9](\u00B0)" + "(\\s)*"
+                    + "([1-5]?[0-9]\')?" + "(\\s)*"
+                    + "([1-5]?[0-9]" + "(\\.[0-9]+)?\")?"
+                    + "((\\s)*" + "[EeWw])?";
     private static final String COORD_DEGREES_PATTERN =
             COORD_DEGREES_LATITUDE
-            + "(\\s)*" + "," + "(\\s)*"
-            + COORD_DEGREES_LONGITUDE;
+                    + "(\\s)*" + "," + "(\\s)*"
+                    + COORD_DEGREES_LONGITUDE;
     private static final String COORD_DECIMAL_LATITUDE =
             "[+-]?"
-            + "[1-9]?[0-9]" + "(\\.[0-9]+)"
-            + "(\u00B0)?";
+                    + "[1-9]?[0-9]" + "(\\.[0-9]+)"
+                    + "(\u00B0)?";
     private static final String COORD_DECIMAL_LONGITUDE =
             "[+-]?"
-            + "(1)?[0-9]?[0-9]" + "(\\.[0-9]+)"
-            + "(\u00B0)?";
+                    + "(1)?[0-9]?[0-9]" + "(\\.[0-9]+)"
+                    + "(\u00B0)?";
     private static final String COORD_DECIMAL_PATTERN =
             COORD_DECIMAL_LATITUDE
-            + "(\\s)*" + "," + "(\\s)*"
-            + COORD_DECIMAL_LONGITUDE;
+                    + "(\\s)*" + "," + "(\\s)*"
+                    + COORD_DECIMAL_LONGITUDE;
     private static final Pattern COORD_PATTERN =
             Pattern.compile(COORD_DEGREES_PATTERN + "|" + COORD_DECIMAL_PATTERN);
 
@@ -254,19 +243,18 @@ public class Utils {
     private static final int NANP_MIN_DIGITS = 7;
     private static final int NANP_MAX_DIGITS = 11;
 
-
     /**
      * Returns whether the SDK is the Jellybean release or later.
      */
     public static boolean isJellybeanOrLater() {
-      return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN;
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN;
     }
 
     /**
      * Returns whether the SDK is the KeyLimePie release or later.
      */
     public static boolean isKeyLimePieOrLater() {
-      return Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
     }
 
     public static int getViewTypeFromIntentAndSharedPref(Activity activity) {
@@ -284,7 +272,8 @@ public class Utils {
                         GeneralPreferences.DEFAULT_DETAILED_VIEW);
             } else if (INTENT_VALUE_VIEW_TYPE_DAY.equals(extras.getString(INTENT_KEY_VIEW_TYPE))) {
                 // Not sure who uses this. This logic came from LaunchActivity
-                return ViewType.MONTH;//modified for FR602091 Porting Wave3 Calendar to soul45 by yubin.yi.hz at 2014-02-13
+                return ViewType.MONTH;// modified for FR602091 Porting Wave3 Calendar to soul45 by
+                                      // yubin.yi.hz at 2014-02-13
             }
         }
 
@@ -315,11 +304,10 @@ public class Utils {
     }
 
     /**
-     * Writes a new home time zone to the db. Updates the home time zone in the
-     * db asynchronously and updates the local cache. Sending a time zone of
-     * **tbd** will cause it to be set to the device's time zone. null or empty
-     * tz will be ignored.
-     *
+     * Writes a new home time zone to the db. Updates the home time zone in the db asynchronously
+     * and updates the local cache. Sending a time zone of **tbd** will cause it to be set to the
+     * device's time zone. null or empty tz will be ignored.
+     * 
      * @param context The calling activity
      * @param timeZone The time zone to set Calendar to, or **tbd**
      */
@@ -328,19 +316,16 @@ public class Utils {
     }
 
     /**
-     * Gets the time zone that Calendar should be displayed in This is a helper
-     * method to get the appropriate time zone for Calendar. If this is the
-     * first time this method has been called it will initiate an asynchronous
-     * query to verify that the data in preferences is correct. The callback
-     * supplied will only be called if this query returns a value other than
-     * what is stored in preferences and should cause the calling activity to
-     * refresh anything that depends on calling this method.
-     *
+     * Gets the time zone that Calendar should be displayed in This is a helper method to get the
+     * appropriate time zone for Calendar. If this is the first time this method has been called it
+     * will initiate an asynchronous query to verify that the data in preferences is correct. The
+     * callback supplied will only be called if this query returns a value other than what is stored
+     * in preferences and should cause the calling activity to refresh anything that depends on
+     * calling this method.
+     * 
      * @param context The calling activity
-     * @param callback The runnable that should execute if a query returns new
-     *            values
-     * @return The string value representing the time zone Calendar should
-     *         display
+     * @param callback The runnable that should execute if a query returns new values
+     * @return The string value representing the time zone Calendar should display
      */
     public static String getTimeZone(Context context, Runnable callback) {
         return mTZUtils.getTimeZone(context, callback);
@@ -348,12 +333,13 @@ public class Utils {
 
     /**
      * Formats a date or a time range according to the local conventions.
-     *
+     * 
      * @param context the context is required only if the time is shown
      * @param startMillis the start time in UTC milliseconds
      * @param endMillis the end time in UTC milliseconds
-     * @param flags a bit mask of options See {@link DateUtils#formatDateRange(Context, Formatter,
-     * long, long, int, String) formatDateRange}
+     * @param flags a bit mask of options See
+     *            {@link DateUtils#formatDateRange(Context, Formatter, long, long, int, String)
+     *            formatDateRange}
      * @return a string containing the formatted date/time range.
      */
     public static String formatDateRange(
@@ -408,7 +394,7 @@ public class Utils {
 
     /**
      * Asynchronously sets the preference with the given key to the given value
-     *
+     * 
      * @param context the context to use to get preferences from
      * @param key the key of the preference to set
      * @param value the value to set
@@ -492,7 +478,7 @@ public class Utils {
 
     /**
      * Save default agenda/day/week/month view for next time
-     *
+     * 
      * @param context
      * @param viewId {@link CalendarController.ViewType}
      */
@@ -542,9 +528,8 @@ public class Utils {
 
     /**
      * Compares two cursors to see if they contain the same data.
-     *
-     * @return Returns true of the cursors contain the same data and are not
-     *         null, false otherwise
+     * 
+     * @return Returns true of the cursors contain the same data and are not null, false otherwise
      */
     public static boolean compareCursors(Cursor c1, Cursor c2) {
         if (c1 == null || c2 == null) {
@@ -574,8 +559,8 @@ public class Utils {
     }
 
     /**
-     * If the given intent specifies a time (in milliseconds since the epoch),
-     * then that time is returned. Otherwise, the current time is returned.
+     * If the given intent specifies a time (in milliseconds since the epoch), then that time is
+     * returned. Otherwise, the current time is returned.
      */
     public static final long timeFromIntentInMillis(Intent intent) {
         // If the time was specified, then use that. Otherwise, use the current
@@ -600,9 +585,9 @@ public class Utils {
     }
 
     /**
-     * Formats the given Time object so that it gives the month and year (for
-     * example, "September 2007").
-     *
+     * Formats the given Time object so that it gives the month and year (for example,
+     * "September 2007").
+     * 
      * @param time the time to format
      * @return the string containing the weekday and the date
      */
@@ -614,9 +599,9 @@ public class Utils {
     }
 
     /**
-     * Returns a list joined together by the provided delimiter, for example,
-     * ["a", "b", "c"] could be joined into "a,b,c"
-     *
+     * Returns a list joined together by the provided delimiter, for example, ["a", "b", "c"] could
+     * be joined into "a,b,c"
+     * 
      * @param things the things to join together
      * @param delim the delimiter to use
      * @return a string contained the things joined together
@@ -636,16 +621,13 @@ public class Utils {
     }
 
     /**
-     * Returns the week since {@link Time#EPOCH_JULIAN_DAY} (Jan 1, 1970)
-     * adjusted for first day of week.
-     *
-     * This takes a julian day and the week start day and calculates which
-     * week since {@link Time#EPOCH_JULIAN_DAY} that day occurs in, starting
-     * at 0. *Do not* use this to compute the ISO week number for the year.
-     *
+     * Returns the week since {@link Time#EPOCH_JULIAN_DAY} (Jan 1, 1970) adjusted for first day of
+     * week. This takes a julian day and the week start day and calculates which week since
+     * {@link Time#EPOCH_JULIAN_DAY} that day occurs in, starting at 0. *Do not* use this to compute
+     * the ISO week number for the year.
+     * 
      * @param julianDay The julian day to calculate the week number for
-     * @param firstDayOfWeek Which week day is the first day of the week,
-     *          see {@link Time#SUNDAY}
+     * @param firstDayOfWeek Which week day is the first day of the week, see {@link Time#SUNDAY}
      * @return Weeks since the epoch
      */
     public static int getWeeksSinceEpochFromJulianDay(int julianDay, int firstDayOfWeek) {
@@ -658,13 +640,11 @@ public class Utils {
     }
 
     /**
-     * Takes a number of weeks since the epoch and calculates the Julian day of
-     * the Monday for that week.
-     *
-     * This assumes that the week containing the {@link Time#EPOCH_JULIAN_DAY}
-     * is considered week 0. It returns the Julian day for the Monday
-     * {@code week} weeks after the Monday of the week containing the epoch.
-     *
+     * Takes a number of weeks since the epoch and calculates the Julian day of the Monday for that
+     * week. This assumes that the week containing the {@link Time#EPOCH_JULIAN_DAY} is considered
+     * week 0. It returns the Julian day for the Monday {@code week} weeks after the Monday of the
+     * week containing the epoch.
+     * 
      * @param week Number of weeks since the epoch
      * @return The julian day for the Monday of the given week since the epoch
      */
@@ -674,7 +654,7 @@ public class Utils {
 
     /**
      * Get first day of week as android.text.format.Time constant.
-     *
+     * 
      * @return the first day of week in android.text.format.Time
      */
     public static int getFirstDayOfWeek(Context context) {
@@ -708,7 +688,7 @@ public class Utils {
 
     /**
      * Get first day of week as java.util.Calendar constant.
-     *
+     * 
      * @return the first day of week as a java.util.Calendar constant
      */
     public static int getFirstDayOfWeekAsCalendar(Context context) {
@@ -740,17 +720,19 @@ public class Utils {
         }
     }
 
-   //FR556557-Yuansheng-Zhao-001 begin
+    // FR556557-Yuansheng-Zhao-001 begin
     /**
      * Get first day of week as android.text.format.Time constant.
-     *
+     * 
      * @return the first day of week in android.text.format.Time
      */
     public static String getFirstWeekOption(Context context) {
         final SharedPreferences prefs = GeneralPreferences.getSharedPreferences(context);
-        return prefs.getString(GeneralPreferences.KEY_FIRST_WEEK_OPTION, GeneralPreferences.getDefaultFirstWeek(context));
+        return prefs.getString(GeneralPreferences.KEY_FIRST_WEEK_OPTION,
+                GeneralPreferences.getDefaultFirstWeek(context));
     }
-   //FR556557-Yuansheng-Zhao-001 end
+
+    // FR556557-Yuansheng-Zhao-001 end
 
     /**
      * @return true when week number should be shown.
@@ -776,7 +758,7 @@ public class Utils {
 
     /**
      * Determine whether the column position is Saturday or not.
-     *
+     * 
      * @param column the column position
      * @param firstDayOfWeek the first day of week in android.text.format.Time
      * @return true if the column is Saturday position
@@ -789,7 +771,7 @@ public class Utils {
 
     /**
      * Determine whether the column position is Sunday or not.
-     *
+     * 
      * @param column the column position
      * @param firstDayOfWeek the first day of week in android.text.format.Time
      * @return true if the column is Sunday position
@@ -801,9 +783,9 @@ public class Utils {
     }
 
     /**
-     * Convert given UTC time into current local time. This assumes it is for an
-     * allday event and will adjust the time to be on a midnight boundary.
-     *
+     * Convert given UTC time into current local time. This assumes it is for an allday event and
+     * will adjust the time to be on a midnight boundary.
+     * 
      * @param recycle Time object to recycle, otherwise null.
      * @param utcTime Time to convert, in UTC.
      * @param tz The time zone to convert this time to.
@@ -830,7 +812,7 @@ public class Utils {
 
     /**
      * Finds and returns the next midnight after "theTime" in milliseconds UTC
-     *
+     * 
      * @param recycle - Time object to recycle, otherwise null.
      * @param theTime - Time used for calculations (in UTC)
      * @param tz The time zone to convert this time to.
@@ -841,7 +823,7 @@ public class Utils {
         }
         recycle.timezone = tz;
         recycle.set(theTime);
-        recycle.monthDay ++;
+        recycle.monthDay++;
         recycle.hour = 0;
         recycle.minute = 0;
         recycle.second = 0;
@@ -849,10 +831,10 @@ public class Utils {
     }
 
     /**
-     * Scan through a cursor of calendars and check if names are duplicated.
-     * This travels a cursor containing calendar display names and fills in the
-     * provided map with whether or not each name is repeated.
-     *
+     * Scan through a cursor of calendars and check if names are duplicated. This travels a cursor
+     * containing calendar display names and fills in the provided map with whether or not each name
+     * is repeated.
+     * 
      * @param isDuplicateName The map to put the duplicate check results in.
      * @param cursor The query of calendars to check
      * @param nameIndex The column of the query that contains the display name
@@ -872,7 +854,7 @@ public class Utils {
 
     /**
      * Null-safe object comparison
-     *
+     * 
      * @param s1
      * @param s2
      * @return
@@ -882,7 +864,7 @@ public class Utils {
     }
 
     public static void setAllowWeekForDetailView(boolean allowWeekView) {
-        mAllowWeekForDetailView  = allowWeekView;
+        mAllowWeekForDetailView = allowWeekView;
     }
 
     public static boolean getAllowWeekForDetailView() {
@@ -895,9 +877,9 @@ public class Utils {
 
     /**
      * For devices with Jellybean or later, darkens the given color to ensure that white text is
-     * clearly visible on top of it.  For devices prior to Jellybean, does nothing, as the
-     * sync adapter handles the color change.
-     *
+     * clearly visible on top of it. For devices prior to Jellybean, does nothing, as the sync
+     * adapter handles the color change.
+     * 
      * @param color
      */
     public static int getDisplayColorFromColor(int color) {
@@ -914,21 +896,22 @@ public class Utils {
 
     // This takes a color and computes what it would look like blended with
     // white. The result is the color that should be used for declined events.
-    ///M: add the a parameter.
+    // /M: add the a parameter.
     public static int getDeclinedColorFromColor(int color, int alpha, int bg) {
         int r = (((color & 0x00ff0000) * alpha) + ((bg & 0x00ff0000) * (0xff - alpha))) & 0xff000000;
         int g = (((color & 0x0000ff00) * alpha) + ((bg & 0x0000ff00) * (0xff - alpha))) & 0x00ff0000;
         int b = (((color & 0x000000ff) * alpha) + ((bg & 0x000000ff) * (0xff - alpha))) & 0x0000ff00;
         return (0xff000000) | ((r | g | b) >> 8);
     }
-    
-    ///M: @{
+
+    // /M: @{
     public static int getDeclinedColorFromColor(int color) {
         int bg = 0xffffffff;
         int a = DECLINED_EVENT_ALPHA;
         return getDeclinedColorFromColor(color, a, bg);
     }
-    ///@}
+
+    // /@}
 
     // A single strand represents one color of events. Events are divided up by
     // color to make them convenient to draw. The black strand is special in
@@ -952,26 +935,24 @@ public class Utils {
     }
 
     /**
-     * Converts a list of events to a list of segments to draw. Assumes list is
-     * ordered by start time of the events. The function processes events for a
-     * range of days from firstJulianDay to firstJulianDay + dayXs.length - 1.
-     * The algorithm goes over all the events and creates a set of segments
-     * ordered by start time. This list of segments is then converted into a
-     * HashMap of strands which contain the draw points and are organized by
-     * color. The strands can then be drawn by setting the paint color to each
-     * strand's color and calling drawLines on its set of points. The points are
-     * set up using the following parameters.
+     * Converts a list of events to a list of segments to draw. Assumes list is ordered by start
+     * time of the events. The function processes events for a range of days from firstJulianDay to
+     * firstJulianDay + dayXs.length - 1. The algorithm goes over all the events and creates a set
+     * of segments ordered by start time. This list of segments is then converted into a HashMap of
+     * strands which contain the draw points and are organized by color. The strands can then be
+     * drawn by setting the paint color to each strand's color and calling drawLines on its set of
+     * points. The points are set up using the following parameters.
      * <ul>
-     * <li>Events between midnight and WORK_DAY_START_MINUTES are compressed
-     * into the first 1/8th of the space between top and bottom.</li>
-     * <li>Events between WORK_DAY_END_MINUTES and the following midnight are
-     * compressed into the last 1/8th of the space between top and bottom</li>
-     * <li>Events between WORK_DAY_START_MINUTES and WORK_DAY_END_MINUTES use
-     * the remaining 3/4ths of the space</li>
-     * <li>All segments drawn will maintain at least minPixels height, except
-     * for conflicts in the first or last 1/8th, which may be smaller</li>
+     * <li>Events between midnight and WORK_DAY_START_MINUTES are compressed into the first 1/8th of
+     * the space between top and bottom.</li>
+     * <li>Events between WORK_DAY_END_MINUTES and the following midnight are compressed into the
+     * last 1/8th of the space between top and bottom</li>
+     * <li>Events between WORK_DAY_START_MINUTES and WORK_DAY_END_MINUTES use the remaining 3/4ths
+     * of the space</li>
+     * <li>All segments drawn will maintain at least minPixels height, except for conflicts in the
+     * first or last 1/8th, which may be smaller</li>
      * </ul>
-     *
+     * 
      * @param firstJulianDay The julian day of the first day of events
      * @param events A list of events sorted by start time
      * @param top The lowest y value the dna should be drawn at
@@ -1103,7 +1084,8 @@ public class Utils {
             if (startMinute < lastSegment.endMinute) {
                 int i = segments.size();
                 // find the last segment this event intersects with
-                while (--i >= 0 && endMinute < segments.get(i).startMinute);
+                while (--i >= 0 && endMinute < segments.get(i).startMinute)
+                    ;
 
                 DNASegment currSegment;
                 // for each segment this event intersects with
@@ -1263,8 +1245,8 @@ public class Utils {
     }
 
     /**
-     * Compute a pixel offset from the top for a given minute from the work day
-     * height and the height of the top area.
+     * Compute a pixel offset from the top for a given minute from the work day height and the
+     * height of the top area.
      */
     private static int getPixelOffsetFromMinutes(int minute, int workDayHeight,
             int remainderHeight) {
@@ -1282,8 +1264,8 @@ public class Utils {
     }
 
     /**
-     * Add a new segment based on the event provided. This will handle splitting
-     * segments across day boundaries and ensures a minimum size for segments.
+     * Add a new segment based on the event provided. This will handle splitting segments across day
+     * boundaries and ensures a minimum size for segments.
      */
     private static void addNewSegment(LinkedList<DNASegment> segments, Event event,
             HashMap<Integer, DNAStrand> strands, int firstJulianDay, int minStart, int minMinutes) {
@@ -1352,7 +1334,7 @@ public class Utils {
 
     /**
      * Sends an intent to launch the top level Calendar view.
-     *
+     * 
      * @param context
      */
     public static void returnToCalendarHome(Context context) {
@@ -1364,9 +1346,9 @@ public class Utils {
     }
 
     /**
-     * This sets up a search view to use Calendar's search suggestions provider
-     * and to allow refining the search.
-     *
+     * This sets up a search view to use Calendar's search suggestions provider and to allow
+     * refining the search.
+     * 
      * @param view The {@link SearchView} to set up
      * @param act The activity using the view
      */
@@ -1377,9 +1359,9 @@ public class Utils {
     }
 
     /**
-     * Given a context and a time in millis since unix epoch figures out the
-     * correct week of the year for that time.
-     *
+     * Given a context and a time in millis since unix epoch figures out the correct week of the
+     * year for that time.
+     * 
      * @param millisSinceEpoch
      * @return
      */
@@ -1399,28 +1381,29 @@ public class Utils {
             weekTime.monthDay += 2;
             weekTime.normalize(true);
         }
-        //FR556557-Yuansheng-Zhao-001 begin
-        //return weekTime.getWeekNumber();
+        // FR556557-Yuansheng-Zhao-001 begin
+        // return weekTime.getWeekNumber();
         int weekNumber = 0;
         int days;
         int year = weekTime.year;
         days = weekTime.yearDay;
         String firstWeekOption = getFirstWeekOption(context);
 
-        if(firstWeekOption.equals(GeneralPreferences.FIRST_WEEK_FIRST_DAY)) {
+        if (firstWeekOption.equals(GeneralPreferences.FIRST_WEEK_FIRST_DAY)) {
             /* first week is starts on first day in January */
-            weekNumber = (days + getWeekDayOfFirstDay(year) -1) / 7 + 1;
-        } else if(firstWeekOption.equals(GeneralPreferences.FIRST_WEEK_FIRST_FOUR_DAYS)) {
-             /**
-             * We have customized the first day of a week
-             * So the first day of a week can possible be SUNDAY=0; MONDAY=1; SATURDAY=6;
-               */
+            weekNumber = (days + getWeekDayOfFirstDay(year) - 1) / 7 + 1;
+        } else if (firstWeekOption.equals(GeneralPreferences.FIRST_WEEK_FIRST_FOUR_DAYS)) {
+            /**
+             * We have customized the first day of a week So the first day of a week can possible be
+             * SUNDAY=0; MONDAY=1; SATURDAY=6;
+             */
             if (firstDayOfWeek == 0) {
                 /**
                  * Case one: Use Sunday as first day of a week, the value of firstDayOfWeek is 0.
                  * And first week of year start on first 4-day week.
                  */
-                weekNumber = weekTime.getWeekNumber(0, GeneralPreferences.FIRST_WEEK_FIRST_FOUR_DAYS);
+                weekNumber = MyTime.getWeekNumber(0,
+                        GeneralPreferences.FIRST_WEEK_FIRST_FOUR_DAYS, weekTime);
             } else if (firstDayOfWeek == 1) {
                 /**
                  * Case two: Use Monday as first day of a week, the value of firstDayOfWeek is 1.
@@ -1429,49 +1412,53 @@ public class Utils {
                 weekNumber = weekTime.getWeekNumber();
             } else if (firstDayOfWeek == 6) {
                 /**
-                 * Case three: Use Saturday as first day of a week, the value of firstDayOfWeek is 6.
-                 * And first week of year start on first 4-day week.
+                 * Case three: Use Saturday as first day of a week, the value of firstDayOfWeek is
+                 * 6. And first week of year start on first 4-day week.
                  */
-                weekNumber = weekTime.getWeekNumber(6, GeneralPreferences.FIRST_WEEK_FIRST_FOUR_DAYS);
+                weekNumber = MyTime.getWeekNumber(6,
+                        GeneralPreferences.FIRST_WEEK_FIRST_FOUR_DAYS, weekTime);
             }
         } else {
-            if(firstDayOfWeek == 0) {
-                //Sunday has been customized as the first day of a week.
-                //And first week of year start on first full week.
-                weekNumber = weekTime.getWeekNumber(0, GeneralPreferences.FIRST_WEEK_FIRST_FULL_WEEK);
+            if (firstDayOfWeek == 0) {
+                // Sunday has been customized as the first day of a week.
+                // And first week of year start on first full week.
+                weekNumber = MyTime.getWeekNumber(0,
+                        GeneralPreferences.FIRST_WEEK_FIRST_FULL_WEEK, weekTime);
             } else if (firstDayOfWeek == 1) {
-                //Monday has been customized as the first day of a week.
-                //And first week of year start on first full week.
-                weekNumber = weekTime.getWeekNumber(1, GeneralPreferences.FIRST_WEEK_FIRST_FULL_WEEK);
+                // Monday has been customized as the first day of a week.
+                // And first week of year start on first full week.
+                weekNumber = MyTime.getWeekNumber(1,
+                        GeneralPreferences.FIRST_WEEK_FIRST_FULL_WEEK, weekTime);
             } else if (firstDayOfWeek == 6) {
-                //Saturday has been customized as the first day of a week.
-                //And first week of year start on first full week.
-                weekNumber = weekTime.getWeekNumber(6, GeneralPreferences.FIRST_WEEK_FIRST_FULL_WEEK);
+                // Saturday has been customized as the first day of a week.
+                // And first week of year start on first full week.
+                weekNumber = MyTime.getWeekNumber(6,
+                        GeneralPreferences.FIRST_WEEK_FIRST_FULL_WEEK, weekTime);
             }
         }
         return weekNumber;
-        //FR556557-Yuansheng-Zhao-001 end
+        // FR556557-Yuansheng-Zhao-001 end
     }
-   //FR556557-Yuansheng-Zhao-001 begin
+
+    // FR556557-Yuansheng-Zhao-001 begin
     /* get the weekDay of January 1st of this year ,return 1-7 */
-    public static int getWeekDayOfFirstDay(int year)
-    {
-        int weekDay = ((year-1)+ (year-1)/4 - (year-1)/100 + (year-1)/400+1) % 7;
-        if(weekDay == 0)
-            weekDay =  7;
+    public static int getWeekDayOfFirstDay(int year) {
+        int weekDay = ((year - 1) + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400 + 1) % 7;
+        if (weekDay == 0)
+            weekDay = 7;
         return weekDay;
     }
-    //FR556557-Yuansheng-Zhao-001 end
+
+    // FR556557-Yuansheng-Zhao-001 end
 
     /**
-     * Formats a day of the week string. This is either just the name of the day
-     * or a combination of yesterday/today/tomorrow and the day of the week.
-     *
+     * Formats a day of the week string. This is either just the name of the day or a combination of
+     * yesterday/today/tomorrow and the day of the week.
+     * 
      * @param julianDay The julian day to get the string for
      * @param todayJulianDay The julian day for today's date
      * @param millis A utc millis since epoch time that falls on julian day
-     * @param context The calling context, used to get the timezone and do the
-     *            formatting
+     * @param context The calling context, used to get the timezone and do the formatting
      * @return
      */
     public static String getDayOfWeekString(int julianDay, int todayJulianDay, long millis,
@@ -1592,8 +1579,8 @@ public class Utils {
     }
 
     /**
-     * Returns the timezone to display in the event info, if the local timezone is different
-     * from the event timezone.  Otherwise returns null.
+     * Returns the timezone to display in the event info, if the local timezone is different from
+     * the event timezone. Otherwise returns null.
      */
     public static String getDisplayedTimezone(long startMillis, String localTimezone,
             String eventTimezone) {
@@ -1633,7 +1620,7 @@ public class Utils {
     private static final int NONE = 0;
 
     /**
-     * Returns TODAY or TOMORROW if applicable.  Otherwise returns NONE.
+     * Returns TODAY or TOMORROW if applicable. Otherwise returns NONE.
      */
     private static int isTodayOrTomorrow(Resources r, long dayMillis,
             long currentMillis, long localGmtOffset) {
@@ -1652,7 +1639,7 @@ public class Utils {
 
     /**
      * Create an intent for emailing attendees of an event.
-     *
+     * 
      * @param resources The resources for translating strings.
      * @param eventTitle The title of the event to use as the email subject.
      * @param body The default text for the email body.
@@ -1671,7 +1658,7 @@ public class Utils {
                 throw new IllegalArgumentException("Both toEmails and ccEmails are empty.");
             }
 
-            // Email app does not work with no "to" recipient.  Move all 'cc' to 'to'
+            // Email app does not work with no "to" recipient. Move all 'cc' to 'to'
             // in this case.
             toList = ccEmails;
             ccList = null;
@@ -1685,15 +1672,15 @@ public class Utils {
 
         // Use the SENDTO intent with a 'mailto' URI, because using SEND will cause
         // the picker to show apps like text messaging, which does not make sense
-        // for email addresses.  We put all data in the URI instead of using the extra
+        // for email addresses. We put all data in the URI instead of using the extra
         // Intent fields (ie. EXTRA_CC, etc) because some email apps might not handle
         // those (though gmail does).
         Uri.Builder uriBuilder = new Uri.Builder();
         uriBuilder.scheme("mailto");
 
         // We will append the first email to the 'mailto' field later (because the
-        // current state of the Email app requires it).  Add the remaining 'to' values
-        // here.  When the email codebase is updated, we can simplify this.
+        // current state of the Email app requires it). Add the remaining 'to' values
+        // here. When the email codebase is updated, we can simplify this.
         if (toList.size() > 1) {
             for (int i = 1; i < toList.size(); i++) {
                 // The Email app requires repeated parameter settings instead of
@@ -1728,12 +1715,12 @@ public class Utils {
             uri = builder.toString();
         }
 
-        // Start the email intent.  Email from the account of the calendar owner in case there
+        // Start the email intent. Email from the account of the calendar owner in case there
         // are multiple email accounts.
         Intent emailIntent = new Intent(android.content.Intent.ACTION_SENDTO, Uri.parse(uri));
         emailIntent.putExtra("fromAccountString", ownerAccount);
 
-        // Workaround a Email bug that overwrites the body with this intent extra.  If not
+        // Workaround a Email bug that overwrites the body with this intent extra. If not
         // set, it clears the body.
         if (body != null) {
             emailIntent.putExtra(Intent.EXTRA_TEXT, body);
@@ -1743,18 +1730,17 @@ public class Utils {
     }
 
     /**
-     * Example fake email addresses used as attendee emails are resources like conference rooms,
-     * or another calendar, etc.  These all end in "calendar.google.com".
+     * Example fake email addresses used as attendee emails are resources like conference rooms, or
+     * another calendar, etc. These all end in "calendar.google.com".
      */
     public static boolean isValidEmail(String email) {
         return email != null && !email.endsWith(MACHINE_GENERATED_ADDRESS);
     }
 
     /**
-     * Returns true if:
-     *   (1) the email is not a resource like a conference room or another calendar.
-     *       Catch most of these by filtering out suffix calendar.google.com.
-     *   (2) the email is not equal to the sync account to prevent mailing himself.
+     * Returns true if: (1) the email is not a resource like a conference room or another calendar.
+     * Catch most of these by filtering out suffix calendar.google.com. (2) the email is not equal
+     * to the sync account to prevent mailing himself.
      */
     public static boolean isEmailableFrom(String email, String syncAccountName) {
         return Utils.isValidEmail(email) && !email.equals(syncAccountName);
@@ -1762,6 +1748,7 @@ public class Utils {
 
     /**
      * Inserts a drawable with today's day into the today's icon in the option menu
+     * 
      * @param icon - today's icon from the options menu
      */
     public static void setTodayIcon(LayerDrawable icon, Context c, String timezone) {
@@ -1770,12 +1757,12 @@ public class Utils {
         // Reuse current drawable if possible
         Drawable currentDrawable = icon.findDrawableByLayerId(R.id.today_icon_day);
         if (currentDrawable != null && currentDrawable instanceof DayOfMonthDrawable) {
-            today = (DayOfMonthDrawable)currentDrawable;
+            today = (DayOfMonthDrawable) currentDrawable;
         } else {
             today = new DayOfMonthDrawable(c);
         }
         // Set the day and update the icon
-        Time now =  new Time(timezone);
+        Time now = new Time(timezone);
         now.setToNow();
         now.normalize(false);
         today.setDayOfMonth(now.monthDay);
@@ -1791,6 +1778,7 @@ public class Utils {
             super();
             mCallBack = callback;
         }
+
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(Intent.ACTION_DATE_CHANGED) ||
@@ -1821,10 +1809,9 @@ public class Utils {
     }
 
     /**
-     * Get a list of quick responses used for emailing guests from the
-     * SharedPreferences. If not are found, get the hard coded ones that shipped
-     * with the app
-     *
+     * Get a list of quick responses used for emailing guests from the SharedPreferences. If not are
+     * found, get the hard coded ones that shipped with the app
+     * 
      * @param context
      * @return a list of quick responses.
      */
@@ -1855,17 +1842,12 @@ public class Utils {
     }
 
     /**
-     * Checks the server for an updated list of Calendars (in the background).
-     *
-     * If a Calendar is added on the web (and it is selected and not
-     * hidden) then it will be added to the list of calendars on the phone
-     * (when this finishes).  When a new calendar from the
-     * web is added to the phone, then the events for that calendar are also
-     * downloaded from the web.
-     *
-     * This sync is done automatically in the background when the
-     * SelectCalendars activity and fragment are started.
-     *
+     * Checks the server for an updated list of Calendars (in the background). If a Calendar is
+     * added on the web (and it is selected and not hidden) then it will be added to the list of
+     * calendars on the phone (when this finishes). When a new calendar from the web is added to the
+     * phone, then the events for that calendar are also downloaded from the web. This sync is done
+     * automatically in the background when the SelectCalendars activity and fragment are started.
+     * 
      * @param account - The account to sync. May be null to sync all accounts.
      */
     public static void startCalendarMetafeedSync(Account account) {
@@ -1876,13 +1858,13 @@ public class Utils {
     }
 
     /**
-     * Replaces stretches of text that look like addresses and phone numbers with clickable
-     * links. If lastDitchGeo is true, then if no links are found in the textview, the entire
-     * string will be converted to a single geo link. Any spans that may have previously been
-     * in the text will be cleared out.
+     * Replaces stretches of text that look like addresses and phone numbers with clickable links.
+     * If lastDitchGeo is true, then if no links are found in the textview, the entire string will
+     * be converted to a single geo link. Any spans that may have previously been in the text will
+     * be cleared out.
      * <p>
      * This is really just an enhanced version of Linkify.addLinks().
-     *
+     * 
      * @param text - The string to search for links.
      * @param lastDitchGeo - If no links are found, turn the entire string into one geo link.
      * @return Spannable object containing the list of URL spans found.
@@ -1892,10 +1874,10 @@ public class Utils {
         Spannable spanText = SpannableString.valueOf(text);
 
         /*
-         * If the text includes a street address like "1600 Amphitheater Parkway, 94043",
-         * the current Linkify code will identify "94043" as a phone number and invite
-         * you to dial it (and not provide a map link for the address).  For outside US,
-         * use Linkify result iff it spans the entire text.  Otherwise send the user to maps.
+         * If the text includes a street address like "1600 Amphitheater Parkway, 94043", the
+         * current Linkify code will identify "94043" as a phone number and invite you to dial it
+         * (and not provide a map link for the address). For outside US, use Linkify result iff it
+         * spans the entire text. Otherwise send the user to maps.
          */
         String defaultPhoneRegion = System.getProperty("user.region", "US");
         if (!defaultPhoneRegion.equals("US")) {
@@ -1922,24 +1904,18 @@ public class Utils {
         }
 
         /*
-         * For within US, we want to have better recognition of phone numbers without losing
-         * any of the existing annotations.  Ideally this would be addressed by improving Linkify.
-         * For now we manage it as a second pass over the text.
-         *
-         * URIs and e-mail addresses are pretty easy to pick out of text.  Phone numbers
-         * are a bit tricky because they have radically different formats in different
-         * countries, in terms of both the digits and the way in which they are commonly
-         * written or presented (e.g. the punctuation and spaces in "(650) 555-1212").
-         * The expected format of a street address is defined in WebView.findAddress().  It's
-         * pretty narrowly defined, so it won't often match.
-         *
-         * The RFC 3966 specification defines the format of a "tel:" URI.
-         *
-         * Start by letting Linkify find anything that isn't a phone number.  We have to let it
-         * run first because every invocation removes all previous URLSpan annotations.
-         *
-         * Ideally we'd use the external/libphonenumber routines, but those aren't available
-         * to unbundled applications.
+         * For within US, we want to have better recognition of phone numbers without losing any of
+         * the existing annotations. Ideally this would be addressed by improving Linkify. For now
+         * we manage it as a second pass over the text. URIs and e-mail addresses are pretty easy to
+         * pick out of text. Phone numbers are a bit tricky because they have radically different
+         * formats in different countries, in terms of both the digits and the way in which they are
+         * commonly written or presented (e.g. the punctuation and spaces in "(650) 555-1212"). The
+         * expected format of a street address is defined in WebView.findAddress(). It's pretty
+         * narrowly defined, so it won't often match. The RFC 3966 specification defines the format
+         * of a "tel:" URI. Start by letting Linkify find anything that isn't a phone number. We
+         * have to let it run first because every invocation removes all previous URLSpan
+         * annotations. Ideally we'd use the external/libphonenumber routines, but those aren't
+         * available to unbundled applications.
          */
         boolean linkifyFoundLinks = Linkify.addLinks(spanText,
                 Linkify.ALL & ~(Linkify.PHONE_NUMBERS));
@@ -1950,8 +1926,8 @@ public class Utils {
         URLSpan[] existingSpans = spanText.getSpans(0, spanText.length(), URLSpan.class);
 
         /*
-         * Check for coordinates.
-         * This must be done before phone numbers because longitude may look like a phone number.
+         * Check for coordinates. This must be done before phone numbers because longitude may look
+         * like a phone number.
          */
         Matcher coordMatcher = COORD_PATTERN.matcher(spanText);
         int coordCount = 0;
@@ -1973,35 +1949,33 @@ public class Utils {
         existingSpans = spanText.getSpans(0, spanText.length(), URLSpan.class);
 
         /*
-         * Search for phone numbers.
-         *
-         * Some URIs contain strings of digits that look like phone numbers.  If both the URI
-         * scanner and the phone number scanner find them, we want the URI link to win.  Since
-         * the URI scanner runs first, we just need to avoid creating overlapping spans.
+         * Search for phone numbers. Some URIs contain strings of digits that look like phone
+         * numbers. If both the URI scanner and the phone number scanner find them, we want the URI
+         * link to win. Since the URI scanner runs first, we just need to avoid creating overlapping
+         * spans.
          */
         int[] phoneSequences = findNanpPhoneNumbers(text);
 
         /*
-         * Insert spans for the numbers we found.  We generate "tel:" URIs.
+         * Insert spans for the numbers we found. We generate "tel:" URIs.
          */
         int phoneCount = 0;
         for (int match = 0; match < phoneSequences.length / 2; match++) {
-            int start = phoneSequences[match*2];
-            int end = phoneSequences[match*2 + 1];
+            int start = phoneSequences[match * 2];
+            int end = phoneSequences[match * 2 + 1];
 
             if (spanWillOverlap(spanText, existingSpans, start, end)) {
                 continue;
             }
 
             /*
-             * The Linkify code takes the matching span and strips out everything that isn't a
-             * digit or '+' sign.  We do the same here.  Extension numbers will get appended
-             * without a separator, but the dialer wasn't doing anything useful with ";ext="
-             * anyway.
+             * The Linkify code takes the matching span and strips out everything that isn't a digit
+             * or '+' sign. We do the same here. Extension numbers will get appended without a
+             * separator, but the dialer wasn't doing anything useful with ";ext=" anyway.
              */
 
-            //String dialStr = phoneUtil.format(match.number(),
-            //        PhoneNumberUtil.PhoneNumberFormat.RFC3966);
+            // String dialStr = phoneUtil.format(match.number(),
+            // PhoneNumberUtil.PhoneNumberFormat.RFC3966);
             StringBuilder dialBuilder = new StringBuilder();
             for (int i = start; i < end; i++) {
                 char ch = spanText.charAt(i);
@@ -2049,7 +2023,7 @@ public class Utils {
 
     /**
      * Finds North American Numbering Plan (NANP) phone numbers in the input text.
-     *
+     * 
      * @param text The text to scan.
      * @return A list of [start, end) pairs indicating the positions of phone numbers in the input.
      */
@@ -2064,8 +2038,8 @@ public class Utils {
         }
 
         /*
-         * We can't just strip the whitespace out and crunch it down, because the whitespace
-         * is significant.  March through, trying to figure out where numbers start and end.
+         * We can't just strip the whitespace out and crunch it down, because the whitespace is
+         * significant. March through, trying to figure out where numbers start and end.
          */
         while (startPos < endPos) {
             // skip whitespace
@@ -2081,7 +2055,7 @@ public class Utils {
             if (matchEnd > startPos) {
                 list.add(startPos);
                 list.add(matchEnd);
-                startPos = matchEnd;    // skip past match
+                startPos = matchEnd; // skip past match
             } else {
                 // skip to next whitespace char
                 while (!Character.isWhitespace(text.charAt(startPos)) && startPos < endPos) {
@@ -2099,30 +2073,24 @@ public class Utils {
 
     /**
      * Checks to see if there is a valid phone number in the input, starting at the specified
-     * offset.  If so, the index of the last character + 1 is returned.  The input is assumed
-     * to begin with a non-whitespace character.
-     *
+     * offset. If so, the index of the last character + 1 is returned. The input is assumed to begin
+     * with a non-whitespace character.
+     * 
      * @return Exclusive end position, or -1 if not a match.
      */
     private static int findNanpMatchEnd(CharSequence text, int startPos) {
         /*
-         * A few interesting cases:
-         *   94043                              # too short, ignore
-         *   123456789012                       # too long, ignore
-         *   +1 (650) 555-1212                  # 11 digits, spaces
-         *   (650) 555 5555                     # Second space, only when first is present.
-         *   (650) 555-1212, (650) 555-1213     # two numbers, return first
-         *   1-650-555-1212                     # 11 digits with leading '1'
-         *   *#650.555.1212#*!                  # 10 digits, include #*, ignore trailing '!'
-         *   555.1212                           # 7 digits
-         *
-         * For the most part we want to break on whitespace, but it's common to leave a space
-         * between the initial '1' and/or after the area code.
+         * A few interesting cases: 94043 # too short, ignore 123456789012 # too long, ignore +1
+         * (650) 555-1212 # 11 digits, spaces (650) 555 5555 # Second space, only when first is
+         * present. (650) 555-1212, (650) 555-1213 # two numbers, return first 1-650-555-1212 # 11
+         * digits with leading '1' *#650.555.1212#*! # 10 digits, include #*, ignore trailing '!'
+         * 555.1212 # 7 digits For the most part we want to break on whitespace, but it's common to
+         * leave a space between the initial '1' and/or after the area code.
          */
 
         // Check for "tel:" URI prefix.
-        if (text.length() > startPos+4
-                && text.subSequence(startPos, startPos+4).toString().equalsIgnoreCase("tel:")) {
+        if (text.length() > startPos + 4
+                && text.subSequence(startPos, startPos + 4).toString().equalsIgnoreCase("tel:")) {
             startPos += 4;
         }
 
@@ -2137,7 +2105,7 @@ public class Utils {
             if (curPos < endPos) {
                 ch = text.charAt(curPos);
             } else {
-                ch = 27;    // fake invalid symbol at end to trigger loop break
+                ch = 27; // fake invalid symbol at end to trigger loop break
             }
 
             if (Character.isDigit(ch)) {
@@ -2150,12 +2118,12 @@ public class Utils {
                     return -1;
                 }
             } else if (Character.isWhitespace(ch)) {
-                if ( (firstDigit == '1' && foundDigits == 4) ||
+                if ((firstDigit == '1' && foundDigits == 4) ||
                         (foundDigits == 3)) {
                     foundWhiteSpaceAfterAreaCode = true;
                 } else if (firstDigit == '1' && foundDigits == 1) {
                 } else if (foundWhiteSpaceAfterAreaCode
-                        && ( (firstDigit == '1' && (foundDigits == 7)) || (foundDigits == 6))) {
+                        && ((firstDigit == '1' && (foundDigits == 7)) || (foundDigits == 6))) {
                 } else {
                     break;
                 }
@@ -2209,12 +2177,12 @@ public class Utils {
         ArrayList<ReminderEntry> reminders = null;
 
         ArrayList<Integer> reminderMinutes = bundle.getIntegerArrayList(
-                        EventInfoFragment.BUNDLE_KEY_REMINDER_MINUTES);
+                EventInfoFragment.BUNDLE_KEY_REMINDER_MINUTES);
         ArrayList<Integer> reminderMethods = bundle.getIntegerArrayList(
                 EventInfoFragment.BUNDLE_KEY_REMINDER_METHODS);
         if (reminderMinutes == null || reminderMethods == null) {
             if (reminderMinutes != null || reminderMethods != null) {
-                String nullList = (reminderMinutes == null?
+                String nullList = (reminderMinutes == null ?
                         "reminderMinutes" : "reminderMethods");
                 Log.d(TAG, String.format("Error resolving reminders: %s was null",
                         nullList));
@@ -2228,22 +2196,21 @@ public class Utils {
             // the same as the size of the reminder methods. Otherwise,
             // something went wrong with bundling them.
             reminders = new ArrayList<ReminderEntry>(numReminders);
-            for (int reminder_i = 0; reminder_i < numReminders;
-                    reminder_i++) {
+            for (int reminder_i = 0; reminder_i < numReminders; reminder_i++) {
                 int minutes = reminderMinutes.get(reminder_i);
                 int method = reminderMethods.get(reminder_i);
                 reminders.add(ReminderEntry.valueOf(minutes, method));
             }
         } else {
             Log.d(TAG, String.format("Error resolving reminders." +
-                        " Found %d reminderMinutes, but %d reminderMethods.",
+                    " Found %d reminderMinutes, but %d reminderMethods.",
                     numReminders, reminderMethods.size()));
         }
 
         return reminders;
     }
 
-// added by Fujuan.Lin for RR565704 begin
+    // added by Fujuan.Lin for RR565704 begin
     /**
      * facebook device flag
      */
@@ -2293,7 +2260,8 @@ public class Utils {
 
     /**
      * get a color value to highlight a friend's birthday.
-     * @return 
+     * 
+     * @return
      */
     public static int getFBBithdayColor() {
         return 0xff3366ff;
@@ -2327,15 +2295,17 @@ public class Utils {
         }
         return newCursor;
     }
+
     // added by Fujuan.Lin for RR565704 end
 
     /**
      * Change the time to the target julian day time.if only change year field.
+     * 
      * @param sourceTime the time to be target
      * @param targetJulianDay
      * @return the target julian day time.
      */
-    public static Time changeToJulianDayTime(Time t,int validJulianDay){
+    public static Time changeToJulianDayTime(Time t, int validJulianDay) {
         Time tmpTime = new Time(t);
         tmpTime.setJulianDay(validJulianDay);
         tmpTime.hour = t.hour;
@@ -2343,22 +2313,23 @@ public class Utils {
         tmpTime.second = t.second;
         return tmpTime;
     }
-    ///@}
-    
-    ///M:@{
+
+    // /@}
+
+    // /M:@{
     public static void toastText(Context context, String msg) {
         Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
     }
-    ///@}
-    
-    
-    ///M:SECONDE_IN_MILLIS
+
+    // /@}
+
+    // /M:SECONDE_IN_MILLIS
     private static final long SECONDE_IN_MILLIS = 1000;
-    
+
     /**
-     * M: @{
-     * Used to check whether the calendar provider can be used. 
-     * To avoid exception when calendar storage was disabled.
+     * M: @{ Used to check whether the calendar provider can be used. To avoid exception when
+     * calendar storage was disabled.
+     * 
      * @param resolver ContentResolver
      * @param uri the uri you want to check.
      * @return
@@ -2367,21 +2338,22 @@ public class Utils {
         ContentProviderClient provider = null;
         try {
             provider = resolver.acquireContentProviderClient(uri);
-            if(provider == null) {
+            if (provider == null) {
                 Log.w(TAG, "failed to find calendar provider.");
                 return false;
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             Log.e(TAG, "failed to acquire calendar's ContentProvider.");
             e.printStackTrace();
             return false;
         } finally {
-            if(provider != null){
+            if (provider != null) {
                 provider.release();
             }
         }
         return true;
     }
+
     /**@}*/
 
     /**
@@ -2389,6 +2361,7 @@ public class Utils {
      * beginning of time displayed in our calendar, and all the valid time must be after this origin
      * display time, for example, if SUN is the first day of week in our calendar, then 1968-12-28
      * is returned,and 1968-12-29 is returned if MON is our first day of week
+     * 
      * @param context the context
      * @return Time the original displayed time in our calendar
      */
@@ -2398,29 +2371,29 @@ public class Utils {
         int julianMonday = Time.getJulianMondayFromWeeksSinceEpoch(0);
         int firstDisplayedJulianDay = 0;
         switch (firstDayOfWeek) {
-        case Time.MONDAY:
-            firstDisplayedJulianDay = julianMonday;
-            break;
-        case Time.TUESDAY:
-            firstDisplayedJulianDay = julianMonday - 6;
-            break;
-        case Time.WEDNESDAY:
-            firstDisplayedJulianDay = julianMonday - 5;
-            break;
-        case Time.THURSDAY:
-            firstDisplayedJulianDay = julianMonday - 4;
-            break;
-        case Time.FRIDAY:
-            firstDisplayedJulianDay = julianMonday - 3;
-            break;
-        case Time.SATURDAY:
-            firstDisplayedJulianDay = julianMonday - 2;
-            break;
-        case Time.SUNDAY:
-            firstDisplayedJulianDay = julianMonday - 1;
-            break;
-        default:
-            break;
+            case Time.MONDAY:
+                firstDisplayedJulianDay = julianMonday;
+                break;
+            case Time.TUESDAY:
+                firstDisplayedJulianDay = julianMonday - 6;
+                break;
+            case Time.WEDNESDAY:
+                firstDisplayedJulianDay = julianMonday - 5;
+                break;
+            case Time.THURSDAY:
+                firstDisplayedJulianDay = julianMonday - 4;
+                break;
+            case Time.FRIDAY:
+                firstDisplayedJulianDay = julianMonday - 3;
+                break;
+            case Time.SATURDAY:
+                firstDisplayedJulianDay = julianMonday - 2;
+                break;
+            case Time.SUNDAY:
+                firstDisplayedJulianDay = julianMonday - 1;
+                break;
+            default:
+                break;
         }
         t.setJulianDay(firstDisplayedJulianDay);
         return t;
@@ -2429,8 +2402,9 @@ public class Utils {
     /**
      * M: Get the last day that could be displayed in our calendar, which means this is the very
      * ending of time displayed in our calendar, and all the valid time must be before this last
-     * display time, for example, if SUN is the first day of week in our calendar, then 2037-1-3
-     * is returned,and 2017-1-4 is returned if MON is our first day of week
+     * display time, for example, if SUN is the first day of week in our calendar, then 2037-1-3 is
+     * returned,and 2017-1-4 is returned if MON is our first day of week
+     * 
      * @param context the context
      * @return Time the original displayed time in our calendar
      */
@@ -2442,29 +2416,29 @@ public class Utils {
         int julianMonday = Time.getJulianMondayFromWeeksSinceEpoch(weekNo);
         int lastDisplayedJulianDay = LAST_CALENDAR_DAY;
         switch (firstDayOfWeek) {
-        case Time.MONDAY:
-            lastDisplayedJulianDay = julianMonday + 6;
-            break;
-        case Time.TUESDAY:
-            lastDisplayedJulianDay = julianMonday;
-            break;
-        case Time.WEDNESDAY:
-            lastDisplayedJulianDay = julianMonday + 1;
-            break;
-        case Time.THURSDAY:
-            lastDisplayedJulianDay = julianMonday + 2;
-            break;
-        case Time.FRIDAY:
-            lastDisplayedJulianDay = julianMonday + 3;
-            break;
-        case Time.SATURDAY:
-            lastDisplayedJulianDay = julianMonday + 4;
-            break;
-        case Time.SUNDAY:
-            lastDisplayedJulianDay = julianMonday + 5;
-            break;
-        default:
-            break;
+            case Time.MONDAY:
+                lastDisplayedJulianDay = julianMonday + 6;
+                break;
+            case Time.TUESDAY:
+                lastDisplayedJulianDay = julianMonday;
+                break;
+            case Time.WEDNESDAY:
+                lastDisplayedJulianDay = julianMonday + 1;
+                break;
+            case Time.THURSDAY:
+                lastDisplayedJulianDay = julianMonday + 2;
+                break;
+            case Time.FRIDAY:
+                lastDisplayedJulianDay = julianMonday + 3;
+                break;
+            case Time.SATURDAY:
+                lastDisplayedJulianDay = julianMonday + 4;
+                break;
+            case Time.SUNDAY:
+                lastDisplayedJulianDay = julianMonday + 5;
+                break;
+            default:
+                break;
         }
         t.setJulianDay(lastDisplayedJulianDay);
         return t;
@@ -2473,12 +2447,13 @@ public class Utils {
     /**
      * M: get the valid time in our calendar, which means the time is valid if it's between the
      * first and last display time in our calendar
+     * 
      * @see getFirstDisplayTimeInCalendar
      * @see getLastDisplayTimeInCalendar
      * @param context
      * @param t
      * @return the valid time in our calendar according the time passed in, return null if time is
-     * null
+     *         null
      */
     public static Time getValidTimeInCalendar(Context context, Time t) {
         if (t == null) {
@@ -2496,6 +2471,7 @@ public class Utils {
 
     /**
      * M: like above, but different parameters
+     * 
      * @param context
      * @param timeMillis
      * @return
@@ -2515,6 +2491,7 @@ public class Utils {
     /**
      * M: If it's before or on the epoch Julian day, Time.setJulianDay() can't work correctly,
      * however, we could compute the time by ourself
+     * 
      * @param time
      * @param julianDay
      * @return
@@ -2536,6 +2513,7 @@ public class Utils {
     /**
      * M: If it's before or on the epoch Julian day, Time.getJulianDay() can't work correctly,
      * however, we could compute the time by ourself
+     * 
      * @param time
      * @param julianDay
      * @return
@@ -2553,50 +2531,58 @@ public class Utils {
         final long millisPerDay = 24 * 60 * 60 * 1000;
         if (dif < 0) {
             LogUtil.d(TAG, "Julian day before epoch day, adjust by epoch day");
-            int difDay = (int) (dif/millisPerDay);
+            int difDay = (int) (dif / millisPerDay);
             return Time.EPOCH_JULIAN_DAY + difDay;
         } else {
             return Time.getJulianDay(millis, time.gmtoff);
         }
     }
 
-    //FR593012-Wentao-Wan-001 begin
-    public static void setSelectedWeekDayEX(int selectWeekDay){
+    // FR593012-Wentao-Wan-001 begin
+    public static void setSelectedWeekDayEX(int selectWeekDay) {
         mSelectedWeekDayEX = selectWeekDay;
     }
-    public static int getSelectedWeekDayEX(){
+
+    public static int getSelectedWeekDayEX() {
         return mSelectedWeekDayEX;
     }
-    public static void setClickedDayIndexEX(int clickedDayIndex){
+
+    public static void setClickedDayIndexEX(int clickedDayIndex) {
         mClickedDayIndexEX = clickedDayIndex;
     }
-    public static int getClickedDayIndexEX(){
+
+    public static int getClickedDayIndexEX() {
         return mClickedDayIndexEX;
     }
-    public static void clearBufferEX(){
+
+    public static void clearBufferEX() {
         mSelectedWeekDayEX = -1;
         mClickedDayIndexEX = -1;
         mSelectedJulianDayEX = -1;
     }
-    public static void setSelectedJulianDayEX(int julian){
+
+    public static void setSelectedJulianDayEX(int julian) {
         mSelectedJulianDayEX = julian;
     }
-    public static int getSelectedJulianDayEX(){
-       return mSelectedJulianDayEX;
-    }
-   //FR593012-Wentao-Wan-001 end
 
-    //added for FR602091 Porting Wave3 Calendar to soul45 by yubin.yi.hz at 2014-02-13 begin
+    public static int getSelectedJulianDayEX() {
+        return mSelectedJulianDayEX;
+    }
+
+    // FR593012-Wentao-Wan-001 end
+
+    // added for FR602091 Porting Wave3 Calendar to soul45 by yubin.yi.hz at 2014-02-13 begin
     /**
      * get system display metrics
+     * 
      * @param context
      * @return
      */
     public static DisplayMetrics getScreenMetrics(Context context) {
-        WindowManager wm = (WindowManager) context.getSystemService("window"); 
+        WindowManager wm = (WindowManager) context.getSystemService("window");
         DisplayMetrics outMetrics = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(outMetrics);
         return outMetrics;
     }
-    //added for FR602091 Porting Wave3 Calendar to soul45 by yubin.yi.hz at 2014-02-13 end
+    // added for FR602091 Porting Wave3 Calendar to soul45 by yubin.yi.hz at 2014-02-13 end
 }

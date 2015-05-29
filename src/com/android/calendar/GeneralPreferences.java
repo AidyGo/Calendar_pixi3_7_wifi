@@ -107,7 +107,7 @@ public class GeneralPreferences extends PreferenceFragment implements
     public static final String KEY_ALERTS_CATEGORY = "preferences_alerts_category";
     public static final String KEY_ALERTS = "preferences_alerts";
     public static final String KEY_ALERTS_VIBRATE = "preferences_alerts_vibrate";
-    ///M:Add a new key to save vibrate setting for calendar event reminder.
+    // /M:Add a new key to save vibrate setting for calendar event reminder.
     public static final String KEY_VIBRATE_FOR_EVENT_REMINDER = "preferences_vibrate_forEventReminder";
     public static final String KEY_ALERTS_RINGTONE = "preferences_alerts_ringtone";
     public static final String KEY_ALERTS_POPUP = "preferences_alerts_popup";
@@ -125,8 +125,8 @@ public class GeneralPreferences extends PreferenceFragment implements
     /** Key to SharePreference for default view (CalendarController.ViewType) */
     public static final String KEY_START_VIEW = "preferred_startView";
     /**
-     *  Key to SharePreference for default detail view (CalendarController.ViewType)
-     *  Typically used by widget
+     * Key to SharePreference for default detail view (CalendarController.ViewType) Typically used
+     * by widget
      */
     public static final String KEY_DETAILED_VIEW = "preferred_detailedView";
     public static final String KEY_DEFAULT_CALENDAR = "preference_defaultCalendar";
@@ -146,10 +146,19 @@ public class GeneralPreferences extends PreferenceFragment implements
     static final String KEY_HOME_TZ = "preferences_home_tz";
 
     // Default preference values
-    public static final int DEFAULT_START_VIEW = CalendarController.ViewType.MONTH;//FR593012-Wentao-Wan-001
-    public static final int DEFAULT_DETAILED_VIEW = CalendarController.ViewType.MONTH;//modified for FR602091 Porting Wave3 Calendar to soul45 by yubin.yi.hz at 2014-02-13
+    public static final int DEFAULT_START_VIEW = CalendarController.ViewType.MONTH;// FR593012-Wentao-Wan-001
+    public static final int DEFAULT_DETAILED_VIEW = CalendarController.ViewType.MONTH;// modified
+                                                                                      // for
+                                                                                      // FR602091
+                                                                                      // Porting
+                                                                                      // Wave3
+                                                                                      // Calendar to
+                                                                                      // soul45 by
+                                                                                      // yubin.yi.hz
+                                                                                      // at
+                                                                                      // 2014-02-13
     public static final boolean DEFAULT_SHOW_WEEK_NUM = false;
-    public static final String CHANGE_WEEK_NUMBER = "com.android.broadcast.CHANGE_WEEK_NUMBER";//FR593012-Wentao-Wan-001
+    public static final String CHANGE_WEEK_NUMBER = "com.android.broadcast.CHANGE_WEEK_NUMBER";// FR593012-Wentao-Wan-001
     // This should match the XML file.
     public static final String DEFAULT_RINGTONE = "content://settings/system/notification_sound";
     // added by Fujuan.Lin for RR565704 begin
@@ -174,22 +183,25 @@ public class GeneralPreferences extends PreferenceFragment implements
 
     /** Return a properly configured SharedPreferences instance */
     public static SharedPreferences getSharedPreferences(Context context) {
-        //FR593012-Wentao-Wan-001 begin
-        //return context.getSharedPreferences(SHARED_PREFS_NAME, Context.MODE_PRIVATE);
+        // FR593012-Wentao-Wan-001 begin
+        // return context.getSharedPreferences(SHARED_PREFS_NAME, Context.MODE_PRIVATE);
         return context.getSharedPreferences(SHARED_PREFS_NAME, Context.MODE_WORLD_READABLE);
-        //FR593012-Wentao-Wan-001 end
+        // FR593012-Wentao-Wan-001 end
     }
 
     /** Set the default shared preferences in the proper context */
     public static void setDefaultValues(Context context) {
-      //FR593012-Wentao-Wan-001 begin
-        /*PreferenceManager.setDefaultValues(context, SHARED_PREFS_NAME, Context.MODE_PRIVATE,
-                R.xml.general_preferences, false);*/
-       PreferenceManager.setDefaultValues(context, SHARED_PREFS_NAME, Context.MODE_WORLD_READABLE,
+        // FR593012-Wentao-Wan-001 begin
+        /*
+         * PreferenceManager.setDefaultValues(context, SHARED_PREFS_NAME, Context.MODE_PRIVATE,
+         * R.xml.general_preferences, false);
+         */
+        PreferenceManager.setDefaultValues(context, SHARED_PREFS_NAME, Context.MODE_WORLD_READABLE,
                 R.xml.general_preferences, false);
-      //FR593012-Wentao-Wan-001 end
+        // FR593012-Wentao-Wan-001 end
     }
-	    //FR556557-Yuansheng-Zhao-001 begin
+
+    // FR556557-Yuansheng-Zhao-001 begin
     static final String KEY_FIRST_WEEK_OPTION = "preferences_first_week_option";
     static final String FIRST_WEEK_FIRST_DAY = "0";
     static final String FIRST_WEEK_FIRST_FOUR_DAYS = "1";
@@ -199,20 +211,24 @@ public class GeneralPreferences extends PreferenceFragment implements
 
     int defFirstWeekOption = 0;
     /* If week setting is changed, the widget need to update */
-    private boolean isWeekSettingChanged = false; //PR507896-tingzhu.guo-001 add
-	
-    public static String defFirstWeekOptionValue[] = {FIRST_WEEK_FIRST_DAY, FIRST_WEEK_FIRST_FOUR_DAYS,
-                                                      FIRST_WEEK_FIRST_FULL_WEEK};
+    private boolean isWeekSettingChanged = false; // PR507896-tingzhu.guo-001 add
+
+    public static String defFirstWeekOptionValue[] = {
+            FIRST_WEEK_FIRST_DAY, FIRST_WEEK_FIRST_FOUR_DAYS,
+            FIRST_WEEK_FIRST_FULL_WEEK
+    };
 
     static String getDefaultFirstWeek(Context context)
     {
-        int defFirstWeek = context.getResources().getInteger(R.integer.def_calendar_first_week_of_year);
-        if(defFirstWeek < 0 || defFirstWeek > 2)
+        int defFirstWeek = context.getResources().getInteger(
+                R.integer.def_calendar_first_week_of_year);
+        if (defFirstWeek < 0 || defFirstWeek > 2)
             return defFirstWeekOptionValue[0];
 
         return defFirstWeekOptionValue[defFirstWeek];
     }
-   //FR556557-Yuansheng-Zhao-001 end
+
+    // FR556557-Yuansheng-Zhao-001 end
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -240,14 +256,14 @@ public class GeneralPreferences extends PreferenceFragment implements
         }
 
         mRingtone = (RingtonePreference) preferenceScreen.findPreference(KEY_ALERTS_RINGTONE);
-//        mRingtone.setmShowMoreRingtong(true);
+        // mRingtone.setmShowMoreRingtong(true);
         String ringToneUri = Utils.getRingTonePreference(activity);
-        /// M: Set default ringtone when old ringtone has been deleted from storage. @{
+        // / M: Set default ringtone when old ringtone has been deleted from storage. @{
         if (!RingtoneManager.isRingtoneExist(activity, Uri.parse(ringToneUri))) {
             ringToneUri = DEFAULT_RINGTONE;
             Utils.setRingTonePreference(activity, DEFAULT_RINGTONE);
         }
-        /// @}
+        // / @}
 
         // Set the ringToneUri to the backup-able shared pref only so that
         // the Ringtone dialog will open up with the correct value.
@@ -272,10 +288,10 @@ public class GeneralPreferences extends PreferenceFragment implements
         // RR-556516-Shenglong-Wu-001 end
 
         // added by Fujuan.Lin for RR565704 begin
-        // get the facebook sync title preference category 
+        // get the facebook sync title preference category
         mPreferencesSyncTitleKey = (PreferenceCategory) preferenceScreen
                 .findPreference(KEY_SYNC_TITLE);
-        // if it's not a facebook device ,then remove the sync title preference  category
+        // if it's not a facebook device ,then remove the sync title preference category
         if (!Utils.IS_FACEBOOK_DEVICE) {
             preferenceScreen.removePreference(mPreferencesSyncTitleKey);
         }
@@ -286,15 +302,15 @@ public class GeneralPreferences extends PreferenceFragment implements
 
         // This triggers an asynchronous call to the provider to refresh the data in shared pref
         mTimeZoneId = Utils.getTimeZone(activity, null);
-	
-	//FR556557-Yuansheng-Zhao-001 begin
+
+        // FR556557-Yuansheng-Zhao-001 begin
         mFirstWeekOption = (ListPreference) preferenceScreen.findPreference(KEY_FIRST_WEEK_OPTION);
         mWeekNumberEnable = (CheckBoxPreference) preferenceScreen.findPreference(KEY_SHOW_WEEK_NUM);
         mFirstWeekOption.setDefaultValue(getDefaultFirstWeek(activity));
-        if(mFirstWeekOption.getValue() == null)
+        if (mFirstWeekOption.getValue() == null)
             mFirstWeekOption.setValue(getDefaultFirstWeek(activity));
         mFirstWeekOption.setSummary(mFirstWeekOption.getEntry());
-        //FR556557-Yuansheng-Zhao-001 end
+        // FR556557-Yuansheng-Zhao-001 end
 
         SharedPreferences prefs = CalendarUtils.getSharedPreferences(activity,
                 Utils.SHARED_PREFS_NAME);
@@ -356,27 +372,28 @@ public class GeneralPreferences extends PreferenceFragment implements
 
     @Override
     public void onStart() {
-	//FR556557-Yuansheng-Zhao-001 begin
+        // FR556557-Yuansheng-Zhao-001 begin
         if (mWeekNumberEnable.isChecked()) {
-          mFirstWeekOption.setEnabled(true);
-          } else {
-          mFirstWeekOption.setEnabled(false);
-          }
-        //FR556557-Yuansheng-Zhao-001 end
+            mFirstWeekOption.setEnabled(true);
+        } else {
+            mFirstWeekOption.setEnabled(false);
+        }
+        // FR556557-Yuansheng-Zhao-001 end
         super.onStart();
         getPreferenceScreen().getSharedPreferences()
                 .registerOnSharedPreferenceChangeListener(this);
         setPreferenceListeners(this);
     }
-   //FR593012-Wentao-Wan-001 begin
-   @Override
-   public void onPause() {
-       // TODO Auto-generated method stub
-       if(isWeekSettingChanged){
-          /* Widget need to update */
+
+    // FR593012-Wentao-Wan-001 begin
+    @Override
+    public void onPause() {
+        // TODO Auto-generated method stub
+        if (isWeekSettingChanged) {
+            /* Widget need to update */
             Activity act = getActivity();
             Intent intent = new Intent(CHANGE_WEEK_NUMBER);
-            //Modified by guangqian.peng for PR711052
+            // Modified by guangqian.peng for PR711052
             intent.putExtra("week_start_day", Utils.getFirstDayOfWeek(getActivity()));
             intent.putExtra("show_week_number", Utils.getShowWeekNumber(getActivity()));
             intent.putExtra("first_week_option", Utils.getFirstWeekOption(getActivity()));
@@ -385,17 +402,17 @@ public class GeneralPreferences extends PreferenceFragment implements
         }
         super.onPause();
     }
-   //FR593012-Wentao-Wan-001 end
+
+    // FR593012-Wentao-Wan-001 end
 
     /**
-     * Sets up all the preference change listeners to use the specified
-     * listener.
+     * Sets up all the preference change listeners to use the specified listener.
      */
     private void setPreferenceListeners(OnPreferenceChangeListener listener) {
         mUseHomeTZ.setOnPreferenceChangeListener(listener);
         mHomeTZ.setOnPreferenceChangeListener(listener);
         mWeekStart.setOnPreferenceChangeListener(listener);
-	 mFirstWeekOption.setOnPreferenceChangeListener(listener); //FR556557-Yuansheng-Zhao-001
+        mFirstWeekOption.setOnPreferenceChangeListener(listener); // FR556557-Yuansheng-Zhao-001
         mDefaultReminder.setOnPreferenceChangeListener(listener);
         mRingtone.setOnPreferenceChangeListener(listener);
         mHideDeclined.setOnPreferenceChangeListener(listener);
@@ -415,10 +432,10 @@ public class GeneralPreferences extends PreferenceFragment implements
         Activity a = getActivity();
         if (key.equals(KEY_ALERTS)) {
             updateChildPreferences();
-            ///M: check whether provider is available first.
+            // /M: check whether provider is available first.
             boolean canUseProvider = Utils.canUseProviderByUri(a.getContentResolver(),
-                                           CalendarContract.CalendarAlerts.CONTENT_URI);
-            if(canUseProvider){
+                    CalendarContract.CalendarAlerts.CONTENT_URI);
+            if (canUseProvider) {
                 if (a != null) {
                     Intent intent = new Intent();
                     intent.setClass(a, AlertReceiver.class);
@@ -436,18 +453,17 @@ public class GeneralPreferences extends PreferenceFragment implements
         if (a != null) {
             BackupManager.dataChanged(a.getPackageName());
         }
-	//FR556557-Yuansheng-Zhao-001 begin
+        // FR556557-Yuansheng-Zhao-001 begin
         if (key.equals(KEY_SHOW_WEEK_NUM) || key.equals(KEY_FIRST_WEEK_OPTION)
-              || key.equals(KEY_WEEK_START_DAY)) {
-           if (mWeekNumberEnable.isChecked()) {
-             mFirstWeekOption.setEnabled(true);
-             } else {
-               mFirstWeekOption.setEnabled(false);
-             }
-           isWeekSettingChanged = true; //PR507896-tingzhu.guo-001 add
-         }
-        //FR556557-Yuansheng-Zhao-001 end
-
+                || key.equals(KEY_WEEK_START_DAY)) {
+            if (mWeekNumberEnable.isChecked()) {
+                mFirstWeekOption.setEnabled(true);
+            } else {
+                mFirstWeekOption.setEnabled(false);
+            }
+            isWeekSettingChanged = true; // PR507896-tingzhu.guo-001 add
+        }
+        // FR556557-Yuansheng-Zhao-001 end
 
         // added by Fujuan.Lin for RR565704 begin
         // import facebook data,and show friends' birthday info.
@@ -465,7 +481,7 @@ public class GeneralPreferences extends PreferenceFragment implements
         String tz;
         final Activity activity = getActivity();
         if (preference == mUseHomeTZ) {
-            if ((Boolean)newValue) {
+            if ((Boolean) newValue) {
                 tz = mTimeZoneId;
             } else {
                 tz = CalendarCache.TIMEZONE_TYPE_AUTO;
@@ -481,11 +497,11 @@ public class GeneralPreferences extends PreferenceFragment implements
         } else if (preference == mWeekStart) {
             mWeekStart.setValue((String) newValue);
             mWeekStart.setSummary(mWeekStart.getEntry());
-	//FR556557-Yuansheng-Zhao-001 begin
+            // FR556557-Yuansheng-Zhao-001 begin
         } else if (preference == mFirstWeekOption) {
             mFirstWeekOption.setValue((String) newValue);
             mFirstWeekOption.setSummary(mFirstWeekOption.getEntry());
-        //FR556557-Yuansheng-Zhao-001 end
+            // FR556557-Yuansheng-Zhao-001 end
         } else if (preference == mDefaultReminder) {
             mDefaultReminder.setValue((String) newValue);
             mDefaultReminder.setSummary(mDefaultReminder.getEntry());
@@ -518,8 +534,9 @@ public class GeneralPreferences extends PreferenceFragment implements
     }
 
     /**
-     * If necessary, upgrades previous versions of preferences to the current
-     * set of keys and values.
+     * If necessary, upgrades previous versions of preferences to the current set of keys and
+     * values.
+     * 
      * @param prefs the preferences to upgrade
      */
     private void migrateOldPreferences(SharedPreferences prefs) {
@@ -549,9 +566,9 @@ public class GeneralPreferences extends PreferenceFragment implements
     }
 
     /**
-     * Keeps the dependent settings in sync with the parent preference, so for
-     * example, when notifications are turned off, we disable the preferences
-     * for configuring the exact notification behavior.
+     * Keeps the dependent settings in sync with the parent preference, so for example, when
+     * notifications are turned off, we disable the preferences for configuring the exact
+     * notification behavior.
      */
     private void updateChildPreferences() {
         if (mAlert.isChecked()) {
@@ -565,7 +582,6 @@ public class GeneralPreferences extends PreferenceFragment implements
         }
     }
 
-
     @Override
     public boolean onPreferenceTreeClick(
             PreferenceScreen preferenceScreen, Preference preference) {
@@ -575,9 +591,9 @@ public class GeneralPreferences extends PreferenceFragment implements
                     Utils.getSearchAuthority(getActivity()),
                     CalendarRecentSuggestionsProvider.MODE);
             suggestions.clearHistory();
-            ///M:here use MTKToast to avoid show very long time when click many times 
+            // /M:here use MTKToast to avoid show very long time when click many times
             MTKToast.toast(getActivity(), R.string.search_history_cleared);
-            ///@}
+            // /@}
             return true;
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -596,23 +612,24 @@ public class GeneralPreferences extends PreferenceFragment implements
         Utils.setTimeZone(getActivity(), tzi.mTzId);
     }
 
-    //RR-556516-Shenglong-Wu-001 begin
-     static String getDefaultFirstDayOfWeek(Context context) {
-         //Get the value customized in CLID for first day of week.
-         //PR-832904-shiyong.luo-20141110 begin
-         //int defFirstDayOfWeek =context.getResources().getInteger(R.integer.def_calendar_first_day_of_week);
-          int defFirstDayOfWeek =2;
-         //PR-832904-shiyong.luo-20141110 end
-       if(defFirstDayOfWeek == 0) {
-           return GeneralPreferences.WEEK_START_DEFAULT;
+    // RR-556516-Shenglong-Wu-001 begin
+    static String getDefaultFirstDayOfWeek(Context context) {
+        // Get the value customized in CLID for first day of week.
+        // PR-832904-shiyong.luo-20141110 begin
+        // int defFirstDayOfWeek
+        // =context.getResources().getInteger(R.integer.def_calendar_first_day_of_week);
+        int defFirstDayOfWeek = 2;
+        // PR-832904-shiyong.luo-20141110 end
+        if (defFirstDayOfWeek == 0) {
+            return GeneralPreferences.WEEK_START_DEFAULT;
         } else if (defFirstDayOfWeek == 1) {
             return GeneralPreferences.WEEK_START_SATURDAY;
         } else if (defFirstDayOfWeek == 2) {
-             return GeneralPreferences.WEEK_START_SUNDAY;
+            return GeneralPreferences.WEEK_START_SUNDAY;
         } else if (defFirstDayOfWeek == 3) {
-             return GeneralPreferences.WEEK_START_MONDAY;
-         }
-         return GeneralPreferences.WEEK_START_DEFAULT;
+            return GeneralPreferences.WEEK_START_MONDAY;
+        }
+        return GeneralPreferences.WEEK_START_DEFAULT;
     }
-    //RR-556516-Shenglong-Wu-001 end
+    // RR-556516-Shenglong-Wu-001 end
 }
