@@ -1,5 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="noApplications">"Tiada apl yang boleh menjalankan tindakan ini."</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"Tarikh yang sah adalah Januari 1970 hingga Disember 2036"</string>
+	<!---->
+	<string name="shareEvent">"Kongsi acara"</string>
+	<!---->
+	<string name="share_label">"Kongsi"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"Gagal dimuatkan."</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Operasi gagal. Sila semak jika "Storan Kalendar" dihentikan."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"Kosongkan peristiwa"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"Pilih akaun"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"Semua peristiwa dalam akaun yang dipilih akan dipadam."</string>
+	<!---->
+	<string name="delete_completed">"Operasi memadam diselesaikan."</string>
+	<!---->
+	<string name="delete_certain">"OK"</string>
+	<!---->
+	<string name="wait_deleting_tip">"Sila tunggu sementara memadam ..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"Sesetengah hadirin tidak sah."</string>
+	<!---->
+	<string name="unread_reminders">"%d peringatan belum dibaca"</string>
+	<!---->
+	<string name="click_to_view_all">"Klik untuk melihat semua"</string>
+	<!---->
+	<string name="search_setting_description">"Acara dalam Kalendar"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Bulan penyusutan"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Bulan kenaikan"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Tahun kenaikan"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Hari kenaikan"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Hari penyusutan"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"Teks telah wujud"</string>
+	<!---->
+	<string name="quick_response_error_null">"Tidak boleh dikosongkan"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"Getar untuk peringatan acara"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"Pergi ke"</string>
+	<!---->
+	<string name="no_event_tip">"Tiada acara."</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"Cari kalendar"</string>
+	<!---->
+	<string name="noApplications">"Tiada apl yang boleh menjalankan tindakan ini."</string>
 </resources>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- This is the label underneath the icon for Calendar -->
+	<string name="app_label">"Kalendorius"</string>
+	<!-- This is the label for the title or name of an event -->
+	<string name="what_label">"Kas"</string>
+	<!-- This is the label for the location of an event -->
+	<string name="where_label">"Kur"</string>
+	<!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+	<string name="when_label">"Kada"</string>
+	<!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+	<string name="timezone_label">"Laiko juosta"</string>
+	<!-- This is the label for the Guests/Attendees of an event -->
+	<string name="attendees_label">"Svečiai"</string>
+	<!-- no translation found for today -->
+	<skip />
+	<!-- Text to show when an event starts on the next day -->
+	<string name="tomorrow">"Rytoj"</string>
+	<!-- no translation found for today_at_time_fmt -->
+	<skip />
+	<!-- no translation found for tomorrow_at_time_fmt -->
+	<skip />
+	<!-- no translation found for date_time_fmt -->
+	<skip />
+	<!-- Some events repeat daily, weekly, monthly, or yearly. This is the label for all the choices about how often an event repeats (including the choice of not repeating). -->
+	<string name="repeats_label">"Pasikartojimas"</string>
+	<!-- no translation found for no_title_label -->
+	<skip />
+	<plurals name="Nminutes">
+		<!-- Reminder format strings  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 min."</item>
+		<!-- Reminder format strings  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> min."</item>
+	</plurals>
+	<plurals name="Nmins">
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 min."</item>
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> min."</item>
+	</plurals>
+	<plurals name="Nhours">
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a 1-hour reminder. -->
+		<item quantity="one">"1 val."</item>
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a reminder of 2 or more hours. The actual number of hours is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> val."</item>
+	</plurals>
+	<plurals name="Ndays">
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 1 day. -->
+		<item quantity="one">"1 d."</item>
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 2 or more days. The actual number of days is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> d."</item>
+	</plurals>
+	<plurals name="weekN">
+		<!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1"  Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> SAVAITĖ"</item>
+	</plurals>
+	<!-- This is a label on a context menu item. Pressing this menu item to initiate syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+	<string name="calendar_refresh">"Atnaujinti"</string>
+	<!-- This is a label on a context menu item. Pressing this menu item displays the Agenda view.   This is a label on a context menu item. Pressing this menu item displays the Day view. -->
+	<string name="show_day_view">"Rodyti dieną"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Agenda view. -->
+	<string name="agenda_view">"Darbotvarkė"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Day view. -->
+	<string name="day_view">"Diena"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Week view. -->
+	<string name="week_view">"Savaitė"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Month view. -->
+	<string name="month_view">"Mėnuo"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the details of an event. -->
+	<string name="event_view">"Žiūrėti įvykį"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to create a new event. -->
+	<string name="event_create">"Naujas įvykis"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to edit or change an existing event. -->
+	<string name="event_edit">"Redaguoti įvykį"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to delete an existing event. -->
+	<string name="event_delete">"Ištrinti įvykį"</string>
+	<!-- This is a label on a menu item. Pressing this menu item takes the user to the current day (today) in whatever view (Day view, Week view, Agenda view, Month view) they are currently in. -->
+	<string name="goto_today">"Šiandien"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to see the list of calendars that he is viewing and to then add or remove selected calendars.   This is a label on a menu item. Pressing this menu item allows the user to view and edit his Settings (or Preferences) -->
+	<string name="menu_preferences">"Nustatymai"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="menu_select_visible_calendars">"Rodomi kalendoriai"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="search">"Ieškoti"</string>
+	<!-- This is a label on a menu item. Pressing this menu item hides the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="hide_controls">"Slėpti valdiklius"</string>
+	<!-- This is a label on a menu item. Pressing this menu item shows the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="show_controls">"Rodyti valdiklius"</string>
+	<!-- Title of "My calendars" screen -->
+	<string name="select_visible_calendars_title">"Norimi rodyti kalendoriai"</string>
+	<!-- Synced and visible status message   Synced but not visible status message   not Synced or visible status message   Synced status message displayed when the given calendar is stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="synced">"sinchronizuota"</string>
+	<!-- Not synced status message displayed when the given calendar is not stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="not_synced">"nesinchronizuota"</string>
+	<!-- Message displayed to user when an account with Calendars is not being auto-synced [CHAR LIMIT=120]-->
+	<string name="acct_not_synced">"Ši paskyra nesinchronizuojama, todėl kalendoriuose gali būti pateikiama ne pati naujausia informacija."</string>
+	<!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+	<string name="accounts">"Paskyros ir sinchronizavim."</string>
+	<!-- Select Synced Calendars activity   Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_title">"Norimi sinchronizuoti kalendoriai"</string>
+	<!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_button">"Sinchronizuojami kalendoriai"</string>
+	<!-- The title of the screen where the user edits an event [CHAR LIMIT=17]   Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+	<string name="hint_what">"Įvykio pavadinimas"</string>
+	<!-- no translation found for hint_where -->
+	<skip />
+	<!-- no translation found for hint_description -->
+	<skip />
+	<!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+	<string name="hint_attendees">"Svečiai"</string>
+	<!-- no translation found for creating_event -->
+	<skip />
+	<!-- no translation found for saving_event -->
+	<skip />
+	<!-- no translation found for empty_event -->
+	<skip />
+	<!-- no translation found for creating_event_with_guest -->
+	<skip />
+	<!-- no translation found for saving_event_with_guest -->
+	<skip />
+	<!-- no translation found for create_event_dialog_save -->
+	<skip />
+	<!-- the title of the alert/notification activity -->
+	<string name="alert_title">"Kalendoriaus pranešimai"</string>
+	<!-- This is the title of the screen used to view the details of an event -->
+	<string name="event_info_title">"Žiūrėti įvykį"</string>
+	<!-- This is the title of the screen used to view the details of an invitation to a meeting or event -->
+	<string name="event_info_title_invite">"Kvietimas į susitikimą"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'end date'. -->
+	<string name="edit_event_to_label">"Iki"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'start date'. -->
+	<string name="edit_event_from_label">"Nuo"</string>
+	<!-- Check box label that specifies if this is an all-day event -->
+	<string name="edit_event_all_day_label">"Visos dienos"</string>
+	<!-- Label for choosing one of the calendars -->
+	<string name="edit_event_calendar_label">"Kalendorius"</string>
+	<!-- no translation found for edit_event_show_all -->
+	<skip />
+	<!-- Label for the event description -->
+	<string name="description_label">"Aprašas"</string>
+	<!-- Label for the 'Presence' of an event, which can be either 'busy' (the default) or 'available' [CHAR LIMIT=15] -->
+	<string name="presence_label">"Rodyti mane kaip"</string>
+	<!-- Label for the 'Privacy' of an event, which can be either 'private' or 'public' [CHAR LIMIT=15] -->
+	<string name="privacy_label">"Privatumas"</string>
+	<!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+	<string name="reminders_label">"Pridėti priminimą"</string>
+	<!-- Title of alert shown if the user tries to create an event and has no calendars -->
+	<string name="no_syncable_calendars">"Nėra kalendorių"</string>
+	<!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+	<string name="no_calendars_found">"Norėdami pridėti įvykį, savo įrenginyje pirmiausia turite pridėti bent vieną Kalendoriaus paskyrą ir padaryti kalendorių matomu. Jei norite pridėti paskyrą, palieskite „Pridėti paskyrą“ (jei paskyrą ką tik pridėjote, palaukite, kol ji bus sinchronizuota,</string>
+	<!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+	<string name="create_an_account_desc">"Kalendorius geriau veikia naudojant „Google“ paskyrą.\n\n\u2022 Pasiekite jį naudodami bet kurią žiniatinklio naršyklę.\n\u2022 Saugiau kurkite atsargines įvykių kopijas."</string>
+	<!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+	<string name="add_account">"Pridėti paskyrą"</string>
+	<!-- no translation found for view_event_calendar_label -->
+	<skip />
+	<!-- no translation found for view_event_organizer_label -->
+	<skip />
+	<!-- no translation found for choose_event_color_label -->
+	<skip />
+	<!-- no translation found for event_color_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for event_color_set_to_default -->
+	<skip />
+	<!-- no translation found for calendar_color_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for calendar_square_color_picker_description -->
+	<skip />
+	<!-- Label for whether the user is attending this event. This is shown when a user is invited to a meeting or event. The possible answers are 'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+	<string name="view_event_response_label">"Dalyvausite?"</string>
+	<!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+	<string name="response_yes">"Taip"</string>
+	<!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+	<string name="response_maybe">"Galbūt"</string>
+	<!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+	<string name="response_no">"Ne"</string>
+	<!-- no translation found for email_guests_label -->
+	<skip />
+	<!-- no translation found for email_organizer_label -->
+	<skip />
+	<!-- no translation found for email_picker_label -->
+	<skip />
+	<!-- no translation found for event_not_found -->
+	<skip />
+	<!-- no translation found for map_label -->
+	<skip />
+	<!-- no translation found for call_label -->
+	<skip />
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings">"Greiti atsakai"</string>
+	<!-- no translation found for quick_response_settings_summary -->
+	<skip />
+	<!-- no translation found for quick_response_settings_title -->
+	<skip />
+	<!-- no translation found for quick_response_settings_edit_title -->
+	<skip />
+	<!-- no translation found for quick_response_dialog_title -->
+	<skip />
+	<!-- no translation found for quick_response_email_failed -->
+	<skip />
+	<!-- no translation found for quick_response_defaults -->
+	<skip />
+	<!-- no translation found for quick_response_custom_msg -->
+	<skip />
+	<!-- Event Info strings  Time Zone Label [CHAR LIMIT=12]  Repetition Label [CHAR LIMIT=12]  Organizer Label [CHAR LIMIT=12]-->
+	<string name="event_info_organizer">"Tvarkytuvas:"</string>
+	<!-- Reminders label [CHAR LIMIT=15]-->
+	<string name="event_info_reminders_label">"Priminimai"</string>
+	<!-- no translation found for agenda_today -->
+	<skip />
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_yesterday">"VAKAR, <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_tomorrow">"RYTOJ, <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown while the calendar events are being loading to the screen. -->
+	<string name="loading">"Įkeliama…"</string>
+	<!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+	<string name="show_older_events">"Palieskite, jei norite peržiūrėti įvykius iki <xliff:g id="oldest_search_range">%1$s</xliff:g>"</string>
+	<!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+	<string name="show_newer_events">"Palieskite, jei norite peržiūrėti įvykius po <xliff:g id="newest_search_range">%1$s</xliff:g>"</string>
+	<!-- Title of the search screen [CHAR LIMIT=30] -->
+	<string name="search_title">"Ieškoti mano kalendoriuose"</string>
+	<!-- This is the title of a popup window that is displayed when the user edits a repeating event. [CHAR LIMIT=20]-->
+	<string name="edit_event_label">"Išsami informacija"</string>
+	<!-- This is a menu button for switching into edit mode when viewing an event. [CHAR LIMIT=10] -->
+	<string name="edit_label">"Redaguoti"</string>
+	<!-- The button label for deleting an event -->
+	<string name="delete_label">"Ištrinti"</string>
+	<!-- A menu item for deleting an event   The button label for saving an event -->
+	<string name="save_label">"Atlikta"</string>
+	<!-- The button label for discarding changes to an event -->
+	<string name="discard_label">"Grąžinti"</string>
+	<!-- The button label for making the reminder alarms go away temporarily. The reminder alarms will fire off again in 5 minutes. -->
+	<string name="snooze_all_label">"Snausti visiems"</string>
+	<!-- The button label for dismissing all the current reminder alarms. This causes them to disappear from the notification screen. -->
+	<string name="dismiss_all_label">"Atsisakyti visko"</string>
+	<!-- no translation found for snooze_label -->
+	<skip />
+	<!-- A label in a multiple-choice list for the specifying that an event does not repeat -->
+	<string name="does_not_repeat">"Vienkartinis įvykis"</string>
+	<!-- no translation found for endByDate -->
+	<skip />
+	<!-- no translation found for endByCount -->
+	<skip />
+	<!-- no translation found for daily -->
+	<skip />
+	<!-- A label in a multiple-choice list for the specifying that an event repeats daily -->
+	<string name="daily">"Kasdien"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats every weekday (Monday through Friday) -->
+	<string name="every_weekday">"Savaitės dienomis (Pi–Pe)"</string>
+	<!-- no translation found for weekly -->
+	<skip />
+	<!-- A label in a multiple-choice list for the specifying that an event repeats weekly on some day of the week. For example, 'Weekly (every Tuesday)'. -->
+	<string name="weekly">"Kas savaitę (kiekvieną <xliff:g id="DAYS_OF_WEEK">%s</xliff:g>)"</string>
+	<!-- Example: 'Monthly (every first Sunday)'   1st parameter is an ordinal number, like 'first'   2nd parameter is a day of the week, like 'Sunday' -->
+	<string name="monthly_on_day_count">"Kas mėnesį (kas <xliff:g id="ORDINAL_NUMBER">%1$s</xliff:g> <xliff:g id="DAY_OF_WEEK">%2$s</xliff:g>)"</string>
+	<!-- The common portion of a string describing how often an event repeats, example: 'Monthly (on day 2)' -->
+	<string name="monthly">"Kas mėnesį"</string>
+	<!-- Calendar spinner item, to select that an event recurs every year. -->
+	<string name="yearly_plain">"Kasmet"</string>
+	<!-- Example: "Monthly (on day 15)" -->
+	<string name="monthly_on_day">"Kas mėnesį (<xliff:g id="DAY_OF_MONTH">%s</xliff:g> d.)"</string>
+	<!-- Example: "Yearly (on April 15)" -->
+	<string name="yearly">"Kasmet (<xliff:g id="DATES">%s</xliff:g>)"</string>
+	<!-- no translation found for custom -->
+	<skip />
+	<!-- no translation found for modify_event -->
+	<skip />
+	<!-- no translation found for modify_all -->
+	<skip />
+	<!-- no translation found for modify_all_following -->
+	<skip />
+	<!-- Dialogs   This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_label">"Naujas įvykis"</string>
+	<!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_option">"Naujas įvykis"</string>
+	<!-- no translation found for delete_this_event_title -->
+	<skip />
+	<!-- no translation found for delete_recurring_event_title -->
+	<skip />
+	<!-- This is the title of a popup dialog that asks for confirmation before changing the response to an invitation. -->
+	<string name="change_response_title">"Pakeisti atsakymą"</string>
+	<!-- This the title of a menu for General Preferences. Pressing the menu item lets user to view and edit his general settings (or preferences) [CHAR LIMIT=30] -->
+	<string name="menu_general_preferences">"Bendrieji nustatymai"</string>
+	<!-- This the title of a menu for "About Calendar" Preferences. Pressing the menu item lets user to view the current settings [CHAR LIMIT=30] -->
+	<string name="menu_about_preferences">"Apie Kalendorių"</string>
+	<!-- This is the title of the screen for setting user preferences. -->
+	<string name="preferences_title">"Nustatymai"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to viewing calendar events -->
+	<string name="preferences_general_title">"Kalendoriaus rodinio nustatymas"</string>
+	<!-- no translation found for preferences_reminder_title -->
+	<skip />
+	<!-- Settings check box label to hide events that the user has declined to attend -->
+	<string name="preferences_hide_declined_title">"Slėpti atmestus įvykius"</string>
+	<!-- Settings week start label to start week on specific day-->
+	<string name="preferences_week_start_day_title">"Savaitė prasideda"</string>
+	<!-- Title of popup for week start day setting-->
+	<string name="preferences_week_start_day_dialog">"Savaitė prasideda"</string>
+	<!-- no translation found for preferences_week_start_day_default -->
+	<skip />
+	<!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+	<string name="preferences_clear_search_history_title">"Išvalyti paieškos istoriją"</string>
+	<!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+	<string name="preferences_clear_search_history_summary">"Pašalinti visas atliktas paieškas"</string>
+	<!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+	<string name="search_history_cleared">"Paieškos istorija išvalyta."</string>
+	<!-- Settings check box label to enable or disable notifications -->
+	<string name="preferences_alerts_title">"Įspėjimai"</string>
+	<!-- Settings dialog label that specifies when the phone should vibrate -->
+	<string name="preferences_alerts_vibrateWhen_title">"Vibruoti"</string>
+	<!-- no translation found for preferences_alerts_ringtone_title -->
+	<skip />
+	<!-- Title of check box label to enable or disable pop-up notifications -->
+	<string name="preferences_alerts_popup_title">"Iššokantis pranešimas"</string>
+	<!-- List item label for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_title">"Numat. priminimo laikas"</string>
+	<!-- Title of dialog for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_dialog">"Numatytasis priminimo laikas"</string>
+	<!-- Default value for the number of reminder minutes -->
+	<string name="preferences_default_reminder_default">"10"</string>
+	<!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+	<string name="preferences_use_home_tz_title">"Naud. pagr. laiko juostą"</string>
+	<!-- no translation found for preferences_use_home_tz_descrip -->
+	<skip />
+	<!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+	<string name="preferences_home_tz_title">"Pagrindinė laiko juosta"</string>
+	<!-- no translation found for preferences_home_tz_default -->
+	<skip />
+	<!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+	<string name="preferences_show_week_num_title">"Rodyti savaitės numerį"</string>
+	<!-- This is the title of a section in the Settings screen for "About" this application -->
+	<string name="preferences_about_title">"Apie"</string>
+	<!-- Build version of the application -->
+	<string name="preferences_build_version">"Versija"</string>
+	<!-- Title for calendar gadget when displayed in list of all other gadgets -->
+	<string name="gadget_title">"Kalendorius"</string>
+	<plurals name="month_more_events">
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for 1 event, the quotes force a literal interpretation of the string [CHAR LIMIT = 10] -->
+		<item quantity="one">"+1"</item>
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for multiple events [CHAR LIMIT = 10] -->
+		<item quantity="other">""</item>
+	</plurals>
+	<!-- Caption to show on gadget when there are no upcoming calendar events -->
+	<string name="gadget_no_events">"Nėra būsimų kalendoriaus įvykių"</string>
+	<!-- no translation found for tardis -->
+	<skip />
+	<!-- no translation found for preferences_experimental_category -->
+	<skip />
+	<!-- no translation found for preferences_reminders_category -->
+	<skip />
+	<!-- no translation found for preferences_reminders_responded_label -->
+	<skip />
+	<!-- no translation found for preferences_reminders_responded_dialog -->
+	<skip />
+	<!-- no translation found for preferences_reminders_quiet_hours_label -->
+	<skip />
+	<!-- no translation found for preferences_reminders_quiet_hours_description -->
+	<skip />
+	<!-- no translation found for preferences_reminders_quiet_hours_start -->
+	<skip />
+	<!-- no translation found for preferences_reminders_quiet_hours_end -->
+	<skip />
+	<!-- no translation found for preferences_debug_category -->
+	<skip />
+	<!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+	<string name="copy_db">"Siųsti duomenų bazę"</string>
+	<!-- Displayed in email address autocomplete list when searching for contacts in corporate directories. Example: "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+	<string name="directory_searching_fmt">"Ieškoma <xliff:g id="domain">%s</xliff:g>\u2026"</string>
+	<!-- Accessibility Events   Strings that describes actions for buttons without text   Create a new calendar event [CHAR LIMIT = NONE]  Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_attendee">"Pašalinti dalyvį"</string>
+	<!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_date">"Pradžios data"</string>
+	<!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_time">"Pradžios laikas"</string>
+	<!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_date">"Pabaigos data"</string>
+	<!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_time">"Pabaigos laikas"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_time_zone">"Laiko juosta"</string>
+	<!-- no translation found for accessibility_pick_recurrence -->
+	<skip />
+	<!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_reminder">"Pridėti priminimą"</string>
+	<!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_reminder">"Pašalinti priminimą"</string>
+	<!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_attendee">"Pridėti dalyvį"</string>
+	<!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+	<string name="accessibility_sync_cal">"Sinchronizuoti kalendorių"</string>
+	<!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+	<string name="accessibility_all_day">"Visos dienos įvykis"</string>
+	<!-- Refresh the data in the calendar [CHAR LIMIT = NONE]  Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+	<string name="accessibility_repeats">"Pasikartojimas"</string>
+	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_time">"Priminimo laikas"</string>
+	<!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_type">"Priminimo tipas"</string>
+	<!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_showmeas">"Rodyti mane kaip"</string>
+	<!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_privacy">"Privatumas"</string>
+	<!-- no translation found for acessibility_cal_notification -->
+	<skip />
+	<!-- no translation found for acessibility_snooze_notification -->
+	<skip />
+	<!-- no translation found for accessibility_email_notification -->
+	<skip />
+	<!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+	<string name="day_view_new_event_hint">"+ Naujas įvykis"</string>
+	<!-- Source: A value for announcing the current event index (example: "Event 2 of 6"). Description: This is spoken to the user. [CHAR LIMIT="NONE"] -->
+	<string name="template_announce_item_index">"<xliff:g id="item_index">%1$s</xliff:g> įvykis iš <xliff:g id="item_count">%2$s</xliff:g>."</string>
+	<!-- no translation found for Nevents -->
+	<skip />
+	<!-- no translation found for N_remaining_events -->
+	<skip />
+	<!-- no translation found for acessibility_selected_marker_description -->
+	<skip />
+	<!-- no translation found for do_not_check -->
+	<skip />
+	<!-- no translation found for recurrence_dialog_title -->
+	<skip />
+	<!-- no translation found for recurrence_dialog_title_never -->
+	<skip />
+	<!-- no translation found for recurrence_interval_daily -->
+	<skip />
+	<!-- no translation found for recurrence_interval_weekly -->
+	<skip />
+	<!-- no translation found for recurrence_interval_monthly -->
+	<skip />
+	<!-- no translation found for recurrence_interval_yearly -->
+	<skip />
+	<!-- no translation found for recurrence_month_pattern_by_day -->
+	<skip />
+	<!-- no translation found for recurrence_end_continously -->
+	<skip />
+	<!-- no translation found for recurrence_end_date_label -->
+	<skip />
+	<!-- no translation found for recurrence_end_date -->
+	<skip />
+	<!-- no translation found for recurrence_end_count_label -->
+	<skip />
+	<!-- no translation found for recurrence_end_count -->
+	<skip />
+	<!-- no translation found for acessibility_recurrence_choose_end_date_description -->
+	<skip />
+	<!-- no translation found for notification_sender_id -->
+	<skip />
+	<!-- FR556557-Yuansheng-Zhao-001 begin   Settings option to bring up a dialog that select first week of year option -->
+	<string name="preferences_alerts_first_week_title">"Pirma metų savaitė"</string>
+	<!-- Title of dialog for setting the default option of first week of year -->
+	<string name="alerts_dialog_first_week_title">"Pirma metų savaitė"</string>
+	<!-- no translation found for cannot_use_in_ultimate_mode -->
+	<skip />
+	<!-- no translation found for select_default_calendar_first -->
+	<skip />
+	<!-- no translation found for noEventHint -->
+	<skip />
+	<!---->
+	<string name="default_calendar_name">"Numat. kalendorius"</string>
+	<!---->
+	<string name="default_calendar_account">"Vietinis kalendorius"</string>
+	<!-- no translation found for import_birthday -->
+	<skip />
+	<!-- no translation found for import_birthday_finish -->
+	<skip />
+	<!-- no translation found for import_birthday_msg -->
+	<skip />
+	<!-- no translation found for importing_msg -->
+	<skip />
+	<!-- no translation found for import_error_msg -->
+	<skip />
+	<!-- no translation found for birthday_reminder_description -->
+	<skip />
+	<!---->
+	<string name="button_label_hide">"Slėpti"</string>
+	<!-- no translation found for import_result_msg -->
+	<skip />
+	<!-- no translation found for toast_start_import -->
+	<skip />
+	<!-- no translation found for toast_import_fail -->
+	<skip />
+	<!---->
+	<string name="menu_item_refresh">"Atnaujinti"</string>
+	<!-- no translation found for title_fb_birthday -->
+	<skip />
+	<!-- no translation found for bithday_item_format -->
+	<skip />
+	<!-- no translation found for preferences_fb_sync_title -->
+	<skip />
+	<!-- no translation found for preferences_fb_sync_all -->
+	<skip />
+	<!-- no translation found for preferences_fb_sync_summary -->
+	<skip />
+	<!-- no translation found for default_calendar_account_facebook -->
+	<skip />
+</resources>

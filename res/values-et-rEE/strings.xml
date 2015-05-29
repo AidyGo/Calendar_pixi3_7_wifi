@@ -1,277 +1,539 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2006 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="5452708708398908131">"Kalender"</string>
-    <string name="what_label" msgid="1933578391985810049">"Mis?"</string>
-    <string name="where_label" msgid="3472482206065595118">"Kus"</string>
-    <string name="when_label" msgid="894636567327261599">"Millal?"</string>
-    <string name="timezone_label" msgid="3988530993300431650">"Ajavöönd"</string>
-    <string name="attendees_label" msgid="2971281641565729725">"Külalised"</string>
-    <string name="today" msgid="8577375020252453006">"Täna"</string>
-    <string name="tomorrow" msgid="614434811813859237">"Homme"</string>
-    <string name="today_at_time_fmt" msgid="1981279213130049736">"Täna kell <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
-    <string name="tomorrow_at_time_fmt" msgid="1330779112841767432">"Homme kell <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
-    <string name="date_time_fmt" msgid="1642972650061946484">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
-    <string name="repeats_label" msgid="7414023871434593196">"Kordamine"</string>
-    <string name="no_title_label" msgid="302177118061368042">"(Pealkiri puudub)"</string>
-  <plurals name="Nminutes">
-    <item quantity="one" msgid="4871052965772159239">"1 minut"</item>
-    <item quantity="other" msgid="5644461630927544936">"<xliff:g id="COUNT">%d</xliff:g> minutit"</item>
-  </plurals>
-  <plurals name="Nmins">
-    <item quantity="one" msgid="9191090668359663663">"1 min"</item>
-    <item quantity="other" msgid="9175648445939148974">"<xliff:g id="COUNT">%d</xliff:g> min"</item>
-  </plurals>
-  <plurals name="Nhours">
-    <item quantity="one" msgid="4793697728599296830">"1 tund"</item>
-    <item quantity="other" msgid="4477841052001760620">"<xliff:g id="COUNT">%d</xliff:g> tundi"</item>
-  </plurals>
-  <plurals name="Ndays">
-    <item quantity="one" msgid="5988137255732166573">"1 päev"</item>
-    <item quantity="other" msgid="1709378992389618261">"<xliff:g id="COUNT">%d</xliff:g> päeva"</item>
-  </plurals>
-  <plurals name="weekN">
-    <item quantity="other" msgid="8085184869561028365">"Nädal: <xliff:g id="COUNT">%d</xliff:g>"</item>
-  </plurals>
-    <string name="calendar_refresh" msgid="6172731193680500025">"Värskenda"</string>
-    <string name="show_day_view" msgid="5782512782605466016">"Kuva päev"</string>
-    <string name="agenda_view" msgid="5566084759423843245">"Päevakord"</string>
-    <string name="day_view" msgid="4467754504843584437">"Päev"</string>
-    <string name="week_view" msgid="6775043022159508060">"Nädal"</string>
-    <string name="month_view" msgid="7287101431749285412">"Kuu"</string>
-    <string name="event_view" msgid="7621353079385122317">"Kuva sündmus"</string>
-    <string name="event_create" msgid="6941040556709110617">"Uus sündmus"</string>
-    <string name="event_edit" msgid="4006961928830064662">"Muuda sündmust"</string>
-    <string name="event_delete" msgid="2386667193277770442">"Kustuta sündmus"</string>
-    <string name="goto_today" msgid="9162136434410891230">"Täna"</string>
-    <string name="menu_preferences" msgid="9120238479503233925">"Seaded"</string>
-    <string name="menu_select_visible_calendars" msgid="735670432781741817">"Kuvatavad kalendrid"</string>
-    <string name="search" msgid="550656004486017426">"Otsing"</string>
-    <string name="hide_controls" msgid="830320505938520882">"Peida juhtelemendid"</string>
-    <string name="show_controls" msgid="715520586028062621">"Kuva juhtelement"</string>
-    <string name="select_visible_calendars_title" msgid="7944393060991949882">"Kuvatavad kalendrid"</string>
-    <string name="synced" msgid="7913940305983383493">"sünkroonitud"</string>
-    <string name="not_synced" msgid="4275114941801829419">"pole sünkroonitud"</string>
-    <string name="acct_not_synced" msgid="6126800985681230627">"Seda kontot ei sünkroonita, seega ei pruugi teie kalendrid olla värskendatud."</string>
-    <string name="accounts" msgid="849401841083180306">"Kontod ja sünkroonimine"</string>
-    <string name="select_synced_calendars_title" msgid="7916084873075901448">"Sünkroonitavad kalendrid"</string>
-    <string name="select_synced_calendars_button" msgid="8890542984949996251">"Sünkroonitavad kalendrid"</string>
-    <string name="hint_what" msgid="709155115005044531">"Sündmuse nimi"</string>
-    <string name="hint_where" msgid="4972598001033801974">"Asukoht"</string>
-    <string name="hint_description" msgid="1910143586169033232">"Kirjeldus"</string>
-    <string name="hint_attendees" msgid="1650488163176888480">"Külalised"</string>
-    <string name="creating_event" msgid="7516249252554059980">"Sündmus on loodud."</string>
-    <string name="saving_event" msgid="7694181017411177226">"Sündmus on salvestatud."</string>
-    <string name="empty_event" msgid="9018699257414338634">"Tühja sündmust ei loodud."</string>
-    <string name="creating_event_with_guest" msgid="5758688413124191931">"Kutsed saadetakse."</string>
-    <string name="saving_event_with_guest" msgid="9184584438475689577">"Värskendused saadetakse."</string>
-    <string name="create_event_dialog_save" msgid="1080859798521717414">"Salvesta"</string>
-    <string name="alert_title" msgid="7869592820853066853">"Kalendriteadistused"</string>
-    <string name="event_info_title" msgid="56024222340421620">"Sündmuse vaatamine"</string>
-    <string name="event_info_title_invite" msgid="9160326363769403865">"Koosolekukutse"</string>
-    <string name="edit_event_to_label" msgid="795012981218062421">"Kuni"</string>
-    <string name="edit_event_from_label" msgid="174999102612666115">"Alates"</string>
-    <string name="edit_event_all_day_label" msgid="6200181113992136073">"Kogu päev"</string>
-    <string name="edit_event_calendar_label" msgid="4556498359505856900">"Kalender"</string>
-    <string name="edit_event_show_all" msgid="4558049350756058301">"Kuva kõik"</string>
-    <string name="description_label" msgid="7193475046717505855">"Kirjeldus"</string>
-    <string name="presence_label" msgid="6169724148441175862">"Kuva mind olekus"</string>
-    <string name="privacy_label" msgid="9215031965259597335">"Privaatsus"</string>
-    <string name="reminders_label" msgid="7292389181815525676">"Lisa meeldetuletus"</string>
-    <string name="no_syncable_calendars" msgid="7019488867045436129">"Kalendrid puuduvad"</string>
-    <string name="no_calendars_found" msgid="8968682716053492187">"Enne kui saate lisada sündmusi, peate seadmesse lisama vähemalt ühe kalendri konto ja muutma kalendri nähtavaks. Konto lisamiseks puudutage käsku Lisa konto (kui lisasite äsja konto, oodake, kuni see lõpetab sünkroonimise, ja proovige uuesti). Teise võimalusena puudutage käsku Tühista ja veenduge, et vähemalt üks kalender on nähtav."</string>
-    <string name="create_an_account_desc" msgid="7249605109240576895">"Calendar töötab Google\'i kontoga paremini.\n\n• Pääsete selle juurde igast veebibrauserist.\n• Varundage sündmusi turvaliselt."</string>
-    <string name="add_account" msgid="1669072099756774952">"Lisa konto"</string>
-    <string name="view_event_calendar_label" msgid="6126231656338241140">"Kalender:"</string>
-    <string name="view_event_organizer_label" msgid="2753151795647402277">"Korraldaja:"</string>
-    <string name="choose_event_color_label" msgid="2192923501857428854">"Vali sündmuse värv"</string>
-    <string name="event_color_picker_dialog_title" msgid="4631938661655159511">"Sündmuse värv"</string>
-    <string name="event_color_set_to_default" msgid="3447218820785647967">"Määra kalendrile vaikevärv"</string>
-    <string name="calendar_color_picker_dialog_title" msgid="3595509200561433667">"Kalendri värv"</string>
-    <string name="calendar_square_color_picker_description" msgid="7430468363525563483">"Värvivalija"</string>
-    <string name="view_event_response_label" msgid="8382281658458798329">"Kas osalete?"</string>
-    <string name="response_yes" msgid="2027484304899988350">"Jah"</string>
-    <string name="response_maybe" msgid="7791500973627841695">"Võib-olla"</string>
-    <string name="response_no" msgid="561911691884148136">"Ei"</string>
-    <string name="email_guests_label" msgid="8772030932155305903">"Külalistele meilimine"</string>
-    <string name="email_organizer_label" msgid="7178059542798074813">"Saatke korraldajale meil"</string>
-    <string name="email_picker_label" msgid="4808253965057791781">"Meili saatmine:"</string>
-    <string name="event_not_found" msgid="8356864185947582727">"Sündmust ei leitud."</string>
-    <string name="map_label" msgid="8795383535586556038">"Kaart"</string>
-    <string name="call_label" msgid="2960328220008869083">"Helista"</string>
-    <string name="quick_response_settings" msgid="6776151690686068278">"Kiirvastused"</string>
-    <string name="quick_response_settings_summary" msgid="7878304729027355604">"Vastuste muutmine"</string>
-    <string name="quick_response_settings_title" msgid="8966517107774567031">"Kiirvast. muutmine"</string>
-    <string name="quick_response_settings_edit_title" msgid="6260055523174081930">"Kiirvastus"</string>
-    <string name="quick_response_dialog_title" msgid="2681309456412199207">"Kiirvastuse valimine"</string>
-    <string name="quick_response_email_failed" msgid="5544066405231853245">"Meiliprogrammi leidmine ebaõnnestus"</string>
-  <string-array name="quick_response_defaults">
-    <item msgid="1524421198348168403">"Jääb paar minutit hiljaks."</item>
-    <item msgid="6215158751728689832">"Olge umbes 10 minuti pärast valmis."</item>
-    <item msgid="4485794001743679338">"Alusta ilma minuta."</item>
-    <item msgid="8036557974294987511">"Kahjuks ma ei jõua. Peame ajakava üle vaatama."</item>
-  </string-array>
-    <string name="quick_response_custom_msg" msgid="8792374208224108798">"Kirjutage ise …"</string>
-    <string name="event_info_organizer" msgid="9138683335394832629">"Korraldaja:"</string>
-    <string name="event_info_reminders_label" msgid="8913097552956388972">"Meeldetuletused"</string>
-    <string name="agenda_today" msgid="5965841338467422191">"TÄNA, <xliff:g id="DATE">%1$s</xliff:g>"</string>
-    <string name="agenda_yesterday" msgid="4170964206728599693">"EILE, <xliff:g id="DATE">%1$s</xliff:g>"</string>
-    <string name="agenda_tomorrow" msgid="3893625470780723605">"HOMME, <xliff:g id="DATE">%1$s</xliff:g>"</string>
-    <string name="loading" msgid="3772533493214331230">"Laadimine ..."</string>
-    <string name="show_older_events" msgid="5140647493681439926">"Puudutage enne vahemikku <xliff:g id="OLDEST_SEARCH_RANGE">%1$s</xliff:g> toimuvate sündmuste kuvamiseks"</string>
-    <string name="show_newer_events" msgid="2604638815440163080">"Puudutage pärast vahemikku <xliff:g id="NEWEST_SEARCH_RANGE">%1$s</xliff:g> toimuvate sündmuste vaatamiseks"</string>
-    <string name="search_title" msgid="8898015280250716254">"Otsimine minu kalendritest"</string>
-    <string name="edit_event_label" msgid="7413222956349977161">"Üksikasjad"</string>
-    <string name="edit_label" msgid="8934331258435656534">"Muutmine"</string>
-    <string name="delete_label" msgid="874742811918030739">"Kustuta"</string>
-    <string name="save_label" msgid="2133599104834432589">"Valmis"</string>
-    <string name="discard_label" msgid="2394623883289782541">"Tühista"</string>
-    <string name="snooze_all_label" msgid="4994488813124409077">"Lükka kõik edasi"</string>
-    <string name="dismiss_all_label" msgid="1834400025868091301">"Loobu kõigist"</string>
-    <string name="snooze_label" msgid="1515893621063224666">"Lükka edasi"</string>
-    <string name="does_not_repeat" msgid="1877681921029738999">"Ühekordne sündmus"</string>
-    <string name="endByDate" msgid="7654221304929538201">"; kuni <xliff:g id="DATE">%s</xliff:g>"</string>
-  <plurals name="endByCount">
-    <item quantity="one" msgid="3727754565990691816">"; ühe korra"</item>
-    <item quantity="other" msgid="4855496837834652446">"; <xliff:g id="NUMBER">%d</xliff:g> korda"</item>
-  </plurals>
-  <plurals name="daily">
-    <item quantity="one" msgid="5169052946627480942">"Iga päev"</item>
-    <item quantity="other" msgid="5455230727715859264">"Iga <xliff:g id="NUMBER">%d</xliff:g> päeva järel"</item>
-  </plurals>
-    <string name="every_weekday" msgid="5896574838353902978">"Igal tööpäeval (E–R)"</string>
-  <plurals name="weekly">
-    <item quantity="one" msgid="5463021019301453273">"Iga nädal: <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
-    <item quantity="other" msgid="2857390143157377867">"Iga <xliff:g id="NUMBER">%1$d</xliff:g> nädala tagant: <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
-  </plurals>
-    <string name="monthly" msgid="4587116285383048586">"Iga kuu"</string>
-    <string name="yearly_plain" msgid="3652692085322162449">"Iga aasta"</string>
-    <string name="monthly_on_day" msgid="5370155265278821156">"Igakuine (<xliff:g id="DAY_OF_MONTH">%s</xliff:g>. kuupäeval)"</string>
-    <string name="yearly" msgid="8576208380302949002">"Iga-aastane (<xliff:g id="DATES">%s</xliff:g>)"</string>
-    <string name="custom" product="tablet" msgid="3806817351377723249">"Kohandatud (ei saa kohandada tahvelarvutile)"</string>
-    <string name="custom" product="default" msgid="4137468716966004993">"Kohandatud (ei saa kohandada telefonis)"</string>
-    <string name="modify_event" msgid="5982876409997142690">"Muutke ainult seda sündmust"</string>
-    <string name="modify_all" msgid="4421657265864209041">"Muutke kõiki seeria sündmusi"</string>
-    <string name="modify_all_following" msgid="3017428541066390380">"Muuda seda sündmust ja kõiki tulevasi sündmusi."</string>
-    <string name="new_event_dialog_label" msgid="7553105224561147916">"Uus sündmus"</string>
-    <string name="new_event_dialog_option" msgid="6154657379574669371">"Uus sündmus"</string>
-    <string name="delete_this_event_title" msgid="518402946676919384">"Kas kustutada see sündmus?"</string>
-    <string name="delete_recurring_event_title" msgid="5609046778422180206">"Kas kustutada <xliff:g id="EVENTTITLE">%s</xliff:g>?"</string>
-    <string name="change_response_title" msgid="7704714776070974984">"Muuda vastust"</string>
-    <string name="menu_general_preferences" msgid="2812705323334260708">"Üldseaded"</string>
-    <string name="menu_about_preferences" msgid="6124375438237674973">"Teave kalendri kohta"</string>
-    <string name="preferences_title" msgid="8045855493262131773">"Seaded"</string>
-    <string name="preferences_general_title" msgid="2069075513760573117">"Kalendrivaate seade"</string>
-    <string name="preferences_reminder_title" msgid="5199606534191180129">"Märguanded ja meeldetuletused"</string>
-    <string name="preferences_hide_declined_title" msgid="1849295943669890034">"Peida tagasilükatud sündmused"</string>
-    <string name="preferences_week_start_day_title" msgid="4619489296444901622">"Nädala algus:"</string>
-    <string name="preferences_week_start_day_dialog" msgid="5181634128884089113">"Nädala algus:"</string>
-    <string name="preferences_clear_search_history_title" msgid="6619916370215282982">"Otsinguajaloo kustutamine"</string>
-    <string name="preferences_clear_search_history_summary" msgid="7864674093455778158">"Eemaldage kõik tehtud otsingud"</string>
-    <string name="search_history_cleared" msgid="1536707558435227567">"Otsinguajalugu on kustutatud."</string>
-    <string name="preferences_alerts_title" msgid="6636088008103904020">"Teatised"</string>
-    <string name="preferences_alerts_vibrateWhen_title" msgid="8731372580674292759">"Vibreerimine"</string>
-    <string name="preferences_alerts_ringtone_title" msgid="1849706055052358346">"Heli"</string>
-    <string name="preferences_alerts_popup_title" msgid="6643468203670475296">"Hüpikteatis"</string>
-    <string name="preferences_default_reminder_title" msgid="5188861433342733905">"Meeldetuletuse vaikeaeg"</string>
-    <string name="preferences_default_reminder_dialog" msgid="2490348857239323412">"Vaikimisi meeldetuletuse aeg"</string>
-    <string name="preferences_default_reminder_default" msgid="2903884416749959435">"10"</string>
-    <string name="preferences_use_home_tz_title" msgid="5597546849968598210">"Kodune ajavöönd"</string>
-    <string name="preferences_use_home_tz_descrip" msgid="4835375381297413746">"Kuvab reisides kalendrid ja sündmuste ajad koduse aja järgi"</string>
-    <string name="preferences_home_tz_title" msgid="6680000444088818578">"Kodune ajavöönd"</string>
-    <string name="preferences_show_week_num_title" msgid="5280734329664503461">"Nädala numbri kuvamine"</string>
-    <string name="preferences_about_title" msgid="2810624892412097879">"Teave"</string>
-    <string name="preferences_build_version" msgid="8242471883413502068">"Järguversioon"</string>
-    <string name="gadget_title" msgid="939918875331310945">"Kalender"</string>
-  <plurals name="month_more_events">
-    <item quantity="one" msgid="8971334808414201327">"+1"</item>
-    <item quantity="other" msgid="1997405398178470838">"+<xliff:g id="NUMBER">%d</xliff:g>"</item>
-  </plurals>
-    <string name="gadget_no_events" msgid="5209110911088302855">"Tulevasi kalendrisündmusi pole"</string>
-    <string name="preferences_experimental_category" msgid="8111213192001230350">"Eksperimentaalne"</string>
-    <string name="preferences_reminders_category" msgid="3179315692653755740">"Meeldetuletused"</string>
-    <string name="preferences_reminders_responded_label" msgid="1196570678238475838">"Jäta meeldetul. vahele"</string>
-    <string name="preferences_reminders_responded_dialog" msgid="1873289128793828352">"Jäta meeldetul. vahele"</string>
-    <string name="preferences_reminders_quiet_hours_label" msgid="8529712276644546893">"Vaikusetunnid"</string>
-    <string name="preferences_reminders_quiet_hours_description" msgid="65969073433791290">"Vaigista sündmuse meeldetuletused määratud ajal."</string>
-    <string name="preferences_reminders_quiet_hours_start" msgid="3433058529220285232">"Vaikusetundide alguse aeg"</string>
-    <string name="preferences_reminders_quiet_hours_end" msgid="7492883554865119346">"Vaikusetundide lõpu aeg"</string>
-    <string name="preferences_debug_category" msgid="6203278208385095018">"Silumine"</string>
-    <string name="copy_db" msgid="437691290566699292">"Saatke andmebaas"</string>
-    <string name="directory_searching_fmt" msgid="1232037509095606687">"Domeeni <xliff:g id="DOMAIN">%s</xliff:g> otsimine ..."</string>
-    <string name="accessibility_remove_attendee" msgid="7082751172654698863">"Eemalda osaleja"</string>
-    <string name="accessibility_pick_start_date" msgid="3926641487042699037">"Alguskuupäev"</string>
-    <string name="accessibility_pick_start_time" msgid="4913428100936555149">"Algusaeg"</string>
-    <string name="accessibility_pick_end_date" msgid="5624250196618643922">"Lõppkuupäev"</string>
-    <string name="accessibility_pick_end_time" msgid="7120310166355224941">"Lõppaeg"</string>
-    <string name="accessibility_pick_time_zone" msgid="7155465783500323811">"Ajavöönd"</string>
-    <string name="accessibility_pick_recurrence" msgid="1834311617874828931">"Korduv sündmus"</string>
-    <string name="accessibility_add_reminder" msgid="2267950744060950152">"Lisa meeldetuletus"</string>
-    <string name="accessibility_remove_reminder" msgid="5261609343259665139">"Eemalda meeldetuletus"</string>
-    <string name="accessibility_add_attendee" msgid="5654014177472600916">"Lisa osaleja"</string>
-    <string name="accessibility_sync_cal" msgid="6506181885764723383">"Sünkrooni kalender"</string>
-    <string name="accessibility_all_day" msgid="4146955438811915282">"Kogupäevasündmus"</string>
-    <string name="accessibility_repeats" msgid="1629279916830919582">"Kordamine"</string>
-    <string name="accessibility_reminder_time" msgid="3594100545814579575">"Meeldetuletuse aeg"</string>
-    <string name="accessibility_reminder_type" msgid="5339120699701437227">"Meeldetuletuse tüüp"</string>
-    <string name="accessibility_reminder_showmeas" msgid="6669129015980006570">"Kuva mind olekus"</string>
-    <string name="accessibility_reminder_privacy" msgid="8669288484484022771">"Privaatsus"</string>
-    <string name="acessibility_cal_notification" msgid="7267601064994839394">"Kalendriteatised"</string>
-    <string name="acessibility_snooze_notification" msgid="5007852779125102681">"Lükka teatis edasi"</string>
-    <string name="accessibility_email_notification" msgid="9124064701968129831">"Saada külalistele meil"</string>
-    <string name="day_view_new_event_hint" msgid="2131483437911536229">"+ Uus sündmus"</string>
-    <string name="template_announce_item_index" msgid="4067877800670753110">"Sündmus <xliff:g id="ITEM_INDEX">%1$s</xliff:g>/<xliff:g id="ITEM_COUNT">%2$s</xliff:g>."</string>
-  <plurals name="Nevents">
-    <item quantity="one" msgid="5230907142214104485">"1 sündmus"</item>
-    <item quantity="other" msgid="6093072093209431078">"<xliff:g id="COUNT">%d</xliff:g> sündmust"</item>
-  </plurals>
-  <plurals name="N_remaining_events">
-    <item quantity="one" msgid="431585781647034528">"+1 sündmus"</item>
-    <item quantity="other" msgid="3609243840882275136">"+<xliff:g id="COUNT">%d</xliff:g> sündmust"</item>
-  </plurals>
-    <string name="acessibility_selected_marker_description" msgid="3010149843148810768">"Valitud sündmus"</string>
-    <string name="do_not_check" msgid="7815441673853466129">"ÄRGE märkige -&gt;"</string>
-    <string name="recurrence_dialog_title" msgid="8093909645557717483">"Kordamine"</string>
-    <string name="recurrence_dialog_title_never" msgid="2679396029776590130">"Ei kordu kunagi"</string>
-  <plurals name="recurrence_interval_daily">
-    <item quantity="one" msgid="1205422710088692631">"Iga <xliff:g id="COUNT">%d</xliff:g> päeva tagant"</item>
-    <item quantity="other" msgid="707566499994398250">"Iga <xliff:g id="COUNT">%d</xliff:g> päeva tagant"</item>
-  </plurals>
-  <plurals name="recurrence_interval_weekly">
-    <item quantity="one" msgid="4948681635464488351">"Iga <xliff:g id="COUNT">%d</xliff:g> nädala tagant"</item>
-    <item quantity="other" msgid="7094801039989237061">"Iga <xliff:g id="COUNT">%d</xliff:g> nädala tagant"</item>
-  </plurals>
-  <plurals name="recurrence_interval_monthly">
-    <item quantity="one" msgid="4768178401603139718">"Iga <xliff:g id="COUNT">%d</xliff:g> kuu tagant"</item>
-    <item quantity="other" msgid="5419723710346646523">"Iga <xliff:g id="COUNT">%d</xliff:g> kuu tagant"</item>
-  </plurals>
-  <plurals name="recurrence_interval_yearly">
-    <item quantity="one" msgid="5819562634008179102">"Iga <xliff:g id="COUNT">%d</xliff:g> aasta tagant"</item>
-    <item quantity="other" msgid="5678653649746562060">"Iga <xliff:g id="COUNT">%d</xliff:g> aasta tagant"</item>
-  </plurals>
-    <string name="recurrence_month_pattern_by_day" msgid="4400107556121003459">"iga kuu samal päeval"</string>
-    <string name="recurrence_end_continously" msgid="6898950241634912991">"Igavesti"</string>
-    <string name="recurrence_end_date_label" msgid="4142791438636994952">"Kuni kuupäevani"</string>
-    <string name="recurrence_end_date" msgid="3693751578164711701">"Kuni <xliff:g id="DATE">%s</xliff:g>"</string>
-    <string name="recurrence_end_count_label" msgid="1233883668293087977">"Sündmust korratakse"</string>
-  <plurals name="recurrence_end_count">
-    <item quantity="one" msgid="1400782968090516215">"<xliff:g id="EVENT_COUNT">%d</xliff:g> sündmuse puhul"</item>
-    <item quantity="other" msgid="8779598489398048259">"<xliff:g id="EVENT_COUNT">%d</xliff:g> sündmuse puhul"</item>
-  </plurals>
-    <string name="acessibility_recurrence_choose_end_date_description" msgid="5899029840837836711">"lõppkuupäeva muutmine"</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- This is the label underneath the icon for Calendar -->
+	<string name="app_label">"Kalender"</string>
+	<!-- This is the label for the title or name of an event -->
+	<string name="what_label">"Mis?"</string>
+	<!-- This is the label for the location of an event -->
+	<string name="where_label">"Kus"</string>
+	<!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+	<string name="when_label">"Millal?"</string>
+	<!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+	<string name="timezone_label">"Ajavöönd"</string>
+	<!-- This is the label for the Guests/Attendees of an event -->
+	<string name="attendees_label">"Külalised"</string>
+	<!-- Text to show when an event starts on the current day -->
+	<string name="today">"Täna"</string>
+	<!-- Text to show when an event starts on the next day -->
+	<string name="tomorrow">"Homme"</string>
+	<!-- Text for an event starting on the current day with a start and end time. For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="today_at_time_fmt">"Täna kell <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+	<!-- Text for an event starting on the next day with a start and end time. For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="tomorrow_at_time_fmt">"Homme kell <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+	<!--translate [date_time_fmt] from sourcecode xml -->
+	<string msgid="1642972650061946484" name="date_time_fmt">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+	<!-- Some events repeat daily, weekly, monthly, or yearly. This is the label for all the choices about how often an event repeats (including the choice of not repeating). -->
+	<string name="repeats_label">"Kordamine"</string>
+	<!--translate [no_title_label] from sourcecode xml -->
+	<string msgid="302177118061368042" name="no_title_label">"(Pealkiri puudub)"</string>
+	<plurals name="Nminutes">
+		<!-- Reminder format strings  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 minut"</item>
+		<!-- Reminder format strings  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> minutit"</item>
+	</plurals>
+	<plurals name="Nmins">
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 min"</item>
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> min"</item>
+	</plurals>
+	<plurals name="Nhours">
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a 1-hour reminder. -->
+		<item quantity="one">"1 tund"</item>
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a reminder of 2 or more hours. The actual number of hours is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> tundi"</item>
+	</plurals>
+	<plurals name="Ndays">
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 1 day. -->
+		<item quantity="one">"1 päev"</item>
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 2 or more days. The actual number of days is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> päeva"</item>
+	</plurals>
+	<plurals name="weekN">
+		<!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1"  Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+		<item quantity="other">"Nädal: <xliff:g id="COUNT">%d</xliff:g>"</item>
+	</plurals>
+	<!-- This is a label on a context menu item. Pressing this menu item to initiate syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+	<string name="calendar_refresh">"Värskenda"</string>
+	<!-- This is a label on a context menu item. Pressing this menu item displays the Agenda view.   This is a label on a context menu item. Pressing this menu item displays the Day view. -->
+	<string name="show_day_view">"Kuva päev"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Agenda view. -->
+	<string name="agenda_view">"Päevakord"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Day view. -->
+	<string name="day_view">"Päev"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Week view. -->
+	<string name="week_view">"Nädal"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Month view. -->
+	<string name="month_view">"Kuu"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the details of an event. -->
+	<string name="event_view">"Kuva sündmus"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to create a new event. -->
+	<string name="event_create">"Uus sündmus"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to edit or change an existing event. -->
+	<string name="event_edit">"Muuda sündmust"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to delete an existing event. -->
+	<string name="event_delete">"Kustuta sündmus"</string>
+	<!-- This is a label on a menu item. Pressing this menu item takes the user to the current day (today) in whatever view (Day view, Week view, Agenda view, Month view) they are currently in. -->
+	<string name="goto_today">"Täna"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to see the list of calendars that he is viewing and to then add or remove selected calendars.   This is a label on a menu item. Pressing this menu item allows the user to view and edit his Settings (or Preferences) -->
+	<string name="menu_preferences">"Seaded"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="menu_select_visible_calendars">"Kuvatavad kalendrid"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="search">"Otsing"</string>
+	<!-- This is a label on a menu item. Pressing this menu item hides the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="hide_controls">"Peida juhtelemendid"</string>
+	<!-- This is a label on a menu item. Pressing this menu item shows the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="show_controls">"Kuva juhtelement"</string>
+	<!-- Title of "My calendars" screen -->
+	<string name="select_visible_calendars_title">"Kuvatavad kalendrid"</string>
+	<!-- Synced and visible status message   Synced but not visible status message   not Synced or visible status message   Synced status message displayed when the given calendar is stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="synced">"sünkroonitud"</string>
+	<!-- Not synced status message displayed when the given calendar is not stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="not_synced">"pole sünkroonitud"</string>
+	<!-- Message displayed to user when an account with Calendars is not being auto-synced [CHAR LIMIT=120]-->
+	<string name="acct_not_synced">"Seda kontot ei sünkroonita, seega ei pruugi teie kalendrid olla värskendatud."</string>
+	<!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+	<string name="accounts">"Kontod ja sünkroonimine"</string>
+	<!-- Select Synced Calendars activity   Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_title">"Sünkroonitavad kalendrid"</string>
+	<!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_button">"Sünkroonitavad kalendrid"</string>
+	<!-- The title of the screen where the user edits an event [CHAR LIMIT=17]   Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+	<string name="hint_what">"Sündmuse nimi"</string>
+	<!--translate [hint_where] from sourcecode xml -->
+	<string msgid="4972598001033801974" name="hint_where">"Asukoht"</string>
+	<!--translate [hint_description] from sourcecode xml -->
+	<string msgid="1910143586169033232" name="hint_description">"Kirjeldus"</string>
+	<!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+	<string name="hint_attendees">"Külalised"</string>
+	<!--translate [creating_event] from sourcecode xml -->
+	<string msgid="7516249252554059980" name="creating_event">"Sündmus on loodud."</string>
+	<!--translate [saving_event] from sourcecode xml -->
+	<string msgid="7694181017411177226" name="saving_event">"Sündmus on salvestatud."</string>
+	<!--translate [empty_event] from sourcecode xml -->
+	<string msgid="9018699257414338634" name="empty_event">"Tühja sündmust ei loodud."</string>
+	<!--translate [creating_event_with_guest] from sourcecode xml -->
+	<string msgid="5758688413124191931" name="creating_event_with_guest">"Kutsed saadetakse."</string>
+	<!--translate [saving_event_with_guest] from sourcecode xml -->
+	<string msgid="9184584438475689577" name="saving_event_with_guest">"Värskendused saadetakse."</string>
+	<!--translate [create_event_dialog_save] from sourcecode xml -->
+	<string msgid="1080859798521717414" name="create_event_dialog_save">"Salvesta"</string>
+	<!-- the title of the alert/notification activity -->
+	<string name="alert_title">"Kalendriteadistused"</string>
+	<!-- This is the title of the screen used to view the details of an event -->
+	<string name="event_info_title">"Sündmuse vaatamine"</string>
+	<!-- This is the title of the screen used to view the details of an invitation to a meeting or event -->
+	<string name="event_info_title_invite">"Koosolekukutse"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'end date'. -->
+	<string name="edit_event_to_label">"Kuni"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'start date'. -->
+	<string name="edit_event_from_label">"Alates"</string>
+	<!-- Check box label that specifies if this is an all-day event -->
+	<string name="edit_event_all_day_label">"Kogu päev"</string>
+	<!-- Label for choosing one of the calendars -->
+	<string name="edit_event_calendar_label">"Kalender"</string>
+	<!--translate [edit_event_show_all] from sourcecode xml -->
+	<string msgid="4558049350756058301" name="edit_event_show_all">"Kuva kõik"</string>
+	<!-- Label for the event description -->
+	<string name="description_label">"Kirjeldus"</string>
+	<!-- Label for the 'Presence' of an event, which can be either 'busy' (the default) or 'available' [CHAR LIMIT=15] -->
+	<string name="presence_label">"Kuva mind olekus"</string>
+	<!-- Label for the 'Privacy' of an event, which can be either 'private' or 'public' [CHAR LIMIT=15] -->
+	<string name="privacy_label">"Privaatsus"</string>
+	<!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+	<string name="reminders_label">"Lisa meeldetuletus"</string>
+	<!-- Title of alert shown if the user tries to create an event and has no calendars -->
+	<string name="no_syncable_calendars">"Kalendrid puuduvad"</string>
+	<!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+	<string name="no_calendars_found">"Enne kui saate lisada sündmusi, peate seadmesse lisama vähemalt ühe kalendri konto ja muutma kalendri nähtavaks. Konto lisamiseks puudutage käsku Lisa konto (kui lisasite äsja konto, oodake, kuni see lõpetab sünkroonimise, ja proovige uuesti). Teise võim</string>
+	<!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+	<string name="create_an_account_desc">"Calendar töötab Google\'i kontoga paremini."\n\n"• Pääsete selle juurde igast veebibrauserist."\n"• Varundage sündmusi turvaliselt."</string>
+	<!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+	<string name="add_account">"Lisa konto"</string>
+	<!--translate [view_event_calendar_label] from sourcecode xml -->
+	<string msgid="6126231656338241140" name="view_event_calendar_label">"Kalender:"</string>
+	<!-- Label for the event organizer -->
+	<string name="view_event_organizer_label">"Organiser"</string>
+	<!--translate [choose_event_color_label] from sourcecode xml -->
+	<string msgid="2192923501857428854" name="choose_event_color_label">"Vali sündmuse värv"</string>
+	<!--translate [event_color_picker_dialog_title] from sourcecode xml -->
+	<string msgid="4631938661655159511" name="event_color_picker_dialog_title">"Sündmuse värv"</string>
+	<!--translate [event_color_set_to_default] from sourcecode xml -->
+	<string msgid="3447218820785647967" name="event_color_set_to_default">"Määra kalendrile vaikevärv"</string>
+	<!--translate [calendar_color_picker_dialog_title] from sourcecode xml -->
+	<string msgid="3595509200561433667" name="calendar_color_picker_dialog_title">"Kalendri värv"</string>
+	<!--translate [calendar_square_color_picker_description] from sourcecode xml -->
+	<string msgid="7430468363525563483" name="calendar_square_color_picker_description">"Värvivalija"</string>
+	<!-- Label for whether the user is attending this event. This is shown when a user is invited to a meeting or event. The possible answers are 'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+	<string name="view_event_response_label">"Kas osalete?"</string>
+	<!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+	<string name="response_yes">"Jah"</string>
+	<!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+	<string name="response_maybe">"Võib-olla"</string>
+	<!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+	<string name="response_no">"Ei"</string>
+	<!-- Label for emailing attendees -->
+	<string name="email_guests_label">"Külalistele meilimine"</string>
+	<!--translate [email_organizer_label] from sourcecode xml -->
+	<string msgid="7178059542798074813" name="email_organizer_label">"Saatke korraldajale meil"</string>
+	<!-- This is shown in the popup picker when emailing attendees -->
+	<string name="email_picker_label">"Meili saatmine:"</string>
+	<!--translate [event_not_found] from sourcecode xml -->
+	<string msgid="8356864185947582727" name="event_not_found">"Sündmust ei leitud."</string>
+	<!--translate [map_label] from sourcecode xml -->
+	<string msgid="8795383535586556038" name="map_label">"Kaart"</string>
+	<!--translate [call_label] from sourcecode xml -->
+	<string msgid="2960328220008869083" name="call_label">"Helista"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings">"Kiirvastused"</string>
+	<!-- Summary of the quick response item in Settings [CHAR LIMIT=80]-->
+	<string name="quick_response_settings_summary">"Vastuste muutmine"</string>
+	<!-- Title of the quick response screen in Settings->Quick Response [CHAR LIMIT=27]-->
+	<string name="quick_response_settings_title">"Kiirvast. muutmine"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings_edit_title">"Kiirvastus"</string>
+	<!-- Title of the dialog prompting the user choose a response when emailing guests [CHAR LIMIT=none]-->
+	<string name="quick_response_dialog_title">"Kiirvastuse valimine"</string>
+	<!-- Error to user when an email program can't be found[CHAR LIMIT=none]-->
+	<string name="quick_response_email_failed">"Meiliprogrammi leidmine ebaõnnestus"</string>
+	<string-array name="quick_response_defaults">
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"I\'ll be a few minutes late."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"I\'ll be there in about 10 minutes."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Alusta ilma minuta."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Kahjuks ma ei jõua. Peame ajakava üle vaatama."</item>
+	</string-array>
+	<!--translate [quick_response_custom_msg] from sourcecode xml -->
+	<string msgid="8792374208224108798" name="quick_response_custom_msg">"Kirjutage ise …"</string>
+	<!-- Event Info strings  Time Zone Label [CHAR LIMIT=12]  Repetition Label [CHAR LIMIT=12]  Organizer Label [CHAR LIMIT=12]-->
+	<string name="event_info_organizer">"Korraldaja:"</string>
+	<!-- Reminders label [CHAR LIMIT=15]-->
+	<string name="event_info_reminders_label">"Meeldetuletused"</string>
+	<!--translate [agenda_today] from sourcecode xml -->
+	<string msgid="5965841338467422191" name="agenda_today">"TÄNA, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_yesterday">"EILE, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_tomorrow">"HOMME, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown while the calendar events are being loading to the screen. -->
+	<string name="loading">"Laadimine ..."</string>
+	<!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+	<string name="show_older_events">"Puudutage enne vahemikku <xliff:g id="OLDEST_SEARCH_RANGE">%1$s</xliff:g> toimuvate sündmuste kuvamiseks"</string>
+	<!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+	<string name="show_newer_events">"Puudutage pärast vahemikku <xliff:g id="NEWEST_SEARCH_RANGE">%1$s</xliff:g> toimuvate sündmuste vaatamiseks"</string>
+	<!-- Title of the search screen [CHAR LIMIT=30] -->
+	<string name="search_title">"Otsimine minu kalendritest"</string>
+	<!-- This is the title of a popup window that is displayed when the user edits a repeating event. [CHAR LIMIT=20]-->
+	<string name="edit_event_label">"Üksikasjad"</string>
+	<!-- This is a menu button for switching into edit mode when viewing an event. [CHAR LIMIT=10] -->
+	<string name="edit_label">"Muutmine"</string>
+	<!-- The button label for deleting an event -->
+	<string name="delete_label">"Kustuta"</string>
+	<!-- A menu item for deleting an event   The button label for saving an event -->
+	<string name="save_label">"Valmis"</string>
+	<!-- The button label for discarding changes to an event -->
+	<string name="discard_label">"Tühista"</string>
+	<!-- The button label for making the reminder alarms go away temporarily. The reminder alarms will fire off again in 5 minutes. -->
+	<string name="snooze_all_label">"Lükka kõik edasi"</string>
+	<!-- The button label for dismissing all the current reminder alarms. This causes them to disappear from the notification screen. -->
+	<string name="dismiss_all_label">"Loobu kõigist"</string>
+	<!-- The button label for making the reminder alarms go away temporarily and re-fire in 5 minutes. [CHAR LIMIT=12]-->
+	<string name="snooze_label">"Lükka edasi"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event does not repeat -->
+	<string name="does_not_repeat">"Ühekordne sündmus"</string>
+	<!--translate [endByDate] from sourcecode xml -->
+	<string msgid="7654221304929538201" name="endByDate">"; kuni <xliff:g id="DATE">%s</xliff:g>"</string>
+	<!-- plurals name="endByCount" from sourcecode xml -->
+	<plurals name="endByCount">
+		<item quantity="one">"; ühe korra"</item>
+		<item quantity="other">"; <xliff:g id="NUMBER">%d</xliff:g> korda"</item>
+	</plurals>
+	<!-- plurals name="daily" from sourcecode xml -->
+	<plurals name="daily">
+		<item quantity="one">"Iga päev"</item>
+		<item quantity="other">"Iga <xliff:g id="NUMBER">%d</xliff:g> päeva järel"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats daily -->
+	<string name="daily">"Iga päev"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats every weekday (Monday through Friday) -->
+	<string name="every_weekday">"Igal tööpäeval (E–R)"</string>
+	<!-- plurals name="weekly" from sourcecode xml -->
+	<plurals name="weekly">
+		<item quantity="one">"Iga nädal: <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+		<item quantity="other">"Iga <xliff:g id="NUMBER">%1$d</xliff:g> nädala tagant: <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats weekly on some day of the week. For example, 'Weekly (every Tuesday)'. -->
+	<string name="weekly">"Iganädalane (iga <xliff:g id="DAYS_OF_WEEK">%s</xliff:g>)"</string>
+	<!-- Example: 'Monthly (every first Sunday)'   1st parameter is an ordinal number, like 'first'   2nd parameter is a day of the week, like 'Sunday' -->
+	<string name="monthly_on_day_count">"Igakuine (iga <xliff:g id="ORDINAL_NUMBER">%1$s</xliff:g> <xliff:g id="DAY_OF_WEEK">%2$s</xliff:g>)"</string>
+	<!-- The common portion of a string describing how often an event repeats, example: 'Monthly (on day 2)' -->
+	<string name="monthly">"Iga kuu"</string>
+	<!-- Calendar spinner item, to select that an event recurs every year. -->
+	<string name="yearly_plain">"Iga aasta"</string>
+	<!-- Example: "Monthly (on day 15)" -->
+	<string name="monthly_on_day">"Igakuine (<xliff:g id="DAY_OF_MONTH">%s</xliff:g>. kuupäeval)"</string>
+	<!-- Example: "Yearly (on April 15)" -->
+	<string name="yearly">"Iga-aastane (<xliff:g id="DATES">%s</xliff:g>)"</string>
+	<!--translate [custom] from sourcecode xml -->
+	<string msgid="3806817351377723249" name="custom" product="tablet">"Kohandatud (ei saa kohandada tahvelarvutile)"</string>
+	<!--translate [modify_event] from sourcecode xml -->
+	<string msgid="5982876409997142690" name="modify_event">"Muutke ainult seda sündmust"</string>
+	<!--translate [modify_all] from sourcecode xml -->
+	<string msgid="4421657265864209041" name="modify_all">"Muutke kõiki seeria sündmusi"</string>
+	<!--translate [modify_all_following] from sourcecode xml -->
+	<string msgid="3017428541066390380" name="modify_all_following">"Muuda seda sündmust ja kõiki tulevasi sündmusi."</string>
+	<!-- Dialogs   This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_label">"Uus sündmus"</string>
+	<!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_option">"Uus sündmus"</string>
+	<!--translate [delete_this_event_title] from sourcecode xml -->
+	<string msgid="518402946676919384" name="delete_this_event_title">"Kas kustutada see sündmus?"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event that is recurring. The user still has a chance to cancel this operation. -->
+	<string name="delete_recurring_event_title">"Kas kustutada <xliff:g id="EVENTTITLE">%s</xliff:g>?"</string>
+	<!-- This is the title of a popup dialog that asks for confirmation before changing the response to an invitation. -->
+	<string name="change_response_title">"Muuda vastust"</string>
+	<!-- This the title of a menu for General Preferences. Pressing the menu item lets user to view and edit his general settings (or preferences) [CHAR LIMIT=30] -->
+	<string name="menu_general_preferences">"Üldseaded"</string>
+	<!-- This the title of a menu for "About Calendar" Preferences. Pressing the menu item lets user to view the current settings [CHAR LIMIT=30] -->
+	<string name="menu_about_preferences">"Teave kalendri kohta"</string>
+	<!-- This is the title of the screen for setting user preferences. -->
+	<string name="preferences_title">"Seaded"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to viewing calendar events -->
+	<string name="preferences_general_title">"Kalendrivaate seade"</string>
+	<!--translate [preferences_reminder_title] from sourcecode xml -->
+	<string msgid="5199606534191180129" name="preferences_reminder_title">"Märguanded ja meeldetuletused"</string>
+	<!-- Settings check box label to hide events that the user has declined to attend -->
+	<string name="preferences_hide_declined_title">"Peida tagasilükatud sündmused"</string>
+	<!-- Settings week start label to start week on specific day-->
+	<string name="preferences_week_start_day_title">"Nädala algus:"</string>
+	<!-- Title of popup for week start day setting-->
+	<string name="preferences_week_start_day_dialog">"Nädala algus:"</string>
+	<!-- no translation found for preferences_week_start_day_default -->
+	<skip />
+	<!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+	<string name="preferences_clear_search_history_title">"Otsinguajaloo kustutamine"</string>
+	<!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+	<string name="preferences_clear_search_history_summary">"Eemaldage kõik tehtud otsingud"</string>
+	<!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+	<string name="search_history_cleared">"Otsinguajalugu on kustutatud."</string>
+	<!-- Settings check box label to enable or disable notifications -->
+	<string name="preferences_alerts_title">"Teadistused"</string>
+	<!-- Settings dialog label that specifies when the phone should vibrate -->
+	<string name="preferences_alerts_vibrateWhen_title">"Vibreerimine"</string>
+	<!--translate [preferences_alerts_ringtone_title] from sourcecode xml -->
+	<string msgid="1849706055052358346" name="preferences_alerts_ringtone_title">"Heli"</string>
+	<!-- Title of check box label to enable or disable pop-up notifications -->
+	<string name="preferences_alerts_popup_title">"Hüpikteatis"</string>
+	<!-- List item label for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_title">"Meeldetuletuse vaikeaeg"</string>
+	<!-- Title of dialog for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_dialog">"Vaikimisi meeldetuletuse aeg"</string>
+	<!-- Default value for the number of reminder minutes -->
+	<string name="preferences_default_reminder_default">"10"</string>
+	<!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+	<string name="preferences_use_home_tz_title">"Kodune ajavöönd"</string>
+	<!--translate [preferences_use_home_tz_descrip] from sourcecode xml -->
+	<string msgid="4835375381297413746" name="preferences_use_home_tz_descrip">"Kuvab reisides kalendrid ja sündmuste ajad koduse aja järgi"</string>
+	<!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+	<string name="preferences_home_tz_title">"Kodune ajavöönd"</string>
+	<!-- no translation found for preferences_home_tz_default -->
+	<skip />
+	<!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+	<string name="preferences_show_week_num_title">"Nädala numbri kuvamine"</string>
+	<!-- This is the title of a section in the Settings screen for "About" this application -->
+	<string name="preferences_about_title">"Teave"</string>
+	<!-- Build version of the application -->
+	<string name="preferences_build_version">"Järguversioon"</string>
+	<!-- Title for calendar gadget when displayed in list of all other gadgets -->
+	<string name="gadget_title">"Kalender"</string>
+	<plurals name="month_more_events">
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for 1 event, the quotes force a literal interpretation of the string [CHAR LIMIT = 10] -->
+		<item quantity="one">"+1"</item>
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for multiple events [CHAR LIMIT = 10] -->
+		<item quantity="other">""</item>
+	</plurals>
+	<!-- Caption to show on gadget when there are no upcoming calendar events -->
+	<string name="gadget_no_events">"Tulevasi kalendrisündmusi pole"</string>
+	<!-- no translation found for tardis -->
+	<skip />
+	<!--translate [preferences_experimental_category] from sourcecode xml -->
+	<string msgid="8111213192001230350" name="preferences_experimental_category">"Eksperimentaalne"</string>
+	<!--translate [preferences_reminders_category] from sourcecode xml -->
+	<string msgid="3179315692653755740" name="preferences_reminders_category">"Meeldetuletused"</string>
+	<!--translate [preferences_reminders_responded_label] from sourcecode xml -->
+	<string msgid="1196570678238475838" name="preferences_reminders_responded_label">"Jäta meeldetul. vahele"</string>
+	<!--translate [preferences_reminders_responded_dialog] from sourcecode xml -->
+	<string msgid="1873289128793828352" name="preferences_reminders_responded_dialog">"Jäta meeldetul. vahele"</string>
+	<!--translate [preferences_reminders_quiet_hours_label] from sourcecode xml -->
+	<string msgid="8529712276644546893" name="preferences_reminders_quiet_hours_label">"Vaikusetunnid"</string>
+	<!--translate [preferences_reminders_quiet_hours_description] from sourcecode xml -->
+	<string msgid="65969073433791290" name="preferences_reminders_quiet_hours_description">"Vaigista sündmuse meeldetuletused määratud ajal."</string>
+	<!--translate [preferences_reminders_quiet_hours_start] from sourcecode xml -->
+	<string msgid="3433058529220285232" name="preferences_reminders_quiet_hours_start">"Vaikusetundide alguse aeg"</string>
+	<!--translate [preferences_reminders_quiet_hours_end] from sourcecode xml -->
+	<string msgid="7492883554865119346" name="preferences_reminders_quiet_hours_end">"Vaikusetundide lõpu aeg"</string>
+	<!--translate [preferences_debug_category] from sourcecode xml -->
+	<string msgid="6203278208385095018" name="preferences_debug_category">"Silumine"</string>
+	<!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+	<string name="copy_db">"Saatke andmebaas"</string>
+	<!-- Displayed in email address autocomplete list when searching for contacts in corporate directories. Example: "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+	<string name="directory_searching_fmt">"Domeeni <xliff:g id="DOMAIN">%s</xliff:g> otsimine ..."</string>
+	<!-- Accessibility Events   Strings that describes actions for buttons without text   Create a new calendar event [CHAR LIMIT = NONE]  Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_attendee">"Eemalda osaleja"</string>
+	<!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_date">"Alguskuupäev"</string>
+	<!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_time">"Algusaeg"</string>
+	<!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_date">"Lõppkuupäev"</string>
+	<!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_time">"Lõppaeg"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_time_zone">"Ajavöönd"</string>
+	<!--translate [accessibility_pick_recurrence] from sourcecode xml -->
+	<string msgid="1834311617874828931" name="accessibility_pick_recurrence">"Korduv sündmus"</string>
+	<!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_reminder">"Lisa meeldetuletus"</string>
+	<!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_reminder">"Eemalda meeldetuletus"</string>
+	<!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_attendee">"Lisa osaleja"</string>
+	<!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+	<string name="accessibility_sync_cal">"Sünkrooni kalender"</string>
+	<!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+	<string name="accessibility_all_day">"Kogupäevasündmus"</string>
+	<!-- Refresh the data in the calendar [CHAR LIMIT = NONE]  Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+	<string name="accessibility_repeats">"Kordamine"</string>
+	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_time">"Meeldetuletuse aeg"</string>
+	<!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_type">"Meeldetuletuse tüüp"</string>
+	<!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_showmeas">"Kuva mind olekus"</string>
+	<!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_privacy">"Privaatsus"</string>
+	<!--translate [acessibility_cal_notification] from sourcecode xml -->
+	<string msgid="7267601064994839394" name="acessibility_cal_notification">"Kalendriteatised"</string>
+	<!-- Calendar notification snooze button [CHAR LIMIT = NONE]-->
+	<string name="acessibility_snooze_notification">"Lükka teatis edasi"</string>
+	<!-- Calendar notification email button [CHAR LIMIT = NONE]-->
+	<string name="accessibility_email_notification">"Külalistele meilimine"</string>
+	<!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+	<string name="day_view_new_event_hint">"+ Uus sündmus"</string>
+	<!-- Source: A value for announcing the current event index (example: "Event 2 of 6"). Description: This is spoken to the user. [CHAR LIMIT="NONE"] -->
+	<string name="template_announce_item_index">"Sündmus <xliff:g id="ITEM_INDEX">%1$s</xliff:g>/<xliff:g id="ITEM_COUNT">%2$s</xliff:g>."</string>
+	<plurals name="Nevents">
+		<!-- number of events in the notification bar  This is the label for a 1 event. -->
+		<item quantity="one">"1 sündmus"</item>
+		<!-- number of events in the notification bar  This is the label for 2 or more events. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> sündmust"</item>
+	</plurals>
+	<!-- plurals name="N_remaining_events" from sourcecode xml -->
+	<plurals name="N_remaining_events">
+		<item quantity="one">"+1 sündmus"</item>
+		<item quantity="other">"+<xliff:g id="COUNT">%d</xliff:g> sündmust"</item>
+	</plurals>
+	<!--translate [acessibility_selected_marker_description] from sourcecode xml -->
+	<string msgid="3010149843148810768" name="acessibility_selected_marker_description">"Valitud sündmus"</string>
+	<!-- Tell user not to check a checkbox [CHAR LIMIT=30] -->
+	<string name="do_not_check">"ÄRGE märkige -&gt;"</string>
+	<!--translate [recurrence_dialog_title] from sourcecode xml -->
+	<string msgid="8093909645557717483" name="recurrence_dialog_title">"Kordamine"</string>
+	<!--translate [recurrence_dialog_title_never] from sourcecode xml -->
+	<string msgid="2679396029776590130" name="recurrence_dialog_title_never">"Ei kordu kunagi"</string>
+	<!-- plurals name="recurrence_interval_daily" from sourcecode xml -->
+	<plurals name="recurrence_interval_daily">
+		<item quantity="one">"Iga <xliff:g id="COUNT">%d</xliff:g> päeva tagant"</item>
+		<item quantity="other">"Iga <xliff:g id="COUNT">%d</xliff:g> päeva tagant"</item>
+	</plurals>
+	<!-- plurals name="recurrence_interval_weekly" from sourcecode xml -->
+	<plurals name="recurrence_interval_weekly">
+		<item quantity="one">"Iga <xliff:g id="COUNT">%d</xliff:g> nädala tagant"</item>
+		<item quantity="other">"Iga <xliff:g id="COUNT">%d</xliff:g> nädala tagant"</item>
+	</plurals>
+	<!-- plurals name="recurrence_interval_monthly" from sourcecode xml -->
+	<plurals name="recurrence_interval_monthly">
+		<item quantity="one">"Iga <xliff:g id="COUNT">%d</xliff:g> kuu tagant"</item>
+		<item quantity="other">"Iga <xliff:g id="COUNT">%d</xliff:g> kuu tagant"</item>
+	</plurals>
+	<!-- plurals name="recurrence_interval_yearly" from sourcecode xml -->
+	<plurals name="recurrence_interval_yearly">
+		<item quantity="one">"Iga <xliff:g id="COUNT">%d</xliff:g> aasta tagant"</item>
+		<item quantity="other">"Iga <xliff:g id="COUNT">%d</xliff:g> aasta tagant"</item>
+	</plurals>
+	<!--translate [recurrence_month_pattern_by_day] from sourcecode xml -->
+	<string msgid="4400107556121003459" name="recurrence_month_pattern_by_day">"iga kuu samal päeval"</string>
+	<!--translate [recurrence_end_continously] from sourcecode xml -->
+	<string msgid="6898950241634912991" name="recurrence_end_continously">"Igavesti"</string>
+	<!--translate [recurrence_end_date_label] from sourcecode xml -->
+	<string msgid="4142791438636994952" name="recurrence_end_date_label">"Kuni kuupäevani"</string>
+	<!--translate [recurrence_end_date] from sourcecode xml -->
+	<string msgid="3693751578164711701" name="recurrence_end_date">"Kuni <xliff:g id="DATE">%s</xliff:g>"</string>
+	<!--translate [recurrence_end_count_label] from sourcecode xml -->
+	<string msgid="1233883668293087977" name="recurrence_end_count_label">"Sündmust korratakse"</string>
+	<!-- plurals name="recurrence_end_count" from sourcecode xml -->
+	<plurals name="recurrence_end_count">
+		<item quantity="one">"<xliff:g id="EVENT_COUNT">%d</xliff:g> sündmuse puhul"</item>
+		<item quantity="other">"<xliff:g id="EVENT_COUNT">%d</xliff:g> sündmuse puhul"</item>
+	</plurals>
+	<!--translate [acessibility_recurrence_choose_end_date_description] from sourcecode xml -->
+	<string msgid="5899029840837836711" name="acessibility_recurrence_choose_end_date_description">"lõppkuupäeva muutmine"</string>
+	<!-- no translation found for notification_sender_id -->
+	<skip />
+	<!-- no translation found for preferences_alerts_first_week_title -->
+	<skip />
+	<!-- no translation found for alerts_dialog_first_week_title -->
+	<skip />
+	<!-- no translation found for cannot_use_in_ultimate_mode -->
+	<skip />
+	<!-- no translation found for select_default_calendar_first -->
+	<skip />
+	<!-- no translation found for noEventHint -->
+	<skip />
+	<!-- no translation found for default_calendar_name -->
+	<skip />
+	<!-- no translation found for default_calendar_account -->
+	<skip />
+	<!-- no translation found for import_birthday -->
+	<skip />
+	<!-- no translation found for import_birthday_finish -->
+	<skip />
+	<!-- no translation found for import_birthday_msg -->
+	<skip />
+	<!-- no translation found for importing_msg -->
+	<skip />
+	<!-- no translation found for import_error_msg -->
+	<skip />
+	<!-- no translation found for birthday_reminder_description -->
+	<skip />
+	<!---->
+	<string name="button_label_hide">"Peida"</string>
+	<!-- no translation found for import_result_msg -->
+	<skip />
+	<!-- no translation found for toast_start_import -->
+	<skip />
+	<!-- no translation found for toast_import_fail -->
+	<skip />
+	<!---->
+	<string name="menu_item_refresh">"Värskenda"</string>
+	<!-- no translation found for title_fb_birthday -->
+	<skip />
+	<!-- no translation found for bithday_item_format -->
+	<skip />
+	<!-- no translation found for preferences_fb_sync_title -->
+	<skip />
+	<!-- no translation found for preferences_fb_sync_all -->
+	<skip />
+	<!-- no translation found for preferences_fb_sync_summary -->
+	<skip />
+	<!-- no translation found for default_calendar_account_facebook -->
+	<skip />
 </resources>

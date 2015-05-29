@@ -1,26 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="valid_date_range">"La fecha de vencimiento es enero 1970 a diciembre 2036"</string>  
-    <string name="shareEvent">Compartir evento</string>  
-    <string name="share_label">"Compartir"</string>  
-    <string name="loading_failed">Error al cargar.</string>  
-    <string name="operation_failed">Error de operación. Compruebe si la función \"Almacenamiento de calendario\" está detenido.</string>  
-    <string name="clear_events">Remover eventos</string>  
-    <string name="select_clear_calendars_title">Seleccionar cuenta</string>  
-    <string name="clear_all_selected_events_title">Todos los datos de la cuenta seleccionada se eliminarán.</string>  
-    <string name="delete_completed">Eliminación de operación completada.</string>
-    <string name="delete_certain">Aceptar</string>  
-    <string name="wait_deleting_tip">"Espere mientras se realiza la eliminación...."</string>
-    <string name="attendees_invalid_tip">"Algunos asistentes no son válidos."</string>
-    <string name="unread_reminders">"%d mensajes sin leer"</string> 
-    <string name="click_to_view_all">"Hacer clic para ver todo"</string> 
-    <string name="search_setting_description">"Eventos del Calendario"</string> 
-    <string name="quick_response_error_already_exist">El texto ya existe</string>  
-    <string name="quick_response_error_null">No se puede vaciar</string>
-    <string name="no_event_tip">No hay evento.</string>
-    <string name="preferences_alerts_vibrateWhen_summary">Vibrar para recordatorio de evento</string>
-    <string name="go_to">Ir a</string>
-    <string name="search_hint">Buscar calendario</string>
-    <string name="noApplications">"Ninguna aplicación puede realizar esta acción."</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"Las fechas válidas van de enero de 1970 a diciembre de 2036."</string>
+	<!---->
+	<string name="shareEvent">"Compartir evento"</string>
+	<!---->
+	<string name="share_label">"Compartir"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"Error al cargar."</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Error en la operación. Compruebe si se ha detenido el "almacenamiento del calendario"."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"Eliminar eventos"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"Seleccione una cuenta"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"Se eliminarán todos los elementos de la cuenta seleccionada."</string>
+	<!---->
+	<string name="delete_completed">"Operación de eliminación completada."</string>
+	<!---->
+	<string name="delete_certain">"Aceptar"</string>
+	<!---->
+	<string name="wait_deleting_tip">"Espere mientras se lleva a cabo la eliminación..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"Algunos participantes no son válidos."</string>
+	<!---->
+	<string name="unread_reminders">"%d mensajes sin leer"</string>
+	<!---->
+	<string name="click_to_view_all">"Hacer clic para ver todo"</string>
+	<!---->
+	<string name="search_setting_description">"Eventos del calendario"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Disminuir mes"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Aumentar mes"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Aumentar año"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Aumentar día"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Disminuir día"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"El texto ya existe"</string>
+	<!---->
+	<string name="quick_response_error_null">"No se puede vaciar"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"Vibración para recordatorio de evento"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"Ir a"</string>
+	<!---->
+	<string name="no_event_tip">"Sin eventos."</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"Buscar calend."</string>
+	<!---->
+	<string name="noApplications">"Ninguna aplicación puede realizar esta acción."</string>
 </resources>

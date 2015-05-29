@@ -70,7 +70,7 @@ public class TabContainerView extends HorizontalScrollView implements AdapterVie
 
     private static final int FADE_DURATION = 200;
     private static final int TAB_OFF_SET = 12 ;
-    private static final int TAB_WIDTH_SET = 140 ; // every tab's width
+    private static final int TAB_WIDTH_SET = 140; // every tab's width
     private static final int BOTTOM_BAR_PADDING = 10;
     private static DisplayMetrics mDisplayMetrics ;
     private int mBottomBarHeight ;

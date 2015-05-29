@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string-array name="reminder_methods_labels">
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"নোটিফিকেশন"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"ইমেইল"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"এসএমএস"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"অ্যালার্ম"</item>
+	</string-array>
+	<string-array name="reminder_minutes_labels">
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"0  মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"১ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"৫ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"১০ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"১৫ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"২০ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"২৫ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"৩০ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"৪৫ মিনিট"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"১ ঘণ্টা"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"২ ঘণ্টা"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"৩ ঘণ্টা"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"১২ ঘণ্টা"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"২৪ ঘণ্টা"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"২ দিন"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"১ সপ্তাহ"</item>
+	</string-array>
+	<string-array name="preferences_default_reminder_labels">
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"কোনটি নয়"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"০ মিনিট+AN72"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"১ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"৫ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"১০ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"১৫ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"২০ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"২৫ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"৩০ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"৪৫ মিনিট"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"১ ঘণ্টা"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"২ ঘণ্টা"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"৩ ঘণ্টা"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"১২ ঘণ্টা"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"২৪ ঘণ্টা"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"২ দিন"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"১ সপ্তাহ"</item>
+	</string-array>
+	<string-array name="preferences_week_start_day_labels">
+		<item>"লোকাল ডিফল্ট"</item>
+		<item>"শনিবার"</item>
+		<item>"রবিবার"</item>
+		<item>"সোমবার"</item>
+	</string-array>
+	<string-array name="availability">
+		<item>"ব্যস্ত"</item>
+		<item>"লভ্য"</item>
+		<item>"সম্ভাব্য"</item>
+	</string-array>
+	<string-array name="visibility">
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"ডিফল্ট"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"ব্যক্তিগত"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"প্রকাশ্য"</item>
+	</string-array>
+	<string-array name="ordinal_labels">
+		<item>"প্রথম"</item>
+		<item>"দ্বিতীয়"</item>
+		<item>"তৃতীয়"</item>
+		<item>"চতুর্থ"</item>
+		<item>"সর্বশেষ"</item>
+	</string-array>
+	<string-array name="response_labels1">
+		<!-- Invitation responses -->
+		<item>"কোন উত্তর নেই"</item>
+		<!-- Invitation responses -->
+		<item>"হ্যা"</item>
+		<!-- Invitation responses -->
+		<item>"হয়ত"</item>
+		<!-- Invitation responses -->
+		<item>"না"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels">
+		<item>"কেবল এই ঘটনা"</item>
+		<item>"এটি এবং ভবিষ্যতের ইভেন্ট"</item>
+		<item>"সব ঘটনা"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels_no_selected">
+		<item>"এই &amp; ভবিষ্যতে ঘটনা"</item>
+		<item>"সব ইভেন্ট"</item>
+	</string-array>
+	<string-array name="change_response_labels">
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to only one instance of a repeating event -->
+		<item>"কেবল এই ঘটনা"</item>
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to all instances of a repeating event -->
+		<item>"সিরিজের সব ঘটনা"</item>
+	</string-array>
+	<string-array name="buttons_list">
+		<!-- Strings for buttons in drop down menu -->
+		<item>"দিন"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"সপ্তাহ"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"মাস"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"এজেন্ডা"</item>
+	</string-array>
+	<string-array name="preferences_skip_reminders_labels">
+		<!-- Experimental options for skipping reminders. [CHAR LIMIT = 37]  Default choice -->
+		<item>"শুধু অস্বীকার করে"</item>
+		<!-- Experimental options for skipping reminders. [CHAR LIMIT = 37]  Second option, for skipping reminders to events not yet responded to. -->
+		<item>"অস্বীকার অথবা যদি না সাড়া দিয়েছে"</item>
+	</string-array>
+	<string-array name="recurrence_freq">
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"পুনরাবৃত্তি নিয়মিত"</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"পুনরাবৃত্তি সাপ্তাহিক"</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"মাসিক পুনরাবৃত্তি"</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"বাত্সরিক পুনরাবৃত্তি"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_sun">
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"প্রতি প্রথম রবিবার"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর দ্বিতীয় রবিবার"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর তৃতীয় রবিবার"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর চতুর্থ রবিবার"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"প্রতি শেষ রোববার"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_mon">
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর প্রথম সোমবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"প্রতি দ্বিতীয় সোমবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"প্রতি তৃতীয় সোমবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"প্রতি চতুর্থ সোমবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর শেষ সোমবার"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_tues">
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি প্রথম মঙ্গলবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি দ্বিতীয় মঙ্গলবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি তৃতীয় মঙ্গলবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি চতুর্থ মঙ্গলবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি শেষ মঙ্গলবার"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_wed">
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি প্রথম বুধবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর দ্বিতীয় বুধবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি তৃতীয় বুধবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি চতুর্থ বুধবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"প্রতি শেষ বুধবার"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_thurs">
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"প্রতি প্রথম বৃহস্পতিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"প্রতি দ্বিতীয় বৃহস্পতিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর তৃতীয় বৃহস্পতিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"প্রতি চতুর্থ বৃহস্পতিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"প্রতি শেষ বৃহস্পতিবার"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_fri">
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর প্রথম শুক্রবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"প্রতি দ্বিতীয় শুক্রবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর তৃতীয় শুক্রবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"প্রতি চতুর্থ শুক্রবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"প্রতি গত শুক্রবার"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_sat">
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর প্রথম শনিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর দ্বিতীয় শনিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"প্রতি উপর তৃতীয় শনিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"প্রতি চতুর্থ শনিবার"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"প্রতি শেষ শনিবার"</item>
+	</string-array>
+	<string-array name="preferences_first_week_entry">
+		<!-- FR556557-Yuansheng-Zhao-001 begin  Starts on January 1st -->
+		<item>"জানুয়ারী 1 থেকে শুরু"</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First week of 4 days in January -->
+		<item>"সপ্তাহে প্রথম 4 দিনে শুরু"</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First full week of January -->
+		<item>"প্রথম পুরো সপ্তাহে শুরু"</item>
+	</string-array>
+</resources>

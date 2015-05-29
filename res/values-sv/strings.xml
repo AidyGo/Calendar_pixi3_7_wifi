@@ -1,280 +1,548 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2006 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="5452708708398908131">"Kalender"</string>
-    <string name="what_label" msgid="1933578391985810049">"Vad"</string>
-    <string name="where_label" msgid="3472482206065595118">"Var"</string>
-    <string name="when_label" msgid="894636567327261599">"När"</string>
-    <string name="timezone_label" msgid="3988530993300431650">"Tidszon"</string>
-    <string name="attendees_label" msgid="2971281641565729725">"Gäster"</string>
-    <string name="today" msgid="8577375020252453006">"Idag"</string>
-    <string name="tomorrow" msgid="614434811813859237">"Imorgon"</string>
-    <string name="today_at_time_fmt" msgid="1981279213130049736">"Idag kl. <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
-    <string name="tomorrow_at_time_fmt" msgid="1330779112841767432">"Imorgon kl. <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
-    <string name="date_time_fmt" msgid="1642972650061946484">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
-    <string name="repeats_label" msgid="7414023871434593196">"Upprepning"</string>
-    <string name="no_title_label" msgid="302177118061368042">"(Ingen titel)"</string>
-  <plurals name="Nminutes">
-    <item quantity="one" msgid="4871052965772159239">"1 minut"</item>
-    <item quantity="other" msgid="5644461630927544936">"<xliff:g id="COUNT">%d</xliff:g> minuter"</item>
-  </plurals>
-  <plurals name="Nmins">
-    <item quantity="one" msgid="9191090668359663663">"1 min"</item>
-    <item quantity="other" msgid="9175648445939148974">"<xliff:g id="COUNT">%d</xliff:g> minuter"</item>
-  </plurals>
-  <plurals name="Nhours">
-    <item quantity="one" msgid="4793697728599296830">"1 timme"</item>
-    <item quantity="other" msgid="4477841052001760620">"<xliff:g id="COUNT">%d</xliff:g> timmar"</item>
-  </plurals>
-  <plurals name="Ndays">
-    <item quantity="one" msgid="5988137255732166573">"1 dag"</item>
-    <item quantity="other" msgid="1709378992389618261">"<xliff:g id="COUNT">%d</xliff:g> dagar"</item>
-  </plurals>
-  <plurals name="weekN">
-    <item quantity="other" msgid="8085184869561028365">"VECKA <xliff:g id="COUNT">%d</xliff:g>"</item>
-  </plurals>
-    <string name="calendar_refresh" msgid="6172731193680500025">"Uppdatera"</string>
-    <string name="show_day_view" msgid="5782512782605466016">"Visa dag"</string>
-    <string name="agenda_view" msgid="5566084759423843245">"Agenda"</string>
-    <string name="day_view" msgid="4467754504843584437">"Dag"</string>
-    <string name="week_view" msgid="6775043022159508060">"Vecka"</string>
-    <string name="month_view" msgid="7287101431749285412">"Månad"</string>
-    <string name="event_view" msgid="7621353079385122317">"Visa händelse"</string>
-    <string name="event_create" msgid="6941040556709110617">"Ny händelse"</string>
-    <string name="event_edit" msgid="4006961928830064662">"Redigera händelse"</string>
-    <string name="event_delete" msgid="2386667193277770442">"Ta bort händelse"</string>
-    <string name="goto_today" msgid="9162136434410891230">"Idag"</string>
-    <string name="menu_preferences" msgid="9120238479503233925">"Inställningar"</string>
-    <string name="menu_select_visible_calendars" msgid="735670432781741817">"Kalendrar att visa"</string>
-    <string name="search" msgid="550656004486017426">"Sök"</string>
-    <string name="hide_controls" msgid="830320505938520882">"Dölj kontroller"</string>
-    <string name="show_controls" msgid="715520586028062621">"Visa kontroller"</string>
-    <string name="select_visible_calendars_title" msgid="7944393060991949882">"Kalendrar som ska visas"</string>
-    <string name="synced" msgid="7913940305983383493">"synkroniserat"</string>
-    <string name="not_synced" msgid="4275114941801829419">"inte synkat"</string>
-    <string name="acct_not_synced" msgid="6126800985681230627">"Kontot synkroniseras inte, så det är inte säkert att kalendrarna är uppdaterade."</string>
-    <string name="accounts" msgid="849401841083180306">"Konton och synkronisering"</string>
-    <string name="select_synced_calendars_title" msgid="7916084873075901448">"Kalendrar som ska synkroniseras"</string>
-    <string name="select_synced_calendars_button" msgid="8890542984949996251">"Kalendrar som ska synkroniseras"</string>
-    <string name="hint_what" msgid="709155115005044531">"Eventnamn"</string>
-    <string name="hint_where" msgid="4972598001033801974">"Plats"</string>
-    <string name="hint_description" msgid="1910143586169033232">"Beskrivning"</string>
-    <string name="hint_attendees" msgid="1650488163176888480">"Gäster"</string>
-    <string name="creating_event" msgid="7516249252554059980">"Händelsen har skapats."</string>
-    <string name="saving_event" msgid="7694181017411177226">"Händelsen har sparats."</string>
-    <string name="empty_event" msgid="9018699257414338634">"Den tomma händelsen sparades inte."</string>
-    <string name="creating_event_with_guest" msgid="5758688413124191931">"Inbjudningar kommer att skickas."</string>
-    <string name="saving_event_with_guest" msgid="9184584438475689577">"Uppdateringar kommer att skickas."</string>
-    <string name="create_event_dialog_save" msgid="1080859798521717414">"Spara"</string>
-    <string name="alert_title" msgid="7869592820853066853">"Kalenderaviseringar"</string>
-    <string name="event_info_title" msgid="56024222340421620">"Visa händelse"</string>
-    <string name="event_info_title_invite" msgid="9160326363769403865">"Inbjudan till möte"</string>
-    <string name="edit_event_to_label" msgid="795012981218062421">"Till"</string>
-    <string name="edit_event_from_label" msgid="174999102612666115">"Från"</string>
-    <string name="edit_event_all_day_label" msgid="6200181113992136073">"Hela dagen"</string>
-    <string name="edit_event_calendar_label" msgid="4556498359505856900">"Kalender"</string>
-    <string name="edit_event_show_all" msgid="4558049350756058301">"Visa alla"</string>
-    <string name="description_label" msgid="7193475046717505855">"Beskrivning"</string>
-    <string name="presence_label" msgid="6169724148441175862">"Visa mig som"</string>
-    <string name="privacy_label" msgid="9215031965259597335">"Sekretess"</string>
-    <string name="reminders_label" msgid="7292389181815525676">"Lägg till påminnelse"</string>
-    <string name="no_syncable_calendars" msgid="7019488867045436129">"Inga kalendrar"</string>
-    <string name="no_calendars_found" msgid="8968682716053492187">"Innan du kan lägga till en händelse måste du lägga till minst ett kalenderkonto på enheten och göra en kalender synlig. Tryck på Lägg till konto (om du precis har lagt till ett konto väntar du tills synkroniseringen är slutförd och försöker sedan igen). Annars trycker du på Avbryt och kontrollerar att minst en kalender visas."</string>
-    <string name="create_an_account_desc" msgid="7249605109240576895">"Kalendern fungerar bättre med ett Google-konto.\n\n• Öppna den i valfri webbläsare\n• Säkerhetskopiera dina händelser på ett tryggt sätt"</string>
-    <string name="add_account" msgid="1669072099756774952">"Lägg till konto"</string>
-    <string name="view_event_calendar_label" msgid="6126231656338241140">"Kalender:"</string>
-    <string name="view_event_organizer_label" msgid="2753151795647402277">"Organisatör:"</string>
-    <string name="choose_event_color_label" msgid="2192923501857428854">"Välj färg på eventet"</string>
-    <string name="event_color_picker_dialog_title" msgid="4631938661655159511">"Färg på event"</string>
-    <string name="event_color_set_to_default" msgid="3447218820785647967">"Ange som standardfärg på kalendern"</string>
-    <string name="calendar_color_picker_dialog_title" msgid="3595509200561433667">"Kalenderfärg"</string>
-    <string name="calendar_square_color_picker_description" msgid="7430468363525563483">"Färgval"</string>
-    <string name="view_event_response_label" msgid="8382281658458798329">"Delta?"</string>
-    <string name="response_yes" msgid="2027484304899988350">"Ja"</string>
-    <string name="response_maybe" msgid="7791500973627841695">"Kanske"</string>
-    <string name="response_no" msgid="561911691884148136">"Nej"</string>
-    <string name="email_guests_label" msgid="8772030932155305903">"Skicka e-post till gäster"</string>
-    <string name="email_organizer_label" msgid="7178059542798074813">"Skicka e-post till arrangören"</string>
-    <string name="email_picker_label" msgid="4808253965057791781">"Skicka e-post till"</string>
-    <string name="event_not_found" msgid="8356864185947582727">"Händelsen hittades inte."</string>
-    <string name="map_label" msgid="8795383535586556038">"Karta"</string>
-    <string name="call_label" msgid="2960328220008869083">"Ring"</string>
-    <string name="quick_response_settings" msgid="6776151690686068278">"Snabbsvar"</string>
-    <string name="quick_response_settings_summary" msgid="7878304729027355604">"Redigera standardsvar när du skickar e-post till gäster"</string>
-    <string name="quick_response_settings_title" msgid="8966517107774567031">"Redigera snabbsvar"</string>
-    <string name="quick_response_settings_edit_title" msgid="6260055523174081930">"Snabbsvar"</string>
-    <string name="quick_response_dialog_title" msgid="2681309456412199207">"Välj snabbsvar"</string>
-    <string name="quick_response_email_failed" msgid="5544066405231853245">"Det gick inte att hitta något e-postprogram"</string>
-  <string-array name="quick_response_defaults">
-    <item msgid="1524421198348168403">"Är några minuter sen."</item>
-    <item msgid="6215158751728689832">"Kommer om runt tio minuter."</item>
-    <item msgid="4485794001743679338">"Börja gärna, vänta inte på mig."</item>
-    <item msgid="8036557974294987511">"Jag kan tyvärr inte komma. Vi får välja en ny tid."</item>
-  </string-array>
-    <string name="quick_response_custom_msg" msgid="8792374208224108798">"Skriv eget svar ..."</string>
-    <string name="event_info_organizer" msgid="9138683335394832629">"Organisatör:"</string>
-    <string name="event_info_reminders_label" msgid="8913097552956388972">"Påminnelser"</string>
-    <string name="agenda_today" msgid="5965841338467422191">"IDAG, DEN <xliff:g id="DATE">%1$s</xliff:g>"</string>
-    <string name="agenda_yesterday" msgid="4170964206728599693">"IGÅR, DEN <xliff:g id="DATE">%1$s</xliff:g>"</string>
-    <string name="agenda_tomorrow" msgid="3893625470780723605">"IMORGON, <xliff:g id="DATE">%1$s</xliff:g>"</string>
-    <string name="loading" msgid="3772533493214331230">"Hämtar…"</string>
-    <string name="show_older_events" msgid="5140647493681439926">"Tryck om du vill visa händelser före <xliff:g id="OLDEST_SEARCH_RANGE">%1$s</xliff:g>"</string>
-    <string name="show_newer_events" msgid="2604638815440163080">"Tryck om du vill visa händelser efter <xliff:g id="NEWEST_SEARCH_RANGE">%1$s</xliff:g>"</string>
-    <string name="search_title" msgid="8898015280250716254">"Sök i mina kalendrar"</string>
-    <string name="edit_event_label" msgid="7413222956349977161">"Information"</string>
-    <string name="edit_label" msgid="8934331258435656534">"Redigera"</string>
-    <string name="delete_label" msgid="874742811918030739">"Ta bort"</string>
-    <string name="save_label" msgid="2133599104834432589">"Färdig"</string>
-    <string name="discard_label" msgid="2394623883289782541">"Avbryt"</string>
-    <string name="snooze_all_label" msgid="4994488813124409077">"Sätt alla på snooze"</string>
-    <string name="dismiss_all_label" msgid="1834400025868091301">"Ta bort alla permanent"</string>
-    <string name="snooze_label" msgid="1515893621063224666">"Skjut upp"</string>
-    <string name="does_not_repeat" msgid="1877681921029738999">"Engångshändelse"</string>
-    <string name="endByDate" msgid="7654221304929538201">", till <xliff:g id="DATE">%s</xliff:g>"</string>
-  <plurals name="endByCount">
-    <item quantity="one" msgid="3727754565990691816">", en gång"</item>
-    <item quantity="other" msgid="4855496837834652446">", <xliff:g id="NUMBER">%d</xliff:g> gånger"</item>
-  </plurals>
-  <plurals name="daily">
-    <item quantity="one" msgid="5169052946627480942">"Varje dag"</item>
-    <item quantity="other" msgid="5455230727715859264">"<xliff:g id="NUMBER">%d</xliff:g> dagars interv."</item>
-  </plurals>
-    <string name="every_weekday" msgid="5896574838353902978">"Varje vardag (mån-fre)"</string>
-  <plurals name="weekly">
-    <item quantity="one" msgid="5463021019301453273">"Varje vecka på <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
-    <item quantity="other" msgid="2857390143157377867">"Med <xliff:g id="NUMBER">%1$d</xliff:g> v. intervall på <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
-  </plurals>
-    <string name="monthly" msgid="4587116285383048586">"Varje månad"</string>
-    <string name="yearly_plain" msgid="3652692085322162449">"Varje år"</string>
-    <string name="monthly_on_day" msgid="5370155265278821156">"Varje månad (den <xliff:g id="DAY_OF_MONTH">%s</xliff:g>)"</string>
-    <string name="yearly" msgid="8576208380302949002">"Varje år (den <xliff:g id="DATES">%s</xliff:g>)"</string>
-    <string name="custom" product="tablet" msgid="3806817351377723249">"Anpassad (går ej att anpassa på surfplattan)"</string>
-    <string name="custom" product="default" msgid="4137468716966004993">"Anpassad (går ej att anpassa i mobilen)"</string>
-    <string name="modify_event" msgid="5982876409997142690">"Ändra bara den här händelsen"</string>
-    <string name="modify_all" msgid="4421657265864209041">"Ändra alla händelser i serien"</string>
-    <string name="modify_all_following" msgid="3017428541066390380">"Ändra den här och alla framtida händelser"</string>
-    <string name="new_event_dialog_label" msgid="7553105224561147916">"Ny händelse"</string>
-    <string name="new_event_dialog_option" msgid="6154657379574669371">"Ny händelse"</string>
-    <string name="delete_this_event_title" msgid="518402946676919384">"Vill du ta bort den här händelsen?"</string>
-    <string name="delete_recurring_event_title" msgid="5609046778422180206">"Vill du ta bort <xliff:g id="EVENTTITLE">%s</xliff:g>?"</string>
-    <string name="change_response_title" msgid="7704714776070974984">"Ändra svar"</string>
-    <string name="menu_general_preferences" msgid="2812705323334260708">"Allmänna inställningar"</string>
-    <string name="menu_about_preferences" msgid="6124375438237674973">"Om Kalender"</string>
-    <string name="preferences_title" msgid="8045855493262131773">"Inställningar"</string>
-    <string name="preferences_general_title" msgid="2069075513760573117">"Inställning för kalendervy"</string>
-    <string name="preferences_reminder_title" msgid="5199606534191180129">"Meddelanden och påminnelser"</string>
-    <string name="preferences_hide_declined_title" msgid="1849295943669890034">"Dölj avböjda händelser"</string>
-    <string name="preferences_week_start_day_title" msgid="4619489296444901622">"Veckan börjar med"</string>
-    <string name="preferences_week_start_day_dialog" msgid="5181634128884089113">"Veckan börjar med"</string>
-    <string name="preferences_clear_search_history_title" msgid="6619916370215282982">"Rensa sökhistorik"</string>
-    <string name="preferences_clear_search_history_summary" msgid="7864674093455778158">"Ta bort alla sökningar som du har gjort"</string>
-    <string name="search_history_cleared" msgid="1536707558435227567">"Sökhistoriken har rensats."</string>
-    <string name="preferences_alerts_title" msgid="6636088008103904020">"Aviseringar"</string>
-    <string name="preferences_alerts_vibrateWhen_title" msgid="8731372580674292759">"Vibrera"</string>
-    <string name="preferences_alerts_ringtone_title" msgid="1849706055052358346">"Ljud"</string>
-    <string name="preferences_alerts_popup_title" msgid="6643468203670475296">"Popup-meddelande"</string>
-    <string name="preferences_default_reminder_title" msgid="5188861433342733905">"Standardtid för påminnelse"</string>
-    <string name="preferences_default_reminder_dialog" msgid="2490348857239323412">"Standardtid för påminnelse"</string>
-    <string name="preferences_default_reminder_default" msgid="2903884416749959435">"10"</string>
-    <string name="preferences_use_home_tz_title" msgid="5597546849968598210">"Använd standardtidszon"</string>
-    <string name="preferences_use_home_tz_descrip" msgid="4835375381297413746">"Tiderna i kalendern visas i din standardtidszon när du är ute och reser."</string>
-    <string name="preferences_home_tz_title" msgid="6680000444088818578">"Standardtidszon"</string>
-    <string name="preferences_show_week_num_title" msgid="5280734329664503461">"Visa veckonummer"</string>
-    <string name="preferences_about_title" msgid="2810624892412097879">"Om"</string>
-    <string name="preferences_build_version" msgid="8242471883413502068">"Programversion"</string>
-    <string name="gadget_title" msgid="939918875331310945">"Kalender"</string>
-  <plurals name="month_more_events">
-    <item quantity="one" msgid="8971334808414201327">"+ 1"</item>
-    <item quantity="other" msgid="1997405398178470838">"+ <xliff:g id="NUMBER">%d</xliff:g>"</item>
-  </plurals>
-    <string name="gadget_no_events" msgid="5209110911088302855">"Inga kommande händelser i kalendern"</string>
-    <string name="preferences_experimental_category" msgid="8111213192001230350">"Experimentell"</string>
-    <string name="preferences_reminders_category" msgid="3179315692653755740">"Påminnelser"</string>
-    <string name="preferences_reminders_responded_label" msgid="1196570678238475838">"Hoppa över påminnelser"</string>
-    <string name="preferences_reminders_responded_dialog" msgid="1873289128793828352">"Hoppa över påminnelser"</string>
-    <string name="preferences_reminders_quiet_hours_label" msgid="8529712276644546893">"Tyst läge"</string>
-    <string name="preferences_reminders_quiet_hours_description" msgid="65969073433791290">"Tysta påminnelser om event under en angiven tid."</string>
-    <string name="preferences_reminders_quiet_hours_start" msgid="3433058529220285232">"Starttid för tyst läge"</string>
-    <string name="preferences_reminders_quiet_hours_end" msgid="7492883554865119346">"Sluttid för tyst läge"</string>
-    <string name="preferences_debug_category" msgid="6203278208385095018">"Felsökning"</string>
-    <string name="copy_db" msgid="437691290566699292">"Skicka databas"</string>
-    <string name="directory_searching_fmt" msgid="1232037509095606687">"Söker <xliff:g id="DOMAIN">%s</xliff:g>…"</string>
-    <string name="accessibility_remove_attendee" msgid="7082751172654698863">"Ta bort deltagare"</string>
-    <string name="accessibility_pick_start_date" msgid="3926641487042699037">"Startdatum"</string>
-    <string name="accessibility_pick_start_time" msgid="4913428100936555149">"Starttid"</string>
-    <string name="accessibility_pick_end_date" msgid="5624250196618643922">"Slutdatum"</string>
-    <string name="accessibility_pick_end_time" msgid="7120310166355224941">"Sluttid"</string>
-    <string name="accessibility_pick_time_zone" msgid="7155465783500323811">"Tidszon"</string>
-    <string name="accessibility_pick_recurrence" msgid="1834311617874828931">"Upprepa händelse"</string>
-    <string name="accessibility_add_reminder" msgid="2267950744060950152">"Lägg till påminnelse"</string>
-    <string name="accessibility_remove_reminder" msgid="5261609343259665139">"Ta bort påminnelse"</string>
-    <string name="accessibility_add_attendee" msgid="5654014177472600916">"Lägg till deltagare"</string>
-    <string name="accessibility_sync_cal" msgid="6506181885764723383">"Synkronisera kalender"</string>
-    <string name="accessibility_all_day" msgid="4146955438811915282">"Hela dagen"</string>
-    <string name="accessibility_repeats" msgid="1629279916830919582">"Upprepning"</string>
-    <string name="accessibility_reminder_time" msgid="3594100545814579575">"Tid för påminnelse"</string>
-    <string name="accessibility_reminder_type" msgid="5339120699701437227">"Påminnelsetyp"</string>
-    <string name="accessibility_reminder_showmeas" msgid="6669129015980006570">"Visa mig som"</string>
-    <string name="accessibility_reminder_privacy" msgid="8669288484484022771">"Sekretess"</string>
-    <string name="acessibility_cal_notification" msgid="7267601064994839394">"Kalendermeddelande"</string>
-    <string name="acessibility_snooze_notification" msgid="5007852779125102681">"Sätt meddelandet i viloläge"</string>
-    <string name="accessibility_email_notification" msgid="9124064701968129831">"Skicka e-post till gäster"</string>
-    <string name="day_view_new_event_hint" msgid="2131483437911536229">"+ ny händelse"</string>
-    <string name="template_announce_item_index" msgid="4067877800670753110">"Händelse <xliff:g id="ITEM_INDEX">%1$s</xliff:g> av <xliff:g id="ITEM_COUNT">%2$s</xliff:g>."</string>
-  <plurals name="Nevents">
-    <item quantity="one" msgid="5230907142214104485">"1 händelse"</item>
-    <item quantity="other" msgid="6093072093209431078">"<xliff:g id="COUNT">%d</xliff:g> händelser"</item>
-  </plurals>
-  <plurals name="N_remaining_events">
-    <item quantity="one" msgid="431585781647034528">"1 händelse"</item>
-    <item quantity="other" msgid="3609243840882275136">"<xliff:g id="COUNT">%d</xliff:g> händelser till"</item>
-  </plurals>
-    <string name="acessibility_selected_marker_description" msgid="3010149843148810768">"Markerad händelse"</string>
-    <string name="do_not_check" msgid="7815441673853466129">"Markera INTE -&gt;"</string>
-    <string name="recurrence_dialog_title" msgid="8093909645557717483">"Upprepa"</string>
-    <string name="recurrence_dialog_title_never" msgid="2679396029776590130">"Upprepas aldrig"</string>
-  <plurals name="recurrence_interval_daily">
-    <item quantity="one" msgid="1205422710088692631">"Med <xliff:g id="COUNT">%d</xliff:g> dags intervall"</item>
-    <item quantity="other" msgid="707566499994398250">"Med <xliff:g id="COUNT">%d</xliff:g> dagars intervall"</item>
-  </plurals>
-  <plurals name="recurrence_interval_weekly">
-    <item quantity="one" msgid="4948681635464488351">"Med <xliff:g id="COUNT">%d</xliff:g> veckas intervall"</item>
-    <item quantity="other" msgid="7094801039989237061">"Med <xliff:g id="COUNT">%d</xliff:g> veckors intervall"</item>
-  </plurals>
-  <plurals name="recurrence_interval_monthly">
-    <item quantity="one" msgid="4768178401603139718">"Med <xliff:g id="COUNT">%d</xliff:g> månads intervall"</item>
-    <item quantity="other" msgid="5419723710346646523">"Med <xliff:g id="COUNT">%d</xliff:g> månaders intervall"</item>
-  </plurals>
-  <plurals name="recurrence_interval_yearly">
-    <item quantity="one" msgid="5819562634008179102">"Med <xliff:g id="COUNT">%d</xliff:g> års intervall"</item>
-    <item quantity="other" msgid="5678653649746562060">"Med <xliff:g id="COUNT">%d</xliff:g> års intervall"</item>
-  </plurals>
-    <string name="recurrence_month_pattern_by_day" msgid="4400107556121003459">"samma dag varje månad"</string>
-    <string name="recurrence_end_continously" msgid="6898950241634912991">"För alltid"</string>
-    <string name="recurrence_end_date_label" msgid="4142791438636994952">"Till ett visst datum"</string>
-    <string name="recurrence_end_date" msgid="3693751578164711701">"Till den <xliff:g id="DATE">%s</xliff:g>"</string>
-    <string name="recurrence_end_count_label" msgid="1233883668293087977">"Ett antal upprepningar"</string>
-  <plurals name="recurrence_end_count">
-    <item quantity="one" msgid="1400782968090516215">"För <xliff:g id="EVENT_COUNT">%d</xliff:g> event"</item>
-    <item quantity="other" msgid="8779598489398048259">"För <xliff:g id="EVENT_COUNT">%d</xliff:g> event"</item>
-  </plurals>
-    <string name="acessibility_recurrence_choose_end_date_description" msgid="5899029840837836711">"ändra slutdatum"</string>
-    <string name="daily">"Varje dag"</string>
-    <string name="weekly">"Veckovis (varje <xliff:g id="days_of_week">%s</xliff:g>)"</string>
-    <string name="monthly_on_day_count">"Månadsvis (varje <xliff:g id="ordinal_number">%1$s</xliff:g> <xliff:g id="day_of_week">%2$s</xliff:g>)"</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- This is the label underneath the icon for Calendar -->
+	<string name="app_label">"Kalender"</string>
+	<!-- This is the label for the title or name of an event -->
+	<string name="what_label">"Vad"</string>
+	<!-- This is the label for the location of an event -->
+	<string name="where_label">"Var"</string>
+	<!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+	<string name="when_label">"När"</string>
+	<!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+	<string name="timezone_label">"Tidszon"</string>
+	<!-- This is the label for the Guests/Attendees of an event -->
+	<string name="attendees_label">"Gäster"</string>
+	<!-- Text to show when an event starts on the current day -->
+	<string name="today">"Idag"</string>
+	<!-- Text to show when an event starts on the next day -->
+	<string name="tomorrow">"imorgon"</string>
+	<!-- Text for an event starting on the current day with a start and end time. For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="today_at_time_fmt">"Idag kl. <xliff:g id="time_interval">%s</xliff:g>"</string>
+	<!-- Text for an event starting on the next day with a start and end time. For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="tomorrow_at_time_fmt">"I morgon kl. <xliff:g id="time_interval">%s</xliff:g>"</string>
+	<!-- Format string for a date and time description. For ex: "April 19, 2012, 3:00pm - 4:00pm" [CHAR LIMIT=NONE] -->
+	<string name="date_time_fmt">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+	<!-- Some events repeat daily, weekly, monthly, or yearly. This is the label for all the choices about how often an event repeats (including the choice of not repeating). -->
+	<string name="repeats_label">"Upprepning"</string>
+	<!-- Title of event when no explicit title is specified by the user -->
+	<string name="no_title_label">"(Ingen titel)"</string>
+	<plurals name="Nminutes">
+		<!-- Reminder format strings  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 minut"</item>
+		<!-- Reminder format strings  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> minuter"</item>
+	</plurals>
+	<plurals name="Nmins">
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 min"</item>
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> minuter"</item>
+	</plurals>
+	<plurals name="Nhours">
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a 1-hour reminder. -->
+		<item quantity="one">"1 timme"</item>
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a reminder of 2 or more hours. The actual number of hours is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> timmar"</item>
+	</plurals>
+	<plurals name="Ndays">
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 1 day. -->
+		<item quantity="one">"1 dag"</item>
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 2 or more days. The actual number of days is a parameter. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> dagar"</item>
+	</plurals>
+	<plurals name="weekN">
+		<!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1"  Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+		<item quantity="other">"VECKA <xliff:g id="count">%d</xliff:g>"</item>
+	</plurals>
+	<!-- This is a label on a context menu item. Pressing this menu item to initiate syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+	<string name="calendar_refresh">"Rensa"</string>
+	<!-- This is a label on a context menu item. Pressing this menu item displays the Agenda view.   This is a label on a context menu item. Pressing this menu item displays the Day view. -->
+	<string name="show_day_view">"Visa dag"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Agenda view. -->
+	<string name="agenda_view">"Agenda"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Day view. -->
+	<string name="day_view">"Dag"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Week view. -->
+	<string name="week_view">"Vecka"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Month view. -->
+	<string name="month_view">"Månad"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the details of an event. -->
+	<string name="event_view">"Visa händelse"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to create a new event. -->
+	<string name="event_create">"Ny händelse"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to edit or change an existing event. -->
+	<string name="event_edit">"Redigera händelse"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to delete an existing event. -->
+	<string name="event_delete">"Ta bort händelse"</string>
+	<!-- This is a label on a menu item. Pressing this menu item takes the user to the current day (today) in whatever view (Day view, Week view, Agenda view, Month view) they are currently in. -->
+	<string name="goto_today">"Idag"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to see the list of calendars that he is viewing and to then add or remove selected calendars.   This is a label on a menu item. Pressing this menu item allows the user to view and edit his Settings (or Preferences) -->
+	<string name="menu_preferences">"Inställningar"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="menu_select_visible_calendars">"Kalendrar att visa"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="search">"Sök"</string>
+	<!-- This is a label on a menu item. Pressing this menu item hides the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="hide_controls">"Dölj kontroller"</string>
+	<!-- This is a label on a menu item. Pressing this menu item shows the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="show_controls">"Visa kontroller"</string>
+	<!-- Title of "My calendars" screen -->
+	<string name="select_visible_calendars_title">"Kalendrar att visa"</string>
+	<!-- Synced and visible status message   Synced but not visible status message   not Synced or visible status message   Synced status message displayed when the given calendar is stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="synced">"synkroniserad"</string>
+	<!-- Not synced status message displayed when the given calendar is not stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="not_synced">"ej synkroniserad"</string>
+	<!-- Message displayed to user when an account with Calendars is not being auto-synced [CHAR LIMIT=120]-->
+	<string name="acct_not_synced">"Det här kontot synkroniseras inte, så dina kalendrar kanske inte är uppdaterade."</string>
+	<!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+	<string name="accounts">"Konton och synkronisering"</string>
+	<!-- Select Synced Calendars activity   Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_title">"Kalendrar att synkronisera"</string>
+	<!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_button">"Kalendrar att synkronisera"</string>
+	<!-- The title of the screen where the user edits an event [CHAR LIMIT=17]   Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+	<string name="hint_what">"Händelsens namn"</string>
+	<!-- Default value of Where field (as a hint to the user)[CHAR LIMIT=15] -->
+	<string name="hint_where">"Plats"</string>
+	<!-- Default value of Description field (as a hint to the user) [CHAR LIMIT=15]-->
+	<string name="hint_description">"Beskrivning"</string>
+	<!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+	<string name="hint_attendees">"Gäster"</string>
+	<!-- Toast message displayed when a new event is created -->
+	<string name="creating_event">"Händelsen har skapats."</string>
+	<!-- Toast message displayed when an existing event is saved after being modified -->
+	<string name="saving_event">"Händelsen har sparats."</string>
+	<!-- Toast message displayed when a new event was not saved because it was empty [CHAR LIMIT=30] -->
+	<string name="empty_event">"Den tomma händelsen sparades inte."</string>
+	<!-- Toast message displayed when a new event with guests is created -->
+	<string name="creating_event_with_guest">"Inbjudningar kommer att skickas."</string>
+	<!-- Toast message displayed when an existing event with guests is saved after being modified -->
+	<string name="saving_event_with_guest">"Uppdateringar kommer att skickas."</string>
+	<!-- Create event dialog save button [CHAR LIMIT=10] -->
+	<string name="create_event_dialog_save">"Spara"</string>
+	<!-- the title of the alert/notification activity -->
+	<string name="alert_title">"Kalenderaviseringar"</string>
+	<!-- This is the title of the screen used to view the details of an event -->
+	<string name="event_info_title">"Visa händelse"</string>
+	<!-- This is the title of the screen used to view the details of an invitation to a meeting or event -->
+	<string name="event_info_title_invite">"Inbjudan till möte"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'end date'. -->
+	<string name="edit_event_to_label">"Till"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'start date'. -->
+	<string name="edit_event_from_label">"Från"</string>
+	<!-- Check box label that specifies if this is an all-day event -->
+	<string name="edit_event_all_day_label">"Hela dagen"</string>
+	<!-- Label for choosing one of the calendars -->
+	<string name="edit_event_calendar_label">"Kalender"</string>
+	<!-- Menu item to show all choices [CHAR LIMIT=22]-->
+	<string name="edit_event_show_all">"Visa alla"</string>
+	<!-- Label for the event description -->
+	<string name="description_label">"Beskrivning"</string>
+	<!-- Label for the 'Presence' of an event, which can be either 'busy' (the default) or 'available' [CHAR LIMIT=15] -->
+	<string name="presence_label">"Visa mig som"</string>
+	<!-- Label for the 'Privacy' of an event, which can be either 'private' or 'public' [CHAR LIMIT=15] -->
+	<string name="privacy_label">"Sekretess"</string>
+	<!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+	<string name="reminders_label">"Påminnelser"</string>
+	<!-- Title of alert shown if the user tries to create an event and has no calendars -->
+	<string name="no_syncable_calendars">"Inga kalendrar"</string>
+	<!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+	<string name="no_calendars_found">"Du har inga kalendrar."</string>
+	<!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+	<string name="create_an_account_desc">"Kalendern fungerar bättre med ett Google-konto.\n\n\u2022 Nå den från en webbläsare\n\u2022 Säkerhetskopiera dina händelser på ett säkert sätt"</string>
+	<!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+	<string name="add_account">"Lägg till konto"</string>
+	<!-- Label for which calendar an event is part of -->
+	<string name="view_event_calendar_label">"Kalender:"</string>
+	<!-- Label for the event organizer -->
+	<string name="view_event_organizer_label">"Organiser"</string>
+	<!-- Label for the local timezone   Label for showing event color picker -->
+	<string name="choose_event_color_label">"Välj färg på eventet"</string>
+	<!-- Title for event color picker dialog -->
+	<string name="event_color_picker_dialog_title">"Färg på event"</string>
+	<!-- Label for button which sets event color to default calendar color -->
+	<string name="event_color_set_to_default">"Ange som standardfärg på kalendern"</string>
+	<!-- Title for calendar color picker dialog -->
+	<string name="calendar_color_picker_dialog_title">"Kalenderfärg"</string>
+	<!-- Description for calendar color squares, which bring up the color picker. -->
+	<string name="calendar_square_color_picker_description">"Färgval"</string>
+	<!-- Label for whether the user is attending this event. This is shown when a user is invited to a meeting or event. The possible answers are 'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+	<string name="view_event_response_label">"Delta?"</string>
+	<!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+	<string name="response_yes">"Ja"</string>
+	<!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+	<string name="response_maybe">"Kanske"</string>
+	<!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+	<string name="response_no">"Nej"</string>
+	<!-- Label for emailing attendees -->
+	<string name="email_guests_label">"E-postgäster"</string>
+	<!-- Label for emailing the organizer (when there are no attendees) -->
+	<string name="email_organizer_label">"E-postorganiserare"</string>
+	<!-- This is shown in the popup picker when emailing attendees -->
+	<string name="email_picker_label">"E-post med"</string>
+	<!-- Toast message displayed when the event id was not found LIMIT=30] -->
+	<string name="event_not_found">"Händelsen hittades inte."</string>
+	<!-- Notification label for getting a map of the location. -->
+	<string name="map_label">"Karta"</string>
+	<!-- Notification label for calling a phone number in the location. -->
+	<string name="call_label">"Ring"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings">"Snabbsvar"</string>
+	<!-- Summary of the quick response item in Settings [CHAR LIMIT=80]-->
+	<string name="quick_response_settings_summary">"Redigera standardsvar vid e-post med gäster"</string>
+	<!-- Title of the quick response screen in Settings->Quick Response [CHAR LIMIT=27]-->
+	<string name="quick_response_settings_title">"Redigera snabba svar"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings_edit_title">"Snabbsvar"</string>
+	<!-- Title of the dialog prompting the user choose a response when emailing guests [CHAR LIMIT=none]-->
+	<string name="quick_response_dialog_title">"Välj snabbsvar"</string>
+	<!-- Error to user when an email program can't be found[CHAR LIMIT=none]-->
+	<string name="quick_response_email_failed">"Det gick inte att hitta något e-postprogram"</string>
+	<string-array name="quick_response_defaults">
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Är några minuter sen."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Kommer om runt tio minuter."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Börja utan mig."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Tyvärr, jag hinner inte. Vi måste ta en annan tid."</item>
+	</string-array>
+	<!-- Option to create a custom response instead of using defaults [CHAR LIMIT=none] -->
+	<string name="quick_response_custom_msg">"Skriv eget svar ..."</string>
+	<!-- Event Info strings  Time Zone Label [CHAR LIMIT=12]  Repetition Label [CHAR LIMIT=12]  Organizer Label [CHAR LIMIT=12]-->
+	<string name="event_info_organizer">"Organisatör"</string>
+	<!-- Reminders label [CHAR LIMIT=15]-->
+	<string name="event_info_reminders_label">"Påminnelser"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_today">"IDAG, DEN <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_yesterday">"IGÅR, <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_tomorrow">"I MORGON, <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown while the calendar events are being loading to the screen. -->
+	<string name="loading">"Hämtar…"</string>
+	<!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+	<string name="show_older_events">"Visar händelser sedan <xliff:g id="OLDEST_SEARCH_RANGE">%1$s</xliff:g>. Peka om du vill visa fler."</string>
+	<!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+	<string name="show_newer_events">"Visar händelser fram till <xliff:g id="NEWEST_SEARCH_RANGE">%1$s</xliff:g>. Peka om du vill visa fler."</string>
+	<!-- Title of the search screen [CHAR LIMIT=30] -->
+	<string name="search_title">"Sök mina kalendrar"</string>
+	<!-- This is the title of a popup window that is displayed when the user edits a repeating event. [CHAR LIMIT=20]-->
+	<string name="edit_event_label">"Redigera händelse"</string>
+	<!-- This is a menu button for switching into edit mode when viewing an event. [CHAR LIMIT=10] -->
+	<string name="edit_label">"Redigera"</string>
+	<!-- The button label for deleting an event -->
+	<string name="delete_label">"Ta bort"</string>
+	<!-- A menu item for deleting an event   The button label for saving an event -->
+	<string name="save_label">"Färdig"</string>
+	<!-- The button label for discarding changes to an event -->
+	<string name="discard_label">"Återgå"</string>
+	<!-- The button label for making the reminder alarms go away temporarily. The reminder alarms will fire off again in 5 minutes. -->
+	<string name="snooze_all_label">"Sätt alla på snooze"</string>
+	<!-- The button label for dismissing all the current reminder alarms. This causes them to disappear from the notification screen. -->
+	<string name="dismiss_all_label">"Ta bort alla permanent"</string>
+	<!-- The button label for making the reminder alarms go away temporarily and re-fire in 5 minutes. [CHAR LIMIT=12]-->
+	<string name="snooze_label">"Snooze"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event does not repeat -->
+	<string name="does_not_repeat">"Engångshändelse"</string>
+	<!-- Part of a description of an repeating event. This part states the date when a repeating event ends. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; until 1/1/2030 [CHAR LIMIT=21] -->
+	<string name="endByDate">", till <xliff:g id="DATE">%s</xliff:g>"</string>
+	<plurals name="endByCount">
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="one">", en gång"</item>
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="other">", <xliff:g id="NUMBER">%d</xliff:g> gånger"</item>
+	</plurals>
+	<plurals name="daily">
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="one">"Varje dag"</item>
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="other">"<xliff:g id="NUMBER">%d</xliff:g> dagars interv."</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats daily -->
+	<string name="daily">"Dagligen"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats every weekday (Monday through Friday) -->
+	<string name="every_weekday">"Varje vardag (mån-fre)"</string>
+	<plurals name="weekly">
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="one">"Varje vecka på <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="other">"Med <xliff:g id="NUMBER">%1$d</xliff:g> v. intervall på <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats weekly on some day of the week. For example, 'Weekly (every Tuesday)'. -->
+	<string name="weekly">"Varje vecka (varje <xliff:g id="DAYS_OF_WEEK">%s</xliff:g>)"</string>
+	<!-- Example: 'Monthly (every first Sunday)'   1st parameter is an ordinal number, like 'first'   2nd parameter is a day of the week, like 'Sunday' -->
+	<string name="monthly_on_day_count">"Varje månad (varje <xliff:g id="ordinal_number">%1$s</xliff:g> <xliff:g id="day_of_week">%2$s</xliff:g>)"</string>
+	<!-- The common portion of a string describing how often an event repeats, example: 'Monthly (on day 2)' -->
+	<string name="monthly">"Varje månad"</string>
+	<!-- Calendar spinner item, to select that an event recurs every year. -->
+	<string name="yearly_plain">"Varje år"</string>
+	<!-- Example: "Monthly (on day 15)" -->
+	<string name="monthly_on_day">"Varje månad (den <xliff:g id="DAY_OF_MONTH">%s</xliff:g>)"</string>
+	<!-- Example: "Yearly (on April 15)" -->
+	<string name="yearly">"Varje år (den <xliff:g id="DATES">%s</xliff:g>)"</string>
+	<!-- This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web).   This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web). -->
+	<string name="custom">"Anpassad (går ej att anpassa i mobilen)"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change just this one instance of this repeating event. -->
+	<string name="modify_event">"Ändra bara den här händelsen"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change all occurrences of this repeating event. -->
+	<string name="modify_all">"Ändra alla händelser i serien"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change this instance and all future occurrences of this repeating event. -->
+	<string name="modify_all_following">"Ändra den här och alla framtida händelser"</string>
+	<!-- Dialogs   This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_label">"Ny händelse"</string>
+	<!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_option">"Ny händelse"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event. The user still has a chance to cancel this operation. -->
+	<string name="delete_this_event_title">"Vill du ta bort den här händelsen?"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event that is recurring. The user still has a chance to cancel this operation. -->
+	<string name="delete_recurring_event_title">"Ta bort <xliff:g id="eventtitle">%s</xliff:g>?"</string>
+	<!-- This is the title of a popup dialog that asks for confirmation before changing the response to an invitation. -->
+	<string name="change_response_title">"Ändra svar"</string>
+	<!-- This the title of a menu for General Preferences. Pressing the menu item lets user to view and edit his general settings (or preferences) [CHAR LIMIT=30] -->
+	<string name="menu_general_preferences">"Allmänna inställn."</string>
+	<!-- This the title of a menu for "About Calendar" Preferences. Pressing the menu item lets user to view the current settings [CHAR LIMIT=30] -->
+	<string name="menu_about_preferences">"Om Kalender"</string>
+	<!-- This is the title of the screen for setting user preferences. -->
+	<string name="preferences_title">"Inställningar"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to viewing calendar events -->
+	<string name="preferences_general_title">"Inställning för kalendervy"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to reminders for calendar events -->
+	<string name="preferences_reminder_title">"Meddelanden och påminnelser"</string>
+	<!-- Settings check box label to hide events that the user has declined to attend -->
+	<string name="preferences_hide_declined_title">"Dölj avböjda händelser"</string>
+	<!-- Settings week start label to start week on specific day-->
+	<string name="preferences_week_start_day_title">"Vecka börjar med"</string>
+	<!-- Title of popup for week start day setting-->
+	<string name="preferences_week_start_day_dialog">"Vecka börjar med"</string>
+	<!-- no translation found for preferences_week_start_day_default -->
+	<skip />
+	<!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+	<string name="preferences_clear_search_history_title">"Rensa sökhistorik"</string>
+	<!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+	<string name="preferences_clear_search_history_summary">"Ta bort alla sökningar du gjort"</string>
+	<!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+	<string name="search_history_cleared">"Sökhistorik rensad."</string>
+	<!-- Settings check box label to enable or disable notifications -->
+	<string name="preferences_alerts_title">"Aviseringar"</string>
+	<!-- Settings dialog label that specifies when the phone should vibrate -->
+	<string name="preferences_alerts_vibrateWhen_title">"Vibrera"</string>
+	<!-- Title of ringtone selector dialog -->
+	<string name="preferences_alerts_ringtone_title">"Ljud"</string>
+	<!-- Title of check box label to enable or disable pop-up notifications -->
+	<string name="preferences_alerts_popup_title">"Popup-meddelande"</string>
+	<!-- List item label for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_title">"Stand.tid för påminnelse"</string>
+	<!-- Title of dialog for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_dialog">"Standardtid för påminnelse"</string>
+	<!-- Default value for the number of reminder minutes -->
+	<string name="preferences_default_reminder_default">"10"</string>
+	<!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+	<string name="preferences_use_home_tz_title">"Använd hemtidszon"</string>
+	<!-- Settings description of what setting Calendar to use a fixed 'home' time zone does [CHAR LIMIT = 60]-->
+	<string name="preferences_use_home_tz_descrip">"Tiderna i kalendern visas i din standardtidszon när du är ute och reser."</string>
+	<!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+	<string name="preferences_home_tz_title">"Hemtidszon"</string>
+	<!-- no translation found for preferences_home_tz_default -->
+	<skip />
+	<!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+	<string name="preferences_show_week_num_title">"Visa veckonummer"</string>
+	<!-- This is the title of a section in the Settings screen for "About" this application -->
+	<string name="preferences_about_title">"Om"</string>
+	<!-- Build version of the application -->
+	<string name="preferences_build_version">"Buildversion"</string>
+	<!-- Title for calendar gadget when displayed in list of all other gadgets -->
+	<string name="gadget_title">"Kalender"</string>
+	<plurals name="month_more_events">
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for 1 event, the quotes force a literal interpretation of the string [CHAR LIMIT = 10] -->
+		<item quantity="one">"+ 1"</item>
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for multiple events [CHAR LIMIT = 10] -->
+		<item quantity="other">"+ <xliff:g id="NUMBER">%d</xliff:g>"</item>
+	</plurals>
+	<!-- Caption to show on gadget when there are no upcoming calendar events -->
+	<string name="gadget_no_events">"Inga kommande händelser i kalendern"</string>
+	<!-- no translation found for tardis -->
+	<skip />
+	<!-- Experimental settings [CHAR LIMIT = 30]-->
+	<string name="preferences_experimental_category">"Experimentell"</string>
+	<!-- Reminders settings [CHAR LIMIT = 30]-->
+	<string name="preferences_reminders_category">"Påminnelser"</string>
+	<!-- Preference label for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_label">"Hoppa över påminnelser"</string>
+	<!-- Dialog title for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_dialog">"Hoppa över påminnelser"</string>
+	<!-- Preference label for quiet hours [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_label">"Tyst läge"</string>
+	<!-- Preference description for quiet hours [CHAR LIMIT = NONE]-->
+	<string name="preferences_reminders_quiet_hours_description">"Tysta påminnelser om event under en angiven tid."</string>
+	<!-- Preference label for quiet hours start time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_start">"Starttid för tyst läge"</string>
+	<!-- Preference label for quiet hours end time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_end">"Sluttid för tyst läge"</string>
+	<!-- Preferences used for debugging purposes [CHAR LIMIT = 30]-->
+	<string name="preferences_debug_category">"Felsökning"</string>
+	<!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+	<string name="copy_db">"Skicka databas"</string>
+	<!-- Displayed in email address autocomplete list when searching for contacts in corporate directories. Example: "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+	<string name="directory_searching_fmt">"Söker <xliff:g id="domain">%s</xliff:g>\u2026"</string>
+	<!-- Accessibility Events   Strings that describes actions for buttons without text   Create a new calendar event [CHAR LIMIT = NONE]  Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_attendee">"Ta bort deltagare"</string>
+	<!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_date">"Startdatum"</string>
+	<!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_time">"Starttid"</string>
+	<!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_date">"Slutdatum"</string>
+	<!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_time">"Sluttid"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_time_zone">"Tidszon"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_recurrence">"Upprepa händelse"</string>
+	<!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_reminder">"Lägg till påminnelse"</string>
+	<!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_reminder">"Ta bort påminnelse"</string>
+	<!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_attendee">"Lägg till deltagare"</string>
+	<!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+	<string name="accessibility_sync_cal">"Synkronisera kalender"</string>
+	<!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+	<string name="accessibility_all_day">"Heldagshändelse"</string>
+	<!-- Refresh the data in the calendar [CHAR LIMIT = NONE]  Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+	<string name="accessibility_repeats">"Upprepning"</string>
+	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_time">"Påminnelsetid"</string>
+	<!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_type">"Påminnelsetyp"</string>
+	<!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_showmeas">"Visa mig som"</string>
+	<!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_privacy">"Sekretess"</string>
+	<!-- Calendar notification [CHAR LIMIT = NONE]-->
+	<string name="acessibility_cal_notification">"Kalendermeddelande"</string>
+	<!-- Calendar notification snooze button [CHAR LIMIT = NONE]-->
+	<string name="acessibility_snooze_notification">"Snooze-meddelande"</string>
+	<!-- Calendar notification email button [CHAR LIMIT = NONE]-->
+	<string name="accessibility_email_notification">"E-postgäster"</string>
+	<!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+	<string name="day_view_new_event_hint">"+ Ny händelse"</string>
+	<!-- Source: A value for announcing the current event index (example: "Event 2 of 6"). Description: This is spoken to the user. [CHAR LIMIT="NONE"] -->
+	<string name="template_announce_item_index">"Händelse <xliff:g id="item_index">%1$s</xliff:g> av <xliff:g id="item_count">%2$s</xliff:g>."</string>
+	<plurals name="Nevents">
+		<!-- number of events in the notification bar  This is the label for a 1 event. -->
+		<item quantity="one">"1 händelse"</item>
+		<!-- number of events in the notification bar  This is the label for 2 or more events. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> händelser"</item>
+	</plurals>
+	<plurals name="N_remaining_events">
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 1 event. -->
+		<item quantity="one">"1 händelse"</item>
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 2 or more events. -->
+		<item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> händelser till"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_selected_marker_description">"Markerad händelse"</string>
+	<!-- Tell user not to check a checkbox [CHAR LIMIT=30] -->
+	<string name="do_not_check">"Kontrollera INTE -&gt;"</string>
+	<!-- Dialog title for recurrence picker for configuring a repeating event[CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title">"Upprepa"</string>
+	<!-- Dialog title for recurrence picker when one-time event is selected [CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title_never">"Upprepas aldrig"</string>
+	<plurals name="recurrence_interval_daily">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Med <xliff:g id="COUNT">%d</xliff:g> dags intervall"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Med <xliff:g id="COUNT">%d</xliff:g> dagars intervall"</item>
+	</plurals>
+	<plurals name="recurrence_interval_weekly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Med <xliff:g id="COUNT">%d</xliff:g> veckas intervall"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Med <xliff:g id="COUNT">%d</xliff:g> veckors intervall"</item>
+	</plurals>
+	<plurals name="recurrence_interval_monthly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Med <xliff:g id="COUNT">%d</xliff:g> månads intervall"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Med <xliff:g id="COUNT">%d</xliff:g> månaders intervall"</item>
+	</plurals>
+	<plurals name="recurrence_interval_yearly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Med <xliff:g id="COUNT">%d</xliff:g> års intervall"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Med <xliff:g id="COUNT">%d</xliff:g> års intervall"</item>
+	</plurals>
+	<!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+	<string name="recurrence_month_pattern_by_day">"samma dag varje månad"</string>
+	<!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_continously">"För alltid"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=25] -->
+	<string name="recurrence_end_date_label">"Till ett visst datum"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_date">"Till den <xliff:g id="DATE">%s</xliff:g>"</string>
+	<!-- Specifies that a repeating event to repeat for a number of times. A repeating event can repeat forever, repeat in a certain frequency until a certain date, or repeat for a number of times. e.g. repeat 10 times and stop. This string is for the last case [CHAR LIMIT=25] -->
+	<string name="recurrence_end_count_label">"Ett antal upprepningar"</string>
+	<plurals name="recurrence_end_count">
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="one">"För <xliff:g id="EVENT_COUNT">%d</xliff:g> event"</item>
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="other">"För <xliff:g id="EVENT_COUNT">%d</xliff:g> event"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_recurrence_choose_end_date_description">"ändra slutdatum"</string>
+	<!-- no translation found for notification_sender_id -->
+	<skip />
+	<!-- FR556557-Yuansheng-Zhao-001 begin   Settings option to bring up a dialog that select first week of year option -->
+	<string name="preferences_alerts_first_week_title">"Första veckan på året"</string>
+	<!-- Title of dialog for setting the default option of first week of year -->
+	<string name="alerts_dialog_first_week_title">"Första veckan på året"</string>
+	<!-- no translation found for cannot_use_in_ultimate_mode -->
+	<skip />
+	<!-- no translation found for select_default_calendar_first -->
+	<skip />
+	<!-- no translation found for noEventHint -->
+	<skip />
+	<!---->
+	<string name="default_calendar_name">"Standardkalender"</string>
+	<!---->
+	<string name="default_calendar_account">"Lokal värdkalender"</string>
+	<!-- FR593012-Wentao-Wan-001 end  added by Fujuan.Lin for RR565704 begin -->
+	<string name="import_birthday">"Importera vänners födelsedag"</string>
+	<!-- no translation found for import_birthday_finish -->
+	<skip />
+	<!---->
+	<string name="import_birthday_msg">"Importera vänners födelsedag från Facebook till lokal kalender?"</string>
+	<!---->
+	<string name="importing_msg">"Importera Facebook-vänners födelsedag\u2026"</string>
+	<!-- no translation found for import_error_msg -->
+	<skip />
+	<!---->
+	<string name="birthday_reminder_description">"&amp;ss födelsedag"</string>
+	<!---->
+	<string name="button_label_hide">"Dölj"</string>
+	<!---->
+	<string name="import_result_msg">"%d vänners födelsedag importerade."</string>
+	<!-- no translation found for toast_start_import -->
+	<skip />
+	<!-- no translation found for toast_import_fail -->
+	<skip />
+	<!---->
+	<string name="menu_item_refresh">"Uppdatera"</string>
+	<!-- no translation found for title_fb_birthday -->
+	<skip />
+	<!-- no translation found for bithday_item_format -->
+	<skip />
+	<!---->
+	<string name="preferences_fb_sync_title">"Synkroniseringsinställning"</string>
+	<!---->
+	<string name="preferences_fb_sync_all">"Synkronisera alla"</string>
+	<!-- no translation found for preferences_fb_sync_summary -->
+	<skip />
+	<!---->
+	<string name="default_calendar_account_facebook">"Facebook-kalender"</string>
 </resources>

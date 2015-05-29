@@ -1,363 +1,548 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- Copyright (C) 2006 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
-    <string name="app_label">ပြက္ခဒိန်</string>  
-    <skip/>  
-    <string name="what_label">ဘယ်အရာ</string>  
-    <string name="where_label">ဘယ်မှာ</string>  
-    <string name="when_label">ဘယ်အချိန်</string>  
-    <string name="timezone_label">အချိန်ဇုန်</string>  
-    <string name="attendees_label">ဧည့်သည်များ</string>  
-    <string name="today">ယနေ့</string>  
-    <string name="tomorrow">မနက်ဖြန်</string>  
-    <string name="today_at_time_fmt">"ယနေ့ 
-        <xliff:g id="time_interval">%s</xliff:g> တွင်"
-    </string>  
-    <string name="tomorrow_at_time_fmt">"မနက်ဖြန် 
-        <xliff:g id="time_interval">%s</xliff:g> တွင်"
-    </string>  
-    <string name="date_time_fmt">" 
-        <xliff:g id="date">%s</xliff:g>၊ 
-        <xliff:g id="time_interval">%s</xliff:g>"
-    </string>  
-    <string name="repeats_label">ပြန်ကျော့ခြင်း</string>  
-    <string name="no_title_label">(ခေါင်းစဉ်မရှိ)</string>  
-    <plurals name="Nminutes"> 
-        <item quantity="one">၁ မိနစ်</item>  
-        <item quantity="other"> 
-            <xliff:g id="count">%d</xliff:g> မိနစ်များ
-        </item> 
-    </plurals>  
-    <plurals name="Nmins"> 
-        <item quantity="one">၁ မိနစ်</item>  
-        <item quantity="other"> 
-            <xliff:g id="count">%d</xliff:g> မိနစ်များ
-        </item> 
-    </plurals>  
-    <plurals name="Nhours"> 
-        <item quantity="one">၁ နာရီ</item>  
-        <item quantity="other"> 
-            <xliff:g id="count">%d</xliff:g> နာရီများ
-        </item> 
-    </plurals>  
-    <plurals name="Ndays"> 
-        <item quantity="one">၁ ရက်</item>  
-        <item quantity="other"> 
-            <xliff:g id="count">%d</xliff:g> ရက်များ
-        </item> 
-    </plurals>  
-    <plurals name="weekN"> 
-        <item quantity="other">သီတင်းပတ် 
-            <xliff:g id="count">%d</xliff:g> 
-        </item> 
-    </plurals>  
-    <skip/>  
-    <string name="calendar_refresh">"ပြန်လည်ဆန်းသစ်ရန်"</string>  
-    <string name="show_day_view">"နေ့ရက်ကို ပြရန်"</string>  
-    <string name="agenda_view">"လုပ်ငန်းစဉ်"</string>  
-    <string name="day_view">"ရက်"</string>  
-    <string name="week_view">"သီတင်းပတ်"</string>  
-    <string name="month_view">"လ"</string>  
-    <string name="event_view">"ဖြစ်ရပ်ကို ကြည့်ရန်"</string>  
-    <string name="event_create">"ဖြစ်ရပ်သစ်"</string>  
-    <string name="event_edit">"ဖြစ်ရပ်ကို တည်းဖြတ်ရန်"</string>  
-    <string name="event_delete">"ဖြစ်ရပ်ကို ဖျက်ရန်"</string>  
-    <string name="goto_today">"ယနေ့"</string>  
-    <string name="menu_preferences">"ဆက်တင်များ"</string>  
-    <string name="menu_select_visible_calendars">"ဖော်ပြရန် ပြက္ခဒိန်များ"</string>  
-    <string name="search">"ရှာရန်"</string>  
-    <string name="hide_controls">"ထိန်းချုပ်မှုများကို ဝှက်ထားရန်"</string>  
-    <string name="show_controls">"ထိန်းချုပ်မှုများကို ဖော်ပြရန်"</string>  
-    <skip/>  
-    <skip/>  
-    <string name="select_visible_calendars_title">"ဖော်ပြရန် ပြက္ခဒိန်များ"</string>  
-    <string name="synced">အချိန်ကိုက်ခြင်းလုပ်ဆောင်ပြီးပြီ</string>  
-    <string name="not_synced">အချိန်ကိုက်ခြင်းလုပ်ဆောင်မထားပါ</string>  
-    <string name="acct_not_synced">ဤအကောင့်ကိုအချိန်ကိုက်ခြင်းလုပ်ဆောင်မထားသောကြောင့် သင့်ပြက္ခဒိန်မှာ ခေတ်မီခြင်းရှိမည်မဟုတ်ပါ။</string>  
-    <string name="accounts">အကောင့်များနှင့်အချိန်ကိုက်လုပ်ဆောင်ခြင်း</string>  
-    <string name="select_synced_calendars_title">အချိန်ကိုက်လုပ်ဆောင်ရန်ပြက္ခဒိန်များ</string>  
-    <string name="select_synced_calendars_button">အချိန်ကိုက်လုပ်ဆောင်ရန်ပြက္ခဒိန်များ</string>  
-    <skip/>  
-    <string name="hint_what">"ဖြစ်ရပ်အမည်"</string>  
-    <string name="hint_where">"တည်နေရာ"</string>  
-    <string name="hint_description">"ဖော်ပြချက်"</string>  
-    <string name="hint_attendees">"ဧည့်သည်များ"</string>  
-    <string name="creating_event">"ဖြစ်ရပ်ဖန်တီးပြီးပြီ"</string>  
-    <string name="saving_event">"ဖြစ်ရပ်ကိုသိမ်းဆည်းပြီးပြီ"</string>  
-    <string name="empty_event">"ဗလာဖြစ်ရပ်ဖန်တီးထားခြင်းမရှိ"</string>  
-    <string name="creating_event_with_guest">"ဖိတ်ကြားခြင်းများကိုပို့လိမ့်မည်။"</string>  
-    <string name="saving_event_with_guest">"မွမ်းမံခြင်းများကိုပို့လိမ့်မည်။"</string>  
-    <skip/>  
-    <string name="alert_title">ပြက္ခဒိန်အကြောင်းကြားချက်များ</string>  
-    <skip/>  
-    <skip/>  
-    <string name="event_info_title">ဖြစ်ရပ်ကိုကြည့်ရန်</string>  
-    <string name="event_info_title_invite">အစည်းအဝေးဖိတ်ကြားခြင်း</string>  
-    <skip/>  
-    <string name="edit_event_to_label">သို့</string>  
-    <string name="edit_event_from_label">မှ</string>  
-    <string name="edit_event_all_day_label">တစ်နေကုန်</string>  
-    <string name="edit_event_calendar_label">ပြက္ခဒိန်</string>  
-    <string name="edit_event_show_all">အားလုံးကိုပြရန်</string>  
-    <string name="description_label">ဖော်ပြချက်</string>  
-    <string name="presence_label">ဤကဲ့သို့ကျွန်ပ်အားပြရန်</string>  
-    <string name="privacy_label">ကိုယ်ပိုင်သီးသန့်</string>  
-    <string name="reminders_label">သတိပေးချက်ထပ်ထည့်ရန်</string>  
-    <string name="no_syncable_calendars">ပြက္ခဒိန်များမရှိ</string>  
-    <string name="no_calendars_found">ဖြစ်ရပ်တစ်ခုကို သင်မထည့်နိုင်မီ၊ သင့်စက်ထဲတွင် အနည်းဆုံးပြက္ခဒိန်အကောင့်တစ်ခု သင်ထည့်၍ ပြက္ခဒိန်ကို မြင်ရအောင် သင်လုပ်ရပါမည်။ အကောင့်တစ်ခုထပ်ထည့်ရန် အကောင့်ထပ်ထည့်ရန် ကိုထိပါ (အကောင့်တစ်ခုကို သင်အခုတင်ထည့်ပြီးဖြစ်ပါက၊ အချိန်ကိုက်လုပ်ဆောင်ခြင်း ပြီးဆုံးအောင်စောင့်ပြီးမှာ နောက်ထပ်ကြိုးစားပါ)။ သို့မဟုတ် ပယ်ဖျက်ရန် ကိုထိ၍ အနည်းဆုံးပြက္ခဒိန်တစ်ခုကို သေချာမြင်ရအောင်လုပ်ပါ။</string>  
-    <string name="create_an_account_desc">"ပြက္ခဒိန်သည် ဂူဂယ်(လ်)အကောင့်တစ်ခုနှင့် ပိုမိုကောင်းမွန်စွာ လုပ်ဆောင်နိုင်ပါသည်။\n\n မည်သည့်ဝက်(ဘ်)ဘရောက်ဆာမှဖြစ်စေ ရယူပါ\n\n2022 သင့်ဖြစ်ရပ်များကို လုံခြုံစွာ မိတ္တူပွားထားပါ"</string>  
-    <string name="add_account">အကောင့်ထပ်ထည့်ရန်</string>  
-    <skip/>  
-    <string name="view_event_calendar_label">ပြက္ခဒိန်-</string>  
-    <string name="view_event_organizer_label">စီစဉ်သူ-</string>  
-    <string name="view_event_response_label">တက်မှာလား။</string>  
-    <string name="response_yes">ဟုတ်ကဲ့</string>  
-    <string name="response_maybe">တက်ချင်တက်မည်</string>  
-    <string name="response_no">မတက်ပါ</string>  
-    <string name="email_guests_label">ဧည့်သည်များထံအီးမေး(လ်)ပို့ရန်</string>  
-    <string name="email_organizer_label">အီးမေးလ်စုစည်းချက်</string>
-    <string name="email_picker_label">ဤအရာဖြင့်အီးမေး(လ်)ပို့ရန်</string>  
-    <string name="event_not_found">"ဖြစ်စဉ်ရှာမတွေ့ပါ။"</string>
-    <string translatable="false" name="email_subject_prefix">Re:\u0020</string>  
-    <string name="quick_response_settings">အမြန်တုံ့ပြန်မှုများ</string>  
-    <string name="quick_response_settings_summary">ဧည့်သည်များထံအီးမေး(လ်)ပို့ရာတွင် အလိုအလျောက်တုံ့ပြန်ချက်အား တည်းဖြတ်ရန်</string>  
-    <string name="quick_response_settings_title">အမြန်တုံ့ပြန်မှုများကိုတည်းဖြတ်ရန်</string>  
-    <string name="quick_response_settings_edit_title">အမြန်တုံ့ပြန်မှုများ</string>  
-    <string name="quick_response_dialog_title">အမြန်တုံ့ပြန်မှုကိုရွေးရန်</string>  
-    <string name="quick_response_email_failed">အီးမေး(လ်)ပရိုဂရမ်တစ်ခုရှာဖွေရာမအောင်မြင်ပါ</string>  
-    <string-array name="quick_response_defaults"> 
-        <item>မိနစ်အနည်းငယ်မျှသာနောက်ကျပါလိမ့်မည်။</item>  
-        <item>နောက် ၁၀ မိနစ်လောက်ကြာရင် အဲဒီကိုရောက်လာပါလိမ့်မယ်။</item>  
-        <item>ကျွန်ုပ်မပါဘဲ စထားနှင့်ပါ။</item>  
-        <item>စိတ်မကောင်းပါ။ ကျွန်ုပ်မလာနိုင်ပါ။ နောက်တစ်ကြိမ်ပြန်ချိန်းဖို့လိုပါသည်။</item> 
-    </string-array>  
-    <string name="quick_response_custom_msg">စိတ်ကြိုက်လုပ်ထားသောသတင်းတို\u2026</string>  
-    <string name="event_info_organizer">စီစဉ်သူ-</string>  
-    <string name="event_info_reminders_label">သတိပေးချက်များ</string>  
-    <skip/>  
-    <string name="agenda_today">ယနေ့၊ 
-        <xliff:g id="date">%1$s</xliff:g> 
-    </string>  
-    <string name="agenda_yesterday">မနေ့က၊ 
-        <xliff:g id="date">%1$s</xliff:g> 
-    </string>  
-    <string name="agenda_tomorrow">မနက်ဖြန်၊ 
-        <xliff:g id="date">%1$s</xliff:g> 
-    </string>  
-    <string name="loading">တင်နေသည်\u2026</string>  
-    <string name="show_older_events"> 
-        <xliff:g id="oldest_search_range">%1$s</xliff:g> မတိုင်ခင်ဖြစ်ရပ်များကိုကြည့်ရန် ထိပါ။
-    </string>  
-    <string name="show_newer_events"> 
-        <xliff:g id="newest_search_range">%1$s</xliff:g> နောက်ပိုင်းဖြစ်ရပ်များကိုကြည့်ရန် ထိပါ။
-    </string>  
-    <skip/>  
-    <string name="search_title">ကျွန်ုပ်ပြက္ခဒိန်အားရှာရန်</string>  
-    <skip/>  
-    <string name="edit_event_label">အသေးစိတ်</string>  
-    <string name="edit_label">"တည်းဖြတ်ရန်"</string>  
-    <string name="delete_label">"ဖျက်ရန်"</string>  
-    <string name="save_label">ပြီးပြီ</string>  
-    <string name="discard_label">ပယ်ဖျက်ရန်</string>  
-    <skip/>  
-    <string name="snooze_all_label">"အားလုံးကိုတစ်ရေးမှိန်းရန်"</string>  
-    <string name="dismiss_all_label">"အားလုံးကိုဖယ်ရန်"</string>  
-    <string name="snooze_label">"တစ်ရေးမှိန်းမည်"</string>  
-    <skip/>  
-    <string name="does_not_repeat">တစ်ကြိမ်သာလုပ်မည့်ဖြစ်ရပ်</string>  
-    <string name="daily">နေ့စဉ်</string>  
-    <string name="every_weekday">"သီတင်းပတ်ကြားရက်တိုင်း (တနင်္လာ\u2013သောကြာ)"</string>  
-    <string name="weekly">"အပတ်စဉ် ( 
-        <xliff:g id="days_of_week">%s</xliff:g>နေ့တိုင်း)"
-    </string>  
-    <string name="monthly_on_day_count">"လစဉ် ( 
-        <xliff:g id="ordinal_number">%1$s</xliff:g>  
-        <xliff:g id="day_of_week">%2$s</xliff:g>တိုင်း)"
-    </string>  
-    <string name="monthly">လစဉ်</string>  
-    <string name="yearly_plain">နှစ်စဉ်</string>  
-    <string name="monthly_on_day">"လစဉ် ( 
-        <xliff:g id="day_of_month">%s</xliff:g>နေ့တွင်)"
-    </string>  
-    <string name="yearly">"နှစ်စဉ် ( 
-        <xliff:g id="dates">%s</xliff:g>တွင်)"
-    </string>  
-    <string name="custom" product="tablet">မိမိစိတ်ကြိုက်ပြုလုပ်ခြင်း (တက်ဘလက်ပေါ်တွင်မိမိစိတ်ကြိုက် မလုပ်နိုင်ပါ)</string>  
-    <string name="custom" product="default">မိမိစိတ်ကြိုက်ပြုလုပ်ခြင်း (ဖုန်းပေါ်တွင်မိမိစိတ်ကြိုက် မလုပ်နိုင်ပါ)</string>  
-    <string name="modify_event">ဤဖြစ်ရပ်ကိုသာပြောင်းရန်</string>  
-    <string name="modify_all">ဤအတွဲတွင်ရှိသော ဖြစ်ရပ်များအားလုံးကိုပြောင်းရန်</string>  
-    <string name="modify_all_following">ဤဖြစ်ရပ်နှင့်နောင်လာမည့်ဖြစ်ရပ်များ အားလုံးကိုပြောင်းရန်</string>  
-    <string name="new_event_dialog_label">ဖြစ်ရပ်အသစ်</string>  
-    <string name="new_event_dialog_option">"ဖြစ်ရပ်အသစ်"</string>  
-    <skip/>  
-    <string name="delete_this_event_title">ဤဖြစ်ရပ်ကိုဖျက်မှာလား။</string>  
-    <string name="delete_recurring_event_title"> 
-        <xliff:g id="eventtitle">%s</xliff:g>ကိုဖျက်မှာလား။
-    </string>  
-    <string name="change_response_title">တုံ့ပြန်မှုပြောင်းရန်</string>  
-    <string name="menu_general_preferences">အထွေထွေဆက်တင်များ</string>  
-    <string name="menu_about_preferences">ပြက္ခဒိန်အကြောင်း</string>  
-    <string name="preferences_title">"ဆက်တင်များ"</string>  
-    <string name="preferences_general_title">ပြက္ခဒိန်ကြည့်ခြင်းဆက်တင်</string>  
-    <string name="preferences_reminder_title">သတိပေးချက်ဆက်တင်များ</string>  
-    <string name="preferences_hide_declined_title">ငြင်းပယ်ဖြစ်ရပ်များဝှက်ပါ</string>
-    <string name="preferences_week_start_day_title">သီတင်းပတ်စတင်သည့်နေ့</string>  
-    <string name="preferences_week_start_day_dialog">သီတင်းပတ်စတင်သည့်နေ့</string>  
-    <string translatable="false" name="preferences_week_start_day_default">-1</string>  
-    <string name="preferences_clear_search_history_title">ရှာဖွေထားသည့်မှတ်တမ်းကိုရှင်းပစ်ရန်</string>  
-    <string name="preferences_clear_search_history_summary">သင်လုပ်ဆောင်ထားသော ရှာဖွေချက်များအားလုံးကိုဖယ်ရှားရန်</string>  
-    <string name="search_history_cleared">ရှာဖွေရေးမှတ်တမ်းရှင်းပြီးပြီ။</string>  
-    <string name="preferences_alerts_title">အကြောင်းကြားချက်</string>  
-    <string name="preferences_alerts_vibrateWhen_title">တုန်ခါခြင်း</string>  
-    <string name="preferences_alerts_ringtone_title">ဖုန်းမြည်သံရွေးရန်</string>  
-    <string name="preferences_alerts_popup_title">ပေါ်လာသည့်သတိပေးချက်</string>
-    <string name="preferences_default_reminder_title">အလိုအလျောက်သတိပေးချက်အချိန်</string>  
-    <string name="preferences_default_reminder_dialog">အလိုအလျောက်သတိပေးချက်အချိန်</string>  
-    <string name="preferences_default_reminder_default">10</string>  
-    <string name="preferences_use_home_tz_title">သင့်နိုင်ငံအချိန်ဇုန်ကိုသုံးရန်</string>  
-    <string name="preferences_use_home_tz_descrip">ခရီးသွားနေစဉ် ပြက္ခဒိန်များနှင့် ဖြစ်ရပ်အချိန်များအား သင့်နိုင်ငံအချိန်ဇုန်နှင့်ပြရန်</string>  
-    <string name="preferences_home_tz_title">သင့်နိုင်ငံအချိန်ဇုန်</string>  
-    <string translatable="false" name="preferences_home_tz_default">America/Los_Angeles</string>  
-    <string name="preferences_show_week_num_title">ရက်သတ္တပတ်နံပါတ်ကိုပြရန်</string>  
-    <string name="preferences_about_title">အကြောင်း</string>  
-    <string name="preferences_build_version">တည်ဆောက်ထားသောမူကွဲပုံစံ</string>  
-    <string-array name="prefEntries_alerts_vibrateWhen"> 
-        <item>အမြဲတမ်း</item>  
-        <item>အသံတိတ်လုပ်ထားသောအချိန်မှသာ</item>  
-        <item>ဘယ်တော့မှ</item> 
-    </string-array>  
-    <string translatable="false" name="prefDefault_alerts_vibrateWhen">never</string>  
-    <string translatable="false" name="prefDefault_alerts_vibrate_true">always</string>  
-    <string translatable="false" name="prefDefault_alerts_vibrate_false">never</string>  
-    <string-array translatable="false" name="prefValues_alerts_vibrateWhen"> 
-        <item>always</item>  
-        <item>silent</item>  
-        <item>never</item> 
-    </string-array>  
-    <string name="prefDialogTitle_vibrateWhen">တုန်ခါခြင်း</string>  
-    <skip/>  
-    <string name="gadget_title">ပြက္ခဒိန်</string>  
-    <plurals name="month_more_events"> 
-        <item quantity="one">"+1"</item>  
-        <item quantity="other">+ 
-            <xliff:g id="number">%d</xliff:g> 
-        </item> 
-    </plurals>  
-    <string name="gadget_no_events">နောက်လာမည့်ပြက္ခဒိန်ဖြစ်ရပ်များမရှိပါ</string>  
-    <string translatable="false" name="tardis">TARDIS</string>  
-    <string name="copy_db">ဒေတာဘေ့(စ်)ပို့ရန်</string>  
-    <string name="directory_searching_fmt"> 
-        <xliff:g id="domain">%s</xliff:g>\u2026 ကိုရှာဖွေနေသည်
-    </string>  
-    <string name="accessibility_remove_attendee">တက်ရောက်သူကိုဖယ်ရှားရန်</string>  
-    <string name="accessibility_pick_start_date">စတင်သည့်နေ့စွဲ</string>  
-    <string name="accessibility_pick_start_time">စတင်သည့်အချိန်</string>  
-    <string name="accessibility_pick_end_date">ပြီးဆုံးသည့်နေ့စွဲ</string>  
-    <string name="accessibility_pick_end_time">ပြီးဆုံးသည့်အချိန်</string>  
-    <string name="accessibility_pick_time_zone">အချိန်ဇုန်</string>  
-    <string name="accessibility_add_reminder">သတိပေးချက်ထပ်ထည့်ရန်</string>  
-    <string name="accessibility_remove_reminder">သတိပေးချက်ဖယ်ရှားရန်</string>  
-    <string name="accessibility_add_attendee">တက်ရောက်သူကိုထပ်ထည့်ရန်</string>  
-    <string name="accessibility_sync_cal">ပြက္ခဒိန်ကိုအချိန်ကိုက်ရန်</string>  
-    <string name="accessibility_all_day">တစ်နေကုန်ဖြစ်ရပ်</string>  
-    <string name="accessibility_repeats">ထပ်ပြန်လုပ်ခြင်း</string>  
-    <string name="accessibility_reminder_time">သတိပေးချက်အချိန်</string>  
-    <string name="accessibility_reminder_type">သတိပေးချက်အမျိုးအစား</string>  
-    <string name="accessibility_reminder_showmeas">ဤကဲ့သို့ကျွနု်ပ်အားပြရန်</string>  
-    <string name="accessibility_reminder_privacy">ကိုယ်ပိုင်သီးသန့်</string>  
-    <string name="acessibility_cal_notification">ပြက္ခဒိန်အကြောင်းကြားချက်</string>  
-    <string name="acessibility_snooze_notification">အကြောင်းကြားချက်ခဏနားခြင်း</string>  
-    <string name="accessibility_email_notification">ဧည့်သည်များထံသို့ အီးမေးလ်ပေးပို့ပါ</string>
-    <string name="day_view_new_event_hint">+ဖြစ်ရပ်အသစ်</string>  
-    <string name="template_announce_item_index"> 
-        <xliff:g id="item_count">%2$s</xliff:g> ၏ 
-        <xliff:g id="item_index">%1$s</xliff:g> ဖြစ်ရပ်
-    </string>  
-    <plurals name="Nevents"> 
-        <item quantity="one">ဖြစ်ရပ် ၁ ခု</item>  
-        <item quantity="other">ဖြစ်ရပ်များ 
-            <xliff:g id="count">%d</xliff:g> 
-        </item> 
-    </plurals>  
-    <plurals name="N_remaining_events"> 
-        <item quantity="one">+ဖြစ်ရပ် ၁ ခု</item>  
-        <item quantity="other">+ဖြစ်ရပ်များ 
-            <xliff:g id="count">%d</xliff:g> 
-        </item> 
-    </plurals>  
-    <string name="acessibility_selected_marker_description">ရွေးချယ်ထားသောဖြစ်ရပ်</string>  
-    <string name="do_not_check">မစစ်ဆေးပါနှင့် -&gt;</string>  
-    <string name="create_event_dialog_save">သိမ်းရန်</string>
-    <string name="choose_event_color_label">ဖြစ်ရပ်အရောင် ရွေးခြင်း</string>
-    <string name="event_color_picker_dialog_title">ဖြစ်ရပ်အရောင်</string>
-    <string name="event_color_set_to_default">ပုံသေပြက္ခဒိန်အရောင် သတ်မှတ်ပါ</string>
-    <string name="calendar_color_picker_dialog_title">ပြက္ခဒိန်အရောင်</string>
-    <string name="calendar_square_color_picker_description">အရောင်ရွေးရန်နေရာ</string>
-    <string name="map_label">မြေပုံ</string>
-    <string name="call_label">ခေါ်ဆိုပါ</string>
-    <string name="endByDate"> - <xliff:g id="date">%s</xliff:g> အထိ</string>
-    <plurals name="endByCount">
-     <item quantity="one">၊ တစ်ကြိမ်အတွက်</item>
-     <item quantity="other">၊ <xliff:g id="number">%d</xliff:g>ကြိမ်အတွက်</item>
-   </plurals>
-    <plurals name="daily">
-     <item quantity="one">နေ့စဉ်</item>
-     <item quantity="other"><xliff:g id="number">%d</xliff:g> ရက်လျှင် တစ်ကြိမ်</item>
-   </plurals>
-    <plurals name="weekly">
-     <item quantity="one">အပတ်စဉ် <xliff:g id="days_of_week">%2$s</xliff:g> နေ့တွင်</item>
-     <item quantity="other"><xliff:g id="number">%1$d</xliff:g> ပတ်လျှင် <xliff:g id="days_of_week">%2$s</xliff:g> နေ့တွင်</item>
-   </plurals>
-    <string name="preferences_experimental_category">လက်တွေ့ဖြစ်သော</string>
-    <string name="preferences_reminders_category">သတိပေးချက်များ</string>
-    <string name="preferences_reminders_responded_label">သတိပေးချက်များကို ကျော်ပါ</string>
-    <string name="preferences_reminders_responded_dialog">သတိပေးချက်များကို ကျော်ပါ</string>
-    <string name="preferences_reminders_quiet_hours_label">ငြိမ်သက်နေသောအချိန်</string>
-    <string name="preferences_reminders_quiet_hours_description">သတ်မှတ်ချိန်အတွင်း အသံတိတ်ဖြစ်ရပ် သတိပေးချက်များ</string>
-    <string name="preferences_reminders_quiet_hours_start">ငြိမ်သက်နေသောအချိန် စချိန်</string>
-    <string name="preferences_reminders_quiet_hours_end">ငြိမ်သက်နေသောအချိန်ဆုံးချိန်</string>
-    <string name="preferences_debug_category">ချို့ယွင်းချက်ဖယ်ရှားခြင်း</string>
-    <string name="accessibility_pick_recurrence">ဖြစ်ရပ်ကို ထပ်လုပ်ပါ</string>
-    <string name="recurrence_dialog_title">နောက်တစ်ခါ ပြုလုပ်သည်</string>
-    <string name="recurrence_dialog_title_never">ဘယ်တော့မှ ထပ်မလုပ်ပါ</string>
-    <plurals name="recurrence_interval_daily">
-     <item quantity="one"><xliff:g id="count">%d</xliff:g> ရက်လျှင် တစ်ကြိမ်</item>
-     <item quantity="other"><xliff:g id="count">%d</xliff:g> ရက်လျှင် တစ်ကြိမ်</item>
-   </plurals>
-    <plurals name="recurrence_interval_weekly">
-     <item quantity="one"><xliff:g id="count">%d</xliff:g> ပတ်လျှင် တစ်ကြိမ်</item>
-     <item quantity="other"><xliff:g id="count">%d</xliff:g> ပတ်လျှင် တစ်ကြိမ်</item>
-   </plurals>
-    <plurals name="recurrence_interval_monthly">
-     <item quantity="one"><xliff:g id="count">%d</xliff:g> လလျှင် တစ်ကြိမ်</item>
-     <item quantity="other"><xliff:g id="count">%d</xliff:g> လလျှင် တစ်ကြိမ်</item>
-   </plurals>
-    <plurals name="recurrence_interval_yearly">
-     <item quantity="one"><xliff:g id="count">%d</xliff:g> နှစ်လျှင် တစ်ကြိမ်</item>
-     <item quantity="other"><xliff:g id="count">%d</xliff:g> နှစ်လျှင် တစ်ကြိမ်</item>
-   </plurals>
-    <string name="recurrence_month_pattern_by_day">လစဉ် တူသောရက်တွင်</string>
-    <string name="recurrence_end_continously">အမြဲတမ်း</string>
-    <string name="recurrence_end_date_label">ရက်စွဲတစ်ခုအထိ</string>
-    <string name="recurrence_end_date"><xliff:g id="date">%s</xliff:g> အထိ</string>
-    <string name="recurrence_end_count_label">ဖြစ်ရပ်များအတွက်</string>
-    <plurals name="recurrence_end_count">
-     <item quantity="one">ဖြစ်ရပ် <xliff:g id="event_count">%d</xliff:g> ခုအတွက်</item>
-     <item quantity="other">ဖြစ်ရပ် <xliff:g id="event_count">%d</xliff:g> ခုအတွက်</item>
-   </plurals>
-    <string name="acessibility_recurrence_choose_end_date_description">နောက်ဆုံးရက်စွဲကို ပြောင်းသည်</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- This is the label underneath the icon for Calendar -->
+	<string name="app_label">"ပြက္ခဒိန်"</string>
+	<!-- This is the label for the title or name of an event -->
+	<string name="what_label">"ဘယ်အရာ"</string>
+	<!-- This is the label for the location of an event -->
+	<string name="where_label">"ဘယ်မှာ"</string>
+	<!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+	<string name="when_label">"ဘယ်အချိန်"</string>
+	<!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+	<string name="timezone_label">"အချိန်ဇုန်"</string>
+	<!-- This is the label for the Guests/Attendees of an event -->
+	<string name="attendees_label">"ဧည့်သည်များ"</string>
+	<!-- Text to show when an event starts on the current day -->
+	<string name="today">"ယနေ့"</string>
+	<!-- Text to show when an event starts on the next day -->
+	<string name="tomorrow">"မနက်ဖြန်"</string>
+	<!-- Text for an event starting on the current day with a start and end time. For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="today_at_time_fmt">"ယနေ့ <xliff:g id="time_interval">%s</xliff:g> တွင်"</string>
+	<!-- Text for an event starting on the next day with a start and end time. For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="tomorrow_at_time_fmt">"မနက်ဖြန် <xliff:g id="time_interval">%s</xliff:g> တွင်"</string>
+	<!-- Format string for a date and time description. For ex: "April 19, 2012, 3:00pm - 4:00pm" [CHAR LIMIT=NONE] -->
+	<string name="date_time_fmt">" <xliff:g id="date">%s</xliff:g>၊ <xliff:g id="time_interval">%s</xliff:g>"</string>
+	<!-- Some events repeat daily, weekly, monthly, or yearly. This is the label for all the choices about how often an event repeats (including the choice of not repeating). -->
+	<string name="repeats_label">"ပြန်ကျော့ခြင်း"</string>
+	<!-- Title of event when no explicit title is specified by the user -->
+	<string name="no_title_label">"(ခေါင်းစဉ်မရှိ)"</string>
+	<plurals name="Nminutes">
+		<!-- Reminder format strings  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"၁မိနစ္"</item>
+		<!-- Reminder format strings  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> မိနစ်များ"</item>
+	</plurals>
+	<plurals name="Nmins">
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"၁ မိနစ်"</item>
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> မိနစ်များ"</item>
+	</plurals>
+	<plurals name="Nhours">
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a 1-hour reminder. -->
+		<item quantity="one">"၁ နာရီ"</item>
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a reminder of 2 or more hours. The actual number of hours is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> နာရီများ"</item>
+	</plurals>
+	<plurals name="Ndays">
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 1 day. -->
+		<item quantity="one">"၁ ရက်"</item>
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 2 or more days. The actual number of days is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> ရက်များ"</item>
+	</plurals>
+	<plurals name="weekN">
+		<!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1"  Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+		<item quantity="other">"သီတင်းပတ် <xliff:g id="count">%d</xliff:g>"</item>
+	</plurals>
+	<!-- This is a label on a context menu item. Pressing this menu item to initiate syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+	<string name="calendar_refresh">"ပြန်လည်ဆန်းသစ်ရန်"</string>
+	<!-- This is a label on a context menu item. Pressing this menu item displays the Agenda view.   This is a label on a context menu item. Pressing this menu item displays the Day view. -->
+	<string name="show_day_view">"နေ့ရက်ကို ပြရန်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Agenda view. -->
+	<string name="agenda_view">"လုပ်ငန်းစဉ်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Day view. -->
+	<string name="day_view">"ရက်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Week view. -->
+	<string name="week_view">"သီတင်းပတ်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Month view. -->
+	<string name="month_view">"လ"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the details of an event. -->
+	<string name="event_view">"ဖြစ်ရပ်ကို ကြည့်ရန်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to create a new event. -->
+	<string name="event_create">"ဖြစ်ရပ်သစ်"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to edit or change an existing event. -->
+	<string name="event_edit">"ဖြစ်ရပ်ကို တည်းဖြတ်ရန်"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to delete an existing event. -->
+	<string name="event_delete">"ဖြစ်ရပ်ကို ဖျက်ရန်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item takes the user to the current day (today) in whatever view (Day view, Week view, Agenda view, Month view) they are currently in. -->
+	<string name="goto_today">"ယနေ့"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to see the list of calendars that he is viewing and to then add or remove selected calendars.   This is a label on a menu item. Pressing this menu item allows the user to view and edit his Settings (or Preferences) -->
+	<string name="menu_preferences">"ဆက်တင်များ"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="menu_select_visible_calendars">"ဖော်ပြရန် ပြက္ခဒိန်များ"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="search">"ရှာရန်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item hides the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="hide_controls">"ထိန်းချုပ်မှုများကို ဝှက်ထားရန်"</string>
+	<!-- This is a label on a menu item. Pressing this menu item shows the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="show_controls">"ထိန်းချုပ်မှုများကို ဖော်ပြရန်"</string>
+	<!-- Title of "My calendars" screen -->
+	<string name="select_visible_calendars_title">"ဖော်ပြရန် ပြက္ခဒိန်များ"</string>
+	<!-- Synced and visible status message   Synced but not visible status message   not Synced or visible status message   Synced status message displayed when the given calendar is stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="synced">"အချိန်ကိုက်ခြင်းလုပ်ဆောင်ပြီးပြီ"</string>
+	<!-- Not synced status message displayed when the given calendar is not stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="not_synced">"အချိန်ကိုက်ခြင်းလုပ်ဆောင်မထားပါ"</string>
+	<!-- Message displayed to user when an account with Calendars is not being auto-synced [CHAR LIMIT=120]-->
+	<string name="acct_not_synced">"ဤအကောင့်ကိုအချိန်ကိုက်ခြင်းလုပ်ဆောင်မထားသောကြောင့် သင့်ပြက္ခဒိန်မှာ ခေတ်မီခြင်းရှိမည်မဟုတ်ပါ။"</string>
+	<!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+	<string name="accounts">"အကောင့်များနှင့်အချိန်ကိုက်လုပ်ဆောင်ခြင်း"</string>
+	<!-- Select Synced Calendars activity   Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_title">"အချိန်ကိုက်လုပ်ဆောင်ရန်ပြက္ခဒိန်များ"</string>
+	<!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_button">"အချိန်ကိုက်လုပ်ဆောင်ရန်ပြက္ခဒိန်များ"</string>
+	<!-- The title of the screen where the user edits an event [CHAR LIMIT=17]   Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+	<string name="hint_what">"ဖြစ်ရပ်အမည်"</string>
+	<!-- Default value of Where field (as a hint to the user)[CHAR LIMIT=15] -->
+	<string name="hint_where">"တည်နေရာ"</string>
+	<!-- Default value of Description field (as a hint to the user) [CHAR LIMIT=15]-->
+	<string name="hint_description">"ဖော်ပြချက်"</string>
+	<!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+	<string name="hint_attendees">"ဧည့်သည်များ"</string>
+	<!-- Toast message displayed when a new event is created -->
+	<string name="creating_event">"ဖြစ်ရပ်ဖန်တီးပြီးပြီ"</string>
+	<!-- Toast message displayed when an existing event is saved after being modified -->
+	<string name="saving_event">"ဖြစ်ရပ်ကိုသိမ်းဆည်းပြီးပြီ"</string>
+	<!-- Toast message displayed when a new event was not saved because it was empty [CHAR LIMIT=30] -->
+	<string name="empty_event">"ဗလာဖြစ်ရပ်ဖန်တီးထားခြင်းမရှိ"</string>
+	<!-- Toast message displayed when a new event with guests is created -->
+	<string name="creating_event_with_guest">"ဖိတ်ကြားခြင်းများကိုပို့လိမ့်မည်။"</string>
+	<!-- Toast message displayed when an existing event with guests is saved after being modified -->
+	<string name="saving_event_with_guest">"မွမ်းမံခြင်းများကိုပို့လိမ့်မည်။"</string>
+	<!-- Create event dialog save button [CHAR LIMIT=10] -->
+	<string name="create_event_dialog_save">"သိမ်းရန်"</string>
+	<!-- the title of the alert/notification activity -->
+	<string name="alert_title">"ပြက္ခဒိန်အကြောင်းကြားချက်များ"</string>
+	<!-- This is the title of the screen used to view the details of an event -->
+	<string name="event_info_title">"ဖြစ်ရပ်ကိုကြည့်ရန်"</string>
+	<!-- This is the title of the screen used to view the details of an invitation to a meeting or event -->
+	<string name="event_info_title_invite">"အစည်းအဝေးဖိတ်ကြားခြင်း"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'end date'. -->
+	<string name="edit_event_to_label">"သို့"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'start date'. -->
+	<string name="edit_event_from_label">"မှ"</string>
+	<!-- Check box label that specifies if this is an all-day event -->
+	<string name="edit_event_all_day_label">"တစ်နေကုန်"</string>
+	<!-- Label for choosing one of the calendars -->
+	<string name="edit_event_calendar_label">"ပြက္ခဒိန်"</string>
+	<!-- Menu item to show all choices [CHAR LIMIT=22]-->
+	<string name="edit_event_show_all">"အားလုံးကိုပြရန်"</string>
+	<!-- Label for the event description -->
+	<string name="description_label">"ဖော်ပြချက်"</string>
+	<!-- Label for the 'Presence' of an event, which can be either 'busy' (the default) or 'available' [CHAR LIMIT=15] -->
+	<string name="presence_label">"ဤကဲ့သို့ကျွန်ပ်အားပြရန်"</string>
+	<!-- Label for the 'Privacy' of an event, which can be either 'private' or 'public' [CHAR LIMIT=15] -->
+	<string name="privacy_label">"ကိုယ်ပိုင်သီးသန့်"</string>
+	<!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+	<string name="reminders_label">"သတိပေးချက်ထပ်ထည့်ရန်"</string>
+	<!-- Title of alert shown if the user tries to create an event and has no calendars -->
+	<string name="no_syncable_calendars">"ပြက္ခဒိန်များမရှိ"</string>
+	<!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+	<string name="no_calendars_found">"ဖြစ်ရပ်တစ်ခုကို သင်မထည့်နိုင်မီ၊ သင့်စက်ထဲတွင် အနည်းဆုံးပြက္ခဒိန်အကောင့်တစ်ခု သင်ထည့်၍ ပြက္ခဒိန်ကို မြင်ရအောင် သင်လုပ်ရပါမည်။ အကောင့်တစ်ခုထပ်ထည့်ရန် အကောင့်ထပ်ထည့်ရန် ကိုထိပါ (အကောင့်တစ်ခုကို သင်အခုတင်ထည့်ပြီးဖြစ်ပါက၊ အချိန်ကိုက်လုပ်ဆောင်ခြင်း ပြီးဆုံးအေ</string>
+	<!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+	<string name="create_an_account_desc">"ပြက္ခဒိန်သည် ဂူဂယ်(လ်)အကောင့်တစ်ခုနှင့် ပိုမိုကောင်းမွန်စွာ လုပ်ဆောင်နိုင်ပါသည်။\n\n မည်သည့်ဝက်(ဘ်)ဘရောက်ဆာမှဖြစ်စေ ရယူပါ\n\n2022 သင့်ဖြစ်ရပ်များကို လုံခြုံစွာ မိတ္တူပွားထားပါ"</string>
+	<!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+	<string name="add_account">"အကောင့်ထပ်ထည့်ရန်"</string>
+	<!-- Label for which calendar an event is part of -->
+	<string name="view_event_calendar_label">"ပြက္ခဒိန်-"</string>
+	<!-- Label for the event organizer -->
+	<string name="view_event_organizer_label">"စီစဉ်သူ-"</string>
+	<!-- Label for the local timezone   Label for showing event color picker -->
+	<string name="choose_event_color_label">"ဖြစ်ရပ်အရောင် ရွေးခြင်း"</string>
+	<!-- Title for event color picker dialog -->
+	<string name="event_color_picker_dialog_title">"ဖြစ်ရပ်အရောင်"</string>
+	<!-- Label for button which sets event color to default calendar color -->
+	<string name="event_color_set_to_default">"ပုံသေပြက္ခဒိန်အရောင် သတ်မှတ်ပါ"</string>
+	<!-- Title for calendar color picker dialog -->
+	<string name="calendar_color_picker_dialog_title">"ပြက္ခဒိန်အရောင်"</string>
+	<!-- Description for calendar color squares, which bring up the color picker. -->
+	<string name="calendar_square_color_picker_description">"အရောင်ရွေးရန်နေရာ"</string>
+	<!-- Label for whether the user is attending this event. This is shown when a user is invited to a meeting or event. The possible answers are 'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+	<string name="view_event_response_label">"တက်မှာလား။"</string>
+	<!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+	<string name="response_yes">"ဟုတ်ကဲ့"</string>
+	<!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+	<string name="response_maybe">"တက်ချင်တက်မည်"</string>
+	<!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+	<string name="response_no">"မတက်ပါ"</string>
+	<!-- Label for emailing attendees -->
+	<string name="email_guests_label">"ဧည့်သည်များထံအီးမေး(လ်)ပို့ရန်"</string>
+	<!-- Label for emailing the organizer (when there are no attendees) -->
+	<string name="email_organizer_label">"အီးမေးလ်စုစည်းချက်"</string>
+	<!-- This is shown in the popup picker when emailing attendees -->
+	<string name="email_picker_label">"ဤအရာဖြင့်အီးမေး(လ်)ပို့ရန်"</string>
+	<!-- Toast message displayed when the event id was not found LIMIT=30] -->
+	<string name="event_not_found">"ဖြစ်စဉ်ရှာမတွေ့ပါ။"</string>
+	<!-- Notification label for getting a map of the location. -->
+	<string name="map_label">"မြေပုံ"</string>
+	<!-- Notification label for calling a phone number in the location. -->
+	<string name="call_label">"ခေါ်ဆိုပါ"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings">"အမြန်တုံ့ပြန်မှုများ"</string>
+	<!-- Summary of the quick response item in Settings [CHAR LIMIT=80]-->
+	<string name="quick_response_settings_summary">"ဧည့်သည်များထံအီးမေး(လ်)ပို့ရာတွင် အလိုအလျောက်တုံ့ပြန်ချက်အား တည်းဖြတ်ရန်"</string>
+	<!-- Title of the quick response screen in Settings->Quick Response [CHAR LIMIT=27]-->
+	<string name="quick_response_settings_title">"အမြန်တုံ့ပြန်မှုများကိုတည်းဖြတ်ရန်"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings_edit_title">"အမြန်တုံ့ပြန်မှုများ"</string>
+	<!-- Title of the dialog prompting the user choose a response when emailing guests [CHAR LIMIT=none]-->
+	<string name="quick_response_dialog_title">"အမြန်တုံ့ပြန်မှုကိုရွေးရန်"</string>
+	<!-- Error to user when an email program can't be found[CHAR LIMIT=none]-->
+	<string name="quick_response_email_failed">"အီးမေး(လ်)ပရိုဂရမ်တစ်ခုရှာဖွေရာမအောင်မြင်ပါ"</string>
+	<string-array name="quick_response_defaults">
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"မိနစ်အနည်းငယ်မျှသာနောက်ကျပါလိမ့်မည်။"</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"နောက် ၁၀ မိနစ်လောက်ကြာရင် အဲဒီကိုရောက်လာပါလိမ့်မယ်။"</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"ကျွန်ုပ်မပါဘဲ စထားနှင့်ပါ။"</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"စိတ်မကောင်းပါ။ ကျွန်ုပ်မလာနိုင်ပါ။ နောက်တစ်ကြိမ်ပြန်ချိန်းဖို့လိုပါသည်။"</item>
+	</string-array>
+	<!-- Option to create a custom response instead of using defaults [CHAR LIMIT=none] -->
+	<string name="quick_response_custom_msg">"စိတ်ကြိုက်လုပ်ထားသောသတင်းတို\u2026"</string>
+	<!-- Event Info strings  Time Zone Label [CHAR LIMIT=12]  Repetition Label [CHAR LIMIT=12]  Organizer Label [CHAR LIMIT=12]-->
+	<string name="event_info_organizer">"စီစဉ်သူ-"</string>
+	<!-- Reminders label [CHAR LIMIT=15]-->
+	<string name="event_info_reminders_label">"သတိပေးချက်များ"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_today">"ယနေ့၊ <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_yesterday">"မနေ့က၊ <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_tomorrow">"မနက်ဖြန်၊ <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown while the calendar events are being loading to the screen. -->
+	<string name="loading">"တင်နေသည်\u2026"</string>
+	<!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+	<string name="show_older_events">"<xliff:g id="oldest_search_range">%1$s</xliff:g> မတိုင်ခင်ဖြစ်ရပ်များကိုကြည့်ရန် ထိပါ။"</string>
+	<!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+	<string name="show_newer_events">"<xliff:g id="newest_search_range">%1$s</xliff:g> နောက်ပိုင်းဖြစ်ရပ်များကိုကြည့်ရန် ထိပါ။"</string>
+	<!-- Title of the search screen [CHAR LIMIT=30] -->
+	<string name="search_title">"ကျွန်ုပ်ပြက္ခဒိန်အားရှာရန်"</string>
+	<!-- This is the title of a popup window that is displayed when the user edits a repeating event. [CHAR LIMIT=20]-->
+	<string name="edit_event_label">"အသေးစိတ်"</string>
+	<!-- This is a menu button for switching into edit mode when viewing an event. [CHAR LIMIT=10] -->
+	<string name="edit_label">"တည်းဖြတ်ရန်"</string>
+	<!-- The button label for deleting an event -->
+	<string name="delete_label">"ဖ်က္ရန္"</string>
+	<!-- A menu item for deleting an event   The button label for saving an event -->
+	<string name="save_label">"ပြီးပြီ"</string>
+	<!-- The button label for discarding changes to an event -->
+	<string name="discard_label">"ပယ္ဖ်က္ရန္"</string>
+	<!-- The button label for making the reminder alarms go away temporarily. The reminder alarms will fire off again in 5 minutes. -->
+	<string name="snooze_all_label">"တေမးအိပ္ခ်ိန္အားလံုးထဲ့ရန္"</string>
+	<!-- The button label for dismissing all the current reminder alarms. This causes them to disappear from the notification screen. -->
+	<string name="dismiss_all_label">"အားလုံးကိုဖယ်ရန်"</string>
+	<!-- The button label for making the reminder alarms go away temporarily and re-fire in 5 minutes. [CHAR LIMIT=12]-->
+	<string name="snooze_label">"တစ်ရေးမှိန်းမည်"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event does not repeat -->
+	<string name="does_not_repeat">"တစ်ကြိမ်သာလုပ်မည့်ဖြစ်ရပ်"</string>
+	<!-- Part of a description of an repeating event. This part states the date when a repeating event ends. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; until 1/1/2030 [CHAR LIMIT=21] -->
+	<string name="endByDate">"- <xliff:g id="date">%s</xliff:g> အထိ"</string>
+	<plurals name="endByCount">
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="one">"၊ တစ်ကြိမ်အတွက်"</item>
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="other">"၊ <xliff:g id="number">%d</xliff:g>ကြိမ်အတွက်"</item>
+	</plurals>
+	<plurals name="daily">
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="one">"နေ့စဉ်"</item>
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="other">"<xliff:g id="number">%d</xliff:g> ရက်လျှင် တစ်ကြိမ်"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats daily -->
+	<string name="daily">"နေ့စဉ်"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats every weekday (Monday through Friday) -->
+	<string name="every_weekday">"တစ္ပတ္ၾကားရက္တိုင္း (တနလၤာ \u2013 ၂၀၁၃ ေသာၾကာ)"</string>
+	<plurals name="weekly">
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="one">"အပတ်စဉ် <xliff:g id="days_of_week">%2$s</xliff:g> နေ့တွင်"</item>
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="other">"<xliff:g id="number">%1$d</xliff:g> ပတ်လျှင် <xliff:g id="days_of_week">%2$s</xliff:g> နေ့တွင်"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats weekly on some day of the week. For example, 'Weekly (every Tuesday)'. -->
+	<string name="weekly">"အပတ်စဉ် ( <xliff:g id="days_of_week">%s</xliff:g>နေ့တိုင်း)"</string>
+	<!-- Example: 'Monthly (every first Sunday)'   1st parameter is an ordinal number, like 'first'   2nd parameter is a day of the week, like 'Sunday' -->
+	<string name="monthly_on_day_count">"လစဉ် ( <xliff:g id="ordinal_number">%1$s</xliff:g> <xliff:g id="day_of_week">%2$s</xliff:g>တိုင်း)"</string>
+	<!-- The common portion of a string describing how often an event repeats, example: 'Monthly (on day 2)' -->
+	<string name="monthly">"လစဉ်"</string>
+	<!-- Calendar spinner item, to select that an event recurs every year. -->
+	<string name="yearly_plain">"နှစ်စဉ်"</string>
+	<!-- Example: "Monthly (on day 15)" -->
+	<string name="monthly_on_day">"လစဉ် ( <xliff:g id="day_of_month">%s</xliff:g>နေ့တွင်)"</string>
+	<!-- Example: "Yearly (on April 15)" -->
+	<string name="yearly">"နှစ်စဉ် ( <xliff:g id="dates">%s</xliff:g>တွင်)"</string>
+	<!-- This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web).   This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web). -->
+	<string name="custom">"မိမိစိတ်ကြိုက်ပြုလုပ်ခြင်း (ဖုန်းပေါ်တွင်မိမိစိတ်ကြိုက် မလုပ်နိုင်ပါ)"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change just this one instance of this repeating event. -->
+	<string name="modify_event">"ဤဖြစ်ရပ်ကိုသာပြောင်းရန်"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change all occurrences of this repeating event. -->
+	<string name="modify_all">"ဤအတွဲတွင်ရှိသော ဖြစ်ရပ်များအားလုံးကိုပြောင်းရန်"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change this instance and all future occurrences of this repeating event. -->
+	<string name="modify_all_following">"ဤဖြစ်ရပ်နှင့်နောင်လာမည့်ဖြစ်ရပ်များ အားလုံးကိုပြောင်းရန်"</string>
+	<!-- Dialogs   This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_label">"ဖြစ်ရပ်အသစ်"</string>
+	<!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_option">"ဖြစ်ရပ်အသစ်"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event. The user still has a chance to cancel this operation. -->
+	<string name="delete_this_event_title">"ဤဖြစ်ရပ်ကိုဖျက်မှာလား။"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event that is recurring. The user still has a chance to cancel this operation. -->
+	<string name="delete_recurring_event_title">"<xliff:g id="eventtitle">%s</xliff:g>ကိုဖျက်မှာလား။"</string>
+	<!-- This is the title of a popup dialog that asks for confirmation before changing the response to an invitation. -->
+	<string name="change_response_title">"တုံ့ပြန်မှုပြောင်းရန်"</string>
+	<!-- This the title of a menu for General Preferences. Pressing the menu item lets user to view and edit his general settings (or preferences) [CHAR LIMIT=30] -->
+	<string name="menu_general_preferences">"အထွေထွေဆက်တင်များ"</string>
+	<!-- This the title of a menu for "About Calendar" Preferences. Pressing the menu item lets user to view the current settings [CHAR LIMIT=30] -->
+	<string name="menu_about_preferences">"ပြက္ခဒိန်အကြောင်း"</string>
+	<!-- This is the title of the screen for setting user preferences. -->
+	<string name="preferences_title">"ဆက်တင်များ"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to viewing calendar events -->
+	<string name="preferences_general_title">"ပြက္ခဒိန်ကြည့်ခြင်းဆက်တင်"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to reminders for calendar events -->
+	<string name="preferences_reminder_title">"သတိပေးချက်ဆက်တင်များ"</string>
+	<!-- Settings check box label to hide events that the user has declined to attend -->
+	<string name="preferences_hide_declined_title">"ပုန္းကြယ္ျခင္း"</string>
+	<!-- Settings week start label to start week on specific day-->
+	<string name="preferences_week_start_day_title">"သီတင်းပတ်စတင်သည့်နေ့"</string>
+	<!-- Title of popup for week start day setting-->
+	<string name="preferences_week_start_day_dialog">"သီတင်းပတ်စတင်သည့်နေ့"</string>
+	<!--translate [preferences_week_start_day_default] from sourcecode xml -->
+	<string name="preferences_week_start_day_default" translatable="false">-1</string>
+	<!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+	<string name="preferences_clear_search_history_title">"ရှာဖွေထားသည့်မှတ်တမ်းကိုရှင်းပစ်ရန်"</string>
+	<!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+	<string name="preferences_clear_search_history_summary">"သင်လုပ်ဆောင်ထားသော ရှာဖွေချက်များအားလုံးကိုဖယ်ရှားရန်"</string>
+	<!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+	<string name="search_history_cleared">"ရှာဖွေရေးမှတ်တမ်းရှင်းပြီးပြီ။"</string>
+	<!-- Settings check box label to enable or disable notifications -->
+	<string name="preferences_alerts_title">"အချက်ပေးချက်များ"</string>
+	<!-- Settings dialog label that specifies when the phone should vibrate -->
+	<string name="preferences_alerts_vibrateWhen_title">"တုန်ခါခြင်း"</string>
+	<!-- Title of ringtone selector dialog -->
+	<string name="preferences_alerts_ringtone_title">"ဖုန်းမြည်သံရွေးရန်"</string>
+	<!-- Title of check box label to enable or disable pop-up notifications -->
+	<string name="preferences_alerts_popup_title">"ထွက်ပေါ်လာသောအကြောင်းကြားချက်"</string>
+	<!-- List item label for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_title">"ပံုေသသတိေပးခ်ိန္"</string>
+	<!-- Title of dialog for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_dialog">"အလိုအလျောက်သတိပေးချက်အချိန်"</string>
+	<!-- Default value for the number of reminder minutes -->
+	<string name="preferences_default_reminder_default">"10"</string>
+	<!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+	<string name="preferences_use_home_tz_title">"သင့်နိုင်ငံအချိန်ဇုန်ကိုသုံးရန်"</string>
+	<!-- Settings description of what setting Calendar to use a fixed 'home' time zone does [CHAR LIMIT = 60]-->
+	<string name="preferences_use_home_tz_descrip">"ခရီးသွားနေစဉ် ပြက္ခဒိန်များနှင့် ဖြစ်ရပ်အချိန်များအား သင့်နိုင်ငံအချိန်ဇုန်နှင့်ပြရန်"</string>
+	<!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+	<string name="preferences_home_tz_title">"သင့်နိုင်ငံအချိန်ဇုန်"</string>
+	<!--translate [preferences_home_tz_default] from sourcecode xml -->
+	<string name="preferences_home_tz_default" translatable="false">America/Los_Angeles</string>
+	<!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+	<string name="preferences_show_week_num_title">"ရက်သတ္တပတ်နံပါတ်ကိုပြရန်"</string>
+	<!-- This is the title of a section in the Settings screen for "About" this application -->
+	<string name="preferences_about_title">"အကြောင်း"</string>
+	<!-- Build version of the application -->
+	<string name="preferences_build_version">"တည်ဆောက်ထားသောမူကွဲပုံစံ"</string>
+	<!-- Title for calendar gadget when displayed in list of all other gadgets -->
+	<string name="gadget_title">"ပြက္ခဒိန်"</string>
+	<plurals name="month_more_events">
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for 1 event, the quotes force a literal interpretation of the string [CHAR LIMIT = 10] -->
+		<item quantity="one">"+1"</item>
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for multiple events [CHAR LIMIT = 10] -->
+		<item quantity="other">"+ <xliff:g id="number">%d</xliff:g> "</item>
+	</plurals>
+	<!-- Caption to show on gadget when there are no upcoming calendar events -->
+	<string name="gadget_no_events">"နောက်လာမည့်ပြက္ခဒိန်ဖြစ်ရပ်များမရှိပါ"</string>
+	<!--translate [tardis] from sourcecode xml -->
+	<string name="tardis" translatable="false">TARDIS</string>
+	<!-- Experimental settings [CHAR LIMIT = 30]-->
+	<string name="preferences_experimental_category">"လက်တွေ့ဖြစ်သော"</string>
+	<!-- Reminders settings [CHAR LIMIT = 30]-->
+	<string name="preferences_reminders_category">"သတိပေးချက်များ"</string>
+	<!-- Preference label for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_label">"သတိပေးချက်များကို ကျော်ပါ"</string>
+	<!-- Dialog title for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_dialog">"သတိပေးချက်များကို ကျော်ပါ"</string>
+	<!-- Preference label for quiet hours [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_label">"ငြိမ်သက်နေသောအချိန်"</string>
+	<!-- Preference description for quiet hours [CHAR LIMIT = NONE]-->
+	<string name="preferences_reminders_quiet_hours_description">"သတ်မှတ်ချိန်အတွင်း အသံတိတ်ဖြစ်ရပ် သတိပေးချက်များ"</string>
+	<!-- Preference label for quiet hours start time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_start">"ငြိမ်သက်နေသောအချိန် စချိန်"</string>
+	<!-- Preference label for quiet hours end time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_end">"ငြိမ်သက်နေသောအချိန်ဆုံးချိန်"</string>
+	<!-- Preferences used for debugging purposes [CHAR LIMIT = 30]-->
+	<string name="preferences_debug_category">"ချို့ယွင်းချက်ဖယ်ရှားခြင်း"</string>
+	<!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+	<string name="copy_db">"ဒေတာဘေ့(စ်)ပို့ရန်"</string>
+	<!-- Displayed in email address autocomplete list when searching for contacts in corporate directories. Example: "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+	<string name="directory_searching_fmt">"<xliff:g id="domain">%s</xliff:g>\u2026 ကိုရှာဖွေနေသည်"</string>
+	<!-- Accessibility Events   Strings that describes actions for buttons without text   Create a new calendar event [CHAR LIMIT = NONE]  Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_attendee">"တက်ရောက်သူကိုဖယ်ရှားရန်"</string>
+	<!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_date">"စတင်သည့်နေ့စွဲ"</string>
+	<!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_time">"စတင်သည့်အချိန်"</string>
+	<!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_date">"ပြီးဆုံးသည့်နေ့စွဲ"</string>
+	<!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_time">"ပြီးဆုံးသည့်အချိန်"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_time_zone">"အချိန်ဇုန်"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_recurrence">"ဖြစ်ရပ်ကို ထပ်လုပ်ပါ"</string>
+	<!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_reminder">"သတိပေးချက်ထပ်ထည့်ရန်"</string>
+	<!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_reminder">"သတိပေးချက်ဖယ်ရှားရန်"</string>
+	<!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_attendee">"တက်ရောက်သူကိုထပ်ထည့်ရန်"</string>
+	<!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+	<string name="accessibility_sync_cal">"ပြက္ခဒိန်ကိုအချိန်ကိုက်ရန်"</string>
+	<!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+	<string name="accessibility_all_day">"တစ်နေကုန်ဖြစ်ရပ်"</string>
+	<!-- Refresh the data in the calendar [CHAR LIMIT = NONE]  Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+	<string name="accessibility_repeats">"ထပ်ပြန်လုပ်ခြင်း"</string>
+	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_time">"သတိပေးချက်အချိန်"</string>
+	<!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_type">"သတိပေးချက်အမျိုးအစား"</string>
+	<!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_showmeas">"ဤကဲ့သို့ကျွနု်ပ်အားပြရန်"</string>
+	<!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_privacy">"ကိုယ်ပိုင်သီးသန့်"</string>
+	<!-- Calendar notification [CHAR LIMIT = NONE]-->
+	<string name="acessibility_cal_notification">"ပြက္ခဒိန်အကြောင်းကြားချက်"</string>
+	<!-- Calendar notification snooze button [CHAR LIMIT = NONE]-->
+	<string name="acessibility_snooze_notification">"အကြောင်းကြားချက်ခဏနားခြင်း"</string>
+	<!-- Calendar notification email button [CHAR LIMIT = NONE]-->
+	<string name="accessibility_email_notification">"ဧည့်သည်များထံသို့ အီးမေးလ်ပေးပို့ပါ"</string>
+	<!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+	<string name="day_view_new_event_hint">"+ဖြစ်ရပ်အသစ်"</string>
+	<!-- Source: A value for announcing the current event index (example: "Event 2 of 6"). Description: This is spoken to the user. [CHAR LIMIT="NONE"] -->
+	<string name="template_announce_item_index">"<xliff:g id="item_count">%2$s</xliff:g> ၏ <xliff:g id="item_index">%1$s</xliff:g> ဖြစ်ရပ်"</string>
+	<plurals name="Nevents">
+		<!-- number of events in the notification bar  This is the label for a 1 event. -->
+		<item quantity="one">"ဖြစ်ရပ် ၁ ခု"</item>
+		<!-- number of events in the notification bar  This is the label for 2 or more events. -->
+		<item quantity="other">"ဖြစ်ရပ်များ <xliff:g id="count">%d</xliff:g>"</item>
+	</plurals>
+	<plurals name="N_remaining_events">
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 1 event. -->
+		<item quantity="one">"+ဖြစ်ရပ် ၁ ခု"</item>
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 2 or more events. -->
+		<item quantity="other">"+ဖြစ်ရပ်များ <xliff:g id="count">%d</xliff:g>"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_selected_marker_description">"ရွေးချယ်ထားသောဖြစ်ရပ်"</string>
+	<!-- Tell user not to check a checkbox [CHAR LIMIT=30] -->
+	<string name="do_not_check">"မစစ်ဆေးပါနှင့် -&gt;"</string>
+	<!-- Dialog title for recurrence picker for configuring a repeating event[CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title">"နောက်တစ်ခါ ပြုလုပ်သည်"</string>
+	<!-- Dialog title for recurrence picker when one-time event is selected [CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title_never">"ဘယ်တော့မှ ထပ်မလုပ်ပါ"</string>
+	<plurals name="recurrence_interval_daily">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"<xliff:g id="count">%d</xliff:g> ရက်လျှင် တစ်ကြိမ်"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> ရက်လျှင် တစ်ကြိမ်"</item>
+	</plurals>
+	<plurals name="recurrence_interval_weekly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"<xliff:g id="count">%d</xliff:g> ပတ်လျှင် တစ်ကြိမ်"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> ပတ်လျှင် တစ်ကြိမ်"</item>
+	</plurals>
+	<plurals name="recurrence_interval_monthly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"<xliff:g id="count">%d</xliff:g> လလျှင် တစ်ကြိမ်"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> လလျှင် တစ်ကြိမ်"</item>
+	</plurals>
+	<plurals name="recurrence_interval_yearly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"<xliff:g id="count">%d</xliff:g> နှစ်လျှင် တစ်ကြိမ်"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> နှစ်လျှင် တစ်ကြိမ်"</item>
+	</plurals>
+	<!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+	<string name="recurrence_month_pattern_by_day">"လစဉ် တူသောရက်တွင်"</string>
+	<!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_continously">"အမြဲတမ်း"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=25] -->
+	<string name="recurrence_end_date_label">"ရက်စွဲတစ်ခုအထိ"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_date">"<xliff:g id="date">%s</xliff:g> အထိ"</string>
+	<!-- Specifies that a repeating event to repeat for a number of times. A repeating event can repeat forever, repeat in a certain frequency until a certain date, or repeat for a number of times. e.g. repeat 10 times and stop. This string is for the last case [CHAR LIMIT=25] -->
+	<string name="recurrence_end_count_label">"ဖြစ်ရပ်များအတွက်"</string>
+	<plurals name="recurrence_end_count">
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="one">"ဖြစ်ရပ် <xliff:g id="event_count">%d</xliff:g> ခုအတွက်"</item>
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="other">"ဖြစ်ရပ် <xliff:g id="event_count">%d</xliff:g> ခုအတွက်"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_recurrence_choose_end_date_description">"နောက်ဆုံးရက်စွဲကို ပြောင်းသည်"</string>
+	<!-- no translation found for notification_sender_id -->
+	<skip />
+	<!-- FR556557-Yuansheng-Zhao-001 begin   Settings option to bring up a dialog that select first week of year option -->
+	<string name="preferences_alerts_first_week_title">"ႏွစ္၏ပထမအပတ္"</string>
+	<!-- Title of dialog for setting the default option of first week of year -->
+	<string name="alerts_dialog_first_week_title">"ႏွစ္၏ပထမအပတ္"</string>
+	<!-- no translation found for cannot_use_in_ultimate_mode -->
+	<skip />
+	<!--huanglin 20140104 for PR576713 -->
+	<string name="select_default_calendar_first">"အေကာင္းဆုံးသက္သာသည့္ စနစ္ဝင္ေနစဥ္တြင္ သံုးေနက် ျပကၡဒိန္ကို အရင္ေရြးေပးပါ။"</string>
+	<!-- no translation found for noEventHint -->
+	<skip />
+	<!---->
+	<string name="default_calendar_name">"ပံုေသျပကၡဒိန္"</string>
+	<!---->
+	<string name="default_calendar_account">"ေဒသအိမ္ရွင္ျပကၡဒိန္"</string>
+	<!-- FR593012-Wentao-Wan-001 end  added by Fujuan.Lin for RR565704 begin -->
+	<string name="import_birthday">"သူငယ္ခ်င္းမ်ားေမြးေန႔ျဖည့္သြင္းျခင္း"</string>
+	<!-- no translation found for import_birthday_finish -->
+	<skip />
+	<!---->
+	<string name="import_birthday_msg">"ေဖ့ဘုတ္မွသူငယ္ခ်င္းမ်ားေမြးေန႔ကို ေဒသျပကၡဒိန္သို႔ ျဖည့္သြင္းျခင္း?"</string>
+	<!---->
+	<string name="importing_msg">"ေဖ့ဘုတ္သူငယ္ခ်င္းမ်ားေမြးေန႔ျဖည့္သြင္းေနျခင္း \u2026"</string>
+	<!-- no translation found for import_error_msg -->
+	<skip />
+	<!---->
+	<string name="birthday_reminder_description">"%s \ ၏ေမြးေန႔"</string>
+	<!---->
+	<string name="button_label_hide">"ပုန္းကြယ္ျခင္း"</string>
+	<!---->
+	<string name="import_result_msg">"%d သူငယ္ခ်င္းမ်ားေမြးေန႔ျဖည့္သြင္းျပီးျခင္း"</string>
+	<!-- no translation found for toast_start_import -->
+	<skip />
+	<!-- no translation found for toast_import_fail -->
+	<skip />
+	<!---->
+	<string name="menu_item_refresh">"ရီဖရက္ရွ္"</string>
+	<!-- no translation found for title_fb_birthday -->
+	<skip />
+	<!-- no translation found for bithday_item_format -->
+	<skip />
+	<!---->
+	<string name="preferences_fb_sync_title">"ထပ္တူျပဳေနရာခ်ထားျခင္းမ်ား"</string>
+	<!---->
+	<string name="preferences_fb_sync_all">"အားလံုးကို ထပ္တူျပဳပါ"</string>
+	<!-- no translation found for preferences_fb_sync_summary -->
+	<skip />
+	<!---->
+	<string name="default_calendar_account_facebook">"ေဖ့ဘုတ္ျပကၡဒိန္"</string>
 </resources>

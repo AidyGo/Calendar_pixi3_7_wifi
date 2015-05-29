@@ -1,169 +1,255 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2007 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="reminder_methods_labels">
-    <item msgid="5172236776878811487">"Notif."</item>
-    <item msgid="1751151680520784746">"E-mail"</item>
-    <item msgid="2658001219380695677">"SMS"</item>
-    <item msgid="7926918288165444873">"Alarme"</item>
-  </string-array>
-  <string-array name="reminder_minutes_labels">
-    <item msgid="2416970002377237011">"0 minutos"</item>
-    <item msgid="6681865010714743948">"Um minuto"</item>
-    <item msgid="2327505114623595779">"Cinco minutos"</item>
-    <item msgid="1657410063332547113">"10 minutos"</item>
-    <item msgid="366087535181197780">"15 minutos"</item>
-    <item msgid="6252612791145061929">"20 minutos"</item>
-    <item msgid="7896694531989090700">"25 minutos"</item>
-    <item msgid="8754510169374808607">"30 minutos"</item>
-    <item msgid="3113380274218454394">"45 minutos"</item>
-    <item msgid="8546646645868526283">"Uma hora"</item>
-    <item msgid="6467845211024768872">"Duas horas"</item>
-    <item msgid="8201677619511076575">"Três horas"</item>
-    <item msgid="7172504281650128893">"12 horas"</item>
-    <item msgid="9114286702181482496">"24 horas"</item>
-    <item msgid="3107009344872997366">"Dois dias"</item>
-    <item msgid="6135563708172153696">"Uma semana"</item>
-  </string-array>
-  <string-array name="preferences_default_reminder_labels">
-    <item msgid="7495163916242649023">"Nenhum"</item>
-    <item msgid="5883344836499335043">"0 minutos"</item>
-    <item msgid="4354350447805231188">"Um minuto"</item>
-    <item msgid="265674592625309858">"5 minutos"</item>
-    <item msgid="8011089417728419666">"10 minutos"</item>
-    <item msgid="6177098581805412986">"15 minutos"</item>
-    <item msgid="356346660503078923">"20 minutos"</item>
-    <item msgid="992592434377054063">"25 minutos"</item>
-    <item msgid="9191353668596201944">"30 minutos"</item>
-    <item msgid="1192985682962908244">"45 minutos"</item>
-    <item msgid="1694315499429259938">"Uma hora"</item>
-    <item msgid="8281019320591769635">"Duas horas"</item>
-    <item msgid="2062931719019287773">"Três horas"</item>
-    <item msgid="4086495711621133006">"12 horas"</item>
-    <item msgid="3172669681920709561">"24 horas"</item>
-    <item msgid="5557836606782821910">"Dois dias"</item>
-    <item msgid="8336577387266744930">"Uma semana"</item>
-  </string-array>
-  <string-array name="preferences_week_start_day_labels">
-    <item msgid="986150274035512339">"Padrão local"</item>
-    <item msgid="134027225275475280">"Sábado"</item>
-    <item msgid="95029346069903091">"Domingo"</item>
-    <item msgid="5840983116375063739">"Segunda-feira"</item>
-  </string-array>
-  <string-array name="availability">
-    <item msgid="454869065893453189">"Ocupado(a)"</item>
-    <item msgid="6228387173725732140">"Disponível"</item>
-    <item msgid="2064426942462573474">"Tentativa"</item>
-  </string-array>
-  <string-array name="visibility">
-    <item msgid="3035788428581513163">"Padrão"</item>
-    <item msgid="5200216103966973369">"Privado"</item>
-    <item msgid="9182342638433672664">"Público"</item>
-  </string-array>
-  <string-array name="ordinal_labels">
-    <item msgid="2693927956303125332">"primeiro(a)"</item>
-    <item msgid="5631923029483854900">"segundo(a)"</item>
-    <item msgid="148935502975250973">"terceiro(a)"</item>
-    <item msgid="5124200797326669172">"quarto(a)"</item>
-    <item msgid="7564374178324652137">"último"</item>
-  </string-array>
-  <string-array name="response_labels1">
-    <item msgid="5605392595848194997">"Sem resposta"</item>
-    <item msgid="3724434080904437698">"Sim"</item>
-    <item msgid="8854145743148992583">"Talvez"</item>
-    <item msgid="6174292185978948873">"Não"</item>
-  </string-array>
-  <string-array name="delete_repeating_labels">
-    <item msgid="4208432367651646938">"Somente este evento"</item>
-    <item msgid="1536401639805370405">"Este evento e eventos futuros"</item>
-    <item msgid="7833229563617435430">"Todos os eventos"</item>
-  </string-array>
-  <string-array name="delete_repeating_labels_no_selected">
-    <item msgid="1341910309321756150">"Este evento e eventos futuros"</item>
-    <item msgid="6315440193748139854">"Todos os eventos"</item>
-  </string-array>
-  <string-array name="change_response_labels">
-    <item msgid="3466644709343519437">"Somente este evento"</item>
-    <item msgid="140670561403965380">"Todos os eventos da série"</item>
-  </string-array>
-  <string-array name="buttons_list">
-    <item msgid="5917946202321434335">"Dia"</item>
-    <item msgid="6248480754959562740">"Semana"</item>
-    <item msgid="4298472806133153766">"Mês"</item>
-    <item msgid="5033084974413793845">"Compromissos"</item>
-  </string-array>
-  <string-array name="preferences_skip_reminders_labels">
-    <item msgid="2285927842308686988">"Somente se recusou"</item>
-    <item msgid="6367412240524984286">"Somente se recusou ou não respondeu"</item>
-  </string-array>
-  <string-array name="recurrence_freq">
-    <item msgid="3388478383574917007">"REPETIR DIARIAMENTE"</item>
-    <item msgid="6300824484048337842">"REPETIR SEMANALMENTE"</item>
-    <item msgid="189361731610816256">"REPETIR MENSALMENTE"</item>
-    <item msgid="8714177874112569158">"REPETIR ANUALMENTE"</item>
-  </string-array>
-  <string-array name="repeat_by_nth_sun">
-    <item msgid="143841313172233420">"primeiro domingo do mês"</item>
-    <item msgid="2557379346106451363">"segundo domingo do mês"</item>
-    <item msgid="7622144489915654132">"terceiro domingo do mês"</item>
-    <item msgid="527152448137686021">"quarto domingo do mês"</item>
-    <item msgid="5057483608824759350">"último domingo do mês"</item>
-  </string-array>
-  <string-array name="repeat_by_nth_mon">
-    <item msgid="7539974918997689048">"primeira segunda-feira do mês"</item>
-    <item msgid="4484275849072423978">"segunda segunda-feira do mês"</item>
-    <item msgid="8956169860824371383">"terceira segunda-feira do mês"</item>
-    <item msgid="6924403357659569326">"quarta segunda-feira do mês"</item>
-    <item msgid="1379608815263472161">"última segunda-feira do mês"</item>
-  </string-array>
-  <string-array name="repeat_by_nth_tues">
-    <item msgid="8690802834039790777">"primeira terça-feira do mês"</item>
-    <item msgid="9063613547307760928">"segunda terça-feira do mês"</item>
-    <item msgid="6688603328729208168">"terceira terça-feira do mês"</item>
-    <item msgid="6695206006961533357">"quarta terça-feira do mês"</item>
-    <item msgid="8619069174889809914">"última terça-feira do mês"</item>
-  </string-array>
-  <string-array name="repeat_by_nth_wed">
-    <item msgid="3233850232075584386">"primeira quarta-feira do mês"</item>
-    <item msgid="5059722045367799217">"segunda quarta-feira do mês"</item>
-    <item msgid="7986246648229272275">"terceira quarta-feira do mês"</item>
-    <item msgid="9068566169348980801">"quarta quarta-feira do mês"</item>
-    <item msgid="7976866743069062134">"última quarta-feira do mês"</item>
-  </string-array>
-  <string-array name="repeat_by_nth_thurs">
-    <item msgid="920673677566009313">"primeira quinta-feira do mês"</item>
-    <item msgid="4857419136007543270">"segunda quinta-feira do mês"</item>
-    <item msgid="222044587450564839">"terceira quinta-feira do mês"</item>
-    <item msgid="6197927556533030945">"quarta quinta-feira do mês"</item>
-    <item msgid="1023326923033436905">"última quinta-feira do mês"</item>
-  </string-array>
-  <string-array name="repeat_by_nth_fri">
-    <item msgid="6534500380525126157">"primeira sexta-feira do mês"</item>
-    <item msgid="1935608297230506940">"segunda sexta-feira do mês"</item>
-    <item msgid="4061877662049317599">"terceira sexta-feira do mês"</item>
-    <item msgid="6856646749131820614">"quarta sexta-feira do mês"</item>
-    <item msgid="6533513913914859794">"última sexta-feira do mês"</item>
-  </string-array>
-  <string-array name="repeat_by_nth_sat">
-    <item msgid="3556369572649948699">"primeiro sábado do mês"</item>
-    <item msgid="9130198690512925355">"segundo sábado do mês"</item>
-    <item msgid="4525736070844032405">"terceiro sábado do mês"</item>
-    <item msgid="422053689531707709">"quarto sábado do mês"</item>
-    <item msgid="5499975799312474425">"último sábado do mês"</item>
-  </string-array>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string-array name="reminder_methods_labels">
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Notificação"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"E-mail"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"SMS"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Alarme"</item>
+	</string-array>
+	<string-array name="reminder_minutes_labels">
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"0 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 minuto"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"5 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"10 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"15 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"20 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"25 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"30 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"45 minutos"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 hora"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"2 horas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"3 horas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"12 horas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"24 horas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"2 dias"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 semana"</item>
+	</string-array>
+	<string-array name="preferences_default_reminder_labels">
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"Nenhum"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"0 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 minuto"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"5 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"10 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"15 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"20 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"25 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"30 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"45 minutos"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 hora"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"2 horas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"3 horas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"12 horas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"24 horas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"2 dias"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 semana"</item>
+	</string-array>
+	<string-array name="preferences_week_start_day_labels">
+		<item>"Localidade padrão"</item>
+		<item>"Sábado"</item>
+		<item>"Domingo"</item>
+		<item>"Segunda-feira"</item>
+	</string-array>
+	<string-array name="availability">
+		<item>"Ocupado"</item>
+		<item>"Disponível"</item>
+		<item>"Tentativa"</item>
+	</string-array>
+	<string-array name="visibility">
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Predefinição"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Privado"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Público"</item>
+	</string-array>
+	<string-array name="ordinal_labels">
+		<item>"primeiro"</item>
+		<item>"segundo"</item>
+		<item>"terceiro"</item>
+		<item>"quarto"</item>
+		<item>"último"</item>
+	</string-array>
+	<string-array name="response_labels1">
+		<!-- Invitation responses -->
+		<item>"Sem resposta"</item>
+		<!-- Invitation responses -->
+		<item>"Sim"</item>
+		<!-- Invitation responses -->
+		<item>"Talvez"</item>
+		<!-- Invitation responses -->
+		<item>"Não"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels">
+		<item>"Apenas este evento"</item>
+		<item>"Este evento e eventos futuros"</item>
+		<item>"Todos os eventos"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels_no_selected">
+		<item>"Este evento e futuros"</item>
+		<item>"Todos os eventos"</item>
+	</string-array>
+	<string-array name="change_response_labels">
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to only one instance of a repeating event -->
+		<item>"Apenas este evento"</item>
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to all instances of a repeating event -->
+		<item>"Todos os eventos da série"</item>
+	</string-array>
+	<string-array name="buttons_list">
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Dia"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Semana"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Mês"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Compromissos"</item>
+	</string-array>
+	<string-array name="preferences_skip_reminders_labels">
+		<!-- Experimental options for skipping reminders. [CHAR LIMIT = 37]  Default choice -->
+		<item>"Apenas se recusado"</item>
+		<!-- Experimental options for skipping reminders. [CHAR LIMIT = 37]  Second option, for skipping reminders to events not yet responded to. -->
+		<item>"Se recusado ou não atendido"</item>
+	</string-array>
+	<string-array name="recurrence_freq">
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"REPETIR DIAR."</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"REPETIR SEMANALMENTE"</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"REPETIR MENSALMENTE"</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"REPETIR ANUALMENTE"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_sun">
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"em todos os primeiros domingos"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"em todos os segundos domingos"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"em todos os terceiros domingos"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"em todos os quartos domingos"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"em todos os últimos domingos"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_mon">
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"em todas as primeiras segundas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"em todas as segundas segundas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"em todas as terceiras segundas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"em todas as quartas segundas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"em todas as últimas segundas-feiras"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_tues">
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"em todas as primeiras terças-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"em todas as segundas terças-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"em todas as terceiras terças-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"em todas as quartas terças-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"em todas as últimas terças-feiras"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_wed">
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"em todas as primeiras quartas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"em todas as segundas quartas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"em todas as terceiras quartas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"em todas as quartas quartas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"em todas as últimas quartas-feiras"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_thurs">
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"em todas as primeiras quintas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"em todas as segundas quintas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"em todas as terceiras quintas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"em todas as quartas quintas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"em todas as últimas quintas-feiras"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_fri">
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"em todas as primeiras sextas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"em todas as segundas sextas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"em todas as terceiras sextas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"em todas as quartas sextas-feiras"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"em todas as últimas sextas-feiras"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_sat">
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"em todos os primeiros sábados"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"em todos os segundos sábados"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"em todos os terceiros sábados"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"em todos os quartos sábados"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"em todos os últimos sábados"</item>
+	</string-array>
+	<string-array name="preferences_first_week_entry">
+		<!-- FR556557-Yuansheng-Zhao-001 begin  Starts on January 1st -->
+		<item>"Iniciar a 1 Jan"</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First week of 4 days in January -->
+		<item>"Iniciar 1ª sem. de 4 dias"</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First full week of January -->
+		<item>"Iniciar 1ª sem. completa"</item>
+	</string-array>
 </resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string-array name="reminder_methods_labels">
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Paziņojums"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Pa e-pastu"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Īsziņā"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Signāls"</item>
+	</string-array>
+	<string-array name="reminder_minutes_labels">
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"0 minutes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 minūte"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"5 minūtes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"10 minūtes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"15 minūtes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"20 minūtes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"25 minūtes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"30 minūtes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"45 minūtes"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 stunda"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"2 stundas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"3 stundas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"12 stundas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"24 stundas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"2 dienas"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 nedēļa"</item>
+	</string-array>
+	<string-array name="preferences_default_reminder_labels">
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"Nav"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"0 minutes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 minūte"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"5 minūtes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"10 minūtes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"15 minūtes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"20 minūtes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"25 minūtes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"30 minūtes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"45 minūtes"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 stunda"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"2 stundas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"3 stundas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"12 stundas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"24 stundas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"2 dienas"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 nedēļa"</item>
+	</string-array>
+	<string-array name="preferences_week_start_day_labels">
+		<item>"Local default"</item>
+		<item>"Sestdiena"</item>
+		<item>"Svētdiena"</item>
+		<item>"Pirmdiena"</item>
+	</string-array>
+	<string-array name="availability">
+		<item>"Aizņemts"</item>
+		<item>"Pieejams"</item>
+		<item>"Pagaidu"</item>
+	</string-array>
+	<string-array name="visibility">
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Noklusējums"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Privāts"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Publisks"</item>
+	</string-array>
+	<string-array name="ordinal_labels">
+		<item>"pirmā"</item>
+		<item>"otrā"</item>
+		<item>"trešā"</item>
+		<item>"ceturtā"</item>
+		<item>"pēdējā"</item>
+	</string-array>
+	<string-array name="response_labels1">
+		<!-- Invitation responses -->
+		<item>"No response"</item>
+		<!-- Invitation responses -->
+		<item>"Jā"</item>
+		<!-- Invitation responses -->
+		<item>"Varbūt"</item>
+		<!-- Invitation responses -->
+		<item>"Nē"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels">
+		<item>"Tikai šo pasākumu"</item>
+		<item>"This and future events"</item>
+		<item>"Visus pasākumus"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels_no_selected">
+		<item>"Šo un nākamos pasākumus"</item>
+		<item>"Visus pasākumus"</item>
+	</string-array>
+	<string-array name="change_response_labels">
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to only one instance of a repeating event -->
+		<item>"Tikai šo pasākumu"</item>
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to all instances of a repeating event -->
+		<item>"Visus virknes pasākumus"</item>
+	</string-array>
+	<string-array name="buttons_list">
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Diena"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Nedēļa"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Mēnesis"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Darba kārtība"</item>
+	</string-array>
+	<!-- no translation found for preferences_skip_reminders_labels -->
+	<skip />
+	<!-- no translation found for recurrence_freq -->
+	<skip />
+	<!-- no translation found for repeat_by_nth_sun -->
+	<skip />
+	<!-- no translation found for repeat_by_nth_mon -->
+	<skip />
+	<!-- no translation found for repeat_by_nth_tues -->
+	<skip />
+	<!-- no translation found for repeat_by_nth_wed -->
+	<skip />
+	<!-- no translation found for repeat_by_nth_thurs -->
+	<skip />
+	<!-- no translation found for repeat_by_nth_fri -->
+	<skip />
+	<!-- no translation found for repeat_by_nth_sat -->
+	<skip />
+	<string-array name="preferences_first_week_entry">
+		<!-- FR556557-Yuansheng-Zhao-001 begin  Starts on January 1st -->
+		<item>"Sākt ar 1. janvāri"</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First week of 4 days in January -->
+		<item>"Sākt ar pirmo nedēļu, kurā ir vismaz 4 dienas"</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First full week of January -->
+		<item>"Sākt ar pirmo pilno nedēļu"</item>
+	</string-array>
+</resources>

@@ -36,5 +36,5 @@
     <integer name="calendar_controls_animation_time">400</integer>
     <!-- size of day date font in week header view  -->
     <integer name="text_size_week_number">18</integer>
-    <integer name="def_calendar_first_week_of_year">0</integer>
+   <!-- <integer name="def_calendar_first_week_of_year">0</integer>-->
 </resources>

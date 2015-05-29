@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- This is the label underneath the icon for Calendar -->
+	<string name="app_label">"Calendar"</string>
+	<!-- This is the label for the title or name of an event -->
+	<string name="what_label">"Ce"</string>
+	<!-- This is the label for the location of an event -->
+	<string name="where_label">"Unde"</string>
+	<!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+	<string name="when_label">"Când"</string>
+	<!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+	<string name="timezone_label">"Fus orar"</string>
+	<!-- This is the label for the Guests/Attendees of an event -->
+	<string name="attendees_label">"Invitaţi"</string>
+	<!-- Text to show when an event starts on the current day -->
+	<string name="today">"Astăzi"</string>
+	<!-- Text to show when an event starts on the next day -->
+	<string name="tomorrow">"Mâine"</string>
+	<!-- Text for an event starting on the current day with a start and end time. For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="today_at_time_fmt">"Astăzi, la ora <xliff:g id="time_interval">%s</xliff:g>"</string>
+	<!-- Text for an event starting on the next day with a start and end time. For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="tomorrow_at_time_fmt">"Mâine, la ora <xliff:g id="time_interval">%s</xliff:g>"</string>
+	<!-- Format string for a date and time description. For ex: "April 19, 2012, 3:00pm - 4:00pm" [CHAR LIMIT=NONE] -->
+	<string name="date_time_fmt">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+	<!-- Some events repeat daily, weekly, monthly, or yearly. This is the label for all the choices about how often an event repeats (including the choice of not repeating). -->
+	<string name="repeats_label">"Repetare"</string>
+	<!-- Title of event when no explicit title is specified by the user -->
+	<string name="no_title_label">"(Fără titlu)"</string>
+	<plurals name="Nminutes">
+		<!-- Reminder format strings  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 minut"</item>
+		<!-- Reminder format strings  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> minute"</item>
+	</plurals>
+	<plurals name="Nmins">
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 min"</item>
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> min"</item>
+	</plurals>
+	<plurals name="Nhours">
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a 1-hour reminder. -->
+		<item quantity="one">"1 oră"</item>
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a reminder of 2 or more hours. The actual number of hours is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> ore"</item>
+	</plurals>
+	<plurals name="Ndays">
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 1 day. -->
+		<item quantity="one">"1 zi"</item>
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 2 or more days. The actual number of days is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> zile"</item>
+	</plurals>
+	<plurals name="weekN">
+		<!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1"  Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+		<item quantity="other">"SĂPTĂMÂNA <xliff:g id="COUNT">%d</xliff:g>"</item>
+	</plurals>
+	<!-- This is a label on a context menu item. Pressing this menu item to initiate syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+	<string name="calendar_refresh">"Actualizaţi"</string>
+	<!-- This is a label on a context menu item. Pressing this menu item displays the Agenda view.   This is a label on a context menu item. Pressing this menu item displays the Day view. -->
+	<string name="show_day_view">"Afişare zi"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Agenda view. -->
+	<string name="agenda_view">"Agendă"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Day view. -->
+	<string name="day_view">"Ziua"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Week view. -->
+	<string name="week_view">"Săptămâna"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Month view. -->
+	<string name="month_view">"Luna"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the details of an event. -->
+	<string name="event_view">"Afişare eveniment"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to create a new event. -->
+	<string name="event_create">"Eveniment nou"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to edit or change an existing event. -->
+	<string name="event_edit">"Modificare eveniment"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to delete an existing event. -->
+	<string name="event_delete">"Ştergere eveniment"</string>
+	<!-- This is a label on a menu item. Pressing this menu item takes the user to the current day (today) in whatever view (Day view, Week view, Agenda view, Month view) they are currently in. -->
+	<string name="goto_today">"Astăzi"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to see the list of calendars that he is viewing and to then add or remove selected calendars.   This is a label on a menu item. Pressing this menu item allows the user to view and edit his Settings (or Preferences) -->
+	<string name="menu_preferences">"Setări"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="menu_select_visible_calendars">"De afişat"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="search">"Căutaţi"</string>
+	<!-- This is a label on a menu item. Pressing this menu item hides the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="hide_controls">"Ascundeţi comenzile"</string>
+	<!-- This is a label on a menu item. Pressing this menu item shows the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="show_controls">"Afişaţi comenzile"</string>
+	<!-- Title of "My calendars" screen -->
+	<string name="select_visible_calendars_title">"Calendare de afişat"</string>
+	<!-- Synced and visible status message   Synced but not visible status message   not Synced or visible status message   Synced status message displayed when the given calendar is stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="synced">"sincronizat"</string>
+	<!-- Not synced status message displayed when the given calendar is not stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="not_synced">"nesincronizat"</string>
+	<!-- Message displayed to user when an account with Calendars is not being auto-synced [CHAR LIMIT=120]-->
+	<string name="acct_not_synced">"Acest cont nu este sincronizat, prin urmare calendarele dvs. pot să nu fie actualizate."</string>
+	<!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+	<string name="accounts">"Conturi şi sincronizare"</string>
+	<!-- Select Synced Calendars activity   Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_title">"Calendare de sincronizat"</string>
+	<!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_button">"Calendare de sincronizat"</string>
+	<!-- The title of the screen where the user edits an event [CHAR LIMIT=17]   Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+	<string name="hint_what">"Denumire eveniment"</string>
+	<!-- Default value of Where field (as a hint to the user)[CHAR LIMIT=15] -->
+	<string name="hint_where">"Locaţie"</string>
+	<!-- Default value of Description field (as a hint to the user) [CHAR LIMIT=15]-->
+	<string name="hint_description">"Descriere"</string>
+	<!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+	<string name="hint_attendees">"Invitaţi"</string>
+	<!-- Toast message displayed when a new event is created -->
+	<string name="creating_event">"Eveniment creat."</string>
+	<!-- Toast message displayed when an existing event is saved after being modified -->
+	<string name="saving_event">"Eveniment salvat."</string>
+	<!-- Toast message displayed when a new event was not saved because it was empty [CHAR LIMIT=30] -->
+	<string name="empty_event">"Evenimentul gol nu s-a creat."</string>
+	<!-- Toast message displayed when a new event with guests is created -->
+	<string name="creating_event_with_guest">"Invitaţiile vor fi trimise."</string>
+	<!-- Toast message displayed when an existing event with guests is saved after being modified -->
+	<string name="saving_event_with_guest">"Actualizările vor fi trimise."</string>
+	<!-- Create event dialog save button [CHAR LIMIT=10] -->
+	<string name="create_event_dialog_save">"Salvare"</string>
+	<!-- the title of the alert/notification activity -->
+	<string name="alert_title">"Notificări calendar"</string>
+	<!-- This is the title of the screen used to view the details of an event -->
+	<string name="event_info_title">"Afişare eveniment"</string>
+	<!-- This is the title of the screen used to view the details of an invitation to a meeting or event -->
+	<string name="event_info_title_invite">"Invitaţie şedinţă"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'end date'. -->
+	<string name="edit_event_to_label">"Până la"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'start date'. -->
+	<string name="edit_event_from_label">"De la"</string>
+	<!-- Check box label that specifies if this is an all-day event -->
+	<string name="edit_event_all_day_label">"Toata ziua"</string>
+	<!-- Label for choosing one of the calendars -->
+	<string name="edit_event_calendar_label">"Calendar"</string>
+	<!-- Menu item to show all choices [CHAR LIMIT=22]-->
+	<string name="edit_event_show_all">"Afişaţi-le pe toate"</string>
+	<!-- Label for the event description -->
+	<string name="description_label">"Descriere"</string>
+	<!-- Label for the 'Presence' of an event, which can be either 'busy' (the default) or 'available' [CHAR LIMIT=15] -->
+	<string name="presence_label">"Disponibilitatea mea"</string>
+	<!-- Label for the 'Privacy' of an event, which can be either 'private' or 'public' [CHAR LIMIT=15] -->
+	<string name="privacy_label">"Confidenţialitate"</string>
+	<!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+	<string name="reminders_label">"Adăugaţi memento"</string>
+	<!-- Title of alert shown if the user tries to create an event and has no calendars -->
+	<string name="no_syncable_calendars">"Nu există calendare"</string>
+	<!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+	<string name="no_calendars_found">"Înainte de a putea adăuga un eveniment, trebuie să adăugaţi cel puţin un cont Calendar pe dispozitiv şi să faceţi un calendar vizibil. Atingeţi „Adăugaţi un cont” pentru a adăuga un cont (dacă tocmai aţi adăugat un cont, aşteptaţi să se termine sincronizarea şi încercaţi din nou). Sau atingeţi „Anulaţi” şi asiguraţi-vă că cel puţin un calendar este vizibil."</string>
+	<!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+	<string name="create_an_account_desc">"Google Calendar funcţionează mai bine cu un Cont Google."\n\n"• Accesaţi serviciul din orice browser web"\n"• Creaţi în siguranţă copii de rezervă pentru evenimentele dvs."</string>
+	<!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+	<string name="add_account">"Adăugaţi un cont"</string>
+	<!-- Label for which calendar an event is part of -->
+	<string name="view_event_calendar_label">"Calendar:"</string>
+	<!-- Label for the event organizer -->
+	<string name="view_event_organizer_label">"Organiser"</string>
+	<!-- Label for the local timezone   Label for showing event color picker -->
+	<string name="choose_event_color_label">"Alegeți culoarea pentru eveniment"</string>
+	<!-- Title for event color picker dialog -->
+	<string name="event_color_picker_dialog_title">"Culoare eveniment"</string>
+	<!-- Label for button which sets event color to default calendar color -->
+	<string name="event_color_set_to_default">"Setați la culoarea implicită a calendarului"</string>
+	<!-- Title for calendar color picker dialog -->
+	<string name="calendar_color_picker_dialog_title">"Culoare calendar"</string>
+	<!-- Description for calendar color squares, which bring up the color picker. -->
+	<string name="calendar_square_color_picker_description">"Selector culoare"</string>
+	<!-- Label for whether the user is attending this event. This is shown when a user is invited to a meeting or event. The possible answers are 'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+	<string name="view_event_response_label">"Participaţi?"</string>
+	<!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+	<string name="response_yes">"Da"</string>
+	<!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+	<string name="response_maybe">"Posibil"</string>
+	<!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+	<string name="response_no">"Nu"</string>
+	<!-- Label for emailing attendees -->
+	<string name="email_guests_label">"Trimiteţi e-mail invitaţilor"</string>
+	<!-- Label for emailing the organizer (when there are no attendees) -->
+	<string name="email_organizer_label">"Organizator de e-mail"</string>
+	<!-- This is shown in the popup picker when emailing attendees -->
+	<string name="email_picker_label">"E-mail cu"</string>
+	<!-- Toast message displayed when the event id was not found LIMIT=30] -->
+	<string name="event_not_found">"Evenimentul nu a fost găsit."</string>
+	<!-- Notification label for getting a map of the location. -->
+	<string name="map_label">"Hartă"</string>
+	<!-- Notification label for calling a phone number in the location. -->
+	<string name="call_label">"Apelare"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings">"Răspunsuri rapide"</string>
+	<!-- Summary of the quick response item in Settings [CHAR LIMIT=80]-->
+	<string name="quick_response_settings_summary">"Modificaţi răspunsurile standard când trimiteţi e-mailuri invitaţilor"</string>
+	<!-- Title of the quick response screen in Settings->Quick Response [CHAR LIMIT=27]-->
+	<string name="quick_response_settings_title">"Editaţi răspunsurile rapide"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings_edit_title">"Răspuns rapid"</string>
+	<!-- Title of the dialog prompting the user choose a response when emailing guests [CHAR LIMIT=none]-->
+	<string name="quick_response_dialog_title">"Alegeţi un răspuns rapid"</string>
+	<!-- Error to user when an email program can't be found[CHAR LIMIT=none]-->
+	<string name="quick_response_email_failed">"Nu s-a putut găsi un program de e-mail"</string>
+	<string-array name="quick_response_defaults">
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Întârzii numai câteva minute."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Ajung în aproximativ 10 minute."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Începeţi fără mine."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Îmi pare rău, nu reuşesc. Trebuie să amânăm pe altă dată."</item>
+	</string-array>
+	<!-- Option to create a custom response instead of using defaults [CHAR LIMIT=none] -->
+	<string name="quick_response_custom_msg">"Scrieți propriul răspuns…"</string>
+	<!-- Event Info strings  Time Zone Label [CHAR LIMIT=12]  Repetition Label [CHAR LIMIT=12]  Organizer Label [CHAR LIMIT=12]-->
+	<string name="event_info_organizer">"Organizator:"</string>
+	<!-- Reminders label [CHAR LIMIT=15]-->
+	<string name="event_info_reminders_label">"Mementouri"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_today">"AZI, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_yesterday">"IERI, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_tomorrow">"MÂINE, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown while the calendar events are being loading to the screen. -->
+	<string name="loading">"Se încarcă\u2026"</string>
+	<!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+	<string name="show_older_events">"Atingeţi pentru a vedea evenimente dinainte de <xliff:g id="OLDEST_SEARCH_RANGE">%1$s</xliff:g>"</string>
+	<!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+	<string name="show_newer_events">"Atingeţi pentru a vedea evenimente după <xliff:g id="NEWEST_SEARCH_RANGE">%1$s</xliff:g>"</string>
+	<!-- Title of the search screen [CHAR LIMIT=30] -->
+	<string name="search_title">"Căutaţi în calendarele dvs."</string>
+	<!-- This is the title of a popup window that is displayed when the user edits a repeating event. [CHAR LIMIT=20]-->
+	<string name="edit_event_label">"Detalii"</string>
+	<!-- This is a menu button for switching into edit mode when viewing an event. [CHAR LIMIT=10] -->
+	<string name="edit_label">"Editaţi"</string>
+	<!-- The button label for deleting an event -->
+	<string name="delete_label">"Ştergere"</string>
+	<!-- A menu item for deleting an event   The button label for saving an event -->
+	<string name="save_label">"Realizat"</string>
+	<!-- The button label for discarding changes to an event -->
+	<string name="discard_label">"Anulaţi"</string>
+	<!-- The button label for making the reminder alarms go away temporarily. The reminder alarms will fire off again in 5 minutes. -->
+	<string name="snooze_all_label">"Amânare toate"</string>
+	<!-- The button label for dismissing all the current reminder alarms. This causes them to disappear from the notification screen. -->
+	<string name="dismiss_all_label">"Respingere toate"</string>
+	<!-- The button label for making the reminder alarms go away temporarily and re-fire in 5 minutes. [CHAR LIMIT=12]-->
+	<string name="snooze_label">"Amânare alarmă"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event does not repeat -->
+	<string name="does_not_repeat">"O singură dată"</string>
+	<!-- Part of a description of an repeating event. This part states the date when a repeating event ends. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; until 1/1/2030 [CHAR LIMIT=21] -->
+	<string name="endByDate">"; până la <xliff:g id="date">%s</xliff:g>"</string>
+	<plurals name="endByCount">
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="one">"; o singură dată"</item>
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="other">"; de <xliff:g id="number">%d</xliff:g> ori"</item>
+	</plurals>
+	<plurals name="daily">
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="one">"Zilnic"</item>
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="other">"La fiecare <xliff:g id="number">%d</xliff:g> zile"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats daily -->
+	<string name="daily">"Zilnic"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats every weekday (Monday through Friday) -->
+	<string name="every_weekday">"Zile de lucru (Lu\u2013Vi)"</string>
+	<plurals name="weekly">
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="one">"Săptămânal, în ziua de <xliff:g id="days_of_week">%2$s</xliff:g>"</item>
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="other">"La fiecare <xliff:g id="number">%1$d</xliff:g> săptămâni în ziua de <xliff:g id="days_of_week">%2$s</xliff:g>"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats weekly on some day of the week. For example, 'Weekly (every Tuesday)'. -->
+	<string name="weekly">"Săptămânal (fiecare <xliff:g id="days_of_week">%s</xliff:g>)"</string>
+	<!-- Example: 'Monthly (every first Sunday)'   1st parameter is an ordinal number, like 'first'   2nd parameter is a day of the week, like 'Sunday' -->
+	<string name="monthly_on_day_count">"Lunar (în fiecare <xliff:g id="ordinal_number">%1$s</xliff:g> <xliff:g id="day_of_week">%2$s</xliff:g>)"</string>
+	<!-- The common portion of a string describing how often an event repeats, example: 'Monthly (on day 2)' -->
+	<string name="monthly">"Lunar"</string>
+	<!-- Calendar spinner item, to select that an event recurs every year. -->
+	<string name="yearly_plain">"Anual"</string>
+	<!-- Example: "Monthly (on day 15)" -->
+	<string name="monthly_on_day">"Lunar (pe <xliff:g id="day_of_month">%s</xliff:g>)"</string>
+	<!-- Example: "Yearly (on April 15)" -->
+	<string name="yearly">"Anual (pe <xliff:g id="dates">%s</xliff:g>)"</string>
+	<!-- This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web).   This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web). -->
+	<string name="custom">"Personalizat (nu se poate personaliza pe tabletă)"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change just this one instance of this repeating event. -->
+	<string name="modify_event">"Modificaţi doar acest eveniment"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change all occurrences of this repeating event. -->
+	<string name="modify_all">"Modificaţi toate evenimentele din serie"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change this instance and all future occurrences of this repeating event. -->
+	<string name="modify_all_following">"Modificaţi acest eveniment şi pe toate cele viitoare."</string>
+	<!-- Dialogs   This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_label">"Eveniment nou"</string>
+	<!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_option">"Eveniment nou"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event. The user still has a chance to cancel this operation. -->
+	<string name="delete_this_event_title">"Ştergeţi acest eveniment?"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event that is recurring. The user still has a chance to cancel this operation. -->
+	<string name="delete_recurring_event_title">"Ştergeţi <xliff:g id="eventtitle">%s</xliff:g>?"</string>
+	<!-- This is the title of a popup dialog that asks for confirmation before changing the response to an invitation. -->
+	<string name="change_response_title">"Modificare răspuns"</string>
+	<!-- This the title of a menu for General Preferences. Pressing the menu item lets user to view and edit his general settings (or preferences) [CHAR LIMIT=30] -->
+	<string name="menu_general_preferences">"Setări generale"</string>
+	<!-- This the title of a menu for "About Calendar" Preferences. Pressing the menu item lets user to view the current settings [CHAR LIMIT=30] -->
+	<string name="menu_about_preferences">"Despre Calendar"</string>
+	<!-- This is the title of the screen for setting user preferences. -->
+	<string name="preferences_title">"Setări"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to viewing calendar events -->
+	<string name="preferences_general_title">"Setare afişare calendar"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to reminders for calendar events -->
+	<string name="preferences_reminder_title">"Notificări și mementouri"</string>
+	<!-- Settings check box label to hide events that the user has declined to attend -->
+	<string name="preferences_hide_declined_title">"Ascund evenim. refuzate"</string>
+	<!-- Settings week start label to start week on specific day-->
+	<string name="preferences_week_start_day_title">"Săptămâna începe"</string>
+	<!-- Title of popup for week start day setting-->
+	<string name="preferences_week_start_day_dialog">"Săptămâna începe"</string>
+	<!-- no translation found for preferences_week_start_day_default -->
+	<skip />
+	<!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+	<string name="preferences_clear_search_history_title">"Ştergeţi istoricul căutărilor"</string>
+	<!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+	<string name="preferences_clear_search_history_summary">"Eliminaţi toate căutările efectuate"</string>
+	<!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+	<string name="search_history_cleared">"Istoricul căutărilor a fost şters."</string>
+	<!-- Settings check box label to enable or disable notifications -->
+	<string name="preferences_alerts_title">"Notificări"</string>
+	<!-- Settings dialog label that specifies when the phone should vibrate -->
+	<string name="preferences_alerts_vibrateWhen_title">"Vibraţie"</string>
+	<!-- Title of ringtone selector dialog -->
+	<string name="preferences_alerts_ringtone_title">"Sunet"</string>
+	<!-- Title of check box label to enable or disable pop-up notifications -->
+	<string name="preferences_alerts_popup_title">"Notificare pop-up"</string>
+	<!-- List item label for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_title">"Oră implicită memento"</string>
+	<!-- Title of dialog for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_dialog">"Oră implicită memento"</string>
+	<!-- Default value for the number of reminder minutes -->
+	<string name="preferences_default_reminder_default">"10"</string>
+	<!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+	<string name="preferences_use_home_tz_title">"Folosiţi fusul orar de acasă"</string>
+	<!-- Settings description of what setting Calendar to use a fixed 'home' time zone does [CHAR LIMIT = 60]-->
+	<string name="preferences_use_home_tz_descrip">"În călătorii, calendarul se afișează în fusul orar de acasă."</string>
+	<!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+	<string name="preferences_home_tz_title">"Fusul orar de acasă"</string>
+	<!-- no translation found for preferences_home_tz_default -->
+	<skip />
+	<!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+	<string name="preferences_show_week_num_title">"Afişaţi numărul săptămânii"</string>
+	<!-- This is the title of a section in the Settings screen for "About" this application -->
+	<string name="preferences_about_title">"Despre"</string>
+	<!-- Build version of the application -->
+	<string name="preferences_build_version">"Versiune"</string>
+	<!-- Title for calendar gadget when displayed in list of all other gadgets -->
+	<string name="gadget_title">"Calendar"</string>
+	<plurals name="month_more_events">
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for 1 event, the quotes force a literal interpretation of the string [CHAR LIMIT = 10] -->
+		<item quantity="one">"+1"</item>
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for multiple events [CHAR LIMIT = 10] -->
+		<item quantity="other">"+<xliff:g id="NUMBER">%d</xliff:g>"</item>
+	</plurals>
+	<!-- Caption to show on gadget when there are no upcoming calendar events -->
+	<string name="gadget_no_events">"Niciun eveniment viitor în calendar"</string>
+	<!-- no translation found for tardis -->
+	<skip />
+	<!-- Experimental settings [CHAR LIMIT = 30]-->
+	<string name="preferences_experimental_category">"Experimental"</string>
+	<!-- Reminders settings [CHAR LIMIT = 30]-->
+	<string name="preferences_reminders_category">"Mementouri"</string>
+	<!-- Preference label for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_label">"Ignorați mementourile"</string>
+	<!-- Dialog title for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_dialog">"Ignorați mementourile"</string>
+	<!-- Preference label for quiet hours [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_label">"Ore de liniște"</string>
+	<!-- Preference description for quiet hours [CHAR LIMIT = NONE]-->
+	<string name="preferences_reminders_quiet_hours_description">"Dezactivați sunetul mementourilor de evenimente în intervalul de timp stabilit."</string>
+	<!-- Preference label for quiet hours start time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_start">"Ore de liniște timp inițial"</string>
+	<!-- Preference label for quiet hours end time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_end">"Ore de liniște timp final"</string>
+	<!-- Preferences used for debugging purposes [CHAR LIMIT = 30]-->
+	<string name="preferences_debug_category">"Depanare în curs..."</string>
+	<!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+	<string name="copy_db">"Trimiteţi baza de date"</string>
+	<!-- Displayed in email address autocomplete list when searching for contacts in corporate directories. Example: "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+	<string name="directory_searching_fmt">"Se caută <xliff:g id="DOMAIN">%s</xliff:g>..."</string>
+	<!-- Accessibility Events   Strings that describes actions for buttons without text   Create a new calendar event [CHAR LIMIT = NONE]  Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_attendee">"Eliminaţi participantul"</string>
+	<!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_date">"Dată de începere"</string>
+	<!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_time">"Oră de începere"</string>
+	<!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_date">"Dată de încheiere"</string>
+	<!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_time">"Oră de încheiere"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_time_zone">"Fus orar"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_recurrence">"Repetați evenimentul"</string>
+	<!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_reminder">"Adăugaţi memento"</string>
+	<!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_reminder">"Eliminaţi mementoul"</string>
+	<!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_attendee">"Adăugaţi participant"</string>
+	<!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+	<string name="accessibility_sync_cal">"Sincronizaţi calendarul"</string>
+	<!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+	<string name="accessibility_all_day">"Eveniment cotidian"</string>
+	<!-- Refresh the data in the calendar [CHAR LIMIT = NONE]  Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+	<string name="accessibility_repeats">"Repetiţie"</string>
+	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_time">"Timp pentru memento"</string>
+	<!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_type">"Tip de memento"</string>
+	<!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_showmeas">"Doresc să fiu afişat(ă) ca"</string>
+	<!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_privacy">"Confidenţialitate"</string>
+	<!-- Calendar notification [CHAR LIMIT = NONE]-->
+	<string name="acessibility_cal_notification">"Notificare din calendar"</string>
+	<!-- Calendar notification snooze button [CHAR LIMIT = NONE]-->
+	<string name="acessibility_snooze_notification">"Amânare notificare"</string>
+	<!-- Calendar notification email button [CHAR LIMIT = NONE]-->
+	<string name="accessibility_email_notification">"Trimiteţi e-mailuri invitaţilor"</string>
+	<!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+	<string name="day_view_new_event_hint">"+ Eveniment nou"</string>
+	<!-- Source: A value for announcing the current event index (example: "Event 2 of 6"). Description: This is spoken to the user. [CHAR LIMIT="NONE"] -->
+	<string name="template_announce_item_index">"Evenimentul <xliff:g id="ITEM_INDEX">%1$s</xliff:g> din <xliff:g id="ITEM_COUNT">%2$s</xliff:g>."</string>
+	<plurals name="Nevents">
+		<!-- number of events in the notification bar  This is the label for a 1 event. -->
+		<item quantity="one">"1 eveniment"</item>
+		<!-- number of events in the notification bar  This is the label for 2 or more events. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> evenimente"</item>
+	</plurals>
+	<plurals name="N_remaining_events">
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 1 event. -->
+		<item quantity="one">"+1 eveniment"</item>
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 2 or more events. -->
+		<item quantity="other">"+<xliff:g id="COUNT">%d</xliff:g> (de) evenimente"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_selected_marker_description">"Eveniment selectat"</string>
+	<!-- Tell user not to check a checkbox [CHAR LIMIT=30] -->
+	<string name="do_not_check">"NU bifaţi -|>"</string>
+	<!-- Dialog title for recurrence picker for configuring a repeating event[CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title">"Repetare"</string>
+	<!-- Dialog title for recurrence picker when one-time event is selected [CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title_never">"Nu se repetă"</string>
+	<plurals name="recurrence_interval_daily">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"La fiecare <xliff:g id="count">%d</xliff:g> zi"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"La fiecare <xliff:g id="count">%d</xliff:g> zile"</item>
+	</plurals>
+	<plurals name="recurrence_interval_weekly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"La fiecare <xliff:g id="count">%d</xliff:g> săptămână"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"La fiecare <xliff:g id="count">%d</xliff:g> săptămâni"</item>
+	</plurals>
+	<plurals name="recurrence_interval_monthly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"La fiecare <xliff:g id="count">%d</xliff:g> lună"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"La fiecare <xliff:g id="count">%d</xliff:g> luni"</item>
+	</plurals>
+	<plurals name="recurrence_interval_yearly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"La fiecare <xliff:g id="count">%d</xliff:g> an"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"La fiecare <xliff:g id="count">%d</xliff:g> ani"</item>
+	</plurals>
+	<!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+	<string name="recurrence_month_pattern_by_day">"în aceeași zi din fiecare lună"</string>
+	<!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_continously">"La infinit"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=25] -->
+	<string name="recurrence_end_date_label">"Până la o anumită dată"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_date">"Până la data de <xliff:g id="date">%s</xliff:g>"</string>
+	<!-- Specifies that a repeating event to repeat for a number of times. A repeating event can repeat forever, repeat in a certain frequency until a certain date, or repeat for a number of times. e.g. repeat 10 times and stop. This string is for the last case [CHAR LIMIT=25] -->
+	<string name="recurrence_end_count_label">"Pentru un anumit număr de evenimente"</string>
+	<plurals name="recurrence_end_count">
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="one">"Pentru <xliff:g id="event_count">%d</xliff:g> eveniment"</item>
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="other">"Pentru <xliff:g id="event_count">%d</xliff:g> evenimente"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_recurrence_choose_end_date_description">"schimbați data de încheiere"</string>
+	<!-- no translation found for notification_sender_id -->
+	<skip />
+	<!-- FR556557-Yuansheng-Zhao-001 begin   Settings option to bring up a dialog that select first week of year option -->
+	<string name="preferences_alerts_first_week_title">"Prima săptămână a anului"</string>
+	<!-- Title of dialog for setting the default option of first week of year -->
+	<string name="alerts_dialog_first_week_title">"Prima săptămână a anului"</string>
+	<!-- FR556557-Yuansheng-Zhao-001 end -->
+	<string name="cannot_use_in_ultimate_mode">"Această funcție nu poate fi utilizată în modul avansat."</string>
+	<!--huanglin 20140104 for PR576713 -->
+	<string name="select_default_calendar_first">"Selectați mai întâi calendarul implicit în modul economizor avansat!"</string>
+	<!-- FR593012-Wentao-Wan-001 begin-->
+	<string name="noEventHint">"Nu există evenimente"</string>
+	<!---->
+	<string name="default_calendar_name">"Calendar implicit"</string>
+	<!---->
+	<string name="default_calendar_account">"Calendar gazdă locală"</string>
+	<!-- FR593012-Wentao-Wan-001 end  added by Fujuan.Lin for RR565704 begin -->
+	<string name="import_birthday">"Importaţi zilele de naştere ale prietenilor"</string>
+	<!---->
+	<string name="import_birthday_finish">"Importarea zilelor de naştere ale prietenilor de pe Facebook s-a terminat."</string>
+	<!---->
+	<string name="import_birthday_msg">"Importaţi zilele de naştere ale prietenilor din Facebook în calendarul local?"</string>
+	<!---->
+	<string name="importing_msg">"Se importă zilele de naştere ale prietenilor de pe Facebook\u2026"</string>
+	<!---->
+	<string name="import_error_msg">"Nu a reuşit importarea zilelor de naştere a prietenilor din Facebook. Motivul poate fi o eroare de reţea. Încercaţi din nou mai târziu."</string>
+	<!---->
+	<string name="birthday_reminder_description">"Ziua de naştere a lui %s"</string>
+	<!---->
+	<string name="button_label_hide">"Ascundeţi"</string>
+	<!---->
+	<string name="import_result_msg">"%d zile de naştere ale prietenilor au fost importate."</string>
+	<!---->
+	<string name="toast_start_import">"Zilele de naştere ale prietenilor de pe Facebook vor fi importate imediat."</string>
+	<!---->
+	<string name="toast_import_fail">"Nu a reuşit importarea zilelor de naştere ale prietenilor de pe Facebook."</string>
+	<!---->
+	<string name="menu_item_refresh">"Împrospătare"</string>
+	<!---->
+	<string name="title_fb_birthday">"Zi de naştere apropiată"</string>
+	<!-- no translation found for bithday_item_format -->
+	<skip />
+	<!---->
+	<string name="preferences_fb_sync_title">"Setări sincronizare"</string>
+	<!---->
+	<string name="preferences_fb_sync_all">"Sicronizare totală"</string>
+	<!---->
+	<string name="preferences_fb_sync_summary">"Sincronizează zilele de naştere ale prietenilor de pe Facebook"</string>
+	<!---->
+	<string name="default_calendar_account_facebook">"Calendar Facebook"</string>
+</resources>

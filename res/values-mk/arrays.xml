@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string-array name="reminder_methods_labels">
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Известување"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Е-пошта"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"SMS"</item>
+		<!-- Choices for the "Reminder method" spinner. These must be kept in sync with the reminder_methods_values array. [CHAR LIMIT=10] -->
+		<item>"Аларм"</item>
+	</string-array>
+	<string-array name="reminder_minutes_labels">
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"0 минута"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 минута"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"5 минути"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"10 минути"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"15 минути"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"20 минути"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"25 минути"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"30 минути"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"45 минути"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 час"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"2 часа"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"3 часа"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"12 часа"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"24 часа"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"2 дена"</item>
+		<!-- This maps reminder_methods_labels to internal constants.   Choices for the "Reminder minutes" spinner. These must be kept in sync with the reminder_minutes_values array. For consistency, the format should match what EventViewUtils.constructReminderLabel() generates. (TODO: eliminate this and just generate the list from reminder_minutes_values?) [CHAR LIMIT=15] -->
+		<item>"1 седмица"</item>
+	</string-array>
+	<string-array name="preferences_default_reminder_labels">
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"Ништо"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 минута"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 минута"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"5 минути"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"10 минути"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"15 минути"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"20 минути"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"25 минути"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"30 минути"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"45 минути"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 час"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"2 часа"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"3 часа"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"12 часа"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"24 часа"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"2 дена"</item>
+		<!-- Choices for the "Reminder minutes" spinner in the settings. These must be kept in sync with the preferences_default_reminder_values array. [CHAR LIMIT=12] -->
+		<item>"1 седмица"</item>
+	</string-array>
+	<string-array name="preferences_week_start_day_labels">
+		<item>"Локално зададено"</item>
+		<item>"Сабота"</item>
+		<item>"Недела"</item>
+		<item>"Понеделник"</item>
+	</string-array>
+	<string-array name="availability">
+		<item>"Зафатено"</item>
+		<item>"Достапно"</item>
+		<item>"Привремено"</item>
+	</string-array>
+	<string-array name="visibility">
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Зададено"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Приватно"</item>
+		<!-- This maps reminder_methods_labels to internal constants. -->
+		<item>"Јавно"</item>
+	</string-array>
+	<string-array name="ordinal_labels">
+		<item>"прв"</item>
+		<item>"втор"</item>
+		<item>"трет"</item>
+		<item>"четврт"</item>
+		<item>"последен"</item>
+	</string-array>
+	<string-array name="response_labels1">
+		<!-- Invitation responses -->
+		<item>"(Нема одговор)"</item>
+		<!-- Invitation responses -->
+		<item>"Да"</item>
+		<!-- Invitation responses -->
+		<item>"Можеби"</item>
+		<!-- Invitation responses -->
+		<item>"Не"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels">
+		<item>"Само овој настан"</item>
+		<item>"Овие и идни настани"</item>
+		<item>"Сите настани"</item>
+	</string-array>
+	<string-array name="delete_repeating_labels_no_selected">
+		<item>"Овој и идни настани"</item>
+		<item>"Сите настани"</item>
+	</string-array>
+	<string-array name="change_response_labels">
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to only one instance of a repeating event -->
+		<item>"Само оваа инстанца"</item>
+		<!-- The list of choices displayed in a dialog box when the user wants to respond to an invitation that repeats.  The choice for responding to all instances of a repeating event -->
+		<item>"Сите настани во серија"</item>
+	</string-array>
+	<string-array name="buttons_list">
+		<!-- Strings for buttons in drop down menu -->
+		<item>"ден"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Седмица"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Месец"</item>
+		<!-- Strings for buttons in drop down menu -->
+		<item>"Агенда"</item>
+	</string-array>
+	<string-array name="preferences_skip_reminders_labels">
+		<!-- Experimental options for skipping reminders. [CHAR LIMIT = 37]  Default choice -->
+		<item>"Само ако е одбиено"</item>
+		<!-- Experimental options for skipping reminders. [CHAR LIMIT = 37]  Second option, for skipping reminders to events not yet responded to. -->
+		<item>"Ако е одбиено или без одговор"</item>
+	</string-array>
+	<string-array name="recurrence_freq">
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"ПОВТ.ДНЕВН."</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"ПОВТОРИ СЕДМИЧНО"</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"ПОВТОРИ МЕСЕЧНО"</item>
+		<!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+		<item>"ПОВТОРИ ГОДИШНО"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_sun">
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"на секоја прва недела"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"на секоја втора недела"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"на секоја трета недела"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"на секоја четврта недела"</item>
+		<!-- The following sets of strings describe a monthly recurring event, which will repeat on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or the last Sunday. These are set up like this to resolve any gender-matching issues that were present in some languages.   Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+		<item>"на секоја последна недела"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_mon">
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"на секој прв понеделник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"на секој втор понеделник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"на секој трет понеделник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"на секој четврт понеделник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+		<item>"на секој последен понеделник"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_tues">
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"на секој прв вторник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"на секој втор вторник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"на секој трет вторник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"на секој четврт вторник"</item>
+		<!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+		<item>"на секој последен вторник"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_wed">
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"на секоја прва среда"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"на секоја втора среда"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"на секоја трета среда"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"на секоја четврта среда"</item>
+		<!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+		<item>"на секоја последна среда"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_thurs">
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"на секој прв четврток"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"на секој втор четврток"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"на секој трет четврток"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"на секој четврт четврток"</item>
+		<!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+		<item>"на секој последен четврток"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_fri">
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"на секој прв петок"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"на секој втор петок"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"на секој трет петок"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"на секој четврт петок"</item>
+		<!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+		<item>"на секој последен петок"</item>
+	</string-array>
+	<string-array name="repeat_by_nth_sat">
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"на секоја прва сабота"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"на секоја втора сабота"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"на секоја трета сабота"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"на секоја четврта сабота"</item>
+		<!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+		<item>"на секоја последна сабота"</item>
+	</string-array>
+	<string-array name="preferences_first_week_entry">
+		<!-- FR556557-Yuansheng-Zhao-001 begin  Starts on January 1st -->
+		<item>"Почни на 1ви Јануари"</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First week of 4 days in January -->
+		<item>"Почни во прв.4-дн. седм."</item>
+		<!-- FR556557-Yuansheng-Zhao-001 begin  First full week of January -->
+		<item>"Почни во прв.цел. седм."</item>
+	</string-array>
+</resources>

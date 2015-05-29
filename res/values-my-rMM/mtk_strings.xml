@@ -1,26 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<resources xmlns:tools="http://schemas.android.com/tools">  
-    <string name="quick_response_error_already_exist">စာသား ရှိပြီးဖြစ်သည်</string>  
-    <string name="quick_response_error_null">ဗလာဖြစ်၍မရပါ</string> 
-    <string name="no_event_tip">ဖြစ်စဉ်မရှိ။ </string> 
-    <string name="go_to">သို့ သွားပါ</string>
-    <string name="preferences_alerts_vibrateWhen_summary">အကြောင်းအရာသတိပေးချက်အတွက် တုန်ခါပါ</string>
-    <string name="search_hint">ပြက္ခဒိန်တွင်ရှာပါ</string>
-<string name="valid_date_range">"အကျုံးဝင်သော ရက်စွဲမှာ ဇန်နဝါရီ 1970 မှ ဒီဇင်ဘာ 2036 အထိ ဖြစ်သည်"</string>
-    <string name="shareEvent">အကြောင်းအရာကို ဝေမျှပါ</string>
-    <string name="share_label">ဝေမျှပါ</string>
-    <string name="loading_failed">ဖွင့်ခြင်းမအောင်မြင်။</string>
-    <string name="operation_failed">ဆောင်ရွက်မှု မအောင်မြင်ပါ။ "ပြက္ခဒိန်သိမ်းဆည်းမှု" ရပ်သွားသလား စစ်ဆေးပါ။</string>
-    <string name="clear_events">အကြောင်းအရာများကို ရှင်းလင်းပါ</string>
-    <string name="select_clear_calendars_title">အကောင့်ကို ရွေးချယ်ပါ</string>
-    <string name="clear_all_selected_events_title">ရွေးချယ်ထားသော အကောင့်ရှိ အကြောင်းအရာအားလုံးကို ဖျက်မည်။</string>
-    <string name="delete_completed">ဖျက်သည့် လုပ်ဆောင်ချက် ပြီးဆုံး။</string>
-    <string name="delete_certain">လုပ်ဆောင်ရန်အသစ်</string>
-    <string name="wait_deleting_tip">"ဖျက်နေစဉ် စောင့်ဆိုင်းပါ…"</string>
-    <string name="attendees_invalid_tip">"အချို့တက်ရောက်မည့်သူများမှာ မရှိပါ။"</string>
-    <string name="unread_reminders">" မဖတ်ရသေးသော သတိပေးချက်များ %d "</string>
-    <string name="click_to_view_all">"အားလုံးကို ကြည့်ရှုရန် ကလစ်နှိပ်ပါ"</string>
-    <string name="search_setting_description">"ပြက္ခဒိန်ရှိ အကြောင်းအရာများ"</string>
-    <string name="noApplications">မည်သည့် လုပ်ငန်းသုံး ပရိုဂရမ်မှ ဤအရေး ယူဆောင်ရွက်မှုကို မပြုလုပ် နိုင်ပါ။</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"သက်တမ်းနေ့စွဲမှာ ၁၉၇၀ ခုဇန်နဝါရီလမှ ၂၀၃၆ ခုဒီဇင်ဘာလအထိ"</string>
+	<!---->
+	<string name="shareEvent">"ၿဖစ္ရပ္ကိုမ်ွေ၀ရန္"</string>
+	<!---->
+	<string name="share_label">"မွ်ေ၀ပါ"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"တင်ခြင်းမအောင်မြင်"</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Operation failed. Please check if “Calendar Storage“ is stopped."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"ဖြစ်ရပ်များကိုရှင်းလင်းရန်"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"အကောင့်ရွေးရန်"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"ရွေးထားသောအကောင့်ရှိဖြစ်ရပ်အားလုံးကို ဖျက်သိမ်းပစ်ပါမည်။"</string>
+	<!---->
+	<string name="delete_completed">"ဖျက်သိမ်းခြင်းလုပ်ငန်းပြီးပြီ။"</string>
+	<!---->
+	<string name="delete_certain">"အုိေက"</string>
+	<!---->
+	<string name="wait_deleting_tip">"ဖျက်သိမ်းနေစဉ်ကျေးဇူးပြု၍စောင့်ပါ ..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"အချို့တက်ရောက်သူများမှာတရားမဝင်ပါ။"</string>
+	<!---->
+	<string name="unread_reminders">"မဖတ်ရသေးသောသတိပေးချက်များ %d"</string>
+	<!---->
+	<string name="click_to_view_all">"အားလုံးကိုကြည့်ရန်နှိပ်ပါ"</string>
+	<!---->
+	<string name="search_setting_description">"ပြက္ခဒိန်ရှိဖြစ်ရပ်များ"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_month_button -->
+	<skip />
+	<!-- no translation found for date_picker_increment_month_button -->
+	<skip />
+	<!-- no translation found for date_picker_increment_year_button -->
+	<skip />
+	<!-- no translation found for date_picker_increment_day_button -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_day_button -->
+	<skip />
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"စာသား ရှိပြီးဖြစ်သည်"</string>
+	<!---->
+	<string name="quick_response_error_null">"ဗလာဖြစ်၍မရပါ"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"အကြောင်းအရာသတိပေးချက်အတွက် တုန်ခါပါ"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"သို့ သွားပါ"</string>
+	<!---->
+	<string name="no_event_tip">"ဖြစ်စဉ်မရှိ။"</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"ပြက္ခဒိန် ရှာပါ"</string>
+	<!---->
+	<string name="noApplications">"မည်သည့် လုပ်ငန်းသုံး ပရိုဂရမ်မှ ဤအရေး ယူဆောင်ရွက်မှုကို မပြုလုပ် နိုင်ပါ။"</string>
 </resources>

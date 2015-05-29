@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- This is the label underneath the icon for Calendar -->
+	<string name="app_label">"Kalendář"</string>
+	<!-- This is the label for the title or name of an event -->
+	<string name="what_label">"Co"</string>
+	<!-- This is the label for the location of an event -->
+	<string name="where_label">"Kde"</string>
+	<!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+	<string name="when_label">"Kdy"</string>
+	<!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+	<string name="timezone_label">"Časové pásmo"</string>
+	<!-- This is the label for the Guests/Attendees of an event -->
+	<string name="attendees_label">"Hosté"</string>
+	<!-- Text to show when an event starts on the current day -->
+	<string name="today">"Dnes"</string>
+	<!-- Text to show when an event starts on the next day -->
+	<string name="tomorrow">"Zítra"</string>
+	<!-- Text for an event starting on the current day with a start and end time. For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="today_at_time_fmt">"Dnes v <xliff:g id="time_interval">%s</xliff:g>"</string>
+	<!-- Text for an event starting on the next day with a start and end time. For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+	<string name="tomorrow_at_time_fmt">"Zítra v <xliff:g id="time_interval">%s</xliff:g>"</string>
+	<!-- Format string for a date and time description. For ex: "April 19, 2012, 3:00pm - 4:00pm" [CHAR LIMIT=NONE] -->
+	<string name="date_time_fmt">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+	<!-- Some events repeat daily, weekly, monthly, or yearly. This is the label for all the choices about how often an event repeats (including the choice of not repeating). -->
+	<string name="repeats_label">"Opakování"</string>
+	<!-- Title of event when no explicit title is specified by the user -->
+	<string name="no_title_label">"(bez názvu)"</string>
+	<plurals name="Nminutes">
+		<!-- Reminder format strings  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 minuta"</item>
+		<!-- Reminder format strings  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> min."</item>
+	</plurals>
+	<plurals name="Nmins">
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for a 1-minute reminder. -->
+		<item quantity="one">"1 min"</item>
+		<!-- We use the abbreviation "mins" instead of "minutes" to keep the string short. This is the number of minutes displayed for a calendar reminder. For example, a reminder of 10 minutes would be displayed as '10 mins'. The translation should use the shortest acceptable abbreviation to save space.  This is the label for 2 or more minutes. The actual number of minutes is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> min."</item>
+	</plurals>
+	<plurals name="Nhours">
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a 1-hour reminder. -->
+		<item quantity="one">"1 hodina"</item>
+		<!-- This is the number of hours displayed for a calendar reminder. For example, a reminder of 1 hour would be displayed as '1 hour'. The translation should use the shortest acceptable abbreviation of 'hour' to save space.  This is the label for a reminder of 2 or more hours. The actual number of hours is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> hod."</item>
+	</plurals>
+	<plurals name="Ndays">
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 1 day. -->
+		<item quantity="one">"1 den"</item>
+		<!-- This is the number of days displayed for a calendar reminder. For example, a reminder of 2 days would be displayed as '2 days'. The translation should use the shortest acceptable abbreviation of 'day' to save space.  This is the label for a reminder of 2 or more days. The actual number of days is a parameter. -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g> dny/dnů"</item>
+	</plurals>
+	<plurals name="weekN">
+		<!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1"  Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+		<item quantity="other">"<xliff:g id="count">%d</xliff:g>. TÝDEN"</item>
+	</plurals>
+	<!-- This is a label on a context menu item. Pressing this menu item to initiate syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+	<string name="calendar_refresh">"Aktualizovat"</string>
+	<!-- This is a label on a context menu item. Pressing this menu item displays the Agenda view.   This is a label on a context menu item. Pressing this menu item displays the Day view. -->
+	<string name="show_day_view">"Zobrazit den"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Agenda view. -->
+	<string name="agenda_view">"Agenda"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Day view. -->
+	<string name="day_view">"Den"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Week view. -->
+	<string name="week_view">"Týden"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the Month view. -->
+	<string name="month_view">"Měsíc"</string>
+	<!-- This is a label on a menu item. Pressing this menu item displays the details of an event. -->
+	<string name="event_view">"Zobrazit událost"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to create a new event. -->
+	<string name="event_create">"Nová událost"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to edit or change an existing event. -->
+	<string name="event_edit">"Upravit událost"</string>
+	<!-- This is a label on a menu item in a popup window. Pressing this menu item allows the user to delete an existing event. -->
+	<string name="event_delete">"Odstranit událost"</string>
+	<!-- This is a label on a menu item. Pressing this menu item takes the user to the current day (today) in whatever view (Day view, Week view, Agenda view, Month view) they are currently in. -->
+	<string name="goto_today">"Dnes"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to see the list of calendars that he is viewing and to then add or remove selected calendars.   This is a label on a menu item. Pressing this menu item allows the user to view and edit his Settings (or Preferences) -->
+	<string name="menu_preferences">"Nastavení"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="menu_select_visible_calendars">"Kalendáře k zobrazení"</string>
+	<!-- This is a label on a menu item. Pressing this menu item allows the user to select the calendars to display [CHAR LIMIT=20] -->
+	<string name="search">"Hledat"</string>
+	<!-- This is a label on a menu item. Pressing this menu item hides the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="hide_controls">"Skrýt ovládací prvky"</string>
+	<!-- This is a label on a menu item. Pressing this menu item shows the navigation controls on the right side. [CHAR LIMIT=20] -->
+	<string name="show_controls">"Zobrazit ovládací prvky"</string>
+	<!-- Title of "My calendars" screen -->
+	<string name="select_visible_calendars_title">"Kalendáře k zobrazení"</string>
+	<!-- Synced and visible status message   Synced but not visible status message   not Synced or visible status message   Synced status message displayed when the given calendar is stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="synced">"synchronizován"</string>
+	<!-- Not synced status message displayed when the given calendar is not stored/synced on the device [CHAR LIMIT=60] -->
+	<string name="not_synced">"není synchronizován"</string>
+	<!-- Message displayed to user when an account with Calendars is not being auto-synced [CHAR LIMIT=120]-->
+	<string name="acct_not_synced">"Tento účet není synchronizován, proto kalendáře nemusí být aktuální."</string>
+	<!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+	<string name="accounts">"Účty a synchronizace"</string>
+	<!-- Select Synced Calendars activity   Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_title">"Kalendáře k synchronizaci"</string>
+	<!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+	<string name="select_synced_calendars_button">"Kalendáře k synchronizaci"</string>
+	<!-- The title of the screen where the user edits an event [CHAR LIMIT=17]   Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+	<string name="hint_what">"Název události"</string>
+	<!-- Default value of Where field (as a hint to the user)[CHAR LIMIT=15] -->
+	<string name="hint_where">"Místo"</string>
+	<!-- Default value of Description field (as a hint to the user) [CHAR LIMIT=15]-->
+	<string name="hint_description">"Popis"</string>
+	<!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+	<string name="hint_attendees">"Hosté"</string>
+	<!-- Toast message displayed when a new event is created -->
+	<string name="creating_event">"Událost byla vytvořena."</string>
+	<!-- Toast message displayed when an existing event is saved after being modified -->
+	<string name="saving_event">"Událost byla uložena."</string>
+	<!-- Toast message displayed when a new event was not saved because it was empty [CHAR LIMIT=30] -->
+	<string name="empty_event">"Prázdná událost se nevytvořila"</string>
+	<!-- Toast message displayed when a new event with guests is created -->
+	<string name="creating_event_with_guest">"Pozvánky budou odeslány."</string>
+	<!-- Toast message displayed when an existing event with guests is saved after being modified -->
+	<string name="saving_event_with_guest">"Aktualizace budou odeslány."</string>
+	<!-- Create event dialog save button [CHAR LIMIT=10] -->
+	<string name="create_event_dialog_save">"Uložit"</string>
+	<!-- the title of the alert/notification activity -->
+	<string name="alert_title">"Upozornění kalendáře"</string>
+	<!-- This is the title of the screen used to view the details of an event -->
+	<string name="event_info_title">"Zobrazit událost"</string>
+	<!-- This is the title of the screen used to view the details of an invitation to a meeting or event -->
+	<string name="event_info_title_invite">"Pozvánka na schůzku"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'end date'. -->
+	<string name="edit_event_to_label">"Do"</string>
+	<!-- Events have a start date/time and an end date/time. The display shows the start and end times like 'From start date To end date'. This is the label before the 'start date'. -->
+	<string name="edit_event_from_label">"Od"</string>
+	<!-- Check box label that specifies if this is an all-day event -->
+	<string name="edit_event_all_day_label">"Celý den"</string>
+	<!-- Label for choosing one of the calendars -->
+	<string name="edit_event_calendar_label">"Kalendář"</string>
+	<!-- Menu item to show all choices [CHAR LIMIT=22]-->
+	<string name="edit_event_show_all">"Zobrazit vše"</string>
+	<!-- Label for the event description -->
+	<string name="description_label">"Popis"</string>
+	<!-- Label for the 'Presence' of an event, which can be either 'busy' (the default) or 'available' [CHAR LIMIT=15] -->
+	<string name="presence_label">"Zobrazit mě jako"</string>
+	<!-- Label for the 'Privacy' of an event, which can be either 'private' or 'public' [CHAR LIMIT=15] -->
+	<string name="privacy_label">"Označení typu události"</string>
+	<!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+	<string name="reminders_label">"Přidat připomenutí"</string>
+	<!-- Title of alert shown if the user tries to create an event and has no calendars -->
+	<string name="no_syncable_calendars">"Žádné kalendáře"</string>
+	<!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+	<string name="no_calendars_found">"Před přidáním události je nutné přidat do zařízení alespoň jeden účet s kalendářem a zobrazit ho. Chcete-li přidat účet, klepněte na tlačítko Přidat účet (pokud jste účet právě přidali, počkejte na dokončení synchronizace a zkuste to znovu). Případně klepněte na tlačítko Zrušit a ověřte, že alespoň jeden kalendář je aktivní."</string>
+	<!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+	<string name="create_an_account_desc">"Kalendář funguje lépe s účtem Google.\n\n\u2022 Zobrazte jej z libovolného webového prohlížeče\n\n\u2022 Bezpečně zálohujte Vaše události"</string>
+	<!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+	<string name="add_account">"Přidat účet"</string>
+	<!-- Label for which calendar an event is part of -->
+	<string name="view_event_calendar_label">"Kalendář:"</string>
+	<!-- Label for the event organizer -->
+	<string name="view_event_organizer_label">"Organiser"</string>
+	<!-- Label for the local timezone   Label for showing event color picker -->
+	<string name="choose_event_color_label">"Vybrat barvu události"</string>
+	<!-- Title for event color picker dialog -->
+	<string name="event_color_picker_dialog_title">"Barva události"</string>
+	<!-- Label for button which sets event color to default calendar color -->
+	<string name="event_color_set_to_default">"Nastavit barvu výchozího kalendáře"</string>
+	<!-- Title for calendar color picker dialog -->
+	<string name="calendar_color_picker_dialog_title">"Barva kalendáře"</string>
+	<!-- Description for calendar color squares, which bring up the color picker. -->
+	<string name="calendar_square_color_picker_description">"Výběr barvy"</string>
+	<!-- Label for whether the user is attending this event. This is shown when a user is invited to a meeting or event. The possible answers are 'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+	<string name="view_event_response_label">"Zúčastníte se?"</string>
+	<!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+	<string name="response_yes">"Ano"</string>
+	<!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+	<string name="response_maybe">"Možná"</string>
+	<!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+	<string name="response_no">"Ne"</string>
+	<!-- Label for emailing attendees -->
+	<string name="email_guests_label">"Poslat e-mail hostům"</string>
+	<!-- Label for emailing the organizer (when there are no attendees) -->
+	<string name="email_organizer_label">"Správce e-mailů"</string>
+	<!-- This is shown in the popup picker when emailing attendees -->
+	<string name="email_picker_label">"Poslat e-mail s"</string>
+	<!-- Toast message displayed when the event id was not found LIMIT=30] -->
+	<string name="event_not_found">"Událost nebyla nalezena."</string>
+	<!-- Notification label for getting a map of the location. -->
+	<string name="map_label">"Mapa"</string>
+	<!-- Notification label for calling a phone number in the location. -->
+	<string name="call_label">"Volat"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings">"Rychlé odpovědi"</string>
+	<!-- Summary of the quick response item in Settings [CHAR LIMIT=80]-->
+	<string name="quick_response_settings_summary">"Upravit výchozí odpovědi při posílání e-mailových zpráv hostům"</string>
+	<!-- Title of the quick response screen in Settings->Quick Response [CHAR LIMIT=27]-->
+	<string name="quick_response_settings_title">"Upravit rychlé odpovědi"</string>
+	<!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+	<string name="quick_response_settings_edit_title">"Rychlá odpověď"</string>
+	<!-- Title of the dialog prompting the user choose a response when emailing guests [CHAR LIMIT=none]-->
+	<string name="quick_response_dialog_title">"Vyberte rychlou odpověď"</string>
+	<!-- Error to user when an email program can't be found[CHAR LIMIT=none]-->
+	<string name="quick_response_email_failed">"E-mailový program nebyl nalezen"</string>
+	<string-array name="quick_response_defaults">
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Opozdím se o několik minut."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Jsem tam za 10 minut."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Klidně začněte beze mě."</item>
+		<!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+		<item>"Omlouvám se, ale nestihnu to. Budeme se muset domluvit na jindy."</item>
+	</string-array>
+	<!-- Option to create a custom response instead of using defaults [CHAR LIMIT=none] -->
+	<string name="quick_response_custom_msg">"Napsat vlastní odpověď..."</string>
+	<!-- Event Info strings  Time Zone Label [CHAR LIMIT=12]  Repetition Label [CHAR LIMIT=12]  Organizer Label [CHAR LIMIT=12]-->
+	<string name="event_info_organizer">"Organizátor:"</string>
+	<!-- Reminders label [CHAR LIMIT=15]-->
+	<string name="event_info_reminders_label">"Připomenutí"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_today">"Dnes, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_yesterday">"VČERA, <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown as part of the heading at the top of a list of today's events. -->
+	<string name="agenda_tomorrow">"ZÍTRA, <xliff:g id="date">%1$s</xliff:g>"</string>
+	<!-- This is shown while the calendar events are being loading to the screen. -->
+	<string name="loading">"Načítání\u2026"</string>
+	<!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+	<string name="show_older_events">"Dotykem zobrazíte události před <xliff:g id="oldest_search_range">%1$s</xliff:g>"</string>
+	<!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+	<string name="show_newer_events">"Dotykem zobrazíte události po <xliff:g id="newest_search_range">%1$s</xliff:g>"</string>
+	<!-- Title of the search screen [CHAR LIMIT=30] -->
+	<string name="search_title">"Hledat v mých kalendářích"</string>
+	<!-- This is the title of a popup window that is displayed when the user edits a repeating event. [CHAR LIMIT=20]-->
+	<string name="edit_event_label">"Podrobnosti"</string>
+	<!-- This is a menu button for switching into edit mode when viewing an event. [CHAR LIMIT=10] -->
+	<string name="edit_label">"Upravit"</string>
+	<!-- The button label for deleting an event -->
+	<string name="delete_label">"Odstranit"</string>
+	<!-- A menu item for deleting an event   The button label for saving an event -->
+	<string name="save_label">"Hotovo"</string>
+	<!-- The button label for discarding changes to an event -->
+	<string name="discard_label">"Zrušit"</string>
+	<!-- The button label for making the reminder alarms go away temporarily. The reminder alarms will fire off again in 5 minutes. -->
+	<string name="snooze_all_label">"Odložit vše"</string>
+	<!-- The button label for dismissing all the current reminder alarms. This causes them to disappear from the notification screen. -->
+	<string name="dismiss_all_label">"Odstranit vše"</string>
+	<!-- The button label for making the reminder alarms go away temporarily and re-fire in 5 minutes. [CHAR LIMIT=12]-->
+	<string name="snooze_label">"Odložit"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event does not repeat -->
+	<string name="does_not_repeat">"Jednorázová událost"</string>
+	<!-- Part of a description of an repeating event. This part states the date when a repeating event ends. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; until 1/1/2030 [CHAR LIMIT=21] -->
+	<string name="endByDate">"; do <xliff:g id="date">%s</xliff:g>"</string>
+	<plurals name="endByCount">
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="one">"; jedenkrát"</item>
+		<!-- Part of a description of an repeating event. This part how many times the event repeats. The part before the semi-colon describes how it repeats. e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+		<item quantity="other">"; <xliff:g id="number">%d</xliff:g>krát"</item>
+	</plurals>
+	<plurals name="daily">
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="one">"Denně"</item>
+		<!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+		<item quantity="other">"Každ. <xliff:g id="number">%d</xliff:g> dny/dní"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats daily -->
+	<string name="daily">"Denně"</string>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats every weekday (Monday through Friday) -->
+	<string name="every_weekday">"Pracovní dny (po\u2013pá)"</string>
+	<plurals name="weekly">
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="one">"Týdně (<xliff:g id="days_of_week">%2$s</xliff:g>)"</item>
+		<!-- A description for an event that repeats weekly on some day of the week. For example, 'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+		<item quantity="other">"Každé <xliff:g id="number">%1$d</xliff:g> týdny v den <xliff:g id="days_of_week">%2$s</xliff:g>"</item>
+	</plurals>
+	<!-- A label in a multiple-choice list for the specifying that an event repeats weekly on some day of the week. For example, 'Weekly (every Tuesday)'. -->
+	<string name="weekly">"Týdně (vždy <xliff:g id="days_of_week">%s</xliff:g>)"</string>
+	<!-- Example: 'Monthly (every first Sunday)'   1st parameter is an ordinal number, like 'first'   2nd parameter is a day of the week, like 'Sunday' -->
+	<string name="monthly_on_day_count">"Měsíčně (<xliff:g id="ordinal_number">%1$s</xliff:g>. <xliff:g id="day_of_week">%2$s</xliff:g>)"</string>
+	<!-- The common portion of a string describing how often an event repeats, example: 'Monthly (on day 2)' -->
+	<string name="monthly">"Měsíčně"</string>
+	<!-- Calendar spinner item, to select that an event recurs every year. -->
+	<string name="yearly_plain">"Ročně"</string>
+	<!-- Example: "Monthly (on day 15)" -->
+	<string name="monthly_on_day">"Měsíčně (<xliff:g id="day_of_month">%s</xliff:g>. den)"</string>
+	<!-- Example: "Yearly (on April 15)" -->
+	<string name="yearly">"Ročně (<xliff:g id="dates">%s</xliff:g>)"</string>
+	<!-- This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web).   This is a label for telling the user that this event repeats in custom (non-standard) way from the usual repeat rates (such as daily, weekly, etc.) and that the user cannot change this on the phone (but only on the web). -->
+	<string name="custom">"Vlastní (nelze upravit v tablet)"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change just this one instance of this repeating event. -->
+	<string name="modify_event">"Změnit pouze tuto událost"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change all occurrences of this repeating event. -->
+	<string name="modify_all">"Změnit všechny události v sérii"</string>
+	<!-- This is a choice in a list that the user sees when he tries to modify a repeating event. This choice says to change this instance and all future occurrences of this repeating event. -->
+	<string name="modify_all_following">"Změnit tuto událost a všechny budoucí"</string>
+	<!-- Dialogs   This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_label">"Nová událost"</string>
+	<!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+	<string name="new_event_dialog_option">"Nová událost"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event. The user still has a chance to cancel this operation. -->
+	<string name="delete_this_event_title">"Smazat tuto událost?"</string>
+	<!-- This is a confirmation message in a popup dialog that appears when the user has asked to delete an event that is recurring. The user still has a chance to cancel this operation. -->
+	<string name="delete_recurring_event_title">"Smazat událost <xliff:g id="eventtitle">%s</xliff:g>?"</string>
+	<!-- This is the title of a popup dialog that asks for confirmation before changing the response to an invitation. -->
+	<string name="change_response_title">"Změnit odpověď"</string>
+	<!-- This the title of a menu for General Preferences. Pressing the menu item lets user to view and edit his general settings (or preferences) [CHAR LIMIT=30] -->
+	<string name="menu_general_preferences">"Obecná nastavení"</string>
+	<!-- This the title of a menu for "About Calendar" Preferences. Pressing the menu item lets user to view the current settings [CHAR LIMIT=30] -->
+	<string name="menu_about_preferences">"O Kalendáři"</string>
+	<!-- This is the title of the screen for setting user preferences. -->
+	<string name="preferences_title">"Nastavení"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to viewing calendar events -->
+	<string name="preferences_general_title">"Nastavení zobrazení kalendáře"</string>
+	<!-- This is the title of a section in the Settings screen for settings related to reminders for calendar events -->
+	<string name="preferences_reminder_title">"Oznámení a připomenutí"</string>
+	<!-- Settings check box label to hide events that the user has declined to attend -->
+	<string name="preferences_hide_declined_title">"Skrýt odmítnuté události"</string>
+	<!-- Settings week start label to start week on specific day-->
+	<string name="preferences_week_start_day_title">"Začátek týdne"</string>
+	<!-- Title of popup for week start day setting-->
+	<string name="preferences_week_start_day_dialog">"Začátek týdne"</string>
+	<!-- no translation found for preferences_week_start_day_default -->
+	<skip />
+	<!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+	<string name="preferences_clear_search_history_title">"Vymazat historii vyhledávání"</string>
+	<!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+	<string name="preferences_clear_search_history_summary">"Odstranit všechna provedená vyhledávání"</string>
+	<!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+	<string name="search_history_cleared">"Historie vyhledávání vymazána."</string>
+	<!-- Settings check box label to enable or disable notifications -->
+	<string name="preferences_alerts_title">"Oznámení"</string>
+	<!-- Settings dialog label that specifies when the phone should vibrate -->
+	<string name="preferences_alerts_vibrateWhen_title">"Vibrovat"</string>
+	<!-- Title of ringtone selector dialog -->
+	<string name="preferences_alerts_ringtone_title">"Zvuk"</string>
+	<!-- Title of check box label to enable or disable pop-up notifications -->
+	<string name="preferences_alerts_popup_title">"Kontextové oznámení"</string>
+	<!-- List item label for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_title">"Výchozí čas připomenutí"</string>
+	<!-- Title of dialog for setting the default number of reminder minutes -->
+	<string name="preferences_default_reminder_dialog">"Výchozí čas připomenutí"</string>
+	<!-- Default value for the number of reminder minutes -->
+	<string name="preferences_default_reminder_default">"10"</string>
+	<!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+	<string name="preferences_use_home_tz_title">"Použít domácí čas. pásmo"</string>
+	<!-- Settings description of what setting Calendar to use a fixed 'home' time zone does [CHAR LIMIT = 60]-->
+	<string name="preferences_use_home_tz_descrip">"Kalendáře a události se vždy zobrazí v domovském časovém pásmu"</string>
+	<!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+	<string name="preferences_home_tz_title">"Výchozí časové pásmo"</string>
+	<!-- no translation found for preferences_home_tz_default -->
+	<skip />
+	<!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+	<string name="preferences_show_week_num_title">"Zobrazovat číslo týdne"</string>
+	<!-- This is the title of a section in the Settings screen for "About" this application -->
+	<string name="preferences_about_title">"O aplikaci"</string>
+	<!-- Build version of the application -->
+	<string name="preferences_build_version">"Verze sestavení"</string>
+	<!-- Title for calendar gadget when displayed in list of all other gadgets -->
+	<string name="gadget_title">"Kalendář"</string>
+	<plurals name="month_more_events">
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for 1 event, the quotes force a literal interpretation of the string [CHAR LIMIT = 10] -->
+		<item quantity="one">"+1"</item>
+		<!-- Shown in month view next to event icon when additional events exist for that day, but no room remaining  additional events message for multiple events [CHAR LIMIT = 10] -->
+		<item quantity="other">"+<xliff:g id="NUMBER">%d</xliff:g>"</item>
+	</plurals>
+	<!-- Caption to show on gadget when there are no upcoming calendar events -->
+	<string name="gadget_no_events">"Žádné nadcházející události v kalendáři"</string>
+	<!-- no translation found for tardis -->
+	<skip />
+	<!-- Experimental settings [CHAR LIMIT = 30]-->
+	<string name="preferences_experimental_category">"Experimentální"</string>
+	<!-- Reminders settings [CHAR LIMIT = 30]-->
+	<string name="preferences_reminders_category">"Připomenutí"</string>
+	<!-- Preference label for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_label">"Přeskočit připomínky"</string>
+	<!-- Dialog title for when to skip reminders [CHAR LIMIT = 25] -->
+	<string name="preferences_reminders_responded_dialog">"Přeskočit připomínky"</string>
+	<!-- Preference label for quiet hours [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_label">"Doba klidu"</string>
+	<!-- Preference description for quiet hours [CHAR LIMIT = NONE]-->
+	<string name="preferences_reminders_quiet_hours_description">"Ztišit připomínky událostí během stanovené doby."</string>
+	<!-- Preference label for quiet hours start time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_start">"Čas zahájení doby klidu"</string>
+	<!-- Preference label for quiet hours end time [CHAR LIMIT = 25]-->
+	<string name="preferences_reminders_quiet_hours_end">"Čas ukončení doby klidu"</string>
+	<!-- Preferences used for debugging purposes [CHAR LIMIT = 30]-->
+	<string name="preferences_debug_category">"Ladění"</string>
+	<!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+	<string name="copy_db">"Odeslat databázi"</string>
+	<!-- Displayed in email address autocomplete list when searching for contacts in corporate directories. Example: "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+	<string name="directory_searching_fmt">"Vyhledávání <xliff:g id="domain">%s</xliff:g>\u2026"</string>
+	<!-- Accessibility Events   Strings that describes actions for buttons without text   Create a new calendar event [CHAR LIMIT = NONE]  Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_attendee">"Odebrat účastníka"</string>
+	<!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_date">"Datum zahájení"</string>
+	<!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_start_time">"Čas zahájení"</string>
+	<!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_date">"Datum ukončení"</string>
+	<!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_end_time">"Čas ukončení"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_time_zone">"Časové pásmo"</string>
+	<!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_pick_recurrence">"Opakovat událost"</string>
+	<!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_reminder">"Přidat připomenutí"</string>
+	<!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_remove_reminder">"Odebrat připomenutí"</string>
+	<!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+	<string name="accessibility_add_attendee">"Přidat účastníka"</string>
+	<!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+	<string name="accessibility_sync_cal">"Synchronizovat kalendář"</string>
+	<!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+	<string name="accessibility_all_day">"Celodenní událost"</string>
+	<!-- Refresh the data in the calendar [CHAR LIMIT = NONE]  Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+	<string name="accessibility_repeats">"Opakování"</string>
+	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_time">"Čas připomenutí"</string>
+	<!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_type">"Typ připomenutí"</string>
+	<!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_showmeas">"Zobrazit mě jako"</string>
+	<!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+	<string name="accessibility_reminder_privacy">"Soukromí"</string>
+	<!-- Calendar notification [CHAR LIMIT = NONE]-->
+	<string name="acessibility_cal_notification">"Upozornění kalendáře"</string>
+	<!-- Calendar notification snooze button [CHAR LIMIT = NONE]-->
+	<string name="acessibility_snooze_notification">"Oznámení o odložení"</string>
+	<!-- Calendar notification email button [CHAR LIMIT = NONE]-->
+	<string name="accessibility_email_notification">"Poslat e-mail hostům"</string>
+	<!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+	<string name="day_view_new_event_hint">"Přidat novou událost"</string>
+	<!-- Source: A value for announcing the current event index (example: "Event 2 of 6"). Description: This is spoken to the user. [CHAR LIMIT="NONE"] -->
+	<string name="template_announce_item_index">"Událost <xliff:g id="item_index">%1$s</xliff:g> z <xliff:g id="item_count">%2$s</xliff:g>."</string>
+	<plurals name="Nevents">
+		<!-- number of events in the notification bar  This is the label for a 1 event. -->
+		<item quantity="one">"1 událost"</item>
+		<!-- number of events in the notification bar  This is the label for 2 or more events. -->
+		<item quantity="other">"Počet událostí: <xliff:g id="count">%d</xliff:g>"</item>
+	</plurals>
+	<plurals name="N_remaining_events">
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 1 event. -->
+		<item quantity="one">"+ 1 událost"</item>
+		<!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30]  This is the label for 2 or more events. -->
+		<item quantity="other">"+ další události (<xliff:g id="COUNT">%d</xliff:g>)"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_selected_marker_description">"Vybraná událost"</string>
+	<!-- Tell user not to check a checkbox [CHAR LIMIT=30] -->
+	<string name="do_not_check">"Nezaškrtávat -|>"</string>
+	<!-- Dialog title for recurrence picker for configuring a repeating event[CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title">"Opakovat"</string>
+	<!-- Dialog title for recurrence picker when one-time event is selected [CHAR LIMIT=20] -->
+	<string name="recurrence_dialog_title_never">"Neopakuje se"</string>
+	<plurals name="recurrence_interval_daily">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Každý <xliff:g id="count">%d</xliff:g> den"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 days)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Každ. <xliff:g id="count">%d</xliff:g> dny/dnů"</item>
+	</plurals>
+	<plurals name="recurrence_interval_weekly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Každý <xliff:g id="count">%d</xliff:g> týden"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Každ. <xliff:g id="count">%d</xliff:g> týdny/týdnů"</item>
+	</plurals>
+	<plurals name="recurrence_interval_monthly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Každý <xliff:g id="count">%d</xliff:g> měsíc"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 months)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Každ. <xliff:g id="count">%d</xliff:g> měsíce/měsíců"</item>
+	</plurals>
+	<plurals name="recurrence_interval_yearly">
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Singular form [CHAR LIMIT=30] -->
+		<item quantity="one">"Každý <xliff:g id="count">%d</xliff:g> rok"</item>
+		<!-- Strings to describe how frequently to repeat an event (e.g. every 5 years)  Plural form [CHAR LIMIT=30] -->
+		<item quantity="other">"Každ. <xliff:g id="count">%d</xliff:g> roky/roků"</item>
+	</plurals>
+	<!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+	<string name="recurrence_month_pattern_by_day">"ve stejný den každý měsíc"</string>
+	<!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_continously">"Navždy"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=25] -->
+	<string name="recurrence_end_date_label">"Po datum"</string>
+	<!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=20] -->
+	<string name="recurrence_end_date">"Do <xliff:g id="date">%s</xliff:g>"</string>
+	<!-- Specifies that a repeating event to repeat for a number of times. A repeating event can repeat forever, repeat in a certain frequency until a certain date, or repeat for a number of times. e.g. repeat 10 times and stop. This string is for the last case [CHAR LIMIT=25] -->
+	<string name="recurrence_end_count_label">"Pro určitý počet událostí"</string>
+	<plurals name="recurrence_end_count">
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="one">"Pro <xliff:g id="event_count">%d</xliff:g> událost"</item>
+		<!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+		<item quantity="other">"Pro <xliff:g id="event_count">%d</xliff:g> události/událostí"</item>
+	</plurals>
+	<!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+	<string name="acessibility_recurrence_choose_end_date_description">"změnit datum ukončení"</string>
+	<!-- no translation found for notification_sender_id -->
+	<skip />
+	<!-- FR556557-Yuansheng-Zhao-001 begin   Settings option to bring up a dialog that select first week of year option -->
+	<string name="preferences_alerts_first_week_title">"První týden v roce"</string>
+	<!-- Title of dialog for setting the default option of first week of year -->
+	<string name="alerts_dialog_first_week_title">"První týden v roce"</string>
+	<!-- FR556557-Yuansheng-Zhao-001 end -->
+	<string name="cannot_use_in_ultimate_mode">"Tuto funkci nelze používat v režimu maximální úspory energie."</string>
+	<!--huanglin 20140104 for PR576713 -->
+	<string name="select_default_calendar_first">"V režimu maximální úspory energie nejprve vyberte výchozí kalendář."</string>
+	<!-- FR593012-Wentao-Wan-001 begin-->
+	<string name="noEventHint">"Žádná událost"</string>
+	<!---->
+	<string name="default_calendar_name">"Výchozí kalendář"</string>
+	<!---->
+	<string name="default_calendar_account">"Lokální kalendář"</string>
+	<!-- FR593012-Wentao-Wan-001 end  added by Fujuan.Lin for RR565704 begin -->
+	<string name="import_birthday">"Importovat narozeniny přátel"</string>
+	<!---->
+	<string name="import_birthday_finish">"Import narozenin přátel ve službě Facebook byl dokončen."</string>
+	<!---->
+	<string name="import_birthday_msg">"Importovat narozeniny přátel ze služby Facebook do místního kalendáře?"</string>
+	<!---->
+	<string name="importing_msg">"Probíhá import narozenin přátel ze služby Facebook\u2026"</string>
+	<!---->
+	<string name="import_error_msg">"Import narozenin přátel ze služby Facebook se nezdařil, pravděpodobně z důvodu chyby sítě. Zkuste to znovu později."</string>
+	<!---->
+	<string name="birthday_reminder_description">"%s má narozeniny."</string>
+	<!---->
+	<string name="button_label_hide">"Skrýt"</string>
+	<!---->
+	<string name="import_result_msg">"%d narozenin přátel importováno."</string>
+	<!---->
+	<string name="toast_start_import">"Narozeniny přátel ve službě Facebook budou brzy importovány."</string>
+	<!---->
+	<string name="toast_import_fail">"Import narozenin přátel ze služby Facebook se nezdařil."</string>
+	<!---->
+	<string name="menu_item_refresh">"Obnovit"</string>
+	<!---->
+	<string name="title_fb_birthday">"Blížící se narozeniny"</string>
+	<!-- no translation found for bithday_item_format -->
+	<skip />
+	<!---->
+	<string name="preferences_fb_sync_title">"Nastavení synchronizace"</string>
+	<!---->
+	<string name="preferences_fb_sync_all">"Synchronizovat vše"</string>
+	<!---->
+	<string name="preferences_fb_sync_summary">"Synchronizovat narozeniny přátel ve službě Facebook"</string>
+	<!---->
+	<string name="default_calendar_account_facebook">"Kalendář ve službě Facebook"</string>
+</resources>

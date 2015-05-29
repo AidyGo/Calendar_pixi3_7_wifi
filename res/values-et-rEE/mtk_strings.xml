@@ -1,5 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="noApplications">"Ükski rakendus ei saa seda toimingut teostada."</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- no translation found for valid_date_range -->
+	<skip />
+	<!-- no translation found for shareEvent -->
+	<skip />
+	<!-- no translation found for share_label -->
+	<skip />
+	<!-- no translation found for loading_failed -->
+	<skip />
+	<!-- no translation found for operation_failed -->
+	<skip />
+	<!-- no translation found for clear_events -->
+	<skip />
+	<!-- no translation found for select_clear_calendars_title -->
+	<skip />
+	<!-- no translation found for clear_all_selected_events_title -->
+	<skip />
+	<!-- no translation found for delete_completed -->
+	<skip />
+	<!---->
+	<string name="delete_certain">"OK"</string>
+	<!-- no translation found for wait_deleting_tip -->
+	<skip />
+	<!-- no translation found for attendees_invalid_tip -->
+	<skip />
+	<!-- no translation found for unread_reminders -->
+	<skip />
+	<!-- no translation found for click_to_view_all -->
+	<skip />
+	<!-- no translation found for search_setting_description -->
+	<skip />
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Kuu vähendamine"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Kuu suurendamine"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Aasta suurendamine"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Päeva suurendamine"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Päeva vähendamine"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!-- no translation found for quick_response_error_already_exist -->
+	<skip />
+	<!-- no translation found for quick_response_error_null -->
+	<skip />
+	<!-- no translation found for preferences_alerts_vibrateWhen_summary -->
+	<skip />
+	<!-- no translation found for go_to -->
+	<skip />
+	<!-- no translation found for no_event_tip -->
+	<skip />
+	<!-- no translation found for search_hint -->
+	<skip />
+	<!--translate [noApplications] from sourcecode xml -->
+	<string name="noApplications">"Ükski rakendus ei saa seda toimingut teostada."</string>
 </resources>

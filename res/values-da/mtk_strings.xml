@@ -1,25 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<string name="valid_date_range">"Gyldig dato er januar 1970 til december 2036"</string>
-    <string name="shareEvent">Del begivenhed</string>
-    <string name="share_label">"Del"</string>
-    <string name="loading_failed">Indlæsning mislykkedes.</string>
-    <string name="operation_failed">Handling mislykkedes. Kontrollér om "Kalenderlagring" er stoppet.</string>
-    <string name="clear_events">Ryd begivenheder</string>
-    <string name="select_clear_calendars_title">Vælg konto</string>
-    <string name="clear_all_selected_events_title">Alle begivenheder på den valgte konto vil blive slettet.</string>
-    <string name="delete_completed">Sletning udført.</string>
-    <string name="delete_certain">OK</string>
-    <string name="wait_deleting_tip">"Vent, mens der slettes..."</string>
-    <string name="attendees_invalid_tip">"Nogle deltagere er ugyldige."</string>
-    <string name="unread_reminders">"%d ulæste påmindelser"</string>
-    <string name="click_to_view_all">"Klik for at se alle"</string>
-    <string name="search_setting_description">"Begivenheder i Kalender"</string>
-    <string name="quick_response_error_already_exist">Teksten findes allerede</string>
-    <string name="quick_response_error_null">Må ikke være tom</string>
-    <string name="preferences_alerts_vibrateWhen_summary">Vibrer som påmindelse om begivenhed</string>
-    <string name="go_to">Gå til</string>
-    <string name="no_event_tip">Ingen begivenhed.</string>
-    <string name="search_hint">Søg i kalender</string>
-    <string name="noApplications">"Der er ingen apps, der kan foretage denne handling."</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"Gyldig dato er januar 1970 til december 2036"</string>
+	<!---->
+	<string name="shareEvent">"Del begivenhed"</string>
+	<!---->
+	<string name="share_label">"Del"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"Indlæsning mislykkedes."</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Handlingen mislykkedes. Kontrollér, om "Kalenderlagring" er stoppet."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"Ryd begivenheder"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"Vælg konto"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"Alle begivenheder i valgt konto vil blive slettet."</string>
+	<!---->
+	<string name="delete_completed">"Sletning af handling fuldført."</string>
+	<!---->
+	<string name="delete_certain">"OK"</string>
+	<!---->
+	<string name="wait_deleting_tip">"Vent et øjeblik, mens der slettes..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"Nogle deltagere er ugyldige."</string>
+	<!---->
+	<string name="unread_reminders">"%d ulæste påmindelser"</string>
+	<!---->
+	<string name="click_to_view_all">"Klik for at se alle"</string>
+	<!---->
+	<string name="search_setting_description">"Begivenheder i kalender"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Tidligere måned"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Senere måned"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Senere år"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Senere dag"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Tidligere dag"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"Teksten findes allerede"</string>
+	<!---->
+	<string name="quick_response_error_null">"Må ikke være tom"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"Vibrer ved påmindelse om hændelse"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"Gå til"</string>
+	<!---->
+	<string name="no_event_tip">"Ingen begivenhed."</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"Søg i kalender"</string>
+	<!---->
+	<string name="noApplications">"Der er ingen apps, der kan foretage denne handling."</string>
 </resources>

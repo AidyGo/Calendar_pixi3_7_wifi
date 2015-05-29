@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"A data debe estar comprendida entre xaneiro de 1970 e decembro de 2036."</string>
+	<!---->
+	<string name="shareEvent">"Compartir cita"</string>
+	<!---->
+	<string name="share_label">"Compartir"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"Non se puido cargar."</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Erro na operación. Comprobe se "Almacenaxe en Calendario" se detivo."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"Eliminar eventos"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"Seleccione unha conta"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"Todos os eventos da conta seleccionada serán eliminados."</string>
+	<!---->
+	<string name="delete_completed">"Operación de eliminación completada."</string>
+	<!---->
+	<string name="delete_certain">"Aceptar"</string>
+	<!---->
+	<string name="wait_deleting_tip">"Agarde mentres se leva a cabo a eliminación..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"Algúns asistentes non son válidos."</string>
+	<!-- no translation found for unread_reminders -->
+	<skip />
+	<!-- no translation found for click_to_view_all -->
+	<skip />
+	<!---->
+	<string name="search_setting_description">"Eventos en Calendario"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Diminuír mes"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Incrementar mes"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Incrementar ano"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Incrementar día"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Diminuír día"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"O texto xa existe"</string>
+	<!-- no translation found for quick_response_error_null -->
+	<skip />
+	<!-- no translation found for preferences_alerts_vibrateWhen_summary -->
+	<skip />
+	<!-- no translation found for go_to -->
+	<skip />
+	<!-- no translation found for no_event_tip -->
+	<skip />
+	<!-- no translation found for search_hint -->
+	<skip />
+	<!-- no translation found for noApplications -->
+	<skip />
+</resources>

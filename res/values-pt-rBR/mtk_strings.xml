@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"A data válida é de Janeiro de 1970 a Dezembro de 2036"</string>
+	<!---->
+	<string name="shareEvent">"Compartilhar evento"</string>
+	<!---->
+	<string name="share_label">"Compartilhar"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"Falha ao carregar."</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Falha na operação. Verifique se "Armazenamento de agenda" foi interrompido."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"Apagar eventos"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"Selecionar conta"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"Todos os eventos na conta selecionada serão excluídos."</string>
+	<!---->
+	<string name="delete_completed">"Operação de exclusão concluída."</string>
+	<!---->
+	<string name="delete_certain">"OK"</string>
+	<!---->
+	<string name="wait_deleting_tip">"Aguarde a exclusão..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"Alguns participantes não são válidos."</string>
+	<!---->
+	<string name="unread_reminders">"%d lembretes não lidos"</string>
+	<!---->
+	<string name="click_to_view_all">"Clique para ver todos"</string>
+	<!---->
+	<string name="search_setting_description">"Eventos no calendário"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Diminuir mês"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Aumentar mês"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Aumentar ano"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Aumentar dia"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Diminuir dia"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"O texto já existe"</string>
+	<!---->
+	<string name="quick_response_error_null">"Não pode estar vazio"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"Vibrar para lembrete de evento"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"Ir para"</string>
+	<!---->
+	<string name="no_event_tip">"Nenhum evento."</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"Pesq. na agenda"</string>
+	<!---->
+	<string name="noApplications">"Nenhum aplicativo pode realizar esta ação."</string>
+</resources>

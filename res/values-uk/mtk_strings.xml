@@ -1,26 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="valid_date_range">"Дійсна дата з січня 1970 до грудня 2036"</string>
-    <string name="shareEvent">Поділитися подією</string>
-    <string name="share_label">"Надіслати"</string>
-    <string name="loading_failed">Помилка завантаження.</string>
-    <string name="operation_failed">Помилка операції. Будь ласка, перевірте, чи зупинена "Пам\'ять календаря".</string>
-    <string name="clear_events">Очистити події</string>
-    <string name="select_clear_calendars_title">Вибрати обліковий запис</string>
-    <string name="clear_all_selected_events_title">Всі події у вибраному обліковому записі будуть видалені.</string>
-    <string name="delete_completed">Завершено видалення.</string>
-    <string name="delete_certain">ОК</string>
-    <string name="wait_deleting_tip">"Будь ласка, почекайте видалення..."</string>
-    <string name="attendees_invalid_tip">"Деякі запрошені недоступні."</string>
-    <string name="unread_reminders">"%d непрочитаних нагадувань"</string>
-    <string name="click_to_view_all">"Клацніть, щоб переглянути все"</string>
-    <string name="search_setting_description">"Подій в Календарі"</string>
-    <string name="quick_response_error_already_exist">Текст вже існує</string>
-    <string name="quick_response_error_null">Не може бути порожнім</string>
-    <string name="preferences_alerts_vibrateWhen_summary">Вібрація для нагадування про подію</string>
-    <string name="go_to">Перейти до</string>
-    <string name="no_event_tip">Нема події.</string>
-    <string name="search_hint">Пошук у календарі</string>
-    <string name="noApplications">"Жодна програма не може виконати цю дію."</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"Дійсні дати: січень 1970 – грудень 2036"</string>
+	<!---->
+	<string name="shareEvent">"Надати доступ до події"</string>
+	<!---->
+	<string name="share_label">"Надати спільний доступ"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"Не вдалося завантажити."</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Збій операції. Перевірте, чи зупинено роботу програми "Місце збереження календаря"."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"Очистити події"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"Виберіть обліковий запис"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"Усі події у вибраному обліковому записі буде видалено."</string>
+	<!---->
+	<string name="delete_completed">"Видалення операції завершено."</string>
+	<!---->
+	<string name="delete_certain">"OK"</string>
+	<!---->
+	<string name="wait_deleting_tip">"Дочекайтеся завершення видалення..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"Деякі учасники хибні."</string>
+	<!---->
+	<string name="unread_reminders">"%d непрочитаних нагадувань"</string>
+	<!---->
+	<string name="click_to_view_all">"Клацніть, щоб переглянути все"</string>
+	<!---->
+	<string name="search_setting_description">"Події у календарі"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Зменшити місяць"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Зменшити місяць"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Зменшити рік"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Зменшити день"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Зменшити день"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"Текст вже існує"</string>
+	<!---->
+	<string name="quick_response_error_null">"Не може бути порожнім"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"Вібрація для 	нагадування про подію"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"Перейти"</string>
+	<!---->
+	<string name="no_event_tip">"Нема події."</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"Пошук у календарі"</string>
+	<!---->
+	<string name="noApplications">"Жодна програма не може виконати цю дію."</string>
 </resources>
-

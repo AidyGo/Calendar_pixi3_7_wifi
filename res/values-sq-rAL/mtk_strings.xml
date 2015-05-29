@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"Data e vlefshme është Janar 1970 deri Dhjetor 2036"</string>
+	<!---->
+	<string name="shareEvent">"Shpërndaj ngjarje"</string>
+	<!---->
+	<string name="share_label">"Shpërndaj"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"Ngarkimi i pasuksesshëm"</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"Operacioni i pasuksesshëm. Ju lutem kontrollo nëse \'\'Memoria e Kalendarit\'\' është ndaluar."</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"Fshij ngjarjet"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"Zgjidh llogari"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"Të gjitha ngjarjet në llogarinë e zgjedhur do të fshihen."</string>
+	<!---->
+	<string name="delete_completed">"Fshirje e operacionit është përfunduar."</string>
+	<!---->
+	<string name="delete_certain">"OK"</string>
+	<!---->
+	<string name="wait_deleting_tip">"Ju lutem pritni,po fshij..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"Disa pjesëmarrës janë të pavlefshëm."</string>
+	<!---->
+	<string name="unread_reminders">"%d përkujtues të palexuar"</string>
+	<!---->
+	<string name="click_to_view_all">"Klikoni për të parë të gjitha"</string>
+	<!---->
+	<string name="search_setting_description">"Ngjarje në Kalendarin"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- DataPicker original has.Only simple preserved. -->
+	<string name="date_picker_decrement_month_button">"Zvogëlo muaj"</string>
+	<!---->
+	<string name="date_picker_increment_month_button">"Zmadho muaj"</string>
+	<!---->
+	<string name="date_picker_increment_year_button">"Zmadho vjetët"</string>
+	<!---->
+	<string name="date_picker_increment_day_button">"Zmadho ditët"</string>
+	<!---->
+	<string name="date_picker_decrement_day_button">"Zvogëlo ditët"</string>
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"Teksti ekziston"</string>
+	<!---->
+	<string name="quick_response_error_null">"Nuk mund të jetë bosh"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"Dridh kur keni pëkujtesë për ngjarje"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"Shko te"</string>
+	<!---->
+	<string name="no_event_tip">"Nuk ka ngjarje."</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"Kërko nëpër kalendarin"</string>
+	<!---->
+	<string name="noApplications">"Asnjë aplikacion nuk mund të përpunojë veprimin."</string>
+</resources>

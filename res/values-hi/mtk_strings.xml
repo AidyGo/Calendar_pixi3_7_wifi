@@ -1,26 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="valid_date_range">"मान्‍य तिथि जनवरी 1970 से दिसंबर 2036 तक है"</string>  
-    <string name="shareEvent">ईवेंट साझा करें</string>  
-    <string name="share_label">साझा करें</string>  
-    <string name="loading_failed">लोड करना असफल।</string>  
-    <string name="operation_failed">कार्रवाई असफल। कृपया जाँचें कि \"कैलेंडर भंडारण\" रूक न गया हो।</string>  
-    <string name="clear_events">ईवेंट खाली करें</string>  
-    <string name="select_clear_calendars_title">खाता चुनें</string>  
-    <string name="clear_all_selected_events_title">चयनित खाते के सभी ईवेंट हटा दिए जाएंगे।</string>  
-    <string name="delete_completed">हटाने की कार्रवाई पूरी।</string>
-    <string name="delete_certain">ओके</string>  
-    <string name="wait_deleting_tip">"हटाने के दौरान प्रतीक्षा करें..."</string>
-    <string name="attendees_invalid_tip">"कुछ उपस्थित व्यक्ति अमान्य हैं।"</string>
-    <string name="unread_reminders">"%d अनपढ़े अनुस्मारक"</string> 
-    <string name="click_to_view_all">"सभी को देखने के लिए क्लिक करें"</string> 
-    <string name="search_setting_description">"कैलेंडर के इवेंट"</string> 
-    <string name="quick_response_error_already_exist">पाठ पहले से मौजूद है</string>  
-    <string name="quick_response_error_null">खाली नहीं हो सकता</string>
-    <string name="no_event_tip">कोई ईवेंट नहीं।</string>
-    <string name="preferences_alerts_vibrateWhen_summary">घटना अनुस्मारक के लिए कंपन</string>
-    <string name="go_to">निम्न पर जाएँ</string>
-    <string name="search_hint">कैलेंडर खोजें</string>
-    <string name="noApplications">"कोई भी ऐप्स यह कार्यवाही नहीं कर सकता."</string>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Thu May 28 13:13:54 CST 2015
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!--M: add new string resource @{ -->
+	<string name="valid_date_range">"मान्‍य तिथि जनवरी 1970 से दिसंबर 2036 तक है"</string>
+	<!---->
+	<string name="shareEvent">"ईवेंट साझा करें"</string>
+	<!---->
+	<string name="share_label">"साझा करें"</string>
+	<!-- When loading events from database is failed, give user a tip. -->
+	<string name="loading_failed">"लोड करना असफल।"</string>
+	<!-- When access database is faile, give user a tip to check the "Calendar Storage" application. -->
+	<string name="operation_failed">"कार्रवाई असफल। कृपया जाँचें कि \"कैलेंडर भंडारण\" रूक न गया हो।"</string>
+	<!-- @}   #ClearAllEvents#  M: add new string resource for clear events in the calendar @{   clear the events in the calendar -->
+	<string name="clear_events">"ईवेंट खाली करें"</string>
+	<!-- select the accounts of calendar to clear events. -->
+	<string name="select_clear_calendars_title">"खाता चुनें"</string>
+	<!---->
+	<string name="clear_all_selected_events_title">"चयनित खाते के सभी ईवेंट हटा दिए जाएंगे।"</string>
+	<!---->
+	<string name="delete_completed">"हटाने की कार्रवाई पूरी।"</string>
+	<!---->
+	<string name="delete_certain">"ओके"</string>
+	<!---->
+	<string name="wait_deleting_tip">"हटाने के दौरान प्रतीक्षा करें..."</string>
+	<!-- @}   M:check attendees' validation, if invalid, give a tip. -->
+	<string name="attendees_invalid_tip">"कुछ उपस्थित व्यक्ति अमान्य हैं।"</string>
+	<!---->
+	<string name="unread_reminders">"%d अनपढ़े अनुस्मारक"</string>
+	<!---->
+	<string name="click_to_view_all">"सभी को देखने के लिए क्लिक करें"</string>
+	<!---->
+	<string name="search_setting_description">"कैलेंडर के इवेंट"</string>
+	<!-- no translation found for lunar_radio_text -->
+	<skip />
+	<!-- no translation found for gregorian_radio_text -->
+	<skip />
+	<!-- no translation found for date_picker_dialog_title -->
+	<skip />
+	<!-- no translation found for date_time_done -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_year_button -->
+	<skip />
+	<!-- no translation found for cancel -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_month_button -->
+	<skip />
+	<!-- no translation found for date_picker_increment_month_button -->
+	<skip />
+	<!-- no translation found for date_picker_increment_year_button -->
+	<skip />
+	<!-- no translation found for date_picker_increment_day_button -->
+	<skip />
+	<!-- no translation found for date_picker_decrement_day_button -->
+	<skip />
+	<!-- no translation found for picker_change_date -->
+	<skip />
+	<!-- no translation found for lunar_date_formatter -->
+	<skip />
+	<!-- no translation found for lunar_twentieth_day -->
+	<skip />
+	<!---->
+	<string name="quick_response_error_already_exist">"पाठ पहले से मौजूद है"</string>
+	<!---->
+	<string name="quick_response_error_null">"खाली नहीं हो सकता"</string>
+	<!-- On Settings screen, vibrate setting item summary text -->
+	<string name="preferences_alerts_vibrateWhen_summary">"घटना अनुस्मारक के लिए कंपन"</string>
+	<!-- Jump to special -->
+	<string name="go_to">"निम्न पर जाएँ"</string>
+	<!---->
+	<string name="no_event_tip">"कोई ईवेंट नहीं।"</string>
+	<!-- Calendar search hint -->
+	<string name="search_hint">"कैलेंडर खोजें"</string>
+	<!---->
+	<string name="noApplications">"कोई भी ऐप्स यह कार्यवाही नहीं कर सकता."</string>
 </resources>
